@@ -6,21 +6,21 @@ body {
 }
 
 TABLE {
-    border-collapse: collapse; /* Убираем двойные линии между ячейками */
-    width: 600px; /* Ширина таблицы */
+    border-collapse: collapse; 
+    width: 600px;
    background: #DAF7A6;}
    TH, TD {
     border: 1px solid #5E694B; 
-      /* Параметры рамки */
-    text-align: left; /* Выравнивание по центру */
-    padding: 5px; /* Поля вокруг текста */
+     
+    text-align: left; 
+    padding: 5px; 
    }
    TH {
-    background: #849566; /* Цвет фона ячейки */  
+    background: #849566;   
     color: #fff;
-    height: 20px; /* Высота ячеек */
+    height: 20px; 
     padding: 5px; 
-    vertical-align: bottom; /* Выравнивание по нижнему краю */
+    vertical-align: bottom; 
     
    }
 
