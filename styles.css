@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -7,36 +9,33 @@ body {
 
 TABLE {
     border-collapse: collapse; 
-    width: 600px;
-   background: #DAF7A6;}
+    width: 600px; 
+    background: #F4F4F4;
+}
    TH, TD {
-    border: 1px solid #5E694B; 
-     
+    border: 1px solid #CDCDCD; 
     text-align: left; 
-    padding: 5px; 
+    padding: 10px;
    }
    TH {
-    background: #849566;   
-    color: #fff;
+    background: #E8E8E8; 
+    color: #6A799D;
     height: 20px; 
-    padding: 5px; 
+    padding: 10px; 
     vertical-align: bottom; 
     
    }
 
 input {
-  background: #DAF7A6;
-  padding: 5px;
+  background: #F4F4F4;
+  padding: 10px;
   text-color: #fff;
-  border: 1px solid #5E694B;
+  border: 1px solid #CDCDCD;
 }
 
-
 textarea {
-  background: #DAF7A6;
+  background: #F4F4F4;
   padding: 5px;
   text-color: #fff;
-  border: 1px solid #5E694B;}
-
-
+  border: 1px solid #CDCDCD;}
 
