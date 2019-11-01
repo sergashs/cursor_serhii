@@ -43,20 +43,19 @@
   </tr>
   </table>
 
-<br>
- <input type="text" placeholder="Ваше имя" size="40"></br></br>
-<input type="text" placeholder="Ваша фамилия" size="40">
+<form action="">
+  <p><input type="text" id="Name" placeholder="Ваше имя"></p>
+ <p><input type="text" id="SName" placeholder="Ваше фамилия"></p>
   
-
   <p><b>Какой ваш пол?</b></p>
-  <input type="radio" name="answer" value="a1" checked>М<Br>
-  <input type="radio" name="answer" value="a2" >Ж<Br>
+   <p><input type="radio" name="answer" id="male" checked><label for="male">М</label></p>
+ <p><input type="radio" name="answer" id="female"><label for="female">Ж</label></p>
  
      <p><textarea name="comment" cols="40" rows="3" placeholder="Напишите свой вопрос"></textarea></p>
     
     
      <p><select size="1">
-    <option hidden disabled selected>Выберите город</option>
+    <option disabled selected>Выберите город</option>
     <option value="Львов">Львов</option>
     <option value="Киев">Киев</option>
     <option value="Одесса">Одесса</option>
@@ -65,15 +64,13 @@
    
     
    <p>Выбор языка:</p>
-    <p><input type="checkbox">Українська</p>
-    <p>
-     <input type="checkbox">Русский</p>
-      <p><input type="checkbox">English</p>
+    <p><input type="checkbox" id="ua"><label for="ua">Українська</label></p>
+    <p><input type="checkbox" id="ru"><label for="ru">Русский</label></p>
+      <p><input type="checkbox" id="eng"><label for="eng">English</label></p>
   
     
-<p><form action=""><input type="submit" value="Отправить"
-                          ></form></p>
-    
+<p><input type="submit" value="Отправить"></form></p>
+    </div>
     </body>
 </body>
 </html>
