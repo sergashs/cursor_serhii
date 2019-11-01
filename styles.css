@@ -1,41 +1,79 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home work #2; Serhii Demchyshyn</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Домашняя работа №2 - Демчишин Сергій</h1>
+  <table>
+   <tr>
+     <th>Имя</th>
+     <th>Фамилия</th>
+     <th>Телефон</th>
+     <th>Email</th>
+     
+  </tr>
+   <tr>
+     <td>Bot</td>
+     <td>Bot</td>
+     <td>+380632491933</td>
+     <td>bot@gmail.com</td>
+  </tr>
+  <tr>
+     <td>Bot</td>
+     <td>Bot</td>
+     <td>+380632491933</td>
+     <td>bot@gmail.com</td>
+  </tr>
+  <tr>
+     <td>Bot</td>
+     <td>Bot</td>
+     <td>+380632491933</td>
+     <td>bot@gmail.com</td>
+  </tr>
+  <tr>
+     <td>Bot</td>
+     <td>Bot</td>
+     <td>+380632491933</td>
+     <td>bot@gmail.com</td>
+  </tr>
+  </table>
 
-
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-}
-
-TABLE {
-    border-collapse: collapse; 
-    width: 600px; 
-    background: #F4F4F4;
-}
-   TH, TD {
-    border: 1px solid #CDCDCD; 
-    text-align: left; 
-    padding: 10px;
-   }
-   TH {
-    background: #E8E8E8; 
-    color: #6A799D;
-    height: 20px; 
-    padding: 10px; 
-    vertical-align: bottom; 
+<form action="">
+  <p><input type="text" id="Name" placeholder="Ваше имя"></p>
+ <p><input type="text" id="SName" placeholder="Ваше фамилия"></p>
+  
+  <p><b>Какой ваш пол?</b></p>
+   <p><input type="radio" name="answer" id="male" checked><label for="male">М</label></p>
+ <p><input type="radio" name="answer" id="female"><label for="female">Ж</label></p>
+ 
+     <p><textarea name="comment" cols="40" rows="3" placeholder="Напишите свой вопрос"></textarea></p>
     
-   }
-
-input {
-  background: #F4F4F4;
-  padding: 10px;
-  text-color: #fff;
-  border: 1px solid #CDCDCD;
-}
-
-textarea {
-  background: #F4F4F4;
-  padding: 10px;
-  text-color: #fff;
-  border: 1px solid #CDCDCD;}
-
+    
+     <p><select size="1">
+    <option disabled selected>Выберите город</option>
+    <option value="Львов">Львов</option>
+    <option value="Киев">Киев</option>
+    <option value="Одесса">Одесса</option>
+    
+   </select></p>
+   
+    
+   <p>Выбор языка:</p>
+    <p><input type="checkbox" id="ua"><label for="ua">Українська</label></p>
+    <p><input type="checkbox" id="ru"><label for="ru">Русский</label></p>
+      <p><input type="checkbox" id="eng"><label for="eng">English</label></p>
+  
+    
+<p><input type="submit" value="Отправить"></form></p>
+    </div>
+    </body>
+</body>
+</html>
+<body>
+  
+  
