@@ -39,10 +39,8 @@ textarea {
   text-color: #fff;
   border: 1px solid #CDCDCD;}
 
-.forms {
-  padding: 20px 0;
-}
 
-.gender {
- padding: 20px 0;  
+
+div{
+    margin: 20px 0;
 }
