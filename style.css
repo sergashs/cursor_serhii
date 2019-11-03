@@ -192,7 +192,7 @@ color: #fff !important;
   outline: none;
   background: #444444;
   padding: 0px 0px 0px 30px;
-  transition: .5s linear;
+  transition: .5s;
 }
 
 .search-style input:focus {
