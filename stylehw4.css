@@ -122,7 +122,19 @@ color: #fff !important;
 
 }
 
+.two.fix1table {
+  margin-left: 40px;
+}
+
 .table ul li.header .fa-sort-desc {
+  margin-left: 10px;
+}
+
+.table ul li.header2 .fa-sort-desc {
+  margin-left: 10px;
+}
+
+.table ul li.header3 .fa-sort-desc {
   margin-left: 10px;
 }
 
@@ -133,6 +145,8 @@ color: #fff !important;
 .table ul li.header1 .two {
   margin-left: 35px;
 }
+
+
 
 .table ul li.header3 .two {
   margin-left: 35px;
@@ -148,8 +162,6 @@ color: #fff !important;
 .table ul li .fa-file {
   color: #19a0fa;
 }
-
-
 
 .table ul li .fa-square-o {
   color: #878787;
