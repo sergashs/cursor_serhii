@@ -83,7 +83,7 @@ display:flex;
 .table ul li.header2 {
   font-weight: bold;
   align-items:center;
-  padding: 15px 15px 15px 15px;
+  padding: 15px 10px 15px 15px;
   }
 
 .table ul li.header {
@@ -102,24 +102,13 @@ display:flex;
   margin-left: 10px;
 }
 
-.table ul li.header1>div{
-color: #fff !important;
 
+#white_text {
+ color: #fff; 
 }
 
-.table ul li.header3>div{
-color: #fff !important;
-
-}
-
-.table ul li.header2>div{
-color: #fff !important;
-
-}
-
-.table ul li.header>div{
-color: #fff !important;
-
+.two.fix1table2 {
+  margin-left: 3px;
 }
 
 .two.fix1table {
@@ -211,4 +200,76 @@ color: #fff !important;
   content: "\f002";
   font-family: FontAwesome;
   color: #9c9c9c;
+}
+
+
+.td_check {
+  margin: -1px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 33px;
+  margin-left: -1px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #2c2c2c;
+  border: solid 1px #565656;
+}
+
+
+.container:hover input ~ .checkmark {
+  background-color: #9c9c9c;
+}
+
+
+.container input:checked ~ .checkmark {
+  background-color: #19a0fa;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.container .checkmark:after {
+  left: 4px;
+  top: 0px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
