@@ -168,6 +168,7 @@ border-right: none;
   background: #444444;
   padding: 0px 0px 0px 30px;
   transition: .5s;
+   color: white;
 }
 
 .search-style input:focus {
