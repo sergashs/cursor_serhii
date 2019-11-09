@@ -188,7 +188,7 @@ left: 980px;
 top: 506px;
 background: #FFFFFF;
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-font-weight: 890;
+font-weight: 885;
 font-size: 17px;
 display: flex;
 align-items: center;
@@ -205,7 +205,7 @@ flex-direction: column;
 position: absolute;
 width: 51px;
 height: 48px;
-left: 920px;
+left: 925px;
 top: 506px;
 background: #032F48; 
 }
