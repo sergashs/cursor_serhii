@@ -223,7 +223,7 @@ nav a {
 }
 nav a:after {
     background-color: #032F48;
-    margin-top: 2px;
+    margin-top: 3px;
     display: block;
     content: "";
     height: 2px;
