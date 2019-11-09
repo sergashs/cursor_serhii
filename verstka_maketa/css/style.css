@@ -99,10 +99,11 @@ margin:100px 0px 0px 100px;
 font-weight: 900;
 font-size: 110px;
 line-height: 132px;
+    color: #032F48;
 }
 
 .under-text-line {
-background-color: #151F32;
+background-color: #032F48;
 display: block;
 content: "";
 height: 10px;
