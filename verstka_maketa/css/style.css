@@ -213,3 +213,26 @@ background: #032F48;
 .img-controls {
     padding: 15px;
 }
+
+nav a {
+    display: inline-block;
+    color:#032F48;
+    line-height: 1;
+    text-decoration:none;
+    cursor: pointer;
+}
+nav a:after {
+    background-color: #032F48;
+    margin-top: 2px;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .4s ease-in-out;
+    -moz--transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+}
+nav a:hover:after,
+nav a:focus:after {
+    width: 20%;
+}
