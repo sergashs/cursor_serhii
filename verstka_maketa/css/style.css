@@ -116,7 +116,6 @@ font-weight: 500;
 font-size: 12px;
 width: 194px;
 height: 66px;
-    padding:  
 }
 
 
@@ -124,7 +123,7 @@ height: 66px;
 width: 565px;
 height: 492px;
 margin-top: 50px;
-background: #032F48;
+background-image: url(/img/right-box-background.svg);
 }
 
 .title-card {
@@ -156,14 +155,13 @@ color: #FCD3AC;
 
 .under-head-menu {
  display: flex;
-
+ justify-content: space-between;
 }
 
 
 .under-head-menu{
-    text-align: left;
-    padding-top: 45px;
-    
+text-align: left;
+padding-top: 45px; 
 }
 
 .menu-link-und {
@@ -178,4 +176,40 @@ color: #C2C2C2;
 .under-head-menu .menu-link-und{
     margin-right: 5.9%;
     margin-left: 8.5%;
+}
+
+
+
+.button-start {
+position: absolute;
+width: 150px;
+height: 48px;
+left: 888px;
+top: 506px;
+background: #FFFFFF;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+font-weight: 900;
+font-size: 17px;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.text-button {
+    padding: 15px;
+}
+
+
+
+.button-controls {
+position: absolute;
+width: 51px;
+height: 48px;
+left: 840px;
+top: 506px;
+background: #032F48; 
+}
+
+.img-controls {
+    padding: 15px;
 }
