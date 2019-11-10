@@ -146,7 +146,7 @@ color: #FCD3AC;
 }
 
 .place-for-buttons {
- padding: 50px 0px 0px 69px; 
+ padding: 70px 0px 0px 69px; 
  display: flex;
  }
 
@@ -182,11 +182,10 @@ color: #C2C2C2;
 
 
 .button-start {
-position: absolute;
-width: 150px;
+position: relative;
+width: 130px;
 height: 48px;
-left: 975px;
-top: 506px;
+margin: -70px 0px 0px 0px;
 background: #FFFFFF;
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 font-weight: 885;
@@ -203,11 +202,10 @@ flex-direction: column;
 
 
 .button-controls {
-position: absolute;
+margin: 130px 0px 22px -51px;
+position: relative;
 width: 51px;
 height: 48px;
-left: 925px;
-top: 506px;
 background: #032F48; 
 }
 
