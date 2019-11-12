@@ -235,3 +235,104 @@ nav a:hover:after,
 nav a:focus:after {
     width: 20%;
 }
+
+.container-ufter-header {
+    max-width: 1160px;
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-cu-btxt {
+font-weight: 900;
+font-size: 110px;
+color: #032F48; 
+}
+
+
+.under-text {
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+color: #DDDFE0; 
+    margin-top: 35px;
+    margin-left: 29px;
+}
+
+
+.right-container-uh {
+   padding-top: 204px;
+}
+
+.right-cu-text{
+width: 190px;
+
+font-size: 12px;
+color: #151F32;
+margin-top:33px;
+margin-left: 5px;
+
+}
+
+.right-cu-botton {
+width: 139px;
+height: 49px;
+background: #032F48;
+display: flex;
+align-items: center;
+justify-content: center;
+    margin-left: 5px;
+    margin-top: 33px;
+}
+
+.text {
+font-weight: 900;
+font-size: 17px;
+color: #FFFFFF;
+}
+
+.poloska1 {
+width: 60px;
+height: 0px;
+margin-top: 440px;    
+border: 5px solid #151F32;
+}
+
+.poloska2 {
+width: 112px;
+height: 0px;
+
+border: 5px solid #032F48;   
+}
+
+
+
+
+.left-container-uh {
+display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+    width: 300px;
+  
+}
+
+.first-block {
+width: 210px;
+height: 210px;
+background: #F9BA51;
+}
+
+.first-block2 {
+width: 210px;
+height: 210px;
+background: #FF7C14;}
+
+
+.first-block3 {
+width: 210px;
+height: 210px;
+background: #78C9C0;}
