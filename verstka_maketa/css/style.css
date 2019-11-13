@@ -276,14 +276,12 @@ color: #DDDFE0;
    padding-top: 204px;
 }
 
-.right-cu-text{
+.right-container-uh p{
 width: 190px;
-
 font-size: 12px;
 color: #151F32;
 margin-top:33px;
 margin-left: 5px;
-
 }
 
 .right-container-uh button {
@@ -380,13 +378,13 @@ padding: 56px 0px 0px 18px;
 }
 
 .cufru{
-    position: relative;
-    font-weight: 900;
-    font-size: 110px;
-    line-height: 132px;
-    color: #fff;
-    padding-left: 46%;
-    padding-top: 20%;
-    opacity: 0.5;
+position: relative;
+font-weight: 900;
+font-size: 110px;
+line-height: 132px;
+color: #fff;
+padding-left: 46%;
+padding-top: 20%;
+opacity: 0.5;
 }
 
