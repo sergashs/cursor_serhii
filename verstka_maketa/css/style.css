@@ -395,7 +395,7 @@ opacity: 0.5;
     height: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+   justify-content: space-evenly;
 }
 
 .section-two-uh-right-btxt {
@@ -408,7 +408,7 @@ margin-bottom: 65px;
 }
 
 .section-two-uh-right {
-    position:relative;
+position:relative;
 margin-top: 165px;
 }
 
@@ -433,7 +433,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-left: 5px;
-
 font-weight: 900;
 font-size: 17px;
 color: #FFFFFF;
@@ -451,6 +450,5 @@ transition: 0.5s;
    
 width: 442px;
 height: 439.5px;
-background: #032F48 url(https://sergashs.github.io/cursor_serhii/verstka_maketa/img/section_two_background.svg);
-
+background: #032F48 url(/img/section_two_background.svg);
 }
