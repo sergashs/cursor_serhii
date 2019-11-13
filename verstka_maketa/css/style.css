@@ -403,13 +403,13 @@ font-style: normal;
 font-weight: 900;
 font-size: 110px;
 color: #151F32;
-margin-bottom: 65px;
-    
+margin-bottom: 65px; 
 }
 
 .section-two-uh-right {
 position:relative;
 margin-top: 165px;
+margin-right: 60px;
 }
 
 .section-two-uh-right p {
@@ -447,8 +447,43 @@ transition: 0.5s;
 }
 
 .b_statistic {
-   
+    
+margin-top: 169px; 
 width: 442px;
-height: 439.5px;
+height: 437px;
 background: #032F48 url(/img/section_two_background.svg);
+margin-left: 15px;
+display: flex;
+justify-content: left;
 }
+
+
+.b_statistic_wb {
+
+margin-top: 58px;
+width: 362px;
+height: 325px;
+background: #FFFFFF;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+.p-text-stat    {
+width: 77px;
+height: 25px;
+font-weight: 900;
+font-size: 21px;
+line-height: 25px;
+color: #151F32;
+    padding-top: 20px;
+    margin-left: 30px;
+
+}
+
+.section-two-uh-left p {
+font-size: 12px;
+width: 178px;
+height: 38px;
+color: #151F32;
+margin-top: 25px;
+margin-left: 30px;}
