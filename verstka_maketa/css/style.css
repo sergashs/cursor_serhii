@@ -446,3 +446,11 @@ background: #78C9C0;
 color: #fff;
 transition: 0.5s; 
 }
+
+.b_statistic {
+   
+width: 442px;
+height: 439.5px;
+background: #032F48 url(https://sergashs.github.io/cursor_serhii/verstka_maketa/img/section_two_background.svg);
+
+}
