@@ -94,13 +94,16 @@ header{
     justify-content: space-between;
 }
 
-.big-text {
+
+
+.under-header h1 {
 margin:100px 0px 0px 100px; 
 font-weight: 900;
 font-size: 110px;
 line-height: 132px;
-    color: #032F48;
+color: #032F48;
 }
+
 
 .under-text-line {
 background-color: #032F48;
@@ -111,7 +114,7 @@ width: 20%;
 margin-left: 8px;
 }
 
-.under-bit-text {
+.left-side-u-header p {
 margin:200px 0px 0px 100px; 
 font-weight: 500;
 font-size: 12px;
@@ -135,7 +138,7 @@ line-height: 34px;
 color: #FFFFFF;
 }
 
-.card-text {
+.right-side-u-heder p {
 padding: 0px 0px 0px 69px; 
 width: 230px;
 height: 34px;
@@ -181,7 +184,7 @@ color: #C2C2C2;
 
 
 
-.button-start {
+.right-side-u-heder button {
 position: relative;
 width: 130px;
 height: 48px;
@@ -192,14 +195,17 @@ font-weight: 885;
 font-size: 17px;
 display: flex;
 align-items: center;
-flex-direction: column;
+justify-content: center;
+border: 0px;
+cursor: pointer;
 }
 
-.text-button {
-    padding: 15px;
+
+.right-side-u-heder button:hover {
+    background: #78C9C0;
+    color: #fff;
+    transition: 0.5s;
 }
-
-
 
 .button-controls {
 margin: 130px 0px 22px -51px;
@@ -207,11 +213,12 @@ position: relative;
 width: 51px;
 height: 48px;
 background: #032F48; 
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-.img-controls {
-    padding: 15px;
-}
+
 
 nav a {
     display: inline-block;
@@ -235,6 +242,8 @@ nav a:hover:after,
 nav a:focus:after {
     width: 20%;
 }
+
+/* header eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeend*/
 
 .container-ufter-header {
     max-width: 1160px;
@@ -277,22 +286,28 @@ margin-left: 5px;
 
 }
 
-.right-cu-botton {
+.right-container-uh button {
 width: 139px;
 height: 49px;
 background: #032F48;
 display: flex;
 align-items: center;
 justify-content: center;
-    margin-left: 5px;
-    margin-top: 33px;
-}
-
-.text {
+margin-left: 5px;
+margin-top: 33px;
 font-weight: 900;
 font-size: 17px;
 color: #FFFFFF;
+border: 0px;
+cursor: pointer;
 }
+
+.right-container-uh button:hover {
+background: #78C9C0;
+color: #fff;
+transition: 0.5s; 
+}
+
 
 .poloska1 {
 width: 60px;
@@ -304,8 +319,9 @@ border: 5px solid #151F32;
 .poloska2 {
 width: 112px;
 height: 0px;
-
 border: 5px solid #032F48;   
+margin-left: 90px;
+margin-top: 50%;
 }
 
 
@@ -313,26 +329,64 @@ border: 5px solid #032F48;
 
 .left-container-uh {
 display: flex;  
-  flex-flow: row wrap;
-  font-weight: bold;
-  text-align: center;
-    width: 300px;
+flex-flow: row wrap;
+font-weight: bold;
+text-align: center;
+width: 420px;
+height: 420px;
+margin-top:180px;
+margin-left:180px;
   
 }
+
+
+
+.white-block {
+width: 210px;
+height: 210px;
+background: #fff;
+}
+
 
 .first-block {
 width: 210px;
 height: 210px;
 background: #F9BA51;
+overflow: hidden;
 }
 
 .first-block2 {
 width: 210px;
 height: 210px;
-background: #FF7C14;}
+background: #78C9C0;
+ overflow: hidden;
+}
 
 
 .first-block3 {
 width: 210px;
 height: 210px;
-background: #78C9C0;}
+background: #E75A31;
+ overflow: hidden;
+}
+
+.tfb {
+font-weight: 900;
+font-size: 28px;
+display: flex;
+align-items: left;
+color: #FFFFFF;
+padding: 56px 0px 0px 18px;
+}
+
+.cufru{
+    position: relative;
+    font-weight: 900;
+    font-size: 110px;
+    line-height: 132px;
+    color: #fff;
+    padding-left: 46%;
+    padding-top: 20%;
+    opacity: 0.5;
+}
+
