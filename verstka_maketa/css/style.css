@@ -623,3 +623,12 @@ margin-left: 30px;
 .diagram-column-min::before {
   content: 'min';
 }
+
+.left-side-generation {
+width: 441px;
+height: 423px;
+background: #032F48 url(https://sergashs.github.io/cursor_serhii/verstka_maketa/img/generation_background.svg);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+}
