@@ -588,8 +588,8 @@ margin-left: 30px;
   align-items: flex-end;
   height: 100px;
   padding-top: 35px;
- margin-left: 30px;
-     margin-right: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .diagram-column {
@@ -624,11 +624,31 @@ margin-left: 30px;
   content: 'min';
 }
 
-.left-side-generation {
-width: 441px;
-height: 423px;
-background: #032F48 url(https://sergashs.github.io/cursor_serhii/verstka_maketa/img/generation_background.svg);
+.background-nextgen {
+width: 424px;
+height: 390px;
+background-image: url(https://sergashs.github.io/cursor_serhii/verstka_maketa/img/generation_background.svg);
 background-repeat: no-repeat;
-background-size: contain;
-background-position: center;
+background-size: cover;
+}
+
+.background-nextgen p {
+margin-left: 20px;   
+margin-top:20px;
+width: 178px;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 157.3%;
+color: #FCD3AC;}
+
+.title_nextgen {
+display: block;
+padding-left: 20px;
+padding-top: 110px;
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
 }
