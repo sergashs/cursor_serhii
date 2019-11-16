@@ -39,4 +39,14 @@ p {
 .title-card a {
     text-decoration: none;
     color: #767679;
+    font-weight: 900;
+}
+
+.title-card {
+ text-align: center;
+}
+
+span {
+    font-style: italic;
+    margin-right: 10px;
 }
