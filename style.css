@@ -37,9 +37,27 @@ p {
 }
 
 .title-card a {
-    text-decoration: none;
     color: #767679;
     font-weight: 900;
+    display: inline-block;
+    line-height: 2;
+    text-decoration:none;
+    cursor: pointer;
+}
+.title-card a:after {
+    background-color: #767679;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .4s ease-in-out;
+    -moz--transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+}
+.title-card a:hover:after,
+.title-card a:focus:after {
+    width: 100%;
+}
 }
 
 .title-card {
