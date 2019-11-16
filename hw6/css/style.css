@@ -152,7 +152,7 @@ height: 66px;
 width: 565px;
 height: 492px;
 margin-top: 50px;
-background: #032F48 url(https://sergashs.github.io/cursor_serhii/verstka_maketa/img/background-card-right.svg);
+background: #032F48 url(https://sergashs.github.io/cursor_serhii/hw6/img/background-card-right.svg);
 }
 
 .title-card {
@@ -478,7 +478,7 @@ transition: 0.5s;
 margin-top: 169px; 
 width: 435px;
 height: 437px;
-background: #032F48 url(https://sergashs.github.io/cursor_serhii/verstka_maketa/img/section_two_background.svg);
+background: #032F48 url(https://sergashs.github.io/cursor_serhii/hw6/img/section_two_background.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: center;
@@ -627,7 +627,7 @@ margin-left: 30px;
 .background-nextgen {
 width: 424px;
 height: 450px;
-background-image: url(https://sergashs.github.io/cursor_serhii/verstka_maketa/img/generation_background.svg);
+background-image: url(https://sergashs.github.io/cursor_serhii/hw6/img/generation_background.svg);
 background-repeat: no-repeat;
 background-size: cover;
     margin-left: 1px;
@@ -816,7 +816,7 @@ border: 5px solid #151F32;
 .program-bg {
 width: 860px;
 height: 389px;
-background-image: url(https://sergashs.github.io/cursor_serhii/verstka_maketa/img/program-bg.png);
+background-image: url(https://sergashs.github.io/cursor_serhii/hw6/img/program-bg.png);
 background-repeat: no-repeat;
 background-size: cover;
 margin-left: 50px;
