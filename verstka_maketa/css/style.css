@@ -698,12 +698,124 @@ margin-top: 10px;
 border: 5px solid #151F32;  
 }
 
-
-
-
 .button-play img:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.container-informer {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -350px;
+    margin-top: 65px;
+}
+
+.container-informer img {
+margin-right: 60px;
+    margin-bottom: 20px;
+}
+
+
+.container-informer p {
+margin-top: 5px;
+font-size: 12px;
+line-height: 163.3%;
+width: 175px;
+height: 40px;
+color: #151F32;
+}
+
+.title-informer {
+font-weight: bold;
+font-size: 15px;
+line-height: 157.3%;
+color: #000000;
+}
+
+.fix-4sec {
+    margin-top: 200px;
+}
+
+.left4section {
+ margin-left: -105px;   
+}
+
+.right4section {
+    margin-right: -40px;
+}
+
+.left4sc-title {
+font-weight: bold;
+font-size: 15px;
+line-height: 157.3%;
+color: #151F32;
+}
+
+.left4section p {
+font-size: 12px;
+line-height: 163.3%;
+color: #151F32;  
+}
+
+.informer-stats {
+font-family: Lato;
+font-style: normal;
+font-weight: 800;
+font-size: 46px;
+line-height: 157.3%;
+color: #FF7C14;
+}
+
+
+.right4sc-title {
+font-weight: bold;
+font-size: 24px;
+line-height: 157.3%;
+color: #151F32;  
+}
+
+.right4section p {
+font-size: 12px;
+line-height: 163.3%;
+color: #151F32;  
+width: 190px;
+height: 86px;
+}
+
+.learn-more {
+font-weight: bold;
+font-size: 11px;
+line-height: 157.3%;
+color: #151F32;
+}
+
+
+.right4section::before {
+ position:absolute;  
+content: "";
+width: 50px;
+margin-left:-90px;
+margin-top: 10px;
+border: 5px solid #151F32;  
+}
+
+
+.left4section::after {
+ position:absolute;  
+content: "";
+width: 112px;
+margin-left:320px;
+margin-top: -160px;
+border: 5px solid #151F32;  
+}
+
+.program-bg {
+width: 822px;
+height: 389px;
+background-image: url(https://sergashs.github.io/cursor_serhii/verstka_maketa/img/program-bg.svg);
+background-repeat: no-repeat;
+background-size: cover;
 }
