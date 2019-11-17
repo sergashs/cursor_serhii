@@ -18,6 +18,7 @@ html, body {
 .container {
     max-width: 1100px;
     width: 100%;
+    min-height: 360px;
     margin: auto;
     background: #fff;
     -webkit-box-shadow: 0px 0px 55px -27px rgba(0,0,0,0.75);
@@ -37,7 +38,7 @@ html, body {
 }
 
 p {
-    margin: 30px 0px 10px 30px;
+    margin: 30px 30px 10px 30px;
     font-weight: 500;
 }
 
