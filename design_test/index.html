@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
@@ -49,7 +48,13 @@
           <div class="card"><img src="1.png" alt=""></div>
          <div class="card"><img src="2.png" alt=""></div>     
      </div> 
-      
+
+<link id="style" rel="stylesheet" type="text/css" href="dark.css" />
+<script type="text/javascript">
+  var date = new Date (); // создаем объект Date с текущей датой и временем
+  var h = date.getHours (); // получаем текущий час
+  if (h>20 || h<8) document.getElementById («style»).href = «light.css»; // если сейчас ночь, то меняем файл стилей
+</script>
   </div> 
 </body>
 </html>
