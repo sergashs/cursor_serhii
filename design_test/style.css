@@ -72,19 +72,20 @@ margin-top: 30px;
     text-decoration: underline;
 }
 
-.right-content-side{
+.right-content-side{Ы
    padding-top: 150px;
    
     max-width: 100%;
     margin: 0 auto;
     column-width: 14em;
-    column-count: 3;
+    column-count: 4;
 }
 
 
 .right-content-side img {
- width: 300px;
- margin-right: 15px;
+ width: 100%;
+    max-width: 300px;
+ margin-right: 10px;
  margin-bottom: 20px;
 }
 
