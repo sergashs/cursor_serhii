@@ -61,7 +61,7 @@ flex-direction: column;
 
 .bottom-links span {
  color: #b7bec4; 
-    margin-top: 30px;
+margin-top: 30px;
 }
 
 
@@ -72,25 +72,24 @@ flex-direction: column;
 }
 
 .right-content-side{
-    display: flex;
-    flex-flow: column wrap;
-    max-height: 1200px;
-    max-width: 100px;
-    flex-wrap: wrap;
-    margin-top: 150px;
-    margin-left: 50px;
+   padding-top: 150px;
+   
+    max-width: 100%;
+    margin: 0 auto;
+    column-width: 14em;
+    column-count: 3;
 }
 
 
 .right-content-side img {
  width: 300px;
- margin-right: 30px;
- margin-bottom: 30px;
+ margin-right: 15px;
+ margin-bottom: 20px;
 }
 
 
 .card {
-    display: block;
+   
    
 }
 
