@@ -85,7 +85,7 @@ margin-top: 30px;
 
 .right-content-side img {
  width: 100%;
-    max-width: 300px;
+ max-width: 300px;
  margin-right: 10px;
  margin-bottom: 20px;
 }
@@ -96,3 +96,21 @@ margin-top: 30px;
    
 }
 
+
+@media(max-width:630px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .right-content-side{
+   padding-top: 50px;
+   padding-left: 5%;
+    max-width: 100%;
+    margin: 0 auto;
+    column-width: 10em;
+    column-count: 1;
+}
+    
+    }
+}
