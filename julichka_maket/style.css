@@ -159,3 +159,17 @@ color: #FFFFFF;
   
 }
     }
+
+
+@media(max-width:430px){ 
+.logo-text {
+    display: none;
+ position: relative;
+margin-left: 0%;
+font-size: 24px;
+display: flex;
+align-items: center;
+font-weight: 700;
+color: #FFFFFF;
+  
+}}
