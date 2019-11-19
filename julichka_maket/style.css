@@ -146,4 +146,16 @@ margin-left: 10%;
     display: flex;
     width: 70%;
 }
+    
+    
+    .logo-text {
+ position: relative;
+margin-left: 0%;
+font-size: 24px;
+display: flex;
+align-items: center;
+font-weight: 700;
+color: #FFFFFF;
+  
+}
     }
