@@ -78,7 +78,7 @@ color: #FFC45D;
 
 h1 {
 font-style: 900;
-font-size: 64px;
+font-size: calc(2rem + 1.23vw);
 text-transform: capitalize;
 margin: 0px;
 color: #FFFFFF;
@@ -178,4 +178,9 @@ color: #FFFFFF;
     background: url(girl_one.svg);
 
 }
+    .soc-icon {
+    width: 70%;
+}
+    
+  
 }
