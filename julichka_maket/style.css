@@ -160,7 +160,7 @@ color: #FFFFFF;
     }
 
 
-@media(max-width:530px){ 
+@media(max-width:480px){ 
 .logo-text {
     display: none;
  
