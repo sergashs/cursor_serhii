@@ -162,7 +162,7 @@ color: #FFC45D;;
 }
 
 .right-side-section2 p {
-width:424px;
+max-width: 424px;
 height: 108px;
 font-style: normal;
 font-weight: 500;
@@ -241,9 +241,29 @@ color: #FFFFFF;
     background: url(girl_one.svg);
 
 }
+    
+    .girl-bck-2 {
+   width: 300px;
+   height: 280px;
+    background: url(girl_2.svg);
+    
+} 
     .soc-icon {
     width: 70%;
 }
+    .right-side-section2 p {
+max-width: 304px;
+height: 158px;
+}
     
-  
+    .right-side-section2 {
+    margin-top: 10%; 
+     align-items: center;
+    text-align: center;
+    margin-right: 0%;
+}
+  .right-side-section2 button{
+margin: 0px 0px 40px 0px;
+
+}
 }
