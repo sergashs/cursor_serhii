@@ -245,7 +245,11 @@ color: #FFFFFF;
     .girl-bck-2 {
    width: 300px;
    height: 280px;
+        background-repeat: no-repeat;
     background: url(girl_2.svg);
+    background-repeat: no-repeat;
+background-size: cover;
+        
     
 } 
     .soc-icon {
