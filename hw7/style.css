@@ -1,0 +1,309 @@
+@font-face{
+    font-family: BebasNeue; 
+    src: url(BebasNeue.ttf); 
+   
+   }
+
+@font-face{
+ font-family: GothamPro; 
+    src: url(GothamPro.ttf);
+ }
+
+a {text-decoration: none;}
+
+body {
+    background: #f0ebe8;
+    max-width: 1554px;
+   margin:auto;
+   
+    }
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left-side {
+    margin-left; 2%;
+    display: flex;
+    width: 20%;
+    align-items: center;
+    
+}
+
+.h1-logo{
+    font-family: BebasNeue; 
+     font-size: 28px;
+     font-weight: normal; 
+    color: #333333;
+}
+
+.text-under-logo{
+    font-family: GothamPro; 
+    font-size: 14px;
+    color: #d4416a;
+}
+
+.text-logo {
+    display: flex;
+  flex-direction: column;
+}
+
+.center-menu-header a {
+    color: #333333;
+    font-size: 16px;
+    font-family: GothamPro; 
+}
+
+.active::after {
+    background-color: #d4416a;
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    margin-top: 3px;
+}
+
+
+.center-menu-header {
+    display: flex;
+    justify-content: space-around; 
+    width: 40%;
+    align-items: center;
+}
+
+
+.right-side-header p {
+    width: 190px;
+    color: #333333;
+    font-size: 16px;
+    font-family: GothamPro;
+    
+}
+
+.right-side-header p::before {
+     content:url('phone-call.png') 
+}
+
+.right-side-header span {
+    font-weight: bold;
+}
+
+
+.section-one {
+ 
+    background-image: url(bg.jpg);
+    max-width: 1549px;
+    height: 600px;  
+    padding: 50px;
+    background-repeat: no-repeat;
+   position: relative;
+    overflow: hidden;
+}
+
+
+.left-side-section-one {
+
+    text-align: center;
+    width: 600px;
+}
+
+h1 {
+    font-family: BebasNeue; 
+    color: #333333;
+    font-size: 48px;
+}
+
+.left-side-section-one::after {
+    width: 50px;
+    content: "219 грн";   
+    position: absolute;
+    font-family: BebasNeue; 
+    color: #fff;
+    font-size: 28px;
+    margin-left: 285px;
+    margin-top: -185px;
+    transform: rotate(15deg);
+}
+
+.left-side-section-one span {
+    color:#d4416a;
+}
+
+.left-side-section-one p {
+    width: 600px;
+    color: #333333;
+    font-size: 18px;
+    font-family: GothamPro; 
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.left-side-section-one button{
+width: 250px;
+height: 56px;
+background: #d4416a;
+font-size: 24px;
+color: #fff;
+font-size: 18px;
+font-family: GothamPro; 
+border: none;
+margin: 20px 0px 20px 0px;
+border-radius: 5px;
+transition:all 0.4s;
+}
+
+.left-side-section-one button span{
+    color:#fff;
+    font-weight: bold;
+    }
+
+
+.left-side-section-one button:hover {
+background-color: #919191;
+transition:all 0.5s;
+}
+
+
+/*друга секія*/
+.section-two {
+}
+
+h2 {
+    font-family: GothamPro; 
+    font-size: 36px;
+    color: #d4416a;
+    text-align: center;
+}
+
+.content-sec-two {
+    display: flex;
+   justify-content: space-between;
+}
+
+.right-side-section-two p {
+    width: 800px;
+    color: #333333;
+    font-size: 18px;
+    font-family: GothamPro; 
+    line-height: 40px;
+    
+}
+
+.right-side-section-two {
+ text-align: center;
+}
+
+.section-two button{
+width: 250px;
+height: 56px;
+background: #d4416a;
+font-size: 24px;
+color: #fff;
+font-size: 18px;
+font-family: GothamPro; 
+border: none;
+margin: 20px 0px 20px 0px;
+border-radius: 5px;
+transition:all 0.4s;
+}
+
+.section-two button span{
+    color:#fff;
+    font-weight: bold;
+    }
+
+
+.section-two button:hover {
+background-color: #919191;
+transition:all 0.5s;
+}
+
+
+
+.section-one::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+radial-gradient(4px 5px at bottom, transparent 12px, #f0ebe8 13px);
+}
+.section-one::after{
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
+} 
+
+.wave{
+  height: 50px;
+  position: relative;
+}
+.wave::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, #fff 13px);
+}
+.wave::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, #fff 12px, transparent 13px);
+}
+
+
+.wave2{
+  height: 50px;
+  position: relative;
+    margin-top:-139px;
+}
+.wave2::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, #f0ebe8 13px);
+}
+.wave2::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, #f0ebe8 12px, transparent 13px);
+}
