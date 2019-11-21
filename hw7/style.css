@@ -25,7 +25,7 @@ header {
 }
 
 .header-left-side {
-    margin-left; 2%;
+    
     display: flex;
     width: 240px;
     align-items: center;
