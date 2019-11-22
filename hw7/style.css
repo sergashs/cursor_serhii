@@ -155,7 +155,7 @@ h1 {
 }
 
 .left-side-section-one button{
-width: 250px;
+max-width: 250px;
 height: 56px;
 background: #d4416a;
 font-size: 24px;
@@ -164,6 +164,8 @@ font-size: 18px;
 font-family: GothamPro; 
 border: none;
 margin: 20px 0px 20px 0px;
+padding-left: 30px;
+    padding-right: 30px;
 border-radius: 5px;
 transition:all 0.4s;
 }
@@ -225,7 +227,7 @@ h2 {
 
 
 .section-two button{
-width: 250px;
+max-width: 250px;
 height: 56px;
 background: #d4416a;
 font-size: 24px;
@@ -234,6 +236,8 @@ font-size: 18px;
 font-family: GothamPro; 
 border: none;
 margin: 20px 0px 20px 0px;
+padding-left: 30px;
+padding-right: 30px;
 border-radius: 5px;
 transition:all 0.4s;
 }
@@ -534,9 +538,9 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 
 
 
-/* ура */
 
-@media(max-width:640px){ 
+
+@media(max-width:660px){ 
     
     header {
         
@@ -565,7 +569,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     
 }
     
-   
     .section-one {
         height: 100%;
          display: flex;
@@ -574,7 +577,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
    }
     .left-side-section-one {
         width: 100%;
-       
         flex-direction: column;
         align-items: center;
     }
@@ -590,8 +592,8 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     
     .right-side-pomade-price {
         margin-top: 50px;
-        
-        
+     margin-left: 75px;
+       
     }
     
     .content-sec-two {
@@ -609,5 +611,126 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     .right-side-section-two p {
         text-align: center;
     }
+    
+    .price {
+    width: 30px;
+    position: absolute;
+    margin-left: 110px;
+    margin-top: -15px;
+    font-family: BebasNeue; 
+    color: #fff;
+    font-size: 18px;
+    transform: rotate(15deg);
 }
+}
+    
+/*    */
+    
+  @media(max-width:565px){ 
+       header {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    .header-left-side {
+        position: relative;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    
+    
+    
+    
+.center-menu-header  {
+    display: none;
+    
+}
+    
+    .section-one {
+        height: 100%;
+         display: flex;
+        flex-direction: column;
+        
+   }
+    .left-side-section-one {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .left-side-section-one p{
+        text-align: center;
+        font-size: 13px;
+        line-height: 25px;
+    }
+    
+    
+    .pomade-1 { 
+    width: 150px;
+    }
+    
+    
+    .right-side-pomade-price {
+    margin-left: -75px;
+    padding-bottom: 20px;
+       
+    }
+    
+    .content-sec-two {
+        flex-direction: column;
+    }
+    
+    .left-side-section-two img {
+        width: 50%;
+        margin-bottom: 20px;
+        
+    }
+    
+    .left-side-section-two {
+       text-align: center;
+    }
+    .right-side-section-two p {
+       text-align: center;
+        font-size: 13px;
+         line-height: 25px;
+        margin:auto;
+    }
+    
+    .price {
+    width: 30px;
+    position: absolute;
+    margin-left: 114px;
+    margin-top: -10px;
+    font-family: BebasNeue; 
+    color: #fff;
+    font-size: 14px;
+    transform: rotate(15deg);
+}
+      h1 {
+         font-size: 28px; 
+      }
+      .wave2{
+  height: 50px;
+  position: relative;
+} 
+      
+      .left-side-section-one button{
+          font-size: 13px;
+      }
+    
+      .right-side-header p{
+          font-size: 9px;
+          text-align: center;
+      }
+      .right-side-header p::before {
+          display: none;
+      }
+      
+      h2 {
+          font-size: 24px;
+      }
+      
+      .section-two button{
+          font-size:  13px;
+      }
+}
