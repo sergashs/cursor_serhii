@@ -694,6 +694,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
       }
       .wave2{
   height: 50px;
+          margin-top:-50px;
   position: relative;
 } 
       
@@ -702,7 +703,8 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
       }
     
       .right-side-header p{
-          font-size: 9px;
+          width: 100px;
+          font-size: 10px;
           text-align: center;
       }
       .right-side-header p::before {
