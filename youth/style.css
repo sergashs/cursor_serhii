@@ -20,7 +20,7 @@ nav>ul {
 }
 
 nav {
-    width: 40%;
+    width: 600px;
 }
 
 nav li {
@@ -33,6 +33,24 @@ font-size: 18px;
 line-height: 22px;
 text-transform: uppercase;
 color: #3F3F3F;
+    margin-right: 20px;
+}
+
+.righ-side-header {
+    display: flex;
+   justify-content: space-evenly;
+}
+
+.icon-header {
+    margin-right: 20px;
+}
+
+.lng{
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+text-transform: uppercase;
+    margin-left: 50px;
 }
 
 .logo {
@@ -40,7 +58,7 @@ font-size: 30px;
 line-height: 22px;
 text-transform: uppercase;
 color: #3F3F3F; 
-font-weight: 800;    
+font-weight: 800;
 }
 
 .head-bg {
@@ -108,7 +126,7 @@ margin-top: 40px;
 display: flex;
 }
 
-
+/* секція 1 */
 .section1 {
     display: flex;
     margin-top: 30px;
@@ -141,6 +159,8 @@ display: flex;
     margin-bottom: 90px;
 }
 
+/* кінець секція 1*/
+
 .h2 {
 margin-top: 90px;
 font-weight: 600;
@@ -152,6 +172,8 @@ color: #3F3F3F;
 }
 
 
+
+/* секція 2 */
 .section2 {
     display: flex;
     margin-top: 30px;
@@ -167,7 +189,7 @@ color: #3F3F3F;
     width: 100%;
     display: flex;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
     margin-right: 30px;
 }
 
@@ -182,6 +204,10 @@ color: #3F3F3F;
     align-items: center;
 }
 
+/* / секція 2 */
+
+
+/* Section 3 start */
 .section3 {
     margin-top:90px;
     background-image: url(about-bg.svg); 
@@ -236,5 +262,136 @@ color: #FFFFFF;
 }
 
 .center-button {
+text-align: center;
+}
+
+/* Section 3 end */
+
+
+/* Cards-area */
+.cards-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+
+.card-background {
+width: 262px;
+height: 392px;
+background: #FFFFFF;
+box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+margin-right: 30px;
+margin-bottom: 30px;
+}
+
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+.card-title {
+margin-top: 12px;
+margin-left: 16px;
+font-size: 18px;
+line-height: 22px;
+text-transform: uppercase;
+color: #3F3F3F;
+}
+
+.link-to-card {
+margin-top: 12px;
+margin-left: 16px;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+color: #3F3F3F;}
+
+
+.other-cards {
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+text-transform: uppercase;
+color: #3F3F3F;
+}
+/* Cards-area */
+
+.sing-up {
+margin-top: 90px;
+font-weight: 600;
+font-size: 36px;
+line-height: 44px;
+text-align: center;
+text-transform: uppercase;
+color: #3F3F3F;
+}
+
+.input-email {
+    text-align: center;
+    margin-top: 90px;
+}
+
+input {
+    width: 602px;
+    height: 60px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #3F3F3F;
+    outline: none;
+    font-family: Montserrat;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: capitalize;
+    color: #3F3F3F;
+    text-align: center;
+}
+
+
+.footer-menu {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column p {
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+text-transform: uppercase;
+color: #3F3F3F;
+}
+
+.column a {
+font-size: 18px;
+line-height: 22px;
+text-transform: uppercase;
+color: #3F3F3F;
+text-decoration: none;
+}
+
+.link-f {
+    margin-bottom: 16px;
+}
+
+.footer-end {
+font-size: 18px;
+line-height: 22px;
+text-transform: lowercase;
+color: #3F3F3F;
 text-align: center;
 }
