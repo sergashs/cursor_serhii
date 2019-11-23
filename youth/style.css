@@ -59,6 +59,8 @@ line-height: 22px;
 text-transform: uppercase;
 color: #3F3F3F; 
 font-weight: 800;
+-webkit-text-stroke: 1px #3F3F3F;;
+-webkit-text-fill-color: #EBF0F6;
 }
 
 .head-bg {
@@ -391,7 +393,6 @@ text-decoration: none;
 .footer-end {
 font-size: 18px;
 line-height: 22px;
-text-transform: lowercase;
 color: #3F3F3F;
 text-align: center;
 }
