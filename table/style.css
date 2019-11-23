@@ -1,18 +1,19 @@
 body{    
     background-color: #2f2f2f;
     margin: 40px;
+    width:100%
 }
 
 table {
 font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-
-width: 800px;
+width: 795px;
 font-size: 14px;
 border-radius: 5px;
 text-align: left;
 border-collapse: collapse;
 box-shadow: 0 0 0 1px #565656;
-    margin: 50px;
+margin: 50px;
+    position: relative;
 }
 
 th.wide_column{
@@ -76,7 +77,6 @@ border-right: none;
 
 
 .container {
-  
   position: relative;
   padding-left: 30px;
   margin-left: 0px;
@@ -151,9 +151,11 @@ border-right: none;
      margin-left: 10px;
 }
 
-.search-style {}
+.search-style {
+    position: absolute;
+}
 .search-style form {
-    margin: -20px -106px;
+margin: -20px -106px;
   width: 200px;
   height: 40px;
   
@@ -164,11 +166,11 @@ border-right: none;
   height: 40px;
   border-radius: 5px;
   border: none;
-    outline: none;
+  outline: none;
   background: #444444;
   padding: 0px 0px 0px 30px;
   transition: .5s;
-   color: white;
+ color: white;
 }
 
 .search-style input:focus {
