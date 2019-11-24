@@ -176,6 +176,10 @@ border-bottom: 5px solid #ab3456;
     }
 
 
+.left-side-section-one button:active {
+    border-bottom: none;
+}
+
 
 /*друга секія*/
 .section-two {width:100%;
@@ -241,6 +245,11 @@ border-bottom: 5px solid #ab3456;
     color:#fff;
     font-weight: bold;
     }
+
+.section-two button:active {
+    border-bottom: none;
+}
+
 
 
 .section-one::before{
@@ -703,8 +712,118 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
       }
     
       .right-side-header p{
-          width: 100px;
-          font-size: 10px;
+          width: 130px;
+          font-size: 13px;
+          text-align: center;
+      }
+      .right-side-header p::before {
+          display: none;
+      }
+      
+      h2 {
+          font-size: 24px;
+      }
+      
+      .section-two button{
+          font-size:  13px;
+      }
+}
+
+
+/* 565 px   */
+    
+  @media(max-width:345px){ 
+       header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header-left-side {
+        position: relative;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    
+.center-menu-header  {
+    display: none;
+    
+}
+    
+    .section-one {
+        height: 120%;
+         display: flex;
+        flex-direction: column;
+        
+   }
+    .left-side-section-one {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .left-side-section-one p{
+        text-align: center;
+        font-size: 13px;
+        line-height: 25px;
+    }
+    
+    
+    .pomade-1 { 
+    margin: auto;
+    }
+    
+    
+    .right-side-pomade-price {
+    margin: auto;
+       
+    }
+    
+    .content-sec-two {
+        flex-direction: column;
+    }
+    
+    .left-side-section-two img {
+        width: 50%;
+        margin-bottom: 20px;
+        
+    }
+    
+    .left-side-section-two {
+       text-align: center;
+    }
+    .right-side-section-two p {
+       text-align: center;
+        font-size: 13px;
+         line-height: 25px;
+        margin:auto;
+    }
+    
+    .price {
+    width: 30px;
+    position: absolute;
+    margin-left: 26px;
+    margin-top: 18px;
+    font-family: BebasNeue; 
+    color: #fff;
+    font-size: 14px;
+    transform: rotate(15deg);
+}
+      h1 {
+         font-size: 28px; 
+      }
+      .wave2{
+  height: 50px;
+          margin-top:-49px;
+  position: relative;
+} 
+      
+      .left-side-section-one button{
+          font-size: 13px;
+      }
+    
+      .right-side-header p{
+          width: 130px;
+          font-size: 13px;
           text-align: center;
       }
       .right-side-header p::before {
