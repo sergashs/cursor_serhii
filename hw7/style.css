@@ -9,6 +9,13 @@
     src: url(GothamPro.ttf);
  }
 
+
+*::selection {
+    color: #fff; 
+    background: #d4416a; 
+   }
+
+
 a {text-decoration: none;}
 
 body {
@@ -54,7 +61,13 @@ header {
 .center-menu-header a {
     color: #333333;
     font-size: 16px;
-    font-family: GothamPro; 
+    font-family: GothamPro;   
+}
+
+.center-menu-header a:hover {
+    color: #d4416a;
+    font-size: 16px;
+    font-family: GothamPro;  
     
 }
 
