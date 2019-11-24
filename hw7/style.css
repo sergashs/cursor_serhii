@@ -646,6 +646,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
         height: 100%;
          display: flex;
         flex-direction: column;
+        background-color: #f1f1f1;
         
    }
     .left-side-section-one {
@@ -732,7 +733,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 }
 
 
-/* 565 px   */
+/* 345 px   */
     
   @media(max-width:345px){ 
        header {
@@ -752,6 +753,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 }
     
     .section-one {
+        background-color: #f1f1f1;
         height: 120%;
          display: flex;
         flex-direction: column;
