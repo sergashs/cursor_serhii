@@ -176,7 +176,7 @@ border-bottom: 5px solid #ab3456;
     }
 
 
-.left-side-section-one button:active {
+.left-side-section-one button:hover {
     border-bottom: none;
 }
 
@@ -246,7 +246,7 @@ border-bottom: 5px solid #ab3456;
     font-weight: bold;
     }
 
-.section-two button:active {
+.section-two button:hover {
     border-bottom: none;
 }
 
