@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
    
@@ -46,18 +46,41 @@
     </header>
     
     
-    <div class="head-bg">
+    
+    
+     
+   
+   
     <div class="container-header">
-        <div class="big-text-head">winter 2019 </div>
-         <button class="button-style">show</button>
-         <div class="place-for-dots">
-             <div class="dot active"></div>
-             <div class="dot"></div>
-             <div class="dot"></div>
-             <div class="dot"></div>
+       
+      <div class="slider">
+    <div class="item">
+        <img src="bg_head.svg" alt="Первый слайд">
+        <div class="slideText">winter 2019</div>
+        <button class="button-style padding-content">show</button>
+    </div>
+
+    <div class="item">
+        <img src="bg_head.svg" alt="Второй слайд">
+        <div class="slideText">3</div>
+    </div>
+
+    <div class="item">
+        <img src="bg_head.svg" alt="Третий слайд">
+        <div class="slideText">2</div>
+    </div>
+ </div>
+
+
+       
+         
+         <div class="slider-dots">
+    <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+    <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+    <span class="slider-dots_item" onclick="currentSlide(3)"></span>
          </div>
           </div>
-    </div>
+    
     <div class="section1">
         <div class="left-side-sec1">
                 <button class="button-style padding-content">show</button>
@@ -175,7 +198,47 @@ For more information, please visit the Inditex Group website: www.inditex.com</d
 
 </script>
 
+<script type="text/javascript">
+    /* Индекс слайда по умолчанию */
+var slideIndex = 1;
+showSlides(slideIndex);
 
+/* Функция увеличивает индекс на 1, показывает следующй слайд*/
+function plusSlide() {
+    showSlides(slideIndex += 1);
+}
+
+/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+function minusSlide() {
+    showSlides(slideIndex -= 1);  
+}
+
+/* Устанавливает текущий слайд */
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+/* Основная функция слайдера */
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("item");
+    var dots = document.getElementsByClassName("slider-dots_item");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+</script>
 
 
 
