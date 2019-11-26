@@ -9,10 +9,12 @@
     src: url(GothamPro.ttf);
  }
 
+=
 
 *::selection {
     color: #fff; 
     background: #d4416a; 
+   
    }
 
 
@@ -32,7 +34,6 @@ header {
 }
 
 .header-left-side {
-    
     display: flex;
     width: 240px;
     align-items: center;
@@ -93,10 +94,11 @@ header {
 }
 
 .right-side-header p {
-    width: 170px;
+    width: 210px;
     color: #333333;
     font-size: 16px;
     font-family: GothamPro;  
+   
 }
 
 .right-side-header p::before {
@@ -112,16 +114,15 @@ header {
    display: flex;
     background-image: url(bg.jpg);
     max-width: 1529px;
-    height: 600px;  
     padding: 50px;
     background-repeat: no-repeat;
     position: relative;
+   
     
 }
 
 
 .left-side-section-one {
-
     text-align: center;
     width: 600px;
 }
@@ -181,7 +182,7 @@ padding-left: 30px;
 padding-right: 30px;
 border-radius: 5px;
 border-bottom: 5px solid #ab3456;
-     text-transform: uppercase;
+text-transform: uppercase;
 }
 
 .left-side-section-one button span{
@@ -196,7 +197,8 @@ border-bottom: 5px solid #ab3456;
 
 
 /*друга секія*/
-.section-two {width:100%;
+.section-two {
+    width:100%;
 }
 
 h2 {
@@ -266,7 +268,6 @@ text-transform: uppercase;
 }
 
 
-
 .section-one::before{
   content: "";
   position: absolute;
@@ -279,6 +280,8 @@ text-transform: uppercase;
   background-image:
 radial-gradient(4px 5px at bottom, transparent 12px, #f0ebe8 13px);
 }
+
+
 .section-one::after{
   content: "";
   position: absolute;
@@ -291,6 +294,65 @@ radial-gradient(4px 5px at bottom, transparent 12px, #f0ebe8 13px);
   background-image:
 radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 } 
+
+
+.section-two::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -100;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+radial-gradient(4px 5px at bottom, transparent 12px, #f0ebe8 13px);
+}
+
+
+.section-two::after{
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -1-0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
+} 
+
+
+.wave2{
+  height: 50px;
+  
+}
+.wave2::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, #f0ebe8 13px);
+}
+.wave2::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, #f0ebe8 12px, transparent 13px);
+}
+
 
 .wave{
   height: 50px;
@@ -322,61 +384,11 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 }
 
 
-.wave2{
-  height: 50px;
-  position: relative;
-    margin-top:-139px;
-}
-.wave2::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat;
-  height: 10px;
-  background-size: 20px 20px;
-  background-image:
-    radial-gradient(circle at 10px -5px, transparent 12px, #f0ebe8 13px);
-}
-.wave2::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat;
-  height: 15px;
-  background-size: 40px 20px;
-  background-image:
-    radial-gradient(circle at 10px 15px, #f0ebe8 12px, transparent 13px);
-}
-
-
 .pomade {
     max-width: 307px; 
 }
 
-/* Початок адаптації */
 
-@media(max-width:1400px){ 
-    
-   .section-one {
-    display: flex;
-    justify-content: space-between;
-    background: #e1e3d6;
-    max-width: 1529px;
-    height: 450px;  
-    padding: 50px;
-       position: relative;
-    }
-    
-.wave2{
-  height: 50px;
-  position: relative;
-    margin-top:-49px;
-}    
-}
 
 /* Частина друга */
 @media(max-width:1200px){ 
@@ -388,20 +400,16 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     max-width: 1529px;
     height: 450px;  
     padding: 50px;
-       position: relative;
+    position: relative;
     }
     
-.wave2{
-  height: 50px;
-  position: relative;
-    margin-top:-49px;
-}    
+ 
     
     header {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    
     
 }
     .center-menu-header {
@@ -415,26 +423,26 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     }
     .header-left-side {
         position: relative;
-        width: 700px;;
+        flex-basis: auto;
+        margin-left: 17px;
     }
     
     .right-side-header {
         position: relative;
         width: 160px;
-        margin-right: 25px;
+        margin-right: -10px;
     }
     
+
+    
 .center-menu-header a {
-    font-size: 19px;
+    font-size: 18px;
     
 }
     
     .pomade {
         display: none;
-    }
-    
-    
-    
+    }   
 }
 
 /* Частина 3 */
@@ -442,19 +450,11 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 @media(max-width:940px){ 
     
 
-    .header-left-side {
-        position: relative;
-        width: 600px;;
-    }
     
-    .right-side-header {
-        position: relative;
-        width: 160px;
-        margin-right: 20px;
-    }
+    
     
 .center-menu-header a {
-    font-size: 19px;
+    font-size: 17px;
     
 }
     
@@ -466,24 +466,13 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
    
 }
 
-/* Пздц */
+/* max-width:860px*/
 
 @media(max-width:860px){ 
     
-
-    .header-left-side {
-        position: relative;
-        width: 500px;;
-    }
-    
-    .right-side-header {
-        position: relative;
-        width: 160px;
-        margin-right: 20px;
-    }
     
 .center-menu-header a {
-    font-size: 19px;
+    font-size: 16px;
     
 }
     
@@ -497,20 +486,20 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     
 }
 
-/* Коли це закінчиться? */
+/* max-width:740px */
 
 @media(max-width:740px){ 
     
 
     .header-left-side {
         position: relative;
-        width: 400px;;
+        width: 400px;
     }
     
     .right-side-header {
         position: relative;
         width: 160px;
-        margin-right: 20px;
+        margin-right: -10px;
     }
     
 .center-menu-header a {
@@ -523,10 +512,12 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     }
     
     .section-one {
-        height: 900px;
         flex-direction: column;
         
    }
+    .section-one p {
+        text-align: center;
+    }
     .right-side-pomade-price {
         margin-top: 50px;
         margin-left: 35px;
@@ -545,6 +536,10 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     .left-side-section-two {
        text-align: center;
     }
+    .right-side-section-two p {
+       text-align: center; 
+        margin-left: 0px;
+    }
     
 }
 
@@ -555,12 +550,13 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 @media(max-width:660px){ 
     
     header {
-        
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .header-left-side {
+        margin-left: 0px;
+        margin-top: 20px;
         position: relative;
         justify-content: center;
     }
@@ -569,11 +565,12 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
         display: flex;
         justify-content: center;
         position: relative;
-         width: 100%;
+        width: 100%;
+        margin: 0px;
         }
     
     .right-side-header p {
-        margin: 20px;
+        margin: 15px;
     }
     
 .center-menu-header  {
@@ -585,6 +582,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
         height: 100%;
          display: flex;
         flex-direction: column;
+      
         
    }
     .left-side-section-one {
@@ -599,13 +597,14 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     
     
     .pomade-1 { 
-    width: 150px;}
+    width: 250;
+    }
     
     
     .right-side-pomade-price {
-        margin-top: 50px;
-     margin-left: 75px;
-       
+     margin-top: 50px;
+     margin-left: 10px;
+     position: relative;
     }
     
     .content-sec-two {
@@ -613,8 +612,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     }
     
     .left-side-section-two img {
-        width: 50%;
-        
+        width: 50%; 
     }
     
     .left-side-section-two {
@@ -624,21 +622,28 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
         text-align: center;
     }
     
+    h2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .price {
     width: 30px;
     position: absolute;
-    margin-left: 110px;
-    margin-top: -15px;
+    margin-left: 132px;
+    margin-top: -2px;
     font-family: BebasNeue; 
     color: #fff;
-    font-size: 18px;
+    font-size: 23px;
     transform: rotate(15deg);
 }
 }
     
-/* 565 px   */
+/*  ---  */
+
+
+
     
-  @media(max-width:565px){ 
+  @media(max-width:550px){ 
        header {
         display: flex;
         flex-wrap: wrap;
@@ -676,12 +681,13 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     
     
     .pomade-1 { 
-    margin: auto;
+    margin-left: 0%;
     }
     
     
     .right-side-pomade-price {
-    margin:auto;
+text-align: center;
+        margin-left: -9px;
     }
     
     .content-sec-two {
@@ -707,20 +713,17 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     .price {
     width: 30px;
     position: absolute;
-    margin-left: 26px;
-    margin-top: 18px;
+    margin-left: 105px;
+    margin-top: 0px;
     font-family: BebasNeue; 
     color: #fff;
-    font-size: 14px;
+    font-size: 20px;
     transform: rotate(15deg);
 }
       h1 {
          font-size: 28px; 
       }
-      .wave2{
-  height: 50px;
-          margin-top:-50px;
-  position: relative;
+      
 } 
       
       .left-side-section-one button{
@@ -732,6 +735,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
           font-size: 13px;
           text-align: center;
       }
+
       .right-side-header p::before {
           display: none;
       }
@@ -767,8 +771,8 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     
     .section-one {
         background-color: #f1f1f1;
-        height: 120%;
-         display: flex;
+        height: 100%;
+        display: flex;
         flex-direction: column;
         
    }
@@ -818,21 +822,19 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     .price {
     width: 30px;
     position: absolute;
-    margin-left: 26px;
+    margin-left: -6px;
     margin-top: 18px;
     font-family: BebasNeue; 
     color: #fff;
     font-size: 14px;
-    transform: rotate(15deg);
+        transform: translate(-50%,-30%);
+        display: flex;
+        justify-content: center;
 }
       h1 {
          font-size: 28px; 
       }
-      .wave2{
-  height: 50px;
-          margin-top:-49px;
-  position: relative;
-} 
+     
       
       .left-side-section-one button{
           font-size: 13px;
@@ -843,6 +845,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
           font-size: 13px;
           text-align: center;
       }
+      
       .right-side-header p::before {
           display: none;
       }
