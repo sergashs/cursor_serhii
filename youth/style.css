@@ -50,7 +50,7 @@ margin-right: 20px;
 .icon-header {
 margin-right: 20px;
 position: relative;
-    width: 25px;
+width: 25px;
   
 }
 
@@ -110,12 +110,10 @@ font-weight: 800;
 
 
 .slider {
-    background-color: skyblue; 
     background-size: cover;
     height: 664px;
     position: relative;
     width: 100%;
-
 }
 
 .item {
@@ -773,3 +771,99 @@ font-size: 16px;
 line-height: 20px;
 text-transform: uppercase;
 color: #3F3F3F;}
+
+
+@media(max-width:900px){ 
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    } 
+
+    nav {
+        order: 1;
+        width: 100%;}
+        
+    nav>ul {
+    display: flex;
+    justify-content: space-between;
+       margin-left: 0px;
+        
+}
+        
+
+    nav a {
+margin-right: 40px;
+}
+
+.input-email {
+    width: 100%;
+}
+
+}
+
+
+
+@media(max-width:800px){ 
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    } 
+
+    nav {
+        order: 1;
+        width: 100%;}
+        
+    nav>ul {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+        
+}
+   
+    
+nav a {
+margin-right: 40px;
+}
+
+.input-email {
+    width: 100%;
+}
+.section1 {
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+.left-side-sec1 {
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+
+    .section2{
+        flex-wrap: wrap;
+    align-items: center;
+    }
+    .left-side-sec2 {
+     margin-right: 0px;   
+    }
+    
+    .cards-area {
+        display: flex;
+        justify-content: space-evenly
+    }
+    .card-background {
+        margin-bottom: 50px;
+    }
+    .footer-menu {
+    
+ flex-flow: wrap;
+   margin: 40px;
+    }
+    .column {
+      flex-basis: auto;
+        width: 50%;
+    }
+    
+    
+}
