@@ -9,13 +9,11 @@
     src: url(GothamPro.ttf);
  }
 
-=
 
 *::selection {
     color: #fff; 
-    background: #d4416a; 
-   
-   }
+    background: #d4416a;
+}
 
 
 a {text-decoration: none;}
@@ -24,7 +22,6 @@ body {
     background: #f0ebe8;
     max-width: 1554px;
    margin:auto;
-   
     }
 
 header {
@@ -94,7 +91,6 @@ header {
 }
 
 .right-side-header p {
-    width: 210px;
     color: #333333;
     font-size: 16px;
     font-family: GothamPro;  
@@ -102,7 +98,8 @@ header {
 }
 
 .right-side-header p::before {
-     content:url('phone-call.png') 
+     content: url('phone-call.png');
+
 }
 
 .right-side-header span {
@@ -390,7 +387,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 
 
 
-/* Частина друга */
+/* 1200 */
 @media(max-width:1200px){ 
     
    .section-one {
@@ -398,7 +395,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     justify-content: space-between;
     background: #e1e3d6;
     max-width: 1529px;
-    height: 450px;  
+/*    height: 450px;  */
     padding: 50px;
     position: relative;
     }
@@ -429,8 +426,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     
     .right-side-header {
         position: relative;
-        width: 160px;
-        margin-right: -10px;
     }
     
 
@@ -454,7 +449,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     
     
 .center-menu-header a {
-    font-size: 17px;
+    font-size: 18px;
     
 }
     
@@ -481,7 +476,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     }
     
     .section-one {
-        height: 100%;
+/*        height: 100%;*/
    }
     
 }
@@ -493,13 +488,10 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 
     .header-left-side {
         position: relative;
-        width: 400px;
     }
     
     .right-side-header {
         position: relative;
-        width: 160px;
-        margin-right: -10px;
     }
     
 .center-menu-header a {
@@ -555,7 +547,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     }
 
     .header-left-side {
-        margin-left: 0px;
         margin-top: 20px;
         position: relative;
         justify-content: center;
@@ -566,12 +557,9 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
         justify-content: center;
         position: relative;
         width: 100%;
-        margin: 0px;
         }
     
-    .right-side-header p {
-        margin: 15px;
-    }
+    
     
 .center-menu-header  {
     display: none;
@@ -579,7 +567,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 }
     
     .section-one {
-        height: 100%;
+/*        height: 100%;*/
          display: flex;
         flex-direction: column;
       
@@ -636,6 +624,16 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     font-size: 23px;
     transform: rotate(15deg);
 }
+    
+    .right-side-header p::before {
+       display: none;
+        margin-right:30px;;
+    }
+    .right-side-header {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
 }
     
 /*  ---  */
@@ -652,7 +650,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     .header-left-side {
         position: relative;
         justify-content: center;
-        margin-left: 0px;
     }
     
 .center-menu-header  {
@@ -661,7 +658,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 }
     
     .section-one {
-        height: 100%;
+/*        height: 100%;*/
          display: flex;
         flex-direction: column;
         background-color: #f1f1f1;
@@ -724,14 +721,13 @@ text-align: center;
          font-size: 28px; 
       }
       
-} 
+
       
       .left-side-section-one button{
           font-size: 13px;
       }
     
       .right-side-header p{
-          width: 130px;
           font-size: 13px;
           text-align: center;
       }
@@ -841,7 +837,7 @@ text-align: center;
       }
     
       .right-side-header p{
-          width: 130px;
+         
           font-size: 13px;
           text-align: center;
       }
