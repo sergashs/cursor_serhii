@@ -134,7 +134,6 @@ h1 {
     width: 50px;
     position: absolute;
     margin-left: 140px;
-    margin-top: 5px;
     font-family: BebasNeue; 
     color: #fff;
     font-size: 28px;
@@ -617,7 +616,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     .price {
     width: 30px;
     position: absolute;
-    margin-left: 132px;
+    
     margin-top: -2px;
     font-family: BebasNeue; 
     color: #fff;
@@ -634,6 +633,10 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
         justify-content: space-around;
         margin: auto;
     }
+    .fix-price {
+    text-align: center;
+    margin: 0 auto;
+}
 }
     
 /*  ---  */
@@ -709,12 +712,11 @@ text-align: center;
     
     .price {
     width: 30px;
+    margin-left: 40px;
     position: absolute;
-    margin-left: 105px;
-    margin-top: 0px;
     font-family: BebasNeue; 
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     transform: rotate(15deg);
 }
       h1 {
@@ -786,12 +788,12 @@ text-align: center;
     
     .pomade-1 { 
     margin: auto;
+       
     }
     
     
     .right-side-pomade-price {
     margin: auto;
-       
     }
     
     .content-sec-two {
@@ -815,16 +817,20 @@ text-align: center;
     }
     
     .price {
-    width: 30px;
-    
-    margin-left: -6px;
-    margin-top: 18px;
+    width: 20px;
     font-family: BebasNeue; 
     color: #fff;
-    font-size: 14px;
-    transform: translate(-50%,-30%);
-        
+    margin-left: 55px;
+    margin-top: 25px;
+    font-size: 13px;
+    
+        transform: rotate(15deg);
+       
 }
+      .right-side-pomade-price img{
+          width:75%;
+      }     
+      
       h1 {
          font-size: 28px; 
       }
@@ -835,7 +841,6 @@ text-align: center;
       }
     
       .right-side-header p{
-         
           font-size: 13px;
           text-align: center;
       }
@@ -852,3 +857,5 @@ text-align: center;
           font-size:  13px;
       }
 }
+
+
