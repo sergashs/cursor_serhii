@@ -134,6 +134,7 @@ h1 {
     width: 50px;
     position: absolute;
     margin-left: 140px;
+    margin-top: 5px;
     font-family: BebasNeue; 
     color: #fff;
     font-size: 28px;
@@ -823,8 +824,7 @@ text-align: center;
     margin-left: 55px;
     margin-top: 25px;
     font-size: 13px;
-    
-        transform: rotate(15deg);
+    transform: rotate(15deg);
        
 }
       .right-side-pomade-price img{
@@ -856,6 +856,7 @@ text-align: center;
       .section-two button{
           font-size:  13px;
       }
+    
 }
 
 
