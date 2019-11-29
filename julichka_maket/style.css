@@ -218,6 +218,7 @@ text-transform: capitalize;
 .section5 {
 width: 100%;
 background: #FFC45D;
+    margin-top: 50px;
 }
 
 .content-sec5 {
@@ -229,7 +230,7 @@ background: #FFC45D;
 
 .text-sec5 {
 font-family: Roboto;
-font-size: 36px;
+font-size: calc(1rem + 1.23vw);
 line-height: 42px;
 color: #060606;
 margin-top: 20px;
@@ -239,10 +240,11 @@ margin-top: 20px;
 font-family: Roboto;
 font-style: normal;
 font-weight: 500;
-font-size: 96px;
+font-size: calc(4rem + 1.23vw);
 line-height: 112px;
 color: #060606;
 text-transform: capitalize;
+margin-top: 30px;
 }
 
 .after-big-txt {
@@ -253,6 +255,7 @@ font-size: 48px;
 line-height: 56px;
 text-transform: capitalize;
 color: #060606;
+margin-top: 30px;
 }
 
 
@@ -267,30 +270,137 @@ text-transform: uppercase;
 border: none;
 margin: 20px 0px 20px 0px;
 border-radius: 5px;
-transition:all 0.4s;
 outline: none;
-color: #FFC45D;;
+color: #FFC45D;
 }
 
 .area-for-timer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.fix-are {
+width: 500px;
+margin-top: 30px;
 display: flex;
-justify-content: center;
+justify-content: space-around;
+flex-wrap: wrap;
 }
 
 .block-hour {
+position: relative;
 width: 96px;
 height: 96px;
 font-size: 85px;
 color: #FFC45D;
 background: #060606;
-margin-right: 40px;
-  
+display: flex;
+justify-content: center;
+margin: 10px;
+}
+
+.block-hour::after {
+content: ":";
+position: absolute;
+color: #060606;
+margin-left: 60px;
+}
+
+.block-hour:last-child::after{
+display: none;
 }
 
 .cifru {
-display: block;
-
+font-family: Roboto;
+margin: auto;  
 }
+
+.section6 {
+    margin-top: 120px;
+}
+.text-sec6 {
+max-width: 570px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 150%;
+text-transform: capitalize;
+color: #919191;
+    margin-bottom: 40px;
+}
+
+.text-sec6 span {
+    color: #FFC45D;
+}
+
+.contacts-inf-line {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 150%;
+text-transform: capitalize;
+color: #FFC45D;
+}
+
+.contacts-inf-line span {
+   color: #919191; 
+}
+
+
+
+input {
+    max-width: 400px;
+    height: 40px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #919191;
+    outline: none;
+    color: #919191;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+
+.right-sec6 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+.left-sec6 {
+   flex-grow: 3;
+}
+
+.content-sec6 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media(max-width:730px){
