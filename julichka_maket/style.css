@@ -119,7 +119,7 @@ transition:all 0.5s;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 200px;
  
 }
 
@@ -162,7 +162,6 @@ color: #FFFFFF;
     margin-top: 5%; 
      align-items: center;
     text-align: center;
-    margin-right: 10%;
 }
 .card-sec3 {
     width: 312px;
@@ -250,7 +249,7 @@ font-family: Roboto;
 font-style: normal;
 font-weight: 500;
 font-size: calc(4rem + 1.23vw);
-line-height: 112px;
+line-height: 120%;
 color: #060606;
 text-transform: capitalize;
 margin-top: 30px;
@@ -529,4 +528,38 @@ height: 158px;
 margin: 0px 0px 40px 0px;
 
 }
+    .content-sec5 {
+        padding: 40px;
+    }
+    .big-txt {
+        font-size: 35px;
+    }
+    .after-big-txt {
+        font-size: 20px;
+    }
+    .section6 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .content-sec6 {
+        padding: 0 20px 0 20px;
+    }
+    .sec3 {
+        display: none;
+    }
+   
+    .two-sec-footer {
+        margin: auto;
+       
+    }
+    .right-sec6 {
+        margin-top: 40px;
+    }
+    .block-hour:nth-child(2)::after{
+display: none;
+}
+    
+    .footer {
+       margin-bottom: 30px;
+    }
 }
