@@ -65,7 +65,7 @@ justify-content: space-between;
 .girl-background-one {
     width: 430.74px;
     height: 640px;
-    background: url(girl_one.svg);
+    background: url(/img/girl_one.svg);
 }
 
 
@@ -487,16 +487,15 @@ color: #FFFFFF;
     display: none;
  
 }
-    
-    .right-nav-menu {
+.right-nav-menu {
     margin-right: 0px;
     display: flex;
     width: 100%; }
         
-        .girl-background-one {
+.girl-background-one {
     width:300px;
     height:450px;
-    background: url(girl_one.svg);
+    background: url(/img/girl_one.svg);
 
 }
     
