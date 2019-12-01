@@ -61,7 +61,7 @@ justify-content: space-between;
 .girl-background-one {
     width: 430.74px;
     height: 640px;
-    background: url(/img/girl_one.svg);
+    background: url(img/girl_one.svg);
 }
 
 
@@ -567,6 +567,7 @@ display: none;
     align-items: center;
     background-color: #060606;
     color: #fff;
+    padding: 20px;
      
 }
 
@@ -576,10 +577,7 @@ display: none;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-top: 17px;
 font-weight: 700;
-    margin-bottom: 17px;
-    margin-left: 10px;
 }
 
 .navbar-links {
@@ -589,8 +587,6 @@ font-weight: 700;
 
 .navbar-links ul {
     display: flex;
-    margin-top: 17px;
-    margin-bottom: 17px;
     justify-content: center;
 }
 
@@ -613,7 +609,7 @@ font-weight: 700;
 .toggle-button {
     position: absolute;
     top: 20px;
-    right: 1rem;
+    right: 20px;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -646,6 +642,7 @@ font-weight: 700;
     .navbar-links ul {
         width: 100%;
         flex-direction: column;
+        margin-top: 20px;
     }
 
     .navbar-links ul li {
