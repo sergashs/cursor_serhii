@@ -1,7 +1,6 @@
 @font-face{
     font-family: BebasNeue; 
     src: url(BebasNeue.ttf); 
-   
    }
 
 @font-face{
@@ -9,12 +8,14 @@
     src: url(GothamPro.ttf);
  }
 
-
 *::selection {
     color: #fff; 
     background: #d4416a;
 }
 
+.right-side-header a {
+    color: #333333;
+}
 
 a {text-decoration: none;}
 
@@ -35,7 +36,6 @@ header {
     width: 240px;
     align-items: center;
     margin-left: 20px;
-    
 }
 
 .h1-logo{
@@ -66,7 +66,6 @@ header {
     color: #d4416a;
     font-size: 16px;
     font-family: GothamPro;  
-    
 }
 
 .active::after {
@@ -114,8 +113,6 @@ header {
     padding: 50px;
     background-repeat: no-repeat;
     position: relative;
-   
-    
 }
 
 
@@ -156,7 +153,6 @@ h1 {
 
 
 .right-side-pomade-price {
-    
 }
 
 .pomade-1 {
@@ -180,6 +176,7 @@ padding-right: 30px;
 border-radius: 5px;
 border-bottom: 5px solid #ab3456;
 text-transform: uppercase;
+    cursor: pointer;
 }
 
 .left-side-section-one button span{
@@ -253,6 +250,7 @@ padding-right: 30px;
 border-radius: 5px;
 border-bottom: 5px solid #ab3456;
 text-transform: uppercase;
+    cursor: pointer;
 }
 
 .section-two button span{
@@ -380,7 +378,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     radial-gradient(circle at 10px 15px, #fff 12px, transparent 13px);
 }
 
-
 .pomade {
     max-width: 307px; 
 }
@@ -395,12 +392,9 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     justify-content: space-between;
     background: #e1e3d6;
     max-width: 1529px;
-/*    height: 450px;  */
     padding: 50px;
     position: relative;
     }
-    
- 
     
     header {
     position: relative;
@@ -443,11 +437,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 /* Частина 3 */
 
 @media(max-width:940px){ 
-    
-
-    
-    
-    
 .center-menu-header a {
     font-size: 18px;
     
@@ -456,22 +445,15 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     .pomade {
         display: none;
     }
-    
-    
-   
 }
 
 /* max-width:860px*/
-
 @media(max-width:860px){ 
-    
-    
 .center-menu-header a {
     font-size: 16px;
-    
 }
-    
-    .pomade {
+
+.pomade {
         display: none;
     }
     
@@ -484,8 +466,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 /* max-width:740px */
 
 @media(max-width:740px){ 
-    
-
     .header-left-side {
         position: relative;
     }
@@ -513,7 +493,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     .right-side-pomade-price {
         margin-top: 50px;
         margin-left: 35px;
-        
     }
     
     .content-sec-two {
@@ -522,7 +501,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     
     .left-side-section-two img {
         width: 50%;
-        
     }
     
     .left-side-section-two {
@@ -536,11 +514,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 }
 
 
-
-
-
 @media(max-width:660px){ 
-    
     header {
         display: flex;
         justify-content: center;
@@ -559,15 +533,11 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
         width: 100%;
         }
     
-    
-    
 .center-menu-header  {
     display: none;
-    
 }
     
     .section-one {
-/*        height: 100%;*/
          display: flex;
         flex-direction: column;
       
@@ -642,9 +612,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     
 /*  ---  */
 
-
-
-    
   @media(max-width:550px){ 
        header {
         display: flex;
@@ -658,11 +625,9 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     
 .center-menu-header  {
     display: none;
-    
 }
     
     .section-one {
-/*        height: 100%;*/
          display: flex;
         flex-direction: column;
         background-color: #f1f1f1;
@@ -680,11 +645,9 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
         line-height: 25px;
     }
     
-    
     .pomade-1 { 
     margin-left: 0%;
     }
-    
     
     .right-side-pomade-price {
 text-align: center;
@@ -725,7 +688,6 @@ text-align: center;
       }
       
 
-      
       .left-side-section-one button{
           font-size: 13px;
       }
@@ -751,7 +713,7 @@ text-align: center;
 
 /* 345 px   */
     
-  @media(max-width:345px){ 
+  @media(max-width:645px){ 
        header {
         display: flex;
         flex-wrap: wrap;
@@ -765,7 +727,6 @@ text-align: center;
     
 .center-menu-header  {
     display: none;
-    
 }
     
     .section-one {
@@ -786,12 +747,9 @@ text-align: center;
         line-height: 25px;
     }
     
-    
     .pomade-1 { 
     margin: auto;
-       
     }
-    
     
     .right-side-pomade-price {
     margin: auto;
@@ -804,7 +762,6 @@ text-align: center;
     .left-side-section-two img {
         width: 50%;
         margin-bottom: 20px;
-        
     }
     
     .left-side-section-two {
@@ -835,7 +792,6 @@ text-align: center;
          font-size: 28px; 
       }
      
-      
       .left-side-section-one button{
           font-size: 13px;
       }
@@ -858,5 +814,7 @@ text-align: center;
       }
     
 }
+
+
 
 
