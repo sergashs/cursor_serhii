@@ -582,7 +582,7 @@ height: 158px;
     margin-left: 20px;
 }
   .right-side-section2 button{
-margin: 0px 0px 40px 0px;
+margin: 20px 0px 40px 0px;
 
 }
     .content-sec5 {
@@ -634,6 +634,19 @@ align-content: center;
     
     .fix-are {
         width: 250px;}
+    
+    .girl-bck-2 {
+   
+    width: 100%;
+   max-width: 653px;
+    min-width: 300px;
+   height: 204px;
+   
+background: url(https://sergashs.github.io/cursor_serhii/julichka_maket/img/girl_2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
 
 }
 
