@@ -96,7 +96,7 @@ justify-content: space-between;
     min-width: 300px;
     min-height: 440px;
     max-height: 640px;
-    background: url(/img/girl_one.svg);
+    background: url(https://sergashs.github.io/cursor_serhii/julichka_maket/img/girl_one.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -161,7 +161,7 @@ transition:all 0.5s;
    max-width: 653px;
     min-width: 400px;
    height: 364px;
-background: url(/img/girl_2.svg);
+background: url(https://sergashs.github.io/cursor_serhii/julichka_maket/img/girl_2.svg);
     
 }
 
@@ -554,13 +554,10 @@ color: #FFFFFF;
 .girl-background-one {
     width:300px;
     height:450px;
-    background: url(/img/girl_one.svg);
-
 }
     .girl-bck-2 {
    width: 300px;
    height: 280px;
-   background: url(/img/girl_2.svg);
    background-repeat: no-repeat;
    background-size: cover;     
 } 
