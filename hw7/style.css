@@ -110,6 +110,7 @@ header {
    display: flex;
     background-image: url(bg.jpg);
     max-width: 1529px;
+    
     padding: 50px;
     background-repeat: no-repeat;
     position: relative;
@@ -556,12 +557,13 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     
     .pomade-1 { 
     width: 250;
+        margin-left: 0px;
     }
     
     
     .right-side-pomade-price {
      margin-top: 50px;
-     margin-left: 10px;
+     margin-left: 0px;
      position: relative;
     }
     
@@ -587,7 +589,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     .price {
     width: 30px;
     position: absolute;
-    
+    left: 25px;
     margin-top: -2px;
     font-family: BebasNeue; 
     color: #fff;
@@ -610,105 +612,9 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 }
 }
     
-/*  ---  */
 
-  @media(max-width:550px){ 
-       header {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    .header-left-side {
-        position: relative;
-        justify-content: center;
-    }
-    
-.center-menu-header  {
-    display: none;
-}
-    
-    .section-one {
-         display: flex;
-        flex-direction: column;
-        background-color: #f1f1f1;
-        
-   }
-    .left-side-section-one {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .left-side-section-one p{
-        text-align: center;
-        font-size: 13px;
-        line-height: 25px;
-    }
-    
-    .pomade-1 { 
-    margin-left: 0%;
-    }
-    
-    .right-side-pomade-price {
-text-align: center;
-        margin-left: -9px;
-    }
-    
-    .content-sec-two {
-        flex-direction: column;
-    }
-    
-    .left-side-section-two img {
-        width: 50%;
-        margin-bottom: 20px;
-        
-    }
-    
-    .left-side-section-two {
-       text-align: center;
-    }
-    .right-side-section-two p {
-       text-align: center;
-        font-size: 13px;
-         line-height: 25px;
-        margin:auto;
-    }
-    
-    .price {
-    width: 30px;
-    margin-left: 40px;
-    position: absolute;
-    font-family: BebasNeue; 
-    color: #fff;
-    font-size: 25px;
-    transform: rotate(15deg);
-}
-      h1 {
-         font-size: 28px; 
-      }
-      
-
-      .left-side-section-one button{
-          font-size: 13px;
-      }
-    
-      .right-side-header p{
-          font-size: 13px;
-          text-align: center;
-      }
-
-      .right-side-header p::before {
-          display: none;
-      }
-      
-      h2 {
-          font-size: 24px;
-      }
-      
-      .section-two button{
-          font-size:  13px;
-      }
-}
+  
 
 
 /* 345 px   */
@@ -778,9 +684,9 @@ text-align: center;
     width: 20px;
     font-family: BebasNeue; 
     color: #fff;
-    margin-left: 55px;
+    margin-left: 40px;
     margin-top: 25px;
-    font-size: 13px;
+    font-size: 18px;
     transform: rotate(15deg);
        
 }
