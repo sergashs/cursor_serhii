@@ -1,4 +1,4 @@
-@font-face{
+﻿@font-face{
     font-family: BebasNeue; 
     src: url(BebasNeue.ttf); 
    }
@@ -6,6 +6,10 @@
 @font-face{
  font-family: GothamPro; 
     src: url(GothamPro.ttf);
+ }
+
+ .text-center {
+     text-align: center;
  }
 
 *::selection {
@@ -110,7 +114,6 @@ header {
    display: flex;
     background-image: url(bg.jpg);
     max-width: 1529px;
-    
     padding: 50px;
     background-repeat: no-repeat;
     position: relative;
@@ -131,8 +134,8 @@ h1 {
 .price {
     width: 50px;
     position: absolute;
-    margin-left: 140px;
-    margin-top: 5px;
+    left: 41px;
+    top: 38px;
     font-family: BebasNeue; 
     color: #fff;
     font-size: 28px;
@@ -154,12 +157,12 @@ h1 {
 
 
 .right-side-pomade-price {
+    position: relative;
+    display: inline-block;
 }
 
 .pomade-1 {
     max-width:297px;
-    margin-left:90px;
-    margin-top: -30px;
 }
 
 .left-side-section-one button{
@@ -251,7 +254,7 @@ padding-right: 30px;
 border-radius: 5px;
 border-bottom: 5px solid #ab3456;
 text-transform: uppercase;
-    cursor: pointer;
+cursor: pointer;
 }
 
 .section-two button span{
@@ -386,7 +389,7 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 
 
 /* 1200 */
-@media(max-width:1200px){ 
+@media(max-width:1400px){ 
     
    .section-one {
     display: flex;
@@ -459,7 +462,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     }
     
     .section-one {
-/*        height: 100%;*/
    }
     
 }
@@ -492,8 +494,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
         text-align: center;
     }
     .right-side-pomade-price {
-        margin-top: 50px;
-        margin-left: 35px;
     }
     
     .content-sec-two {
@@ -511,7 +511,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
        text-align: center; 
         margin-left: 0px;
     }
-    
 }
 
 
@@ -589,8 +588,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     .price {
     width: 30px;
     position: absolute;
-    left: 25px;
-    margin-top: -2px;
     font-family: BebasNeue; 
     color: #fff;
     font-size: 23px;
@@ -612,10 +609,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
 }
 }
     
-
-
-  
-
 
 /* 345 px   */
     
@@ -684,14 +677,14 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
     width: 20px;
     font-family: BebasNeue; 
     color: #fff;
-    margin-left: 40px;
-    margin-top: 25px;
+    /* margin-left: 40px; */
+    /* margin-top: 25px; */
     font-size: 18px;
     transform: rotate(15deg);
        
 }
       .right-side-pomade-price img{
-          width:75%;
+          /* width:75%; */
       }     
       
       h1 {
@@ -720,7 +713,6 @@ radial-gradient(circle at top, #f0ebe8 14px, transparent 12px);
       }
     
 }
-
 
 
 
