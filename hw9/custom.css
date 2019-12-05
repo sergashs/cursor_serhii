@@ -198,7 +198,7 @@ list-style: none;
 font-size: 14px;
 line-height: 30px;
 color: #8b8b8b;
-width: 220px;
+max-width: 220px;
 }
 ul.list-left-cnt4 li::before{
 position: absolute;
@@ -209,14 +209,17 @@ width: 10px;
 height: 12px;
 background: url('li.png');
 }
-
+.center-cnt4 {
+ 
+align-content: center;
+   
+}
 .center-cnt4 p {
 max-width: 700px;
 color: #8b8b8b;
 font-size: 14px;
 }
 .center-cnt4 span{
-display: inline-block;
 color:#e2534b;
 text-decoration: underline;
 }
@@ -255,7 +258,7 @@ margin-bottom: 30px;
 .comment-right-cnt4{
 position: relative;
 background-color: #f8f8f8;
-max-width: 350px;
+max-width: 300px;
 padding: 15px;
 border-radius: 5px;
 font-size: 14px;
@@ -294,14 +297,15 @@ margin-top: 5px;
 }
 
 .cnt-5-left{
-    flex-basis: 2;
+flex-basis: 2;
 font-size: 17px;
 font-weight: 700;
 color: #7f8c8c; }
 
 
-hr {
-max-width: 900px;
+.class-hr {
+content:'' ;
+width: 900px;
 height: 3px;
 background: #7f8c8c;
 }
