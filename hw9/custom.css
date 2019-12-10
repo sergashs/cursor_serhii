@@ -41,22 +41,12 @@ background-color: #76c7c0!important;
 height: 80px;
 }
 
-.bg-light::before {
-    content: "";
-    top:71px;
-    background-image: url(lineika.png);
-    background-repeat: repeat-x;
-    position: absolute;
-    height: 9px;
-    width: 100%;
-    }
-
 .card-body1 {display: flex;
 justify-content: space-between;}
 
 .btn-p {
-    display: flex;
-    justify-content: center;
+display: flex;
+justify-content: center;
 align-items: center;
 }
 
@@ -241,7 +231,7 @@ margin-top: 8px;
 content: "";
 width: 10px;
 height: 12px;
-background: url('li.png');
+background: url('../img/li.png');
 }
 .center-cnt4 {
 align-content: center;
