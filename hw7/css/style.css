@@ -1,11 +1,11 @@
 ﻿@font-face{
     font-family: BebasNeue; 
-    src: url(/fonts/BebasNeue.ttf); 
+    src: url(../fonts/BebasNeue.ttf); 
    }
 
 @font-face{
  font-family: GothamPro; 
-    src: url(/fonts/GothamPro.ttf);
+    src: url(../fonts/GothamPro.ttf);
  }
 
  .text-center {
