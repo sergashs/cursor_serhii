@@ -231,7 +231,7 @@ margin-top: 8px;
 content: "";
 width: 10px;
 height: 12px;
-background: url('../img/li.png');
+background: url('./img/li.png');
 }
 .center-cnt4 {
 align-content: center;
