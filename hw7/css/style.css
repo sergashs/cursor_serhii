@@ -101,7 +101,7 @@ header {
 }
 
 .right-side-header p::before {
-     content: url('/img/phone-call.png');
+     content: url('../img/phone-call.png');
 
 }
 
@@ -112,7 +112,7 @@ header {
 
 .section-one {
    display: flex;
-    background-image: url(/img/bg.jpg);
+    background-image: url(../img/bg.jpg);
     max-width: 1529px;
     padding: 50px;
     background-repeat: no-repeat;
