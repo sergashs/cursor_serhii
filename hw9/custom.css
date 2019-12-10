@@ -145,7 +145,7 @@ background: rgba(236,236,236,1) repeat-x;
 background-image: linear-gradient(270deg, rgb(243,243,243) 3px, rgba(243,243,243,0) 2px), linear-gradient(270deg, rgb(243,243,243,0) 5px, rgba(243,243,243,0) 3px), linear-gradient(270deg, rgb(243,243,243) 4px, rgba(243,243,243,0) 3px);
 background-size: 10px 3%, 5px 10%, 50px 5%; 
 width: 100%;
-height: 350px;
+height: 300px;
 text-align: center;
 padding: 30px;
 }
@@ -165,7 +165,7 @@ font-size: 14px;
 .browsers-pl {
     display: flex;
     justify-content: center;
-    margin-top: -190px; 
+    margin-top: -90px; 
 }
 .browser1{
  width: 100%;
@@ -326,7 +326,8 @@ font-weight: 700;
 color: #7f8c8c; }
 
 .cnt-5-center {
-width: 300px;
+width: 900px;
+min-width: 100px;
 }
 .class-hr {
 width:100%;
@@ -375,7 +376,7 @@ width: 100%;
 background: rgba(118,199,192,1) repeat-x;
 background-image: linear-gradient(270deg, rgb(243,243,243) 3px, rgba(243,243,243,0) 2px), linear-gradient(270deg, rgb(243,243,243,0) 5px, rgba(243,243,243,0) 3px), linear-gradient(270deg, rgb(243,243,243) 4px, rgba(243,243,243,0) 3px);
 background-size: 10px 3%, 5px 10%, 50px 5%; 
-padding-top: 60px;
+padding: 50px 10px 10px 10px;
 }
 .footer-content{
 max-width: 1250px;
@@ -420,6 +421,7 @@ flex-grow: 1;
 .footer-2sec {
 flex-grow: 2;
 display: flex;
+margin-bottom: 30px;
 }
 
 .colum-menu-footer {
@@ -488,7 +490,9 @@ color:#589590;
 
 .footer-bottom-line {
 width:100%;
-background:#6ab3ac;    
+background:#6ab3ac;
+padding: 0px 10px 0px 10px;    
+align-items: center;
 }
 
 .footer-bottom-line-container{  
@@ -503,3 +507,4 @@ color: #fff;
 .footer-bottom-line-right-icon-social img{
 margin-left: 20px;
 }
+
