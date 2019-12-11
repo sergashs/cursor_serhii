@@ -1,44 +1,125 @@
-.singIn {
-  background-image: url(https://st3.depositphotos.com/1021180/17791/i/1600/depositphotos_177911454-stock-photo-old-fashioned-gramophone-record.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 1000px;
-}
+
 body {
     background: #f3f3f3;
 }
 
-
-.nav-link {
-    font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    padding: 3px 10px;
-    border-top: 3px solid #76c7c0;
-    border-bottom: 3px solid rgba(0, 0, 0, 0);
+.header {
+    background-color: #76c7c0;
+    background-image: url('./img/nav-border-img.png');
+    background-repeat: repeat-x;
+    background-position: left bottom;
 }
 
-.nav-item{
-color: #fff;
-}
-.dropdown {
-background-color: #e2534b;
+.container {
+    max-width: 1170px;
 }
 
-.active, .nav-link:hover {
+.header .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header .navbar-brand,
+.footer-brand {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.header .navbar-brand span,
+.footer-brand span {
+    font-size: 25px;
+    font-weight: initial;
+}
+
+.header .nav-item.active,
+.header .nav-item:hover {
     background-color: #62a29e;
-    border-radius: 5px;
     border-bottom: 3px solid #528b86;
+    border-radius: 8px;
 }
 
-.navbar-brand {
-    font-size: 20px;
+.header .nav-item .nav-link {
+    font-weight: 600;
+    color: #fff;
+    margin: 0 15px;
+    padding: 9px 10px;
 }
 
-.bg-light {
-background-color: #76c7c0!important;
-height: 80px;
+.nav-item.dropdown,
+.dropdown-item,
+.dropdown-menu {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    border: 0;
+    content:"\f078";
+    font-family: 'fontawesome';
+    color:#fff;
+    font-size:14px;
+    position: absolute;
+    top: 9px;
+    left: 5px;
+}
+ .nav-item.btn-group {
+    display: block;
+ }
+.dropdown-menu {
+    padding: 7px;
+    border-radius: 5px;
+    top: 135%;
+}
+.dropdown-menu::before {
+    content: "";
+    border-top: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #e2534b;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    display: none;
+}
+
+.dropdown-item {
+    background: #e5655d;
+    padding: 7px 25px;
+    margin-bottom: 7px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar-nav .show {
+    background: #e2534b;
+}
+
+.navbar-nav .show.nav-item {
+    background: #e5655d;
+    border-bottom: 3px solid #e2534b;
+    border-radius: 8px;
+}
+
+.dropdown-item:hover {
+    background: #76c7c0;
+    color: #fff;
+}
+
+.dropdown-item::before {
+    content: "\f054";
+    font-size: 10px;
+    position: absolute;
+    font-family:'fontawesome';
+    top: 12px;
+    color:#fff;
+    left: 11px;
+}
+
+.dropdown-item:last-child {
+    margin-bottom: 0;
+}
+.nav-search{
+    position:relative;
 }
 
 .card-body1 {display: flex;
@@ -142,7 +223,7 @@ height: 95px;
 .cnt-3{
 margin-top: 60px;    
 background: rgba(236,236,236,1) repeat-x;
-background-image: linear-gradient(270deg, rgb(243,243,243) 3px, rgba(243,243,243,0) 2px), linear-gradient(270deg, rgb(243,243,243,0) 5px, rgba(243,243,243,0) 3px), linear-gradient(270deg, rgb(243,243,243) 4px, rgba(243,243,243,0) 3px);
+background-image: linear-gradient(270deg, rgb(243,243,243) 2px, rgba(243,243,243,0) 2px), linear-gradient(270deg, rgb(243,243,243,0) 5px, rgba(243,243,243,0) 3px), linear-gradient(270deg, rgb(243,243,243) 4px, rgba(243,243,243,0) 3px);
 background-size: 10px 3%, 5px 10%, 50px 5%; 
 width: 100%;
 height: 300px;
@@ -327,7 +408,7 @@ color: #7f8c8c; }
 
 .cnt-5-center {
 width: 900px;
-min-width: 100px;
+min-width: 50px;
 }
 .class-hr {
 width:100%;
@@ -374,7 +455,7 @@ width: 100%;
 margin-top: 50px;
 width: 100%;
 background: rgba(118,199,192,1) repeat-x;
-background-image: linear-gradient(270deg, rgb(243,243,243) 3px, rgba(243,243,243,0) 2px), linear-gradient(270deg, rgb(243,243,243,0) 5px, rgba(243,243,243,0) 3px), linear-gradient(270deg, rgb(243,243,243) 4px, rgba(243,243,243,0) 3px);
+background-image: linear-gradient(270deg, rgb(145,210,205) 2px, rgba(243,243,243,0) 2px), linear-gradient(270deg, rgb(243,243,243,0) 2px, rgba(243,243,243,0) 3px), linear-gradient(270deg, rgb(145,210,205) 4px, rgba(243,243,243,0) 3px);
 background-size: 10px 3%, 5px 10%, 50px 5%; 
 padding: 50px 10px 10px 10px;
 }
