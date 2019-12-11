@@ -31,7 +31,12 @@ font-size: 15px;
 font-weight: 600;
 border-radius: 5px;
 outline: none;
-padding: 20px 20px 20px 20px;      
+padding: 20px 20px 20px 20px;
+cursor: pointer;      
+}
+
+.button-style:hover{
+background: #f7ebeb;    
 }
 
 .left-side {
@@ -40,7 +45,8 @@ background: #545871;
 color: #f8feff;
 height: 100vh;
 display: flex;
-justify-content: center;   
+flex-direction: column;
+justify-content: space-between; 
 }
 
 .left-side-content {
@@ -85,6 +91,12 @@ display: flex;
 justify-content: center;    
 }
 
+.psevdo_footer {
+color:#bec0cd;
+font-size: 14px;
+text-align: center; 
+  
+}
 
 .right-content-side{
     max-width: 100%;
