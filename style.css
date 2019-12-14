@@ -76,6 +76,12 @@ nav ul li a {
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 30px;
+  overflow: visible;
+}
+.card:hover {
+  -webkit-box-shadow: 0px 0px 28px 4px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0px 0px 28px 4px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 0px 28px 4px rgba(0, 0, 0, 0.21);
 }
 i {
   margin-right: 7px;
