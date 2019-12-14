@@ -6,12 +6,9 @@ body {
   font-weight: 600;
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 
-html {
-  min-height: 100%;
-  position: relative;
-}
 body a {
   text-decoration: none;
 }
@@ -19,6 +16,7 @@ body a {
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .left-side {
@@ -60,20 +58,27 @@ nav ul li a {
 .right-content-side {
   max-width: 100%;
   margin: 0 auto;
-  column-width: 10em;
-  column-count: 4;
-  padding: 30px 20px 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 10px 30px 20px;
 }
 
 .right-content-side img {
   width: 100%;
   max-width: 300px;
+  max-height: 300px;
+  transition: 0.5s;
+  margin-bottom: 30px;
+}
+
+.right-content-side img:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .card {
   margin-right: 10px;
   margin-left: 10px;
-  margin-bottom: 30px;
 }
 
 i {
@@ -87,8 +92,6 @@ i {
   justify-content: center;
   background-color: #1f1e1e;
   padding: 20px;
-  position: absolute;
-  bottom: 0;
   box-sizing: border-box;
   border-top: solid 1px rgb(230, 230, 230);
 }
