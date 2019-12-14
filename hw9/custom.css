@@ -445,11 +445,14 @@ ul.list-left-cnt4 li::before {
 .btn-sml-lft {
   background: #76c7c0;
   color: #fff;
-  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border: none;
   border-radius: 3px;
   width: 30px;
-  padding: 3px;
+  padding: 5px;
   box-shadow: inset 0 -3px 0 #62b9b0;
   margin-left: 5px;
   margin-right: 5px;
@@ -637,15 +640,36 @@ ul.list-left-cnt4 li::before {
 }
 
 .carousel-indicators .active {
-  box-shadow: 0 3px 3px #e2534b inset;
+  background: #e2534b;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
 }
 .carousel-indicators {
-  bottom: -43px;
+  bottom: -35px;
 }
-.carousel-caption p {
+.carousel-indicators li {
+  width: 50px;
+  height: 0px;
+  background: rgb(176, 184, 185);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.slide .carousel-inner .carousel-item .carousel-caption p {
   background-color: #3f4646;
+  width: 100%;
+  padding: 0 20px;
   border-radius: 5px;
+  margin-top: 10px;
 }
+.slide .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  margin: 0 auto;
+  width: 30%;
+  top: 30%;
+  color: #ffffff;
+}
+
 @media (max-width: 900px) {
   .adaptive-padding {
     padding-left: 10px;
