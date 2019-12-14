@@ -1,36 +1,34 @@
 body {
-  background-color: #484747;
+  background-color: #fff;
   font-family: "Titillium Web", sans-serif;
-  color: #f8feff;
+  color: #000;
   font-size: 10px;
   font-weight: 600;
-  padding: 30px;
   margin: 0;
+  padding: 0;
 }
 
+html {
+  min-height: 100%;
+  position: relative;
+}
 body a {
-  color: #f8feff;
   text-decoration: none;
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  background-color: #f7ebeb;
-  -webkit-box-shadow: 0px 0px 28px 4px rgba(0, 0, 0, 0.21);
-  -moz-box-shadow: 0px 0px 28px 4px rgba(0, 0, 0, 0.21);
-  box-shadow: 0px 0px 28px 4px rgba(0, 0, 0, 0.21);
 }
 
 .left-side {
-  background: #545871;
   color: #f8feff;
-  height: 150px;
+  height: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: solid 1px rgb(230, 230, 230);
+  background: rgb(243, 238, 238);
 }
 
 .left-side-content {
@@ -42,8 +40,9 @@ body a {
 .logo {
   font-size: 30px;
   max-width: 300px;
+  color: #534f4f;
 }
-sub {
+span {
   font-size: 10px;
 }
 nav ul {
@@ -55,17 +54,15 @@ nav ul {
 }
 
 nav ul li a {
-  color: #b5acbb;
+  color: #534f4f;
 }
 
 .right-content-side {
-  border-top: solid 3px #b5acbb;
   max-width: 100%;
   margin: 0 auto;
   column-width: 10em;
   column-count: 4;
   padding: 30px 20px 30px 20px;
-  overflow: visible;
 }
 
 .right-content-side img {
@@ -83,10 +80,17 @@ i {
   margin-right: 7px;
 }
 .footer {
-  margin-top: 10px;
-  text-align: center;
+  width: 100%;
   font-size: 13px;
-  color: #717171;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  background-color: #1f1e1e;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  border-top: solid 1px rgb(230, 230, 230);
 }
 
 @media (max-width: 920px) {
@@ -96,7 +100,7 @@ i {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -110,7 +114,6 @@ i {
     justify-content: center;
   }
   .right-content-side {
-    border-top: solid 3px #b5acbb;
     max-width: 100%;
     margin: 0 auto;
     column-width: 10em;
@@ -119,5 +122,13 @@ i {
   }
   nav {
     display: none;
+  }
+  .left-side-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .logo {
+    font-size: 22px;
   }
 }
