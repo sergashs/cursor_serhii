@@ -118,10 +118,10 @@ header {
   height: 250px;
 }
 .front .img1 {
-  background-image: url("/img/1.png");
+  background-image: url("1.png");
 }
 .front .img2 {
-  background-image: url("/img/2.png");
+  background-image: url("2.png");
 }
 
 h2 {
@@ -167,7 +167,7 @@ li {
 }
 
 .imgdiv {
-  background-image: url("/img/p.png");
+  background-image: url("p.png");
   background-size: contain;
   height: 35px;
   width: 35px;
