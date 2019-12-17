@@ -118,10 +118,10 @@ header {
   height: 250px;
 }
 .front .img1 {
-  background-image: url("1.png");
+  background-image: url("../img/1.png");
 }
 .front .img2 {
-  background-image: url("2.png");
+  background-image: url("../img/2.png");
 }
 
 h2 {
@@ -154,12 +154,14 @@ li {
 }
 
 .profile li a {
-  display: block;
   text-decoration: none;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   padding: 12px 12px 12px 12px;
+  display: flex;
+  align-items: center;
+  height: 30px;
 }
 
 .profile li:hover {
@@ -167,7 +169,7 @@ li {
 }
 
 .imgdiv {
-  background-image: url("p.png");
+  background-image: url("../img/p.png");
   background-size: contain;
   height: 35px;
   width: 35px;
@@ -175,7 +177,24 @@ li {
   border-radius: 20px;
 }
 
-.profile li a {
+.profile {
   display: flex;
   align-items: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.social i {
+  opacity: 0.5;
+  transition: 0.1s ease-out;
+  transition-delay: 0.1s;
+  margin: 0px 5px 0px 5px;
+}
+
+.social i:hover {
+  opacity: 1;
 }
