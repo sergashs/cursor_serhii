@@ -55,7 +55,7 @@
 body {
   background: #62626d;
   font-family: "Public Sans", sans-serif;
-  padding: 40px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,9 +68,9 @@ body {
   padding: 20px;
   background: #21242d;
   border-top-left-radius: 25px;
-  -webkit-box-shadow: inset 0px 0px 95px 0px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: inset 0px 0px 95px 0px rgba(0, 0, 0, 0.35);
-  box-shadow: inset 0px 0px 95px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: inset 0px 0px 112px -34px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: inset 0px 0px 112px -34px rgba(0, 0, 0, 0.32);
+  box-shadow: inset 0px 0px 112px -34px rgba(0, 0, 0, 0.32);
 }
 
 .right-side {
@@ -78,9 +78,9 @@ body {
   max-width: 500px;
   padding: 0px 20px 20px 20px;
   border-bottom-right-radius: 25px;
-  -webkit-box-shadow: inset 0px 0px 95px 0px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: inset 0px 0px 95px 0px rgba(0, 0, 0, 0.35);
-  box-shadow: inset 0px 0px 95px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: inset 0px 0px 112px -34px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: inset 0px 0px 112px -34px rgba(0, 0, 0, 0.32);
+  box-shadow: inset 0px 0px 112px -34px rgba(0, 0, 0, 0.32);
 }
 
 h1 {
