@@ -135,4 +135,5 @@ input:focus {
 
 .main3 {
   display: flex;
+  flex-wrap: wrap;
 }
