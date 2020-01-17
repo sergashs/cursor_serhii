@@ -185,7 +185,8 @@ input:focus {
   }
   .common-stat {
     width: 100%;
-    max-width: 320px;
+    max-width: 530px;
+    min-width: 310px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -204,6 +205,18 @@ input:focus {
     border-radius: 25px;
     color: #646870;
     min-width: 130px;
+    min-height: 210px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .mainer {
+    padding: 20px;
+    background: #21242d;
+    border-radius: 25px;
+    color: #646870;
+    min-width: 100px;
     min-height: 210px;
     margin: 10px;
   }
