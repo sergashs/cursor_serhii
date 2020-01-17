@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #62626d;
+  font-family: "Public Sans", sans-serif;
+  font-size: 13px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 200px;
+}
+
+.header-logo {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.header-info-block {
+  padding: 20px;
+  background: #21242d;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  color: #646870;
+  min-height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.block-test {
+  padding: 20px;
+  background: #2d3039;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: #646870;
+  max-width: 300px;
+  min-height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+span {
+  color: #b8bdbe;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #b8bdbe;
+  font-weight: 600;
+}
+
+.main {
+  display: flex;
+}
+
+.common-stat {
+  padding: 20px;
+  background: #2d3039;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  color: #646870;
+  max-width: 300px;
+  min-height: 280px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.calc {
+  padding: 20px;
+  background: #21242d;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: #646870;
+  max-width: 300px;
+  min-height: 280px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title-block {
+  display: flex;
+  color: #b8bdbe;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid #62626d;
+  color: #b8bdbe;
+  outline: none;
+  padding: 5px;
+  transition: all 1s;
+}
+
+input:focus {
+  border-bottom: 3px solid #7ee28b;
+}
+
+.main2 {
+  display: flex;
+}
+
+.mainer {
+  padding: 20px;
+  background: #21242d;
+  border-radius: 25px;
+  color: #646870;
+  max-width: 300px;
+  min-height: 210px;
+  margin: 10px;
+}
+
+.main3 {
+  display: flex;
+}

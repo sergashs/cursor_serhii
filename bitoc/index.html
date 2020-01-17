@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Public+Sans:400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/js/main.js">
+	<script src="/js/main.js"></script>
+
+  <title>Document</title>
+</head>
+<body>
+<div class="header">
+<div class="header-logo"><img src="http://sha256ru.mnshare.info:8083/img/mnshare-300-300-pr.png" alt="logo my company"></div>  
+</div>
+ <div class="main">
+<div class="header-info-block">
+<p><span>Как подключиться к пулу:</span></p><p>
+<p>Написать в телеграм <a href="https://t.me/poolMnshare" target="_blank">@poolMnshare</a></p>
+<p>Отправить свои данные для регистарции.</p>
+<p>Подключить свои устройств к нашему пулу!</p>
+
+<p>Сервер: <span>stratum+tcp://sha256ru.mnshare.info:3512</span></p>
+<p>Воркер: <span>BTC_WALLET.Worker1</span></p>
+<p>Пароль: <span>Любой(x,123,qwerty)</span></p>
+  </div>  
+  <div class="block-test">
+ <p>Идет тестирование нашей площадки для майнинга!</p>
+<p>Мы платим 0.000021 BTC за 1 ТН мощности!</p>
+<p>Выплата 1 раз в сутки без минимальных порогов для выплаты.</p>
+<p>Расчет выплат произовдиться за последние сутки.</p>
+  </div> 
+  </div> 
+  
+
+<div class="main2">
+<div class="common-stat">
+<div class="title-block">Общая статистика</div>
+<p>1 минута: 443T</p>
+<p>5 минут: 462T</p> 
+<p>15 минут: 475T</p> 
+<p>1 час: 486T</p> 
+<p>6 часов: 486T</p> 
+<p>1 день: 483T</p> 
+<p>7 дней: 266T</p>
+</div>  
+
+
+  
+<div class="calc">
+<div class="title-block">Калькулятор дохода BTC</div>
+<form onsubmit="return false;" oninput="changeText0()">
+Ваша мощность ТН <input id="a" type="textarea">
+Количество дней <input id="b" type="textarea">
+Доход составит: <output id="rezultat">0</output> BTC</b><br>
+<p>Примерные данные основанные на профитности пула за 24ч.</p>
+</div>  
+</div>
+
+
+<div class="main3">
+<div class="mainer">
+<a href="36g41nqaDeUyKQMnkW4GugbY3jM6UvjuxF.json" target="_blank">Майнер 1:</a>
+  <p>1 минута:</p><span id="1min1"></span>
+  <p>5 минут:</p><span id="5min1"></span>
+  <p>1 час:</p><span id="1hour1"></span>
+  <p>1 день:</p><span id="1day1"></span>
+  <p>7 дней:</p><span id="7day1"></span>
+  <p>Воркеров:</p><span id="worker1"></span>
+</div>
+
+<div class="mainer">
+  <a href="36g41nqaDeUyKQMnkW4GugbY3jM6UvjuxF.json" target="_blank">Майнер 1:</a>
+    <p>1 минута:</p><span id="1min1"></span>
+    <p>5 минут:</p><span id="5min1"></span>
+    <p>1 час:</p><span id="1hour1"></span>
+    <p>1 день:</p><span id="1day1"></span>
+    <p>7 дней:</p><span id="7day1"></span>
+    <p>Воркеров:</p><span id="worker1"></span>
+  </div>
+
+  <div class="mainer">
+    <a href="36g41nqaDeUyKQMnkW4GugbY3jM6UvjuxF.json" target="_blank">Майнер 1:</a>
+      <p>1 минута:</p><span id="1min1"></span>
+      <p>5 минут:</p><span id="5min1"></span>
+      <p>1 час:</p><span id="1hour1"></span>
+      <p>1 день:</p><span id="1day1"></span>
+      <p>7 дней:</p><span id="7day1"></span>
+      <p>Воркеров:</p><span id="worker1"></span>
+    </div>
+
+
+    <div class="mainer">
+      <a href="36g41nqaDeUyKQMnkW4GugbY3jM6UvjuxF.json" target="_blank">Майнер 1:</a>
+        <p>1 минута:</p><span id="1min1"></span>
+        <p>5 минут:</p><span id="5min1"></span>
+        <p>1 час:</p><span id="1hour1"></span>
+        <p>1 день:</p><span id="1day1"></span>
+        <p>7 дней:</p><span id="7day1"></span>
+        <p>Воркеров:</p><span id="worker1"></span>
+      </div>
+
+      <div class="mainer">
+        <a href="36g41nqaDeUyKQMnkW4GugbY3jM6UvjuxF.json" target="_blank">Майнер 1:</a>
+          <p>1 минута:</p><span id="1min1"></span>
+          <p>5 минут:</p><span id="5min1"></span>
+          <p>1 час:</p><span id="1hour1"></span>
+          <p>1 день:</p><span id="1day1"></span>
+          <p>7 дней:</p><span id="7day1"></span>
+          <p>Воркеров:</p><span id="worker1"></span>
+        </div>
+
+
+        <div class="mainer">
+          <a href="36g41nqaDeUyKQMnkW4GugbY3jM6UvjuxF.json" target="_blank">Майнер 1:</a>
+            <p>1 минута:</p><span id="1min1"></span>
+            <p>5 минут:</p><span id="5min1"></span>
+            <p>1 час:</p><span id="1hour1"></span>
+            <p>1 день:</p><span id="1day1"></span>
+            <p>7 дней:</p><span id="7day1"></span>
+            <p>Воркеров:</p><span id="worker1"></span>
+          </div>
+
+
+          <div class="mainer">
+            <a href="36g41nqaDeUyKQMnkW4GugbY3jM6UvjuxF.json" target="_blank">Майнер 1:</a>
+              <p>1 минута:</p><span id="1min1"></span>
+              <p>5 минут:</p><span id="5min1"></span>
+              <p>1 час:</p><span id="1hour1"></span>
+              <p>1 день:</p><span id="1day1"></span>
+              <p>7 дней:</p><span id="7day1"></span>
+              <p>Воркеров:</p><span id="worker1"></span>
+            </div>
+  
+</div>
+
+  
+  
+  <script>
+window.replainSettings = { id: '38e86dc5-ff97-4a82-8611-4b10b42d3ab0' };
+(function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
+var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');
+</script>
+  
+ 
+
+</body>
+</html>
