@@ -10,6 +10,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  margin: 0;
 }
 
 .header {
@@ -73,6 +75,7 @@ a {
   border-bottom-left-radius: 25px;
   color: #646870;
   max-width: 300px;
+  min-width: 230px;
   min-height: 280px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -84,7 +87,7 @@ a {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   color: #646870;
-  max-width: 300px;
+  max-width: 430px;
   min-height: 280px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -128,12 +131,80 @@ input:focus {
   background: #21242d;
   border-radius: 25px;
   color: #646870;
-  max-width: 300px;
+  min-width: 150px;
   min-height: 210px;
   margin: 10px;
+}
+
+.footer {
+  width: 100%;
+  padding: 5px;
+  background: rgb(0, 0, 0, 0.6);
+  position: absolute;
+  margin-top: 20px;
+  bottom: -7px;
+  display: flex;
+  justify-content: center;
 }
 
 .main3 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  max-width: 700px;
+}
+
+.fa {
+  margin: 5px;
+  color: #b8bdbe;
+}
+
+@media (max-width: 550px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-info-block {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-bottom: 0px;
+  }
+  .block-test {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 25px;
+    min-height: 50px;
+    max-width: 361px;
+    margin-top: 0px;
+  }
+
+  .main2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .common-stat {
+    width: 100%;
+    max-width: 320px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-bottom: 0px;
+  }
+  .calc {
+    max-width: 361px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+    margin-top: 0px;
+  }
+  .mainer {
+    padding: 20px;
+    background: #21242d;
+    border-radius: 25px;
+    color: #646870;
+    min-width: 130px;
+    min-height: 210px;
+    margin: 10px;
+  }
 }
