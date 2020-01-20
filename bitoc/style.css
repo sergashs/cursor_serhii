@@ -4,6 +4,18 @@
 
 body {
   background: #62626d;
+  background: #62626d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #606080,
+    #62626d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #606080,
+    #62626d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-family: "Public Sans", sans-serif;
   font-size: 13px;
   padding: 40px;

@@ -40,15 +40,9 @@
   
 
 <div class="main2">
-<div class="common-stat">
+<div class="common-stat" id="some_id">
 <div class="title-block">Общая статистика</div>
-<p>1 минута: 443T</p>
-<p>5 минут: 462T</p> 
-<p>15 минут: 475T</p> 
-<p>1 час: 486T</p> 
-<p>6 часов: 486T</p> 
-<p>1 день: 483T</p> 
-<p>7 дней: 266T</p>
+<?php echo file_get_contents('status.txt') ?>
 </div>  
 
 
@@ -67,12 +61,12 @@
 <div class="main3">
 <div class="mainer">
 <a href="36g41nqaDeUyKQMnkW4GugbY3jM6UvjuxF.json" target="_blank">Майнер 1:</a>
-  <p>1 минута:</p><span id="1min1"></span>
-  <p>5 минут:</p><span id="5min1"></span>
-  <p>1 час:</p><span id="1hour1"></span>
-  <p>1 день:</p><span id="1day1"></span>
-  <p>7 дней:</p><span id="7day1"></span>
-  <p>Воркеров:</p><span id="worker1"></span>
+  <p>1 минута: <span id="1min1"></span></p>
+  <p>5 минут: <span id="5min1"></span></p>
+  <p>1 час: <span id="1hour1"></span></p>
+  <p>1 день: <span id="1day1"></span></p>
+  <p>7 дней: <span id="7day1"></span></p>
+  <p>Воркеров: <span id="worker1"></span></p>
 </div>
 
 <div class="mainer">

@@ -24,8 +24,7 @@
     margin-right: 20px;
   }
   .works-item {
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin: 10px;
   }
 
 }
@@ -70,13 +69,7 @@
   .ava {
     margin-right: 0px;
   }
-  .works-container {
-    justify-content: center;
-  }
 
-  .works-item:last-child {
-    margin-right: 0px;
-  }
 
 }
 
@@ -86,17 +79,11 @@
   }
 
     .works-container {
-      flex-direction: column;
+      display: flex;
       align-items: center;
     }
 
-    .works-item {
-      margin-bottom: 20px;
-      margin-right: 0px;
-    }
-
-    
-
+  
   }
 }
 
@@ -313,14 +300,17 @@ p {
 .works-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 
+
 .works-item-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 200px;
+  width: 105px;
+  height: 105px;
+  border-radius: 105px;
   cursor: pointer;
+  object-fit: cover;
 }
 
 
