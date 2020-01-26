@@ -530,7 +530,7 @@ z-index: 10;
 width: 100%;
 max-width: 500px;
 max-height: 377px;
-margin-top: 20px;
+margin-top: 25px;
 }
 
 
@@ -567,7 +567,7 @@ position: absolute;
     }}
 
     .girls { 
-width: 265px;
+width: 267px;
     }
 
     .dot-slider{
@@ -598,3 +598,5 @@ margin-right: 3px;
             justify-content: center;
         }
     }
+
+   
