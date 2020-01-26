@@ -614,3 +614,8 @@ margin-right: 3px;
     color: #6A6A6A;
    }
 
+
+   @media (max-width: 615px){
+.choose-price{
+    max-width: 265px;
+}}
