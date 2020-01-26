@@ -612,5 +612,9 @@ margin-right: 3px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #6A6A6A;
-    
    }
+
+   @media (min-width: 909px){
+.navbar-expand-md .navbar-toggler {
+    display: block;
+}
