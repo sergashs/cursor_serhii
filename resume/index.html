@@ -8,7 +8,13 @@
       href="https://fonts.googleapis.com/css?family=Public+Sans:400,500,700,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <noscript>
+      <link rel="stylesheet" type="text/css" href="light.css">
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
     <title>Resume</title>
   </head>
   <body>
@@ -195,5 +201,28 @@
       </div>
     </div>
     <div class="footer">© 2020 // powered by serhii // ver. 0.1</div>
+    <button id="toggle" class="btn btn--brand">
+      <i class="fa fa-refresh" aria-hidden="true"></i>
+  </button>
+
+  <span id="mode"></span>
+
+
+    <script src="/js/darkmode.js"></script>
+    <script>
+		var options = {
+			light: 'light.css',
+			dark: 'dark.css',
+			startAt: '23:00',
+			endAt: '06:00'
+		};
+
+		var DarkMode = new DarkMode(options);
+		document.getElementById('mode').innerHTML = DarkMode.getMode();
+		document.getElementById('toggle').onclick = function() {
+			DarkMode.toggleTheme();
+			document.getElementById('mode').innerHTML = DarkMode.getMode();
+		}
+	</script>
   </body>
 </html>
