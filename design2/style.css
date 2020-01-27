@@ -204,7 +204,7 @@ padding: .55rem 1.25rem;
             width: 80px;
             height: 80px;
             box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-            margin: -20px 30px 20px 40px;
+            margin: -20px 33px 20px 40px;
         }
     
         .informer-block-big-text-container{
@@ -225,7 +225,8 @@ padding: .55rem 1.25rem;
         }
     
         
-        .informer-block-text-big{
+        .informer-block-text-big{            
+max-width: 280px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
@@ -243,7 +244,7 @@ padding: .55rem 1.25rem;
             line-height: 11px;
             letter-spacing: 0.09em;
             text-transform: uppercase;
-            margin-top: 20px;
+            margin-top: 10px;
             color: #000000;
             position: relative;
             
@@ -283,6 +284,13 @@ padding: .55rem 1.25rem;
                     }
                     .informer-block-big-text-container {
                          margin-top: 0px;}
+                         .informer-avatar-big{
+                            margin: -38px 30px 20px 30px;
+                         }
+.informer-block-link-big{
+    margin-top: 20px;
+}
+}
                 }
                 
                 .all-discounts:hover{
@@ -621,3 +629,51 @@ margin-right: 3px;
 }}
 
 
+@media (max-width: 1000px){
+    .fix-girls{
+max-width: 600px;
+
+    }
+    }
+
+
+  
+
+
+    .arrw-left{
+        position: absolute;
+        left: 20px;
+        top: 40%;
+        height: 10px;
+        width: 10px;
+        bottom: 40%;
+    border: solid #ADAFAE;
+    border-width: 0 2px 2px 0;
+    display: block;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    z-index: 1000;
+    }
+
+    .arrw-right{
+        position: absolute;
+        right: 20px;
+        top: 40%;
+        height: 10px;
+        width: 10px;
+        bottom: 40%;
+        border: solid  #ADAFAE;
+        border-width: 0 2px 2px 0;
+        display: block;
+        padding: 5px;
+        transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    z-index: 1000;
+    }
+
+    @media (max-width: 650px){
+        .arrw-left, .arrw-right{
+display: none;
+        }
+        }
