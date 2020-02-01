@@ -1,0 +1,74 @@
+
+.navbar-brand {
+    font-size: 30px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #3F3F3F;
+    font-weight: 800;
+    -webkit-text-stroke: 1px #3F3F3F;
+    -webkit-text-fill-color: #EBF0F6;
+}
+
+.nav-link {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    display: flex;
+    text-transform: uppercase;
+    color: #3F3F3F;
+}
+
+.bg-light{
+  background: #EBF0F6!important;
+}
+
+h5{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 100px;
+line-height: 176px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+
+.btn{
+background: #FFFFFF;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 22px;
+text-transform: uppercase;
+color: #3F3F3F;
+border-radius: 0;
+padding-left: 30px;
+padding-right: 30px;
+max-width: 168px;
+}
+
+.carousel-indicators li{
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 6px;
+    height: 6px;
+    border-radius: 100px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-clip: padding-box;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    opacity: 1;
+    transition: opacity .6s ease;
+    border: 2px solid #FFFFFF;
+}
+
+.carousel-indicators .active {
+    background-color: #ffffff;
+}
