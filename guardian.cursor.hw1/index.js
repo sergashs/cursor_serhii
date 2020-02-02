@@ -7,16 +7,16 @@ let minPrice = Math.min(milkPrice, winePrice, showergelPrice); // мінімал
 const totalPrice = (milkPrice + winePrice + showergelPrice); // загальна ціна
 let integersTotalPrice = Math.floor(milkPrice + winePrice + showergelPrice) // загальна ціна цілим числом
 const ceilprice = (Math.ceil((totalPrice)*100)/100);
-// bulevoe - 
+// bulevoe -
 const dealing = (money - totalPrice); // здача
-
-
+//------advanced part-------------------------------------
 let message = `
   <h1>Advanced part</h1>
-  <p>Max number - <b>${maxPrice}</b></p>
-  <p>Min number - <b>${minPrice}</b></p>
-  <p>Total - <b>${totalPrice}</b></p>
- `;
+  <p>Max number - <strong>${maxPrice}</strong></p>
+  <p>Min number - <strong>${minPrice}</strong></p>
+  <p>Total - <strong>${totalPrice}</strong></p>
+  <p>Integer part of product price - <strong>${integersTotalPrice}</strong></p>
+  <p>Price sume ceiled to hundreds - <strong>${ceilprice}</strong></p>
+`;
 document.writeln(message);
 console.log(message);
-
