@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./css/light.css"/>
     <link
       href="https://fonts.googleapis.com/css?family=Public+Sans:400,500,700,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <noscript>
-      <link rel="stylesheet" type="text/css" href="light.css">
-    </noscript>
+
+    
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
@@ -19,7 +18,11 @@
     <title>Resume</title>
   </head>
   <body>
-    <div class="main">
+  
+       <div class="main">
+        <div class="switchers"><a href="#" class="btn-switch"  onclick="changeCSS('/css/light.css', 0);">light</a> 
+          <a href="#" class="btn-switch" onclick="changeCSS('/css/dark.css', 0);">dark</a>
+       </div>
       <div class="left-side">
         <div class="profile">
           <div class="profile-ava">
@@ -201,29 +204,27 @@
         </div>
       </div>
     </div>
-    <div class="footer">© 2020 // powered by serhii // ver. 0.1</div>
-    <button id="toggle" class="btn btn--brand">
-      <i class="fa fa-refresh" aria-hidden="true"></i>
-  </button>
+    <div class="footer">© 2020 // powered by serhii // ver. 0.2</div>
+    
 
-  <span id="mode"></span>
+  
 
 
-    <script src="/js/darkmode.js"></script>
+ 
     <script>
-		var options = {
-			light: 'light.css',
-			dark: 'dark.css',
-			startAt: '23:00',
-			endAt: '06:00'
-		};
+		function changeCSS(cssFile, cssLinkIndex) {
 
-		var DarkMode = new DarkMode(options);
-		document.getElementById('mode').innerHTML = DarkMode.getMode();
-		document.getElementById('toggle').onclick = function() {
-			DarkMode.toggleTheme();
-			document.getElementById('mode').innerHTML = DarkMode.getMode();
-		}
+var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+var newlink = document.createElement("link");
+newlink.setAttribute("rel", "stylesheet");
+newlink.setAttribute("type", "text/css");
+newlink.setAttribute("href", cssFile);
+
+document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+}
+
+
 	</script>
   </body>
 </html>

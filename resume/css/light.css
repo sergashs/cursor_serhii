@@ -93,7 +93,7 @@
 }
 
 body {
-  background: #62626d;
+  background: #828282;
   font-family: "Public Sans", sans-serif;
   padding: 20px;
   display: flex;
@@ -103,15 +103,16 @@ body {
 
 .main {
   display: flex;
+  position: relative;
 }
 .left-side {
   padding: 20px;
-  background: #21242d;
+  background: #bababa;
   border-top-left-radius: 25px;
 }
 
 .right-side {
-  background: #2d3039;
+  background: #ededed;
   max-width: 500px;
   padding: 0px 20px 20px 20px;
   border-bottom-right-radius: 25px;
@@ -126,7 +127,7 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 100px;
-  border: 3px solid #7ee28b;
+  border: 3px solid #738dbf;
    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
     0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15); 
 }
@@ -136,7 +137,7 @@ body {
 
 h1 {
   font-size: 1rem;
-  color: #b8bdbe;
+  color: #474a4f;
   margin: 0;
 }
 
@@ -148,7 +149,7 @@ h1 {
 
 .left-side-title-block {
   display: flex;
-  color: #b8bdbe;
+  color: #474a4f;
   border-radius: 10px;
   text-align: center;
   font-size: 0.7rem;
@@ -160,7 +161,7 @@ h1 {
 
 .left-side-title-block::before {
   content: "";
-  background: #7ee28b;
+  background: #738dbf;
   width: 3px;
   height: 20px;
   position: absolute;
@@ -202,51 +203,46 @@ ul {
 .leadership::before {
   content: "";
   position: absolute;
-  background: #7ee28b;
+  background: #738dbf;
   width: 90%;
   height: 5px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
 }
 
 .collaboration::before {
   content: "";
   position: absolute;
-  background: #7ee28b;
+  background: #738dbf;
   width: 70%;
   height: 5px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
 }
 
 .communication::before {
   content: "";
   position: absolute;
-  background: #7ee28b;
+  background: #738dbf;
   width: 80%;
   height: 5px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
 }
 
 .html::before {
   content: "";
   position: absolute;
-  background: #7ee28b;
+  background: #738dbf;
   width: 75%;
   height: 5px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
 }
 
 .css::before {
   content: "";
   position: absolute;
-  background: #7ee28b;
+  background: #738dbf;
   width: 70%;
   height: 5px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
 }
 
 p {
@@ -270,7 +266,6 @@ p {
 .education-container-right {
   color: #646870;
   font-size: 0.6rem;
-  border-shadow: solid 3px;
   position: relative;
 }
 
@@ -278,11 +273,10 @@ p {
   content: "";
   width: 3px;
   height: 100%;
-  background: #7ee28b;
+  background: #738dbf;
   position: absolute;
   left: -30px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
 }
 
 .education-container-right::after {
@@ -290,11 +284,10 @@ p {
   width: 7px;
   height: 7px;
   border-radius: 7px;
-  background: #7ee28b;
+  background: #738dbf;
   position: absolute;
   left: -32px;
   top: 50%;
-  box-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
 }
 
 .works-container {
@@ -320,11 +313,33 @@ p {
 }
 
 *::selection {
-  background: #7ee28b;
+  background: #bababa;
   color: #fff;
 }
 
-#mode {
-	background-color: #152121;
+
+.btn-switch{
+  text-decoration: none;
+  background: #ededed;
+  color: #646870;
+  padding: 1px 5px 5px 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /* border-bottom: 2px solid #738dbf; */
+  margin-right: 10px;
+  font-size: 11px;
+  transition: .5s;
 }
 
+.btn-switch:hover{
+ background: #bababa;
+ color: #474a4f;
+}
+
+.switchers{
+  display: flex;
+  position: absolute;
+  top: -29px;
+  right: -10px;
+  }
+  

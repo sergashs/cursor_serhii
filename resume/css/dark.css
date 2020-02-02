@@ -99,10 +99,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .main {
   display: flex;
+  position: relative;
 }
 .left-side {
   padding: 20px;
@@ -322,4 +324,32 @@ p {
 *::selection {
   background: #7ee28b;
   color: #fff;
+}
+
+
+
+.btn-switch{
+  text-decoration: none;
+  background: #21242d;;
+  color: #b8bdbe;
+  padding: 1px 5px 5px 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /* border-bottom: 2px solid #738dbf; */
+  margin-right: 10px;
+  font-size: 11px;
+  transition: .5s;
+}
+
+.btn-switch:hover{
+ background-color: rgb(126, 226, 139);; 
+ color: #2f2f2f;
+ box-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
+}
+
+.switchers{
+display: flex;
+position: absolute;
+top: -29px;
+right: -10px;
 }
