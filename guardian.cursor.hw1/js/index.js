@@ -7,12 +7,13 @@ let minPrice = Math.min(milkPrice, winePrice, showergelPrice); // мінімал
 const totalPrice = (milkPrice + winePrice + showergelPrice); // загальна ціна
 let integersTotalPrice = Math.floor(milkPrice + winePrice + showergelPrice) // загальна ціна цілим числом
 const ceilprice = (Math.ceil((totalPrice)*100)/100);
-integersTotalPrice
+const bul = (integersTotalPrice % 2 === 0);
 const dealing = (money - totalPrice); // здача
+const averagePrice = ((milkPrice + winePrice + showergelPrice)/3).toFixed(2);
 //------advanced part-------------------------------------
 
 let message = `
-  <h1>Advanced part</h1>
+  <h1>HW#1 Serhii Demchyshyn</h1>
   <p>Milk price - <strong>${milkPrice}</strong></p>
   <p>Wine Price - <strong>${winePrice}</strong></p>
   <p>Shower gel price - <strong>${showergelPrice}</strong></p>
@@ -23,6 +24,8 @@ let message = `
   <p>Integer part of product price - <strong>${integersTotalPrice}</strong></p>
   <p>Price sume ceiled to hundreds - <strong>${ceilprice}</strong></p>
   <p>Dealing - <strong>${dealing}</strong></p>
+  <p>Boolean value - <strong>${bul}</strong></p>
+  <p>Average Price - <strong>${averagePrice}</strong></p>
 `;
 document.writeln(message);
 console.log(message);
