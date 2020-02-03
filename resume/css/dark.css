@@ -95,7 +95,7 @@
 body {
   background: #62626d;
   font-family: "Public Sans", sans-serif;
-  padding: 20px;
+  padding: 20px 5px 5px 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
