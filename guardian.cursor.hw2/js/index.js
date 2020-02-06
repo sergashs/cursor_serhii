@@ -1,37 +1,25 @@
-let calcFrom = null;
-let calcTo = null;
-let temp = 0;
-let sum = 0;
+let numericStart = +(prompt('Число з якого починаємо рахувати ', 1));
+let numericFinish = +(prompt('Число на якому закінчуємо рахувати ', 100));
+let skip = confirm("Пропускати парні числа?");
 
-while(calcFrom===null){
-    calcFrom = prompt('З якого числа рахуємо? ', 10); 
-    calcFrom = isNaN(calcFrom)?null:parseInt(calcFrom);
-}
-while(calcTo===null){
-    calcTo = prompt('По яке? ', 100);
-    calcTo = isNaN(calcTo)?null:parseInt(calcTo);
-}
 
-if(skip===true){
-  temp = "пропускаємо";
-}
-else{
-  temp = "не пропускаємо";
-}
-
-console.log("Перше число це те число яке ми додаємо, друге - поточна сума.");
-for(let i = calcFrom; i <= calcTo; i++){  
-    if(skip){
-        if(i%2===0){
-           continue;
-        } 
-        else{
-            sum += i; 
+if (numericStart && numericFinish) {
+    let result1 = 0;
+    let sum = 0;
+    
+    for (let i = numericStart; i<=numericFinish; i++) {
+        if ( skip && !( i % 2 == 0 )  ) {
+            result1 +=i;
+            i++;
+        } else {
+            sum +=i;
         }
     }
-    else{
-        sum += i;  
-    }  
-    console.log(i, sum);
+
+    if(result1){
+      document.writeln(`Сума не парних чисел: <b>${result1}</b>`)
+    }else{
+      document.writeln(`Сумма всіх чисел: <b>${sum}</b>`)
+    }
+
 }
-document.writeln(`Складаємо числа з <b>${calcFrom}</b> до <b>${calcTo}</b>, парні <b>${temp}</b>. \n Сума дорівнює <b>${sum}</b>.`);
