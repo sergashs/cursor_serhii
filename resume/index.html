@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="./css/light.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/orange.css"/>
     <link
       href="https://fonts.googleapis.com/css?family=Public+Sans:400,500,700,900&display=swap"
       rel="stylesheet"
@@ -20,12 +20,7 @@
   <body>
   
        <div class="main">
-        <div class="switchers">
-          <a href="#" class="btn-switch"  onclick="changeCSS('./css/light.css', 0);">light</a> 
-          <a href="#" class="btn-switch" onclick="changeCSS('./css/dark.css', 0);">dark</a>
-          <a href="#" class="btn-switch" onclick="changeCSS('./css/orange.css', 0);">orange</a>
-       </div>
-      <div class="left-side">
+        <div class="left-side">
         <div class="profile">
           <div class="profile-ava">
             <img src="./img/ava.jfif" alt="" class="ava" />
@@ -40,7 +35,7 @@
           Personal info
         </div>
         <ul class="list">
-          <li class="paragraph">Adress</li>
+          <li class="paragraph"> Adress</li>
           <li>Povitryana street</li>
           <li>Ukraine, Lviv</li>
           <li>79007</li>
@@ -116,117 +111,50 @@
         <div class="left-side-title-block">
           Works
         </div>
-        <div class="works-container">
-          <div class="works-item">
-            <img
-              src="https://sergashs.github.io/cursor_serhii/img/1.png"
-              alt=""
-              class="works-item-img"
-            />
-          </div>
-          <div class="works-item">
-            <img
-              src="https://sergashs.github.io/cursor_serhii/img/2.png"
-              alt=""
-              class="works-item-img"
-            />
-          </div>
+<div class="works-container">    
+<div class="work-item-block">
+<div class="work-item-block-title">#work 1</div> 
+<div class="work-item-block-text">
+  <div class="work-item-block-text-icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></div> 
+  Graphic Designer Job Responsibilities: Prepares work to be accomplished by gathering information and materials. Plans concept by studying information and materials...
+</div>
+</div>
 
-          <div class="works-item">
-            <img
-              src="https://sergashs.github.io/cursor_serhii/img/1.png"
-              alt=""
-              class="works-item-img"
-            />
-          </div>
-          <div class="works-item">
-            <img
-              src="https://sergashs.github.io/cursor_serhii/img/2.png"
-              alt=""
-              class="works-item-img"
-            />
-          </div>
 
-          <div class="works-item">
-            <img
-              src="https://sergashs.github.io/cursor_serhii/img/1.png"
-              alt=""
-              class="works-item-img"
-            />
-          </div>
-          <div class="works-item">
-            <img
-              src="https://sergashs.github.io/cursor_serhii/img/2.png"
-              alt=""
-              class="works-item-img"
-            />
-          </div>
-          <div class="works-item">
-            <img
-              src="https://sergashs.github.io/cursor_serhii/img/1.png"
-              alt=""
-              class="works-item-img"
-            />
-          </div>
-          <div class="works-item">
-            <img
-              src="https://sergashs.github.io/cursor_serhii/img/2.png"
-              alt=""
-              class="works-item-img"
-            />
-          </div>
-          <div class="works-item">
-            <img
-              src="https://sergashs.github.io/cursor_serhii/img/1.png"
-              alt=""
-              class="works-item-img"
-            />
-          </div>
-          <div class="works-item">
-            <img
-              src="https://sergashs.github.io/cursor_serhii/img/2.png"
-              alt=""
-              class="works-item-img"
-            />
-          </div>
-          <div class="works-item">
-            <img
-              src="https://sergashs.github.io/cursor_serhii/img/1.png"
-              alt=""
-              class="works-item-img"
-            />
-          </div>
-          <div class="works-item">
-            <img
-              src="https://sergashs.github.io/cursor_serhii/img/2.png"
-              alt=""
-              class="works-item-img"
-            />
-          </div>
+<div class="work-item-block">
+  <div class="work-item-block-title">#work 2</div> 
+  <div class="work-item-block-text">
+    <div class="work-item-block-text-icon"><i class="fa fa-cogs" aria-hidden="true"></i></div> 
+    Graphic Designer Job Responsibilities: Prepares work to be accomplished by gathering information and materials. Plans concept by studying information and materials...
+  </div>
+  </div>
+
+
+  <div class="work-item-block">
+    <div class="work-item-block-title">#work 3</div> 
+    <div class="work-item-block-text">
+      <div class="work-item-block-text-icon"><i class="fa fa-life-ring" aria-hidden="true"></i></div> 
+      Graphic Designer Job Responsibilities: Prepares work to be accomplished by gathering information and materials. Plans concept by studying information and materials...
+    </div>
+    </div>
+
+
+    <div class="work-item-block">
+      <div class="work-item-block-title">#work 1</div> 
+      <div class="work-item-block-text">
+        <div class="work-item-block-text-icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></div> 
+        Graphic Designer Job Responsibilities: Prepares work to be accomplished by gathering information and materials. Plans concept by studying information and materials...
+      </div>
+      </div>
+
+
+  </div>
         </div>
       </div>
     </div>
     <div class="footer">© 2020 // powered by serhii // ver. 0.2</div>
     
 
-  
-
-
  
-    <script>
-		function changeCSS(cssFile, cssLinkIndex) {
-
-var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
-
-var newlink = document.createElement("link");
-newlink.setAttribute("rel", "stylesheet");
-newlink.setAttribute("type", "text/css");
-newlink.setAttribute("href", cssFile);
-
-document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
-}
-
-
-	</script>
   </body>
 </html>
