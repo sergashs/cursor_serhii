@@ -1,27 +1,20 @@
-body{
-    background: #21242d;
-    color: #b8bdbe;
-    padding: 20px;
-    font-family: 'Martel Sans', sans-serif;
+body {
+  background: #21242d;
+  color: #b8bdbe;
+  padding: 20px;
+  font-family: "Martel Sans", sans-serif;
 }
 
 h1 {
-    color: #7ee28b;
-
-
-    animation:blur 1s ease-out infinite;
-    text-shadow:0 0 10px rgb(126, 226, 139, 0.3);
+  color: #7ee28b;
+  text-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
 }
 
-
-
-
-
 b {
-   color: #7ee28b;
-   text-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
+  color: #7ee28b;
+  text-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
 }
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
