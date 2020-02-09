@@ -3,7 +3,7 @@ body {
   color: #b8bdbe;
   padding: 20px;
   font-family: "Martel Sans", sans-serif;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 h1 {
@@ -18,4 +18,48 @@ b {
 
 strong {
   font-weight: bold;
+}
+
+button {
+  outline: none;
+  background: #7ee28b;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
+  font-size: 18px;
+  margin: 0px 20px 0px 20px;
+}
+
+button:active {
+  background: #7ee28b;
+  transform: translateY(0.1rem);
+}
+
+.hr {
+  background: #62626d;
+  width: 100%;
+  height: 1px;
+}
+
+input {
+  outline: none;
+  background: none;
+  border: none;
+  color: #848492;
+  border-bottom: solid 2px #62626d;
+  padding: 5px;
+  font-size: 18px;
+  margin-left: 10px;
+  transition: ease-in 0.5s;
+}
+
+input:focus {
+  border-bottom: solid 2px #7ee28b;
+  color: #9f9faf;
+}
+
+li {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
