@@ -2,14 +2,20 @@ const milkPrice = 15.678;
 const winePrice = 123.965; 
 const showergelPrice = 90.2345; 
 const money = 500;
-let maxPrice = Math.max(milkPrice, winePrice, showergelPrice); // максимальне число
-let minPrice = Math.min(milkPrice, winePrice, showergelPrice); // мінімальне число
+const maxPrice = Math.max(milkPrice, winePrice, showergelPrice); // максимальне число
+const minPrice = Math.min(milkPrice, winePrice, showergelPrice); // мінімальне число
 const totalPrice = (milkPrice + winePrice + showergelPrice); // загальна ціна
-let integersTotalPrice = Math.floor(milkPrice + winePrice + showergelPrice) // загальна ціна цілим числом
+const integersTotalPrice = Math.floor(milkPrice + winePrice + showergelPrice) // загальна ціна цілим числом
 const ceilprice = (Math.ceil((totalPrice)*100)/100);
 const bul = (integersTotalPrice % 2 === 0);
 const dealing = (money - totalPrice); // здача
 const averagePrice = ((milkPrice + winePrice + showergelPrice)/3).toFixed(2);
+
+const discount = (Math.floor(Math.random() * 50));
+
+
+
+
 //------advanced part-------------------------------------
 
 let message = `
@@ -26,6 +32,7 @@ let message = `
   <p>Dealing - <strong>${dealing}</strong></p>
   <p>Boolean value - <strong>${bul}</strong></p>
   <p>Average Price - <strong>${averagePrice}</strong></p>
+  <p>Your discount - <strong>${discount}</strong></p>
 `;
 document.writeln(message);
 console.log(message);
