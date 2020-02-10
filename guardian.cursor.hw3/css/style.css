@@ -9,6 +9,12 @@ body {
 h1 {
   color: #7ee28b;
   text-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
+  cursor: pointer;
+}
+
+h1:hover {
+  color: #8fff9e;
+  text-shadow: 0 0 14px rgb(126, 226, 139, 0.3);
 }
 
 b {
