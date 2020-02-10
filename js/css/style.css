@@ -32,8 +32,12 @@ button {
   margin: 10px;
 }
 
+button:hover {
+  background: #8fff9e;
+  box-shadow: 0 0 14px rgb(126, 226, 139, 0.3);
+}
+
 button:active {
-  background: #7ee28b;
   transform: translateY(0.1rem);
 }
 
