@@ -29,17 +29,16 @@ button {
   box-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
   font-size: 18px;
   margin: 0px 20px 0px 20px;
+  margin: 10px;
+}
+
+button:hover {
+  background: #8fff9e;
+  box-shadow: 0 0 14px rgb(126, 226, 139, 0.3);
 }
 
 button:active {
-  background: #7ee28b;
   transform: translateY(0.1rem);
-}
-
-.hr {
-  background: #62626d;
-  width: 100%;
-  height: 1px;
 }
 
 input {
@@ -51,6 +50,7 @@ input {
   padding: 5px;
   font-size: 18px;
   margin-left: 10px;
+  margin-bottom: 10px;
   transition: ease-in 0.5s;
 }
 
