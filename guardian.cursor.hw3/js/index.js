@@ -8,14 +8,6 @@
 //   document.getElementById("demo").innerHTML = x;
 // }
 
-// function maxDigit(n) {
-//   if (n == 0) {
-//     return 0;
-//   } else {
-//     return Math.max(n % 10, maxDigit(Math.floor(n / 10)));
-//   }
-// }
-
 // document.write(`
 // <p><strong>Функція 1:<strong> <b>${ucFirst("вася")}</b>, <b>${ucFirst(
 //   "іван "
@@ -84,4 +76,45 @@ function two() {
     document.getElementById("fun-2-label").innerHTML = temp;
     two();
   }
+}
+
+const firstbiglet = function(name) {
+  let bigname = name;
+  bigname = bigname[0].toUpperCase() + bigname.substring(1);
+  return bigname;
+};
+
+function firstbigletter() {
+  let name = document.getElementById("fun-3").value;
+  if (name) {
+    const temp = firstbiglet(name);
+    document.getElementById("fun-3-label").innerHTML = temp;
+  }
+  document.getElementById("fun-3-label").innerHTML = temp;
+  firstbigletter();
+}
+
+function amountaftertax() {
+  let namber = document.getElementById("fun-4").value;
+  let prcnt = 20;
+  namber = parseInt(namber);
+  pow = parseInt(prcnt);
+  let temp = namber - (namber / 100) * prcnt;
+  document.getElementById("fun-4-label").innerHTML = temp.toFixed();
+  amountaftertax();
+}
+
+const getRandomNumber = function(n, m) {
+  const rnd = Math.floor(Math.random() * (m - n + 1) + n);
+  return rnd;
+};
+
+function five() {
+  let n = document.getElementById("n").value;
+  let m = document.getElementById("m").value;
+  n = parseFloat(n);
+  m = parseFloat(m);
+  const temp = `Нагенеровано от що: ${getRandomNumber(n, m)}`;
+  document.getElementById("fun-5-label").innerHTML = temp;
+  five();
 }

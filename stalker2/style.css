@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(201, 197, 197);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-image: url(./img/bg-header.jpg);
+  background-size: cover;
+  background-position: 20%;
+  height: 500px;
+  padding: 30px 30px 40px 40px;
+}
+
+nav {
+  display: flex;
+  margin-top: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #ffff;
+  opacity: 0.7;
+  list-style-type: none;
+  font-size: 19px;
+  margin: 10px 50px 10px 50px;
+}
+
+nav li a:last-child {
+  margin: 10px 10px 10px 50px;
+}
+
+nav li a:hover {
+  opacity: 1;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+.logo {
+  color: #ffff;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+main {
+  display: flex;
+}
+
+.informer1 {
+  background: #332715;
+  padding: 50px;
+  color: rgb(201, 197, 197);
+  flex-grow: 3;
+}
+
+.informer1-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.informer1-top-number span {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.informer1-top-switchers a {
+  font-size: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.informer1-message {
+  line-height: 25px;
+}
+
+.informer2 {
+  background: #bbb5af;
+  flex-shrink: 1;
+  color: rgb(48, 48, 48);
+}
+
+.informer2-title {
+  margin: 50px;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.informer2-message {
+  line-height: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
+
+.informer3 {
+  flex-grow: 1;
+  color: rgb(48, 48, 48);
+  padding: 50px 0px 50px 50px;
+}
+
+.informer3-comment-left img {
+  border-radius: 100px;
+  width: 60px;
+}
+
+.informer3-title {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.informer3-comment {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.informer3-container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 200px;
+}
+
+.informer3-container::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+.informer3-container::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.informer3-comment-right {
+  margin-left: 20px;
+}
+
+.commnet-message-name-author {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.commnet-message {
+  line-height: 25px;
+  margin-right: 50px;
+}
