@@ -104,7 +104,7 @@ function amountaftertax() {
   amountaftertax();
 }
 
-const getRandomNumber = function(n, m) {
+const getRandomNumber = function(min, max) {
   const rnd = Math.floor(Math.random() * (m - n + 1) + n);
   return rnd;
 };
@@ -117,4 +117,22 @@ function five() {
   const temp = `Нагенеровано от що: ${getRandomNumber(n, m)}`;
   document.getElementById("fun-5-label").innerHTML = temp;
   five();
+}
+
+function countLetter() {
+  let word = document.getElementById("getword").value;
+  let letter = document.getElementById("getletter").value;
+
+  var stringsearch = letter,
+    str = word;
+  for (
+    var i = (count = 0);
+    i < str.length;
+    count += +(stringsearch === str[i++])
+  );
+
+  const temp = count;
+
+  document.getElementById("fun-6-label").innerHTML = temp;
+  countLetter();
 }
