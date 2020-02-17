@@ -104,9 +104,13 @@ function countLetter() {
 }
 
 ////////////
-var randomNumber = function(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-};
+function randompass() {
+  var randomNumber = function(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  };
 
-var rand = randomNumber(1, 80000008);
-console.log(rand);
+  const temp = randomNumber(1, 80000008);
+
+  document.getElementById("fun-7-label").innerHTML = temp;
+  randompass();
+}
