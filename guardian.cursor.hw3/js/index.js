@@ -1,36 +1,3 @@
-// function ucFirst(str) {
-//   if (!str) return str;
-//   return str[0].toUpperCase() + str.slice(1);
-// } // Робимо першу букву великою
-
-// function myFunction() {
-//   var x = Math.floor(Math.random() * 10 + 1);
-//   document.getElementById("demo").innerHTML = x;
-// }
-
-// document.write(`
-// <p><strong>Функція 1:<strong> <b>${ucFirst("вася")}</b>, <b>${ucFirst(
-//   "іван "
-// )}</b></p>
-// <p>${maxDigit(59)}</p>
-
-// `);
-
-// const func1 = document.getElementById("f1-btn");
-// func1.addEventListener("click", function() {
-//   const number = document.getElementById("f1-1");
-//   const result = document.getElementById("f1-lbl");
-//   number.value = number.value || 12345;
-//   result.textContent = Number(number.value)
-//     ? `--> ${getMaxDigit(number.value)}`
-//     : "you need to insert a number in the input";
-// });
-
-// //1 - max digit
-// function getMaxDigit(number) {
-//   return Math.max(...number.toString().split(""));
-// }
-
 //1 - max digit
 const maxOfNumber = function(number) {
   return Math.max(...number.toString().split(""));
@@ -104,17 +71,16 @@ function amountaftertax() {
   amountaftertax();
 }
 
-const getRandomNumber = function(min, max) {
+const getRandomNumber = function(n, m) {
   const rnd = Math.floor(Math.random() * (m - n + 1) + n);
   return rnd;
 };
 
 function five() {
-  let n = document.getElementById("n").value;
-  let m = document.getElementById("m").value;
-  n = parseFloat(n);
-  m = parseFloat(m);
-  const temp = `Нагенеровано от що: ${getRandomNumber(n, m)}`;
+  let n = document.getElementById("min").value;
+  let m = document.getElementById("max").value;
+
+  const temp = `${getRandomNumber(n, m)}`;
   document.getElementById("fun-5-label").innerHTML = temp;
   five();
 }
@@ -136,3 +102,11 @@ function countLetter() {
   document.getElementById("fun-6-label").innerHTML = temp;
   countLetter();
 }
+
+////////////
+var randomNumber = function(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
+var rand = randomNumber(1, 80000008);
+console.log(rand);
