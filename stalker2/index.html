@@ -7,22 +7,30 @@
       href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Stalker 2</title>
   </head>
   <body>
     <header>
-      <div class="logo">St2Fun</div>
-      <nav>
+      <div class="logo">S<div class="text-logo">2</div><span>F</span></div>
+      <nav class="navbar-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">Articles</a></li>
         <li><a href="#">Community</a></li>
+        <li><a href="#">Loads</a></li>
+        </div>
       </nav>
-      <div class="left-side-header">
-        <nav>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">messages (1+)</a></li>
-        </nav>
+      <div class="right-side-header">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
       </div>
     </header>
     <main>
@@ -111,5 +119,14 @@
         </div>
       </div>
     </main>
+
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

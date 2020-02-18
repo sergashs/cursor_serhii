@@ -54,10 +54,25 @@ nav li {
   color: #ffff;
   font-weight: bold;
   font-size: 30px;
+  display: flex;
+}
+
+.logo span {
+  margin-top: 10px;
+}
+
+.text-logo {
+  margin-top: 5px;
 }
 
 main {
   display: flex;
+}
+
+@media (max-width: 1000px) {
+  main {
+    flex-wrap: wrap;
+  }
 }
 
 .informer1 {
@@ -161,4 +176,43 @@ main {
 .commnet-message {
   line-height: 25px;
   margin-right: 50px;
+}
+
+.toggle-button {
+  margin-top: 10px;
+  margin-right: 10px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+@media (max-width: 730px) {
+  .navbar-links {
+    margin-top: 50px;
+    margin-left: -50px;
+    display: none;
+    transition: ease 1s;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
 }
