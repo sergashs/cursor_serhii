@@ -100,7 +100,6 @@ function countLetter() {
   const temp = count;
 
   document.getElementById("fun-6-label").innerHTML = temp;
-  countLetter();
 }
 
 ////////////
@@ -112,5 +111,4 @@ function randompass() {
   const temp = randomNumber(1, 80000008);
 
   document.getElementById("fun-7-label").innerHTML = temp;
-  randompass();
 }
