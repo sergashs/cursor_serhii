@@ -108,7 +108,7 @@ function randompass() {
     return Math.floor(Math.random() * (max - min + 1) + min);
   };
 
-  const temp = randomNumber(1, 80000008);
+  const temp = randomNumber(10000000, 80000008);
 
   document.getElementById("fun-7-label").innerHTML = temp;
 }
