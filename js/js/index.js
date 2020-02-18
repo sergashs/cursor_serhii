@@ -3,23 +3,27 @@
 // while(isNaN(namber)) {
 //   alert('Ви ввели не число');
 
-function onInputHandler(e) {
-  if (isNaN(e.target.value)) {
-    e.target.classList.add("invalid");
-  } else {
-    e.target.classList.remove("invalid");
-  }
-}
+// function onInputHandler(e) {
+//   if (isNaN(e.target.value)) {
+//     e.target.classList.add("invalid");
+//   } else {
+//     e.target.classList.remove("invalid");
+//   }
+// }
 
-function getpercent() {
-  let namber = document.getElementById("fun-2").value;
-  let prcnt = document.getElementById("fun-22").value;
+// function getpercent() {
+//   let namber = document.getElementById("fun-2").value;
+//   let prcnt = document.getElementById("fun-22").value;
 
-  namber = parseInt(namber);
-  pow = parseInt(prcnt);
+//   namber = parseInt(namber);
+//   pow = parseInt(prcnt);
 
-  let temp = (namber / 100) * prcnt;
+//   let temp = (namber / 100) * prcnt;
 
-  document.getElementById("fun-2-label").innerHTML = temp.toFixed();
-  getpercent();
+//   document.getElementById("fun-2-label").innerHTML = temp.toFixed();
+//   getpercent();
+// }
+
+for (let i = 0; i < 10; i++) {
+  console.log("hello " + i);
 }

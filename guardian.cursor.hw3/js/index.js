@@ -57,8 +57,6 @@ function firstbigletter() {
     const temp = firstbiglet(name);
     document.getElementById("fun-3-label").innerHTML = temp;
   }
-  document.getElementById("fun-3-label").innerHTML = temp;
-  firstbigletter();
 }
 
 function amountaftertax() {
@@ -68,7 +66,6 @@ function amountaftertax() {
   pow = parseInt(prcnt);
   let temp = namber - (namber / 100) * prcnt;
   document.getElementById("fun-4-label").innerHTML = temp.toFixed();
-  amountaftertax();
 }
 
 const getRandomNumber = function(n, m) {
@@ -111,4 +108,47 @@ function randompass() {
   const temp = randomNumber(10000000, 80000008);
 
   document.getElementById("fun-7-label").innerHTML = temp;
+}
+
+///////////////
+
+// function countLetter() {
+//   let word = document.getElementById("getword").value;
+//   let letter = document.getElementById("getletter").value;
+
+//   var stringsearch = letter,
+//     str = word;
+//   for (
+//     var i = (count = 0);
+//     i < str.length;
+//     count += +(stringsearch === str[i++])
+//   );
+
+//   const temp = count;
+
+//   document.getElementById("fun-6-label").innerHTML = temp;
+// }
+
+// let word = document.getElementById("message").value;
+// let letter = document.getElementById("deleteLetter").value;
+
+function deleteLetters(word) {
+  let pureStr = "";
+  let bukva = document.getElementById("deleteLetter").value;
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] !== bukva) {
+      pureStr += word[i];
+    }
+  }
+  return pureStr;
+}
+
+const result = deleteLetters();
+console.log("result: ", result);
+
+function deleteLettersClick() {
+  let word = document.getElementById("message").value;
+
+  const temp = `${deleteLetters(word)}`;
+  document.getElementById("fun-8-label").innerHTML = temp;
 }
