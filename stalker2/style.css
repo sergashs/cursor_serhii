@@ -21,7 +21,7 @@ header {
   background-size: cover;
   background-position: 20%;
   height: 500px;
-  padding: 30px 30px 40px 40px;
+  padding: 40px 40px 40px 40px;
 }
 
 nav {
@@ -79,7 +79,7 @@ main {
   background: #332715;
   padding: 50px;
   color: rgb(201, 197, 197);
-  flex-grow: 3;
+  flex-grow: 1;
 }
 
 .informer1-top {
@@ -107,12 +107,12 @@ main {
 
 .informer2 {
   background: #bbb5af;
-  flex-shrink: 1;
+  flex-grow: 2;
   color: rgb(48, 48, 48);
+  padding: 50px;
 }
 
 .informer2-title {
-  margin: 50px;
   font-size: 25px;
   font-weight: 800;
   margin-bottom: 30px;
@@ -120,13 +120,10 @@ main {
 
 .informer2-message {
   line-height: 25px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-bottom: 50px;
 }
 
 .informer3 {
-  flex-grow: 1;
+  flex-grow: 2;
   color: rgb(48, 48, 48);
   padding: 50px 0px 50px 50px;
 }
@@ -180,7 +177,6 @@ main {
 
 .toggle-button {
   margin-top: 10px;
-  margin-right: 10px;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -199,6 +195,54 @@ main {
   list-style: none;
 }
 
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+.article {
+  max-width: 25%;
+  min-width: 300px;
+  padding: 30px 40px 0px 40px;
+}
+
+@media (max-width: 1600px) {
+  .article {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .article {
+    max-width: 50%;
+  }
+}
+
+.article img {
+  width: 100%;
+}
+
+.article-title {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.article-text {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #494643;
+}
+
+.article-icons-bar {
+  color: rgb(88, 88, 88);
+  font-size: 14px;
+}
+.article-icons-bar i {
+  margin-right: 10px;
+}
+
 @media (max-width: 730px) {
   .navbar-links {
     margin-top: 50px;
@@ -214,5 +258,26 @@ main {
 
   .toggle-button {
     display: flex;
+  }
+}
+
+@media (max-width: 620px) {
+  .article {
+    padding: 20px 20px 0px 20px;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .informer3 {
+    color: rgb(48, 48, 48);
+    padding: 20px;
+  }
+
+  .informer2 {
+    padding: 20px;
+  }
+
+  .informer1 {
+    padding: 20px;
   }
 }
