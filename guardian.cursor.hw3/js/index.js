@@ -110,28 +110,6 @@ function randompass() {
   document.getElementById("fun-7-label").innerHTML = temp;
 }
 
-///////////////
-
-// function countLetter() {
-//   let word = document.getElementById("getword").value;
-//   let letter = document.getElementById("getletter").value;
-
-//   var stringsearch = letter,
-//     str = word;
-//   for (
-//     var i = (count = 0);
-//     i < str.length;
-//     count += +(stringsearch === str[i++])
-//   );
-
-//   const temp = count;
-
-//   document.getElementById("fun-6-label").innerHTML = temp;
-// }
-
-// let word = document.getElementById("message").value;
-// let letter = document.getElementById("deleteLetter").value;
-
 function deleteLetters(word) {
   let pureStr = "";
   let bukva = document.getElementById("deleteLetter").value;
@@ -142,9 +120,6 @@ function deleteLetters(word) {
   }
   return pureStr;
 }
-
-const result = deleteLetters();
-console.log("result: ", result);
 
 function deleteLettersClick() {
   let word = document.getElementById("message").value;
