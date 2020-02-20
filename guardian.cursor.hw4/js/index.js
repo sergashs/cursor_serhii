@@ -16,9 +16,9 @@ const studentsPairs = [
 ];
 
 document.writeln(`
-<p><b>Студенти:</b>  ${students}</p>
+<p><b>Студенты:</b>  ${students}</p>
 
-<b>Вийшли такі пари:</b>
+<b>Пары:</b>
 <p>1. ${studentsPairs[0]} + ${studentsPairs[3]}</p>
 <p>2. ${studentsPairs[1]} + ${studentsPairs[2]}</p>
 <p>3. ${studentsPairs[4]} + ${studentsPairs[5]}</p>
