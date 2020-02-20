@@ -14,14 +14,20 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
   background-image: url(./img/bg-header.jpg);
   background-size: cover;
   background-position: 20%;
   height: 500px;
   padding: 40px 40px 40px 40px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px 20px 40px;
+  background-image: url(https://lh3.googleusercontent.com/proxy/Ow8t2ikWeuNnwtaSEE8kAYYMYLYPMnL9eSz9nyK9sOBvaH3Q9BFrW5BZa_HMdGCAQVHC9kRxrQLcb1V4);
+  border-bottom: 1px solid #424242;
 }
 
 nav {
@@ -31,7 +37,7 @@ nav {
 
 nav li a {
   text-decoration: none;
-  color: #ffff;
+  color: #e2d9d0;
   opacity: 0.7;
   list-style-type: none;
   font-size: 19px;
@@ -51,7 +57,7 @@ nav li {
 }
 
 .logo {
-  color: #ffff;
+  color: #e2d9d0;
   font-weight: bold;
   font-size: 30px;
   display: flex;
@@ -187,7 +193,7 @@ main {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: #fff;
+  background-color: #494643;
   border-radius: 10px;
 }
 
@@ -246,7 +252,6 @@ main {
 @media (max-width: 730px) {
   .navbar-links {
     margin-top: 50px;
-    margin-left: -50px;
     display: none;
     transition: ease 1s;
   }
@@ -254,10 +259,20 @@ main {
   .navbar-links.active {
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
+    margin-right: auto;
   }
 
   .toggle-button {
     display: flex;
+  }
+
+  nav li a {
+    margin: 0px 0px 0px 0px;
+  }
+
+  nav li a:last-child {
+    margin: 0px 0px 0px 0px;
   }
 }
 
