@@ -1,13 +1,13 @@
 function getpercent() {
-  let namber = document.getElementById("fun-2").value;
-  let prcnt = document.getElementById("fun-22").value;
+  let namber = Number(document.getElementById("fun-2").value);
+  let prcnt = Number(document.getElementById("fun-22").value);
 
-  namber = parseInt(namber);
-  pow = parseInt(prcnt);
+  namber = Number(parseInt(namber));
+  pow = Number(parseInt(prcnt));
 
   let temp = (namber / 100) * prcnt;
 
-  document.getElementById("fun-2-label").innerHTML = temp.toFixed();
+  document.getElementById("fun-2-label").innerHTML = Math.floor(temp).toFixed();
 }
 
 // function count() {
