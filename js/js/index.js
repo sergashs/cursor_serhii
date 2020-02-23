@@ -7,9 +7,7 @@ function getpercent() {
 
   let temp = (namber / 100) * prcnt;
 
-  document.getElementById("fun-2-label").innerHTML = Math.floor(temp).toFixed(
-    2
-  );
+  document.getElementById("fun-2-label").innerHTML = temp;
 }
 
 // function count() {
