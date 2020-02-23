@@ -4,7 +4,7 @@ const maxOfNumber = function(number) {
 };
 
 function one() {
-  let number = document.getElementById("fun-1").value;
+  const number = document.getElementById("fun-1").value;
   if (!isNaN(number)) {
     let temp =
       "You entered " +
@@ -15,7 +15,6 @@ function one() {
   } else {
     let temp = "ERROR, Try again";
     document.getElementById("fun-1-label").innerHTML = temp;
-    one();
   }
 }
 
@@ -41,7 +40,6 @@ function two() {
   } else {
     let temp = "You made a mistake. Please try again";
     document.getElementById("fun-2-label").innerHTML = temp;
-    two();
   }
 }
 
@@ -59,14 +57,28 @@ function firstbigletter() {
   }
 }
 
-function amountaftertax() {
-  let namber = document.getElementById("fun-4").value;
-  let prcnt = 20;
-  namber = parseInt(namber);
-  pow = parseInt(prcnt);
-  let temp = namber - (namber / 100) * prcnt;
-  document.getElementById("fun-4-label").innerHTML = temp.toFixed();
-}
+
+//////////////////////////// після сплати податку
+
+// let amountaftertaxClear = function getprcnt (namber, procnt) {
+//   let procnt = 20;
+//   let resulttax = namber - (namber / 100) * prcnt;
+  
+//   return resulttax;
+// };
+
+
+
+// function amountaftertax() {
+//   let namber = document.getElementById("fun-4").value;
+//   namber = parseInt(namber);
+//   let temp = amountaftertaxClear(namber, prcnt)
+//   document.getElementById("fun-4-label").innerHTML = temp.toFixed();
+// }
+
+/////////////////////////
+
+/////////////////////// Дістаємо рандомні числа
 
 const getRandomNumber = function(n, m) {
   const rnd = Math.floor(Math.random() * (m - n + 1) + n);
@@ -79,17 +91,18 @@ function five() {
 
   const temp = `${getRandomNumber(n, m)}`;
   document.getElementById("fun-5-label").innerHTML = temp;
-  five();
 }
+
+//////////////////////
 
 function countLetter() {
   let word = document.getElementById("getword").value;
   let letter = document.getElementById("getletter").value;
 
-  var stringsearch = letter,
+  let stringsearch = letter,
     str = word;
   for (
-    var i = (count = 0);
+    ByteLengthQueuingStrategy i = (count = 0);
     i < str.length;
     count += +(stringsearch === str[i++])
   );
@@ -101,7 +114,7 @@ function countLetter() {
 
 ////////////
 function randompass() {
-  var randomNumber = function(min, max) {
+  let randomNumber = function(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   };
 
