@@ -6,24 +6,6 @@ const themes = [
 ];
 const marks = [4, 5, 5, 3, 4, 5];
 
-// const studentsPairs = [
-//   students[0],
-//   students[3],
-//   students[1],
-//   students[2],
-//   students[4],
-//   students[5]
-// ];
-
-// document.writeln(`
-// <p><b>Студенты:</b>  ${students}</p>
-
-// <b>Пары:</b>
-// <p>1. ${studentsPairs[0]} + ${studentsPairs[3]}</p>
-// <p>2. ${studentsPairs[1]} + ${studentsPairs[2]}</p>
-// <p>3. ${studentsPairs[4]} + ${studentsPairs[5]}</p>
-// `);
-
 let pairsStudent = [];
 
 for (let i = 0; i < students.length; i += 2) {
@@ -34,12 +16,76 @@ console.log(pairsStudent);
 
 document.write("<b>Pairs:</b>");
 for (let i = 0; i < pairsStudent.length; i++) {
-  document.write(`<li>Пара ${i + 1}: ${pairsStudent[i]}</li>`);
+  document.write(`<p>Пара ${i + 1}: ${pairsStudent[i]}</p>`);
 }
 
-themesStudent = [];
-for (let i = 0; i < themes.length; i += 2) {
-  themesStudent.push(themes.slice(i, i + 2));
+// themesStudent = [];
+// for (let i = 0; i < themes.length; i += 2) {
+//   themesStudent.push(themes.slice(i, i + 2));
+// }
+
+// console.log(themesStudent);
+
+const pairswithThemes = (pairs, themes) => {
+  let pairsandThemes = [];
+  for (let i = 0; i < pairsStudent.length; i++) {
+    pairsandThemes.push([pairsStudent[i].join(" и "), themes[i]]);
+  }
+  return pairsandThemes;
+};
+
+console.log(pairswithThemes(pairsStudent, themes));
+const pairsandThemes = pairswithThemes(pairsStudent, themes);
+
+document.write("<b>Pairs and themes:</b>");
+for (let i = 0; i < pairsandThemes.length; i++) {
+  document.write(`<p>Пара ${i + 1}: ${pairsandThemes[i]}</p>`);
 }
 
-console.log(themesStudent);
+/////////////////////
+
+const getMarksforStudents = (students, marks) => {
+  let studentsMarks = [];
+  for (let i = 0; i < students.length; i++) {
+    studentsMarks.push([students[i], marks[i]]);
+  }
+  return studentsMarks;
+};
+console.log(getMarksforStudents(students, marks));
+
+const studentsMarks = getMarksforStudents(students, marks);
+
+document.write(`<b>Students and marks: </b>`);
+for (let i = 0; i < studentsMarks.length; i++) {
+  document.write(`<p> ${studentsMarks[i]} </p>`);
+}
+
+//////
+
+// const getrandomarksforStudentsandthemes = (pairs, themes, marks) => {
+//   let randomMarksforPairswithThemes = [];
+//   for (let i = 0; i < pairs.length; i++) {
+//     randomMarksforPairswithThemes.push([pairs[i], themes[i], marks[i]]);
+//   }
+//   return randomMarksforPairswithThemes;
+// };
+// console.log(getrandomarksforStudentsandthemes(pairs, themes, marks));
+
+const getRandomMforPairsandThemes = pairsandThemes => {
+  let pairThemeMark = [];
+  const n = 1;
+  const m = 5;
+  for (let i = 0; i < pairsandThemes.length; i++) {
+    let randomMark = Math.floor(Math.random() * (m - n + 1) + n);
+    pairThemeMark[i] = [...pairsandThemes[i], randomMark];
+  }
+
+  return pairThemeMark;
+};
+console.log(getRandomMforPairsandThemes(pairsandThemes));
+const pairThemeMark = getRandomMforPairsandThemes(pairsandThemes);
+
+document.write(`<b>Pairs with themes and marks: </b>`);
+for (let i = 0; i < pairThemeMark.length; i++) {
+  document.write(`<p> ${pairThemeMark[i]} </p>`);
+}

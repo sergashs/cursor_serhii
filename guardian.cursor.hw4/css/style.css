@@ -4,20 +4,12 @@ body {
   padding: 20px;
   font-family: "Martel Sans", sans-serif;
   font-size: 18px;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
 }
 
 h1 {
-  color: #7ee28b;
-  text-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
-  cursor: pointer;
-}
-
-h1:hover {
-  color: #8fff9e;
-  text-shadow: 0 0 14px rgb(126, 226, 139, 0.3);
-}
-
-b {
   color: #7ee28b;
   text-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
 }
@@ -26,6 +18,15 @@ strong {
   font-weight: bold;
 }
 
+b {
+  color: #7ee28b;
+  text-shadow: 0 0 10px rgb(126, 226, 139, 0.3);
+}
+
+.div {
+  display: flex;
+  max-width: 100px;
+}
 button {
   outline: none;
   background: #7ee28b;
@@ -47,29 +48,103 @@ button:active {
   transform: translateY(0.1rem);
 }
 
-input {
-  outline: none;
-  background: none;
-  border: none;
-  color: #848492;
-  border-bottom: solid 2px #62626d;
-  padding: 5px;
-  font-size: 18px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  transition: ease-in 0.5s;
-}
-
-input:focus {
-  border-bottom: solid 2px #7ee28b;
-  color: #9f9faf;
-}
-
 li {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
+p {
+  margin: 0;
+  margin-bottom: 1px;
+  padding: 0;
+}
+
 ol {
   padding-inline-start: 20px;
+}
+
+input *,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  display: block;
+  font-size: 2em;
+  line-height: 1.5;
+  transform: rotate(-120deg);
+  cursor: pointer;
+}
+main {
+  padding: 1.5em 0 0 0;
+  text-align: center;
+}
+.l {
+  color: #8fff9e;
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+  height: 1.5em;
+  transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.l:before,
+.l:after {
+  content: "";
+  display: block;
+}
+.l:before {
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+  z-index: 1;
+  transition: linear 1s;
+}
+.l:after {
+  background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.15) 0) 0 50% /
+      50% 100%,
+    repeating-linear-gradient(90deg, #bbb 0, #bbb, #bbb 20%, #999 20%, #999 40%)
+      0 50% / 50% 100%,
+    radial-gradient(circle at 50% 50%, #888 25%, transparent 26%);
+  background-repeat: no-repeat;
+  border: 0.25em solid transparent;
+  border-left: 0.4em solid #d8d8d8;
+  border-right: 0 solid transparent;
+  transition: border-left-color 0.1s 0.3s ease-out;
+  transform: translateX(-22.5%);
+  transform-origin: 25% 50%;
+  width: 1.2em;
+  height: 1em;
+  transition: linear 1s;
+}
+/* Checked */
+
+.l:checked:before {
+  background-color: #8fff9e;
+  box-shadow: 0 0 30px rgb(126, 226, 139, 0.3);
+  transition: linear 1s;
+}
+.l:checked:after {
+  border-left-color: #8fff9e;
+  transition: linear 1s;
+}
+/* Other States */
+.l:focus {
+  /* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+  outline: 0;
+}
+
+.footer {
+  position: absolute;
+  right: -60px;
+  font-size: 15px;
+  color: #999;
+  transform: rotate(-90deg);
 }
