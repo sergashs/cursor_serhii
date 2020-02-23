@@ -95,7 +95,7 @@
 body {
   background: #62626d;
   font-family: "Public Sans", sans-serif;
-  padding: 20px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,6 +104,7 @@ body {
 .main {
   display: flex;
   position: relative;
+  margin: 20px;
 }
 .left-side {
   padding: 20px;
@@ -116,6 +117,7 @@ body {
   max-width: 500px;
   padding: 0px 20px 20px 20px;
   border-bottom-right-radius: 25px;
+  position: relative;
 }
 
 .profile {
@@ -380,7 +382,18 @@ p {
 .footer {
   margin-top: 5px;
   font-size: 0.5rem;
-}
+  position: absolute;
+  right: -83px;
+  bottom: 100px;
+  font-size: 12px;
+  color: rgb(204, 204, 204);
+  transform: rotate(-90deg);
+  background-color: #e64420;
+  padding: 5px 10px 5px 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  }
+
 
 *::selection {
   background: #dd9a8c;
