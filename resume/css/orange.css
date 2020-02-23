@@ -208,7 +208,31 @@ ul {
   height: 5px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(230, 68, 32, 0.3);
+  animation-name: stretchRight;
+    -webkit-animation-name: stretchRight;   
+ 
+    animation-duration: 1.5s;   
+    -webkit-animation-duration: 1.5s;
+ 
+    animation-timing-function: ease-out;    
+    -webkit-animation-timing-function: ease-out;    
+ 
+    transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;    
 }
+
+@keyframes stretchRight {
+  0% {
+      transform: scaleX(0.1);} 
+  100% {
+      transform: scaleX(1);
+  }                           
+}
+
+
+
+
 
 .collaboration::before {
   content: "";
@@ -218,6 +242,18 @@ ul {
   height: 5px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(230, 68, 32, 0.3);
+  animation-name: stretchRight;
+  -webkit-animation-name: stretchRight;   
+
+  animation-duration: 1.5s;   
+  -webkit-animation-duration: 1.5s;
+
+  animation-timing-function: ease-out;    
+  -webkit-animation-timing-function: ease-out;    
+
+  transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%; 
 }
 
 .communication::before {
@@ -228,6 +264,18 @@ ul {
   height: 5px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(230, 68, 32, 0.3);
+  animation-name: stretchRight;
+  -webkit-animation-name: stretchRight;   
+
+  animation-duration: 1.5s;   
+  -webkit-animation-duration: 1.5s;
+
+  animation-timing-function: ease-out;    
+  -webkit-animation-timing-function: ease-out;    
+
+  transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%; 
 }
 
 .html::before {
@@ -238,6 +286,18 @@ ul {
   height: 5px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(230, 68, 32, 0.3);
+  animation-name: stretchRight;
+  -webkit-animation-name: stretchRight;   
+
+  animation-duration: 1.5s;   
+  -webkit-animation-duration: 1.5s;
+
+  animation-timing-function: ease-out;    
+  -webkit-animation-timing-function: ease-out;    
+
+  transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%; 
 }
 
 .css::before {
@@ -248,6 +308,18 @@ ul {
   height: 5px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(230, 68, 32, 0.3);
+  animation-name: stretchRight;
+  -webkit-animation-name: stretchRight;   
+
+  animation-duration: 1.5s;   
+  -webkit-animation-duration: 1.5s;
+
+  animation-timing-function: ease-out;    
+  -webkit-animation-timing-function: ease-out;    
+
+  transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%; 
 }
 
 p {
@@ -341,10 +413,10 @@ p {
 .work-item-block-text{
   padding: 10px;
   font-size: .6rem;
+  text-align: center;
 }
 
 .work-item-block-text-icon{
-  text-align: center;
   font-size: 1.5rem;
   color: #62626d;
   /* color: rgb(230, 68, 32, 0.7); */
