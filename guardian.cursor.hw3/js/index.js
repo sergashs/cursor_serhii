@@ -1,4 +1,4 @@
-//1 - max digit
+// first function start
 const maxOfNumber = function(number) {
   return Math.max(...number.toString().split(""));
 };
@@ -18,7 +18,9 @@ function one() {
   }
 }
 
-//2 = pow function
+//// first function end
+
+// second function start
 const calculatePow = function calculatePow(base, exp) {
   let result = 1;
   for (let i = 0; i < exp; i++) {
@@ -43,6 +45,9 @@ function two() {
   }
 }
 
+// secondfunction end
+
+/// third function start
 const firstbiglet = function(name) {
   let bigname = name;
   bigname = bigname[0].toUpperCase() + bigname.substring(1);
@@ -57,28 +62,26 @@ function firstbigletter() {
   }
 }
 
+/// third function end
 
-//////////////////////////// після сплати податку
+////////////////////////// fourth function start
 
-// let amountaftertaxClear = function getprcnt (namber, procnt) {
-//   let procnt = 20;
-//   let resulttax = namber - (namber / 100) * prcnt;
-  
-//   return resulttax;
-// };
+let amountaftertaxClear = function getprcnt(namber, prcnt) {
+  let resulttax = namber - (namber / 100) * prcnt;
+  return resulttax;
+};
 
+function amountaftertax() {
+  let namber = document.getElementById("fun-4").value;
+  namber = parseInt(namber);
+  let prcnt = 20;
+  let temp = amountaftertaxClear(namber, prcnt);
+  document.getElementById("fun-4-label").innerHTML = temp.toFixed();
+}
 
+/////////////////////////  fourth function end
 
-// function amountaftertax() {
-//   let namber = document.getElementById("fun-4").value;
-//   namber = parseInt(namber);
-//   let temp = amountaftertaxClear(namber, prcnt)
-//   document.getElementById("fun-4-label").innerHTML = temp.toFixed();
-// }
-
-/////////////////////////
-
-/////////////////////// Дістаємо рандомні числа
+///////////////////////  fifth function start
 
 const getRandomNumber = function(n, m) {
   const rnd = Math.floor(Math.random() * (m - n + 1) + n);
@@ -93,26 +96,28 @@ function five() {
   document.getElementById("fun-5-label").innerHTML = temp;
 }
 
-//////////////////////
+////////////////////// fifth function end
 
-function countLetter() {
+///// sixth function start
+
+function countLetter(word, letter) {
+  let stringsearch = letter.toLowerCase(),
+    str = word.toLowerCase();
+  for (i = count = 0; i < str.length; count += +(stringsearch === str[i++]));
+  return count;
+}
+
+function countLetterPrint() {
   let word = document.getElementById("getword").value;
   let letter = document.getElementById("getletter").value;
-
-  let stringsearch = letter,
-    str = word;
-  for (
-    ByteLengthQueuingStrategy i = (count = 0);
-    i < str.length;
-    count += +(stringsearch === str[i++])
-  );
-
-  const temp = count;
-
+  const temp = countLetter(word, letter);
   document.getElementById("fun-6-label").innerHTML = temp;
 }
 
-////////////
+//////////// sixth function end
+
+/////// seventh function start
+
 function randompass() {
   let randomNumber = function(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -122,10 +127,13 @@ function randompass() {
 
   document.getElementById("fun-7-label").innerHTML = temp;
 }
+///// seventh function end
 
-function deleteLetters(word) {
+// eighth function start
+
+function deleteLetters(word, bukva) {
   let pureStr = "";
-  let bukva = document.getElementById("deleteLetter").value;
+  word = word.toLowerCase();
   for (let i = 0; i < word.length; i++) {
     if (word[i] !== bukva) {
       pureStr += word[i];
@@ -136,7 +144,10 @@ function deleteLetters(word) {
 
 function deleteLettersClick() {
   let word = document.getElementById("message").value;
+  let bukva = document.getElementById("deleteLetter").value;
 
-  const temp = `${deleteLetters(word)}`;
+  const temp = deleteLetters(word, bukva);
   document.getElementById("fun-8-label").innerHTML = temp;
 }
+
+// eighth function end
