@@ -1,6 +1,6 @@
 :root {
-  --orange-color: #e64420;
-  --orange-shadow: rgb(230, 68, 32, 0.3);
+  --orange-color: #f8d406;
+  --orange-shadow: rgba(255, 251, 0, 0.3);
 }
 
 body {
@@ -72,4 +72,8 @@ li {
 
 ol {
   padding-inline-start: 20px;
+}
+
+#RandomArray {
+  width: 200px;
 }

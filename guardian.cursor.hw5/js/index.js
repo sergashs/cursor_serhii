@@ -1,26 +1,32 @@
-getRandomArray = (length, min, max) => {
-  const rarray = [];
+function getRandomArray(length, n, m) {
+  const randomarray = [];
   for (let i = 0; i < length; i++) {
-    rarray.push(Math.floor(Math.random() * (max - min + 1) + min));
+    randomarray.push(Math.floor(Math.random() * (m - n + 1) + n));
   }
-  return rarray;
-};
+  return randomarray;
+}
 
 function getRandomArrayPrint() {
-  const length = parseInt(document.getElementById("length").value);
-  const min = parseInt(document.getElementById("min").value);
-  const max = parseInt(document.getElementById("max").value);
-
-  // let temp = getRandomArray(length, min, max);
-  document.getElementById("RandomArray").innerHTML = `[${getRandomArray(
-    length,
-    min,
-    max
-  )}]`;
+  let length = document.getElementById("length").value;
+  let n = document.getElementById("min").value;
+  let m = document.getElementById("max").value;
+  const temp = `${getRandomArray(length, n, m)}`;
+  document.getElementById("RandomArray").innerHTML = temp;
 }
 
-function average(nums) {
-  return nums.reduce((a, b) => a + b) / nums.length;
+///////
+function average() {
+  let len = arguments.length;
+  let sum = 0;
+  for (let i = 0; i < len; i++) {
+    sum += +arguments[i];
+  }
+  return sum / len;
 }
 
-// console.log(average(20, 10, 50));
+function averagePrint() {
+  let arguments = document.getElementById("numerics").value;
+  const arr = arguments.split(" ");
+  document.getElementById("averageinArray").innerHTML = ` ${average(...arr)}`;
+  console.log(average(...arr));
+}
