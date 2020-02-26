@@ -267,17 +267,21 @@ main {
 footer {
   background: url(http://chernobyl-soul.com/img/optm_diz/bg.jpg) repeat 50% 9px
     #000;
-
-  text-align: center;
-  color: rgb(201, 197, 197);
   padding: 20px;
+}
+
+footer p {
+  color: rgb(143, 143, 143);
+  padding: 5px;
   font-style: italic;
-  font-size: 14px;
+  font-size: 13px;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
 }
 
 .border {
-  border-left: solid 1px rgb(73, 71, 71);
-  border-right: solid 1px rgb(73, 71, 71);
+  border: solid 1px rgb(73, 71, 71);
 }
 
 @media (max-width: 730px) {
