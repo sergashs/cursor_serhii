@@ -9,8 +9,16 @@ a {
   color: rgb(201, 197, 197);
 }
 
+html {
+  background: url(http://chernobyl-soul.com/img/optm_diz/bg.jpg) repeat 50% 9px
+    #000;
+}
+
 body {
   font-family: "Lato", sans-serif;
+  max-width: 1400px;
+  margin: auto;
+  background-color: #ffffff;
 }
 
 header {
@@ -25,9 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 20px 40px 20px 40px;
   background-image: url(https://lh3.googleusercontent.com/proxy/Ow8t2ikWeuNnwtaSEE8kAYYMYLYPMnL9eSz9nyK9sOBvaH3Q9BFrW5BZa_HMdGCAQVHC9kRxrQLcb1V4);
-  border-bottom: 1px solid #424242;
 }
 
 nav {
@@ -83,6 +89,7 @@ main {
 
 .informer1 {
   background: #332715;
+  width: 500px;
   padding: 50px;
   color: rgb(201, 197, 197);
   flex-grow: 1;
@@ -113,7 +120,8 @@ main {
 
 .informer2 {
   background: #bbb5af;
-  flex-grow: 2;
+  width: 900px;
+  flex-grow: 10;
   color: rgb(48, 48, 48);
   padding: 50px;
 }
@@ -131,7 +139,8 @@ main {
 .informer3 {
   flex-grow: 2;
   color: rgb(48, 48, 48);
-  padding: 50px 0px 50px 50px;
+  padding: 50px 0px 0px 50px;
+  width: 600px;
 }
 
 .informer3-comment-left img {
@@ -193,7 +202,7 @@ main {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: #494643;
+  background-color: #e2d9d0;
   border-radius: 10px;
 }
 
@@ -249,6 +258,28 @@ main {
   margin-right: 10px;
 }
 
+.section-title {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 40px 40px 0px 40px;
+}
+
+footer {
+  background: url(http://chernobyl-soul.com/img/optm_diz/bg.jpg) repeat 50% 9px
+    #000;
+
+  text-align: center;
+  color: rgb(201, 197, 197);
+  padding: 20px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.border {
+  border-left: solid 1px rgb(73, 71, 71);
+  border-right: solid 1px rgb(73, 71, 71);
+}
+
 @media (max-width: 730px) {
   .navbar-links {
     margin-top: 50px;
@@ -294,5 +325,9 @@ main {
 
   .informer1 {
     padding: 20px;
+  }
+
+  .section-title {
+    margin: 20px 20px 0px 20px;
   }
 }
