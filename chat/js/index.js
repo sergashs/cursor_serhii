@@ -26,7 +26,7 @@ function sendMesssage() {
   newdiv.innerHTML = `
   <div class="message-container">
   <div class="message-left-side">
-  <div class="avatar-chat"><img src="http://127.0.0.1:5500/img/ava.jfif" alt="avatar-chat"></div>
+  <div class="avatar-chat"><img src="./img/ava.jfif" alt="avatar-chat"></div>
   </div>
   <div class="message-content">
   <div class="message-title">Serhii <span>${now}</span></div>
