@@ -21,6 +21,7 @@ function sendMesssage() {
   var newdiv = document.createElement("div");
   let length = document.getElementById("getmessage").value;
   let temp = length;
+  var date = new Date();
 
   newdiv.innerHTML = `
 
