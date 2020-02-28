@@ -375,6 +375,8 @@ p {
   color: #b8bdbe;
   font-size: 16px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 .message{
@@ -442,4 +444,10 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.message-title span {
+font-size: 12px;
+margin-left: auto;
+order: 2;
 }
