@@ -126,7 +126,7 @@ body {
 
 .profile {
   display: flex;
-  padding: 20px;
+  padding: 27px 20px 20px 20px;
 }
 
 .ava {
@@ -276,7 +276,7 @@ p {
 
 
 *::selection {
-  background: #23492c;
+  background: var(--orange-color);
   color: #fff;
 }
 
