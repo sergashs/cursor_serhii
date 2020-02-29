@@ -119,9 +119,8 @@ body {
 
 .right-side {
   background: #2d3039;
-  max-width: 500px;
- 
   border-bottom-right-radius: 25px;
+  max-width: 600px;
 }
 
 .profile {
@@ -387,6 +386,7 @@ p {
 margin-top: 10px;
 color: #646870;
 font-size: 14px;
+word-wrap: break-word
 }
 
 
