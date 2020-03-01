@@ -6,14 +6,14 @@ const maxOfNumber = function(number) {
 function one() {
   const number = document.getElementById("fun-1").value;
   if (!isNaN(number)) {
-    let temp =
+    const temp =
       "You entered " +
       number +
       ". The largest digit of the number: " +
       maxOfNumber(number);
     document.getElementById("fun-1-label").innerHTML = temp;
   } else {
-    let temp = "ERROR, Try again";
+    const temp = "ERROR, Try again";
     document.getElementById("fun-1-label").innerHTML = temp;
   }
 }
@@ -36,11 +36,11 @@ function two() {
   if (!isNaN(namber) && !isNaN(pow)) {
     namber = parseInt(namber);
     pow = parseInt(pow);
-    let temp =
+    const temp =
       namber + " in degree " + pow + " equal " + calculatePow(namber, pow);
     document.getElementById("fun-2-label").innerHTML = temp;
   } else {
-    let temp = "You made a mistake. Please try again";
+    const temp = "You made a mistake. Please try again";
     document.getElementById("fun-2-label").innerHTML = temp;
   }
 }
@@ -55,7 +55,7 @@ const firstbiglet = function(name) {
 };
 
 function firstbigletter() {
-  let name = document.getElementById("fun-3").value;
+  const name = document.getElementById("fun-3").value;
   if (name) {
     const temp = firstbiglet(name);
     document.getElementById("fun-3-label").innerHTML = temp;
@@ -74,8 +74,8 @@ let amountaftertaxClear = function getprcnt(namber, prcnt) {
 function amountaftertax() {
   let namber = document.getElementById("fun-4").value;
   namber = parseInt(namber);
-  let prcnt = 20;
-  let temp = amountaftertaxClear(namber, prcnt);
+  const prcnt = 20;
+  const temp = amountaftertaxClear(namber, prcnt);
   document.getElementById("fun-4-label").innerHTML = temp.toFixed();
 }
 
@@ -89,8 +89,8 @@ const getRandomNumber = function(n, m) {
 };
 
 function five() {
-  let n = document.getElementById("min").value;
-  let m = document.getElementById("max").value;
+  const n = document.getElementById("min").value;
+  const m = document.getElementById("max").value;
 
   const temp = `${getRandomNumber(n, m)}`;
   document.getElementById("fun-5-label").innerHTML = temp;
@@ -101,15 +101,18 @@ function five() {
 ///// sixth function start
 
 function countLetter(word, letter) {
-  let stringsearch = letter.toLowerCase(),
-    str = word.toLowerCase();
-  for (i = count = 0; i < str.length; count += +(stringsearch === str[i++]));
+  let count = 0;
+  letter = letter.toLowerCase();
+  word = word.toLowerCase();
+  for (let i = 0; i < word.length; i++) {
+    word[i] === letter ? count++ : count;
+  }
   return count;
 }
 
 function countLetterPrint() {
-  let word = document.getElementById("getword").value;
-  let letter = document.getElementById("getletter").value;
+  const word = document.getElementById("getword").value;
+  const letter = document.getElementById("getletter").value;
   const temp = countLetter(word, letter);
   document.getElementById("fun-6-label").innerHTML = temp;
 }
@@ -118,13 +121,12 @@ function countLetterPrint() {
 
 /////// seventh function start
 
+let randomNumber = function(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
 function randompass() {
-  let randomNumber = function(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  };
-
   const temp = randomNumber(10000000, 80000008);
-
   document.getElementById("fun-7-label").innerHTML = temp;
 }
 ///// seventh function end
@@ -143,8 +145,8 @@ function deleteLetters(word, bukva) {
 }
 
 function deleteLettersClick() {
-  let word = document.getElementById("message").value;
-  let bukva = document.getElementById("deleteLetter").value;
+  const word = document.getElementById("message").value;
+  const bukva = document.getElementById("deleteLetter").value;
 
   const temp = deleteLetters(word, bukva);
   document.getElementById("fun-8-label").innerHTML = temp;
