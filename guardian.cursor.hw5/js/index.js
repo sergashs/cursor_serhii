@@ -44,35 +44,23 @@
 // }
 // //////////////////////////////////////////
 // //////////////////////////////////////////
-
 // function countPositiveNumbers(...arr) {
+//   let newArr = arr;
 //   let count = 0;
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] > 0) {
+//   for (let i = 0; i < newArr.length; i++) {
+//     if (newArr[i] > 0) {
 //       count++;
 //     }
-//     return count;
 //   }
+//   return count;
 // }
 
-// console.log(countPositiveNumbers(1, 2, 3, -5));
+// function countPositiveNumbersPrint() {
+//   let arr = document.getElementById("PositiveNumbers").value;
+//   let temp = `${countPositiveNumbers(...arr.split(" "))}`;
+//   document.getElementById("positiveNumbers").innerHTML = temp;
+// }
+// // //////////////////////////////////////////
+// // //////////////////////////////////////////
 
-// var arr = [1, 2, -3, -2];
-
-function countPositiveNumbers(...arr) {
-  let newArr = arr.join().split(",");
-  let count = 0;
-  for (let i = 0; i < newArr.length; i++) {
-    if (newArr[i] > 0) {
-      count++;
-    }
-  }
-  return count;
-}
-
-function countPositiveNumbersPrint() {
-  let arr = document.getElementById("PositiveNumbers").value;
-  let temp = `${countPositiveNumbers(...arr)}`;
-  document.getElementById("positiveNumbers").innerHTML = temp;
-  console.log(countPositiveNumbers(1, -2, 5, -6));
-}
+// getDividedByFive(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2) -> [55, 55]
