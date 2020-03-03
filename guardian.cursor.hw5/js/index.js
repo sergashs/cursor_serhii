@@ -73,3 +73,23 @@ function getDividedByFivePrint() {
 }
 // // //////////////////////////////////////////
 // // //////////////////////////////////////////
+
+function getMedian(...arr) {
+  let half = Math.floor(arr.length / 2);
+  arr.sort(function(a, b) {
+    return a - b;
+  });
+
+  if (arr.length % 2) {
+    return arr[half];
+  } else {
+    return (arr[half - 1] + arr[half]) / 2.0;
+  }
+}
+
+function getMedianPrint() {
+  let arr = document.getElementById("GetMedian").value;
+  let temp = `${getMedian(...arr)}`;
+  document.getElementById("getMedian").innerHTML = temp;
+  console.log(getMedian(...arr));
+}
