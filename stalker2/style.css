@@ -23,7 +23,7 @@ header {
   height: 160px;
   padding-top: 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/img/bg-header.jpg);
+    url(./img/bg-header.jpg);
   background-position: 100% 85%;
   background-size: cover;
   background-repeat: no-repeat;
