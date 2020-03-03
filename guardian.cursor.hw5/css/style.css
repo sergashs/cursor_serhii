@@ -1,6 +1,6 @@
 :root {
-  --orange-color: #d85c2b;
-  --orange-shadow: rgba(207, 88, 41, 0.3);
+  --orange-color: #595cff;
+  --orange-shadow: rgba(41, 71, 207, 0.3);
 }
 
 body {
@@ -36,11 +36,14 @@ button {
   margin: 0px 20px 0px 20px;
   margin: 10px;
   cursor: pointer;
+  transition: all 1s;
 }
 
 button:hover {
   background: var(--orange-color);
   box-shadow: 0 0 14px var(--orange-shadow);
+  filter: brightness(1.3);
+  transition: all 1s;
 }
 
 button:active {
