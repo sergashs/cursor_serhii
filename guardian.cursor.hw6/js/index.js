@@ -30,12 +30,14 @@ const students = [
 
 // function getSubjects(array, search) {
 //   return array.reduce(function(values, item) {
-//     item.name === search && values.push(item.subjects);
+//     if (item.name === search) {
+//       return Object.keys(item.subjects);
+//     }
 //     return values;
 //   }, []);
 // }
+// console.log(getSubjects(students, "Victor"));
 
-// console.log(getSubjects(students, "Anton"));
 ////1
 const getSubjects = student => {
   return Object.keys(student.subjects).map(item => {
