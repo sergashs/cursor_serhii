@@ -38,7 +38,7 @@ function filterEvenNumbers(...numbers) {
 
 function filterEvenNumbersPrint() {
   let numbers = document.getElementById("evenNumbers").value;
-  let temp = `${filterEvenNumbers(...numbers).join(" ")}`;
+  const temp = `${filterEvenNumbers(...numbers).join(" ")}`;
   document.getElementById("EvenNumbers").innerHTML = temp;
   console.log(filterEvenNumbers(...numbers));
 }
@@ -57,7 +57,7 @@ function countPositiveNumbers(...arr) {
 
 function countPositiveNumbersPrint() {
   let arr = document.getElementById("PositiveNumbers").value;
-  let temp = `${countPositiveNumbers(...arr.split(" "))}`;
+  const temp = `${countPositiveNumbers(...arr.split(" "))}`;
   document.getElementById("positiveNumbers").innerHTML = temp;
 }
 // //////////////////////////////////////////
@@ -68,7 +68,7 @@ function getDividedByFive(...numbers) {
 
 function getDividedByFivePrint() {
   let numbers = document.getElementById("GetDividedByFive").value;
-  let temp = `${getDividedByFive(...numbers.split(" ")).join(" ")}`;
+  const temp = `${getDividedByFive(...numbers.split(" ")).join(" ")}`;
   document.getElementById("getDividedByFive").innerHTML = temp;
 }
 // // //////////////////////////////////////////
@@ -89,7 +89,7 @@ function getMedian(...arr) {
 
 function getMedianPrint() {
   let arr = document.getElementById("GetMedian").value;
-  let temp = `${getMedian(...arr)}`;
+  const temp = `${getMedian(...arr.split(" "))}`;
   document.getElementById("getMedian").innerHTML = temp;
   console.log(getMedian(...arr));
 }
