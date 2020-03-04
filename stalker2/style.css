@@ -1,3 +1,13 @@
+@font-face {
+  font-family: stalkerLogo; /* Гарнитура шрифта */
+  src: url(./fonts/stalkerLogo.ttf);
+}
+
+@font-face {
+  font-family: stalkerBoycott; /* Гарнитура шрифта */
+  src: url(./fonts/Boycott.otf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +15,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f9f9f9;
 }
 
@@ -43,20 +53,20 @@ header {
 }
 
 .logo img {
-  width: 80px;
+  width: 70px;
   margin-right: 20px;
 }
 
 .left-side-header-text {
   color: #fff;
-  font-size: 30px;
-  font-weight: 900;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: stalkerBoycott;
 }
 
 .left-side-header-sub-text {
   color: #fff;
-  font-size: 17px;
-  font-style: italic;
+  font-size: 10px;
 }
 
 header nav ul {
