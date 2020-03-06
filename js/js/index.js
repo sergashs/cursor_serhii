@@ -20,42 +20,12 @@
 
 // count();
 
-const students = [
-  {
-    name: "Tanya",
-    course: 3,
-    subjects: {
-      math: [4, 4, 3, 4],
-      algorithms: [3, 3, 3, 4, 4, 4],
-      data_science: [5, 5, 3, 4]
-    }
-  },
-  {
-    name: "Victor",
-    course: 4,
-    subjects: {
-      physics: [5, 5, 5, 3],
-      economics: [2, 3, 3, 3, 3, 5],
-      geometry: [5, 5, 2, 3, 5]
-    }
-  },
-  {
-    name: "Anton",
-    course: 2,
-    subjects: {
-      statistics: [4, 5, 5, 5, 5, 3, 4, 3, 4, 5],
-      english: [5, 3],
-      cosmology: [5, 5, 5, 5]
-    }
-  }
-];
+var myCrazyObject = {
+  name: "Нелепый объект",
+  "some array": [7, 9, { purpose: "путаница", number: 123 }, 3.3],
+  "random animal": "Банановая акула"
+};
 
-function getSubjects(array, search) {
-  return array.reduce(function(values, item) {
-    if (item.name === search) {
-      return Object.keys(item.subjects);
-    }
-    return values;
-  }, []);
-}
-console.log(getSubjects(students, "Victor"));
+// console.log(myCrazyObject["some array"]);
+
+console.log(Array.from(myCrazyObject["some array"]));
