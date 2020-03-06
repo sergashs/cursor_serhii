@@ -240,7 +240,7 @@ header nav ul li a:hover {
   header {
     background-color: #081c24;
     /* padding-top: 60px; */
-    padding: 10px 20px 60px 20px;
+    padding: 20px 20px 60px 20px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(./img/bg-header.jpg);
     background-position: 100% 85%;
@@ -260,5 +260,11 @@ header nav ul li a:hover {
 
   .left-side-header-sub-text {
     font-size: 12px;
+  }
+  .toggle-button {
+    top: 30px;
+    right: 20px;
+    width: 25px;
+    height: 21px;
   }
 }
