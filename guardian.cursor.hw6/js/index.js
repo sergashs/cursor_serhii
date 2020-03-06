@@ -36,11 +36,11 @@ function getSubjects(array, search) {
     return values;
   }, []);
 }
-console.log(getSubjects(students, "Victor"));
+console.log(getSubjects(students, "Tanya"));
 document.writeln(
   `<p>Список предметов для студента <b>${
     students[1].name
-  }</b> -  <b>${getSubjects(students, "Victor")}</b></p>`
+  }</b> -  <b>${getSubjects(students, "Tanya")}</b></p>`
 );
 
 ////
