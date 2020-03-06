@@ -28,27 +28,19 @@ const students = [
   }
 ];
 
-// function getSubjects(array, search) {
-//   return array.reduce(function(values, item) {
-//     if (item.name === search) {
-//       return Object.keys(item.subjects);
-//     }
-//     return values;
-//   }, []);
-// }
-// console.log(getSubjects(students, "Victor"));
-
-////1
-const getSubjects = student => {
-  return Object.keys(student.subjects).map(item => {
-    return (item.charAt(0).toUpperCase() + item.slice(1)).replace(/_/g, " ");
-  });
-};
-console.log(getSubjects(students[0]));
+function getSubjects(array, search) {
+  return array.reduce(function(values, item) {
+    if (item.name === search) {
+      return Object.keys(item.subjects);
+    }
+    return values;
+  }, []);
+}
+console.log(getSubjects(students, "Victor"));
 document.writeln(
   `<p>Список предметов для студента <b>${
-    students[0].name
-  }</b> -  <b>${getSubjects(students[0])}</b></p>`
+    students[1].name
+  }</b> -  <b>${getSubjects(students, "Victor")}</b></p>`
 );
 
 ////
@@ -111,9 +103,9 @@ const calculateWordLetters = string => {
       return acc;
     }, {});
 };
-
+const word = "Tanya";
 console.log(calculateWordLetters("Tanya"));
-document.write(`<li>6) Кількість літер в слові <b>${word}<b></li>`);
+document.write(`<p>Кількість літер в слові <b>${word}<b></p>`);
 Object.entries(calculateWordLetters(word)).forEach(([key, value]) => {
   document.write(` \n${key}:  ${value}  `);
 });
