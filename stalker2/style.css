@@ -30,14 +30,14 @@ main {
 }
 
 header {
-  background-color: #081c24;
+  background-color: #1b1b1b;
   padding-top: 20px;
   padding-bottom: 60px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(./img/bg-header.jpg);
   background-position: 100% 85%;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   position: relative;
 }
 
@@ -56,17 +56,19 @@ header {
 .logo img {
   width: 70px;
   margin-right: 20px;
+  border: solid 2px#bebebe;
+  border-radius: 50px;
 }
 
 .left-side-header-text {
-  color: #fff;
+  color: #e5e5e5;
   font-size: 35px;
   font-weight: 500;
   font-family: stalkerBoycott;
 }
 
 .left-side-header-sub-text {
-  color: #fff;
+  color: #bebebe;
   font-size: 13px;
 }
 
@@ -118,12 +120,13 @@ header nav ul li a:hover {
   font-size: 13px;
   text-align: center;
   z-index: 1000;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./img/footer-bg.jpg);
+  background-color: #1b1b1b;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://stalkers-mod.ru/_ld/1/25380629.jpg);
   background-position: 100% 85%;
   background-size: cover;
-  background-repeat: no-repeat;
-  color: #e5e5e5;
+  background-repeat: no-repeat; */
+  color: #bebebe;
 }
 
 .toggle-button {
@@ -429,14 +432,13 @@ header nav ul li a:hover {
   }
 
   header {
-    background-color: #081c24;
     /* padding-top: 60px; */
     padding: 20px 20px 60px 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(./img/bg-header.jpg);
     background-position: 100% 85%;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     position: relative;
     z-index: 1;
   }
