@@ -6,22 +6,16 @@ function generatecolor() {
 }
 
 function generateBlocks() {
-  for (i = 1; i < 26; i++) {
-    let board = document.createElement("div");
-
-    board.style = "background-color: " + generatecolor();
-
-    // "background-color: " +
-    // "#" +
-    // (Math.random().toString(16) + "000000").substring(2, 8).toUpperCase();
-
+  const container = document.getElementById("container-blocks");
+  container.innerHTML = "";
+  for (let i = 1; i < 26; i++) {
+    const board = document.createElement("div");
+    board.style.backgroundColor = generatecolor();
     board.className = "block";
-    document.getElementById("container-blocks").appendChild(board);
+    container.appendChild(board);
   }
 }
 
-generateBlocks();
-
-// function generateColor() {
-//   return '#' + Math.floor(Math.random()*16777215).toString(16)
-// }
+setInterval(() => {
+  generateBlocks();
+}, 2000);
