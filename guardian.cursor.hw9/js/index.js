@@ -18,4 +18,4 @@ function generateBlocks() {
 
 setInterval(() => {
   generateBlocks();
-}, 5000);
+}, 1000);
