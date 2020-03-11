@@ -2,18 +2,27 @@ body {
   width: 100wh;
   height: 100vh;
   background-color: rgb(102, 101, 101);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
   color: #fff;
   font-family: "Karla", sans-serif;
   font-size: 36px;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 header {
   position: absolute;
+  top: 10px;
   left: 20px;
-  top: 20px;
-  color: #000;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 20px;
 }
