@@ -33,6 +33,7 @@ header {
   background-color: #1b1b1b;
   padding-top: 20px;
   padding-bottom: 65px;
+  /* height: 140px; */
   /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(./img/bg-header.jpg);
   background-position: 100% 85%;
@@ -51,12 +52,10 @@ header {
 
 .left-side-header {
   display: flex;
-  align-items: center;
 }
 
 .logo {
   height: 50px;
-  align-items: center;
 }
 
 .logo img {
