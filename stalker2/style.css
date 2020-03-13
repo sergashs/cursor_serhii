@@ -72,6 +72,10 @@ header {
   transition: all 1s;
 }
 
+.container-for-side-header-text {
+  align-self: center;
+}
+
 .left-side-header-text {
   color: #e5e5e5;
   font-size: 30px;
