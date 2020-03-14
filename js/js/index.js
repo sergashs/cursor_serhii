@@ -76,5 +76,14 @@ function hackertextmade(input) {
 function hackertextmadePrint() {
   let input = document.getElementById("funcget4").value.toLowerCase();
   let temp = hackertextmade(input);
-  document.getElementById("function4").innerHTML += `${temp.split(" ")}`;
+  document.getElementById("function4").innerHTML += temp;
 }
+
+// const input = document.getElementById("funcget4");
+// input.addEventListener("input", function(e) {
+//   const lastChar = e.target.value[e.target.value.length - 1];
+//   const isEnLetterRegEx = /[a-zA-Z]/;
+//   if (!isEnLetterRegEx.test(lastChar)) {
+//     return alert("plz print on eng");
+//   }
+// });

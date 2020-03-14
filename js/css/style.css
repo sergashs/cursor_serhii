@@ -75,6 +75,7 @@ textarea {
   margin-bottom: 10px;
   transition: ease-in 0.5s;
   resize: none;
+  margin-right: 10px;
 }
 
 textarea:focus {
