@@ -1,5 +1,5 @@
 function generatecolor() {
-  result = (Math.random().toString(16) + "000000")
+  const result = (Math.random().toString(16) + "000000")
     .substring(2, 8)
     .toUpperCase();
   return "#" + result;
