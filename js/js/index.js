@@ -55,29 +55,30 @@
 
 // console.log(randomString);
 
-function hackertextmade(input) {
-  let output = "";
-  for (i = 0; i < input.length; i++) {
-    if (input[i] == "a") {
-      output += 4;
-    } else if (input[i] == "e") {
-      output += 3;
-    } else if (input[i] == "i") {
-      output += "l";
-    } else if (input[i] == "o") {
-      output += "0";
-    } else {
-      output += input[i];
-    }
-  }
-  return output;
-}
+/* хакерський текст */
+// function hackertextmade(input) {
+//   let output = "";
+//   for (i = 0; i < input.length; i++) {
+//     if (input[i] == "a") {
+//       output += 4;
+//     } else if (input[i] == "e") {
+//       output += 3;
+//     } else if (input[i] == "i") {
+//       output += "l";
+//     } else if (input[i] == "o") {
+//       output += "0";
+//     } else {
+//       output += input[i];
+//     }
+//   }
+//   return output;
+// }
 
-function hackertextmadePrint() {
-  let input = document.getElementById("funcget4").value.toLowerCase();
-  let temp = hackertextmade(input);
-  document.getElementById("function4").innerHTML += temp;
-}
+// function hackertextmadePrint() {
+//   let input = document.getElementById("funcget4").value.toLowerCase();
+//   let temp = hackertextmade(input);
+//   document.getElementById("function4").innerHTML += temp;
+// }
 
 // const input = document.getElementById("funcget4");
 // input.addEventListener("input", function(e) {
@@ -87,3 +88,53 @@ function hackertextmadePrint() {
 //     return alert("plz print on eng");
 //   }
 // });
+
+/* кінець хакерського тексту */
+
+// var name = prompt("Как вас зовут?");
+
+// if (name == "null") {
+//   console.log("Вы отказались назвать свое имя");
+// } else if (name == name.replace(/[^0-9.]/g, "")) {
+//   console.log("Пишите только буквы на английском");
+// } else {
+//   console.log("Привет, " + name);
+// }
+
+// Создаем массив со словами
+var words = ["программа", "макака", "прекрасный", "оладушек"];
+// Выбираем случайное слово
+var word = words[Math.floor(Math.random() * words.length)];
+// Создаем итоговый массив
+var answerArray = [];
+for (var i = 0; i < word.length; i++) {
+  answerArray[i] = "_";
+}
+var remainingLetters = word.length;
+// Игровой цикл
+
+while (remainingLetters > 0) {
+  // Показываем состояние игры
+  alert(answerArray.join(" "));
+
+  // Запрашиваем вариант ответа
+  var guess = prompt("Угадайте букву, или нажмите Отмена для выхода из игры.");
+  if (guess === null) {
+    // Выходим из игрового цикла
+    break;
+  } else if (guess.length !== 1) {
+    alert("Пожалуйста, введите одиночную букву.");
+  } else {
+    // Обновляем состояние игры
+    for (var j = 0; j < word.length; j++) {
+      if (word[j] === guess) {
+        answerArray[j] = guess;
+        remainingLetters--;
+      }
+    }
+  }
+  // Конец игрового цикла
+}
+// Отображаем ответ и поздравляем игрока
+alert(answerArray.join(" "));
+alert("Отлично! Было загадано слово " + word);
