@@ -5,13 +5,12 @@ function generatecolor() {
   return "#" + result;
 }
 
-document.body.onclick = function() {
+function printcolor() {
   document.body.style.backgroundColor = generatecolor();
-
   document.body.innerText = document.body.style.backgroundColor;
   const color = document.createElement("p");
   color.className = "color";
-};
+}
 
 let match = "rgb(111, 103, 178)";
 
@@ -27,3 +26,9 @@ function rgb2hex(rgb) {
         ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2)
     : "";
 }
+
+document.addEventListener("keypress", function(event) {
+  if (event.keyCode == 13) {
+    printcolor();
+  }
+});
