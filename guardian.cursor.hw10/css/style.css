@@ -4,7 +4,7 @@ body {
   color: #b8bdbe;
   padding: 20px;
   font-size: 18px;
-  height: 100%;
+  position: relative;
 }
 
 h1 {
@@ -20,6 +20,7 @@ ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  flex: 1 0 auto;
 }
 
 ul li {
@@ -54,7 +55,7 @@ li:hover {
   color: rgb(102, 12, 12);
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .portfolio-experiment .experiment-title {
   outline: none;
@@ -62,7 +63,7 @@ li:hover {
   text-align: center;
   font-family: "Roboto", monospace;
   position: absolute;
-  bottom: 90px;
+  bottom: 20px;
 }
 .portfolio-experiment .experiment-title,
 .portfolio-experiment .experiment-title * {
