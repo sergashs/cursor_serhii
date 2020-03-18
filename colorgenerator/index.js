@@ -7,7 +7,8 @@ function generatecolor() {
 
 function printcolor() {
   document.body.style.backgroundColor = generatecolor();
-  document.body.innerText = document.body.style.backgroundColor;
+  document.getElementById("scriptColor").innerText =
+    document.body.style.backgroundColor;
   const color = document.createElement("p");
   color.className = "color";
 }

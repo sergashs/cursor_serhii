@@ -1,28 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
-  width: 100wh;
+  padding: 20px;
   height: 100vh;
-  background-color: rgb(102, 101, 101);
-  overflow: hidden;
-  color: #fff;
+  background-color: rgb(140, 106, 157);
+  color: rgb(0, 0, 0);
   font-family: "Karla", sans-serif;
   font-size: 36px;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
 }
 
 header {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+  font-size: 35px;
+  flex: 1 0 auto;
+  align-self: flex-start;
 }
 
 footer {
-  position: absolute;
-  bottom: 20px;
-  font-size: 20px;
+  font-size: 18px;
+  flex: 0 0 auto;
+  align-self: flex-start;
+}
+
+#scriptColor {
+  flex: 1 0 auto;
+  font-size: 45px;
+}
+
+b {
+  font-weight: bold;
 }

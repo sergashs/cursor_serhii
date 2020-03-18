@@ -101,40 +101,16 @@
 //   console.log("Привет, " + name);
 // }
 
-// Создаем массив со словами
-var words = ["программа", "макака", "прекрасный", "оладушек"];
-// Выбираем случайное слово
-var word = words[Math.floor(Math.random() * words.length)];
-// Создаем итоговый массив
-var answerArray = [];
-for (var i = 0; i < word.length; i++) {
-  answerArray[i] = "_";
-}
-var remainingLetters = word.length;
-// Игровой цикл
-
-while (remainingLetters > 0) {
-  // Показываем состояние игры
-  alert(answerArray.join(" "));
-
-  // Запрашиваем вариант ответа
-  var guess = prompt("Угадайте букву, или нажмите Отмена для выхода из игры.");
-  if (guess === null) {
-    // Выходим из игрового цикла
-    break;
-  } else if (guess.length !== 1) {
-    alert("Пожалуйста, введите одиночную букву.");
-  } else {
-    // Обновляем состояние игры
-    for (var j = 0; j < word.length; j++) {
-      if (word[j] === guess) {
-        answerArray[j] = guess;
-        remainingLetters--;
-      }
+function areArraysSame(array1, array2) {
+  array1 = [1, 2, 3];
+  array2 = [1, 2, 3];
+  for (let i = 0; i < array2.length; i++) {
+    if (array1 == array2) {
+      return true;
+    } else {
+      return false;
     }
   }
-  // Конец игрового цикла
 }
-// Отображаем ответ и поздравляем игрока
-alert(answerArray.join(" "));
-alert("Отлично! Было загадано слово " + word);
+
+console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
