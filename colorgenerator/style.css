@@ -51,6 +51,7 @@ footer {
 #scriptColor {
   flex: 1 0 auto;
   font-size: 45px;
+  text-align: center;
 }
 
 b {
