@@ -26,7 +26,7 @@ function printcolor() {
   ).innerText = color = document.body.style.backgroundColor = generatecolor();
 
   document.body.style.color = pickTextColorBasedOnBgColorSimple(
-    generatecolor(),
+    color,
     "#FFFFFF",
     "#000000"
   );
