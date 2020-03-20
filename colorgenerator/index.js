@@ -5,7 +5,7 @@ function generatecolor() {
   return "#" + result;
 }
 
-if (document.documentElement.clientWidth < 768) {
+if (document.documentElement.clientWidth < 868) {
   document.getElementById("scriptColor").innerHTML = "Touch to <b>screen</b>";
   console.log("mobile");
   function pickTextColorBasedOnBgColorSimple(bgColor, lightColor, darkColor) {
@@ -17,7 +17,7 @@ if (document.documentElement.clientWidth < 768) {
     return result;
   }
 
-  document.body.onclick = function() {
+  document.getElementById("scriptColor").onclick = function() {
     document.getElementById(
       "scriptColor"
     ).innerText = color = document.body.style.backgroundColor = generatecolor();
@@ -58,8 +58,8 @@ if (document.documentElement.clientWidth < 768) {
   });
 }
 
-// document.body.style.color = "#ffffff";
-
-// if(){
-//   document.body.style.color = "#ffffff";
-// }
+const toggleButton = document.getElementsByClassName("updateLink")[0];
+const navbarLinks = document.getElementsByClassName("updatesList")[0];
+toggleButton.addEventListener("click", () => {
+  navbarLinks.classList.toggle("active");
+});

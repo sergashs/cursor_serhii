@@ -37,7 +37,7 @@ h1::after {
   content: "#hex";
   position: absolute;
   font-size: 14px;
-  right: 2px;
+  right: 0;
   top: -5px;
   font-weight: bold;
 }
@@ -56,4 +56,71 @@ footer {
 
 b {
   font-weight: bold;
+}
+
+p {
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+p:last-child {
+  border: none;
+}
+
+.updateLink {
+  position: relative;
+  cursor: pointer;
+  position: relative;
+}
+
+.updateLink::after {
+  content: "___";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  color: inherit;
+}
+
+.updatesList {
+  display: none;
+  background-color: aliceblue;
+  width: 210px;
+}
+
+.updatesList.active {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  height: 140px;
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+  display: block;
+  color: black;
+}
+
+.updatesList.active::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  right: 10px;
+  bottom: -7px;
+  background-color: aliceblue;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 868px) {
+  #scriptColor {
+    /* flex: 1 0 auto; */
+    font-size: 45px;
+    text-align: center;
+    height: 90%;
+    /* align-self: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
