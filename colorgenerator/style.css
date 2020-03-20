@@ -6,7 +6,7 @@
 body {
   padding: 20px;
   height: 100vh;
-  background-color: rgb(140, 106, 157);
+  background-color: #fd9cc7;
   color: rgb(0, 0, 0);
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -26,12 +26,19 @@ h1 {
   position: relative;
 }
 
+h1::before {
+  content: "Generator";
+  position: absolute;
+  left: 95px;
+  font-weight: bold;
+}
+
 h1::after {
-  content: "hex";
+  content: "#hex";
   position: absolute;
   font-size: 14px;
-  right: 0;
-  top: -10px;
+  right: 2px;
+  top: -5px;
   font-weight: bold;
 }
 

@@ -21,4 +21,6 @@ const getRandomChinese = async length => {
   return chars.join("");
 };
 
-getRandomChinese(length).then(el => console.log(el));
+getRandomChinese(length).then(
+  el => (document.getElementById("result").innerText = el)
+);

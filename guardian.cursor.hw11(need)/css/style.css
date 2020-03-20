@@ -76,3 +76,9 @@ li {
 ol {
   padding-inline-start: 20px;
 }
+
+#result {
+  color: var(--orange-color);
+  text-shadow: 0 0 10px var(--orange-shadow);
+  font-size: 30px;
+}
