@@ -8,8 +8,7 @@ body {
   height: 100vh;
   background-color: rgb(140, 106, 157);
   color: rgb(0, 0, 0);
-  font-family: "Karla", sans-serif;
-  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -18,9 +17,22 @@ body {
 }
 
 header {
-  font-size: 35px;
   flex: 1 0 auto;
   align-self: flex-start;
+}
+
+h1 {
+  font-size: 35px;
+  position: relative;
+}
+
+h1::after {
+  content: "hex";
+  position: absolute;
+  font-size: 14px;
+  right: 0;
+  top: -10px;
+  font-weight: bold;
 }
 
 footer {

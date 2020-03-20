@@ -5,27 +5,31 @@ function generatecolor() {
   return "#" + result;
 }
 
-function printcolor() {
-  document.body.style.backgroundColor = generatecolor();
-  document.getElementById("scriptColor").innerText =
-    document.body.style.backgroundColor;
-  const color = document.createElement("p");
-  color.className = "color";
+// this can be any color
+pickTextColorBasedOnBgColorSimple(
+  document.body.style.color,
+  "#FFFFFF",
+  "#000000"
+);
+function pickTextColorBasedOnBgColorSimple(bgColor, lightColor, darkColor) {
+  var color = bgColor.charAt(0) === "#" ? bgColor.substring(1, 7) : bgColor;
+  var r = parseInt(color.substring(0, 2), 16); // hexToR
+  var g = parseInt(color.substring(2, 4), 16); // hexToG
+  var b = parseInt(color.substring(4, 6), 16); // hexToB
+  result = r * 0.299 + g * 0.587 + b * 0.114 > 186 ? darkColor : lightColor;
+  return result;
 }
 
-let match = "rgb(111, 103, 178)";
+function printcolor() {
+  document.getElementById(
+    "scriptColor"
+  ).innerText = color = document.body.style.backgroundColor = generatecolor();
 
-function rgb2hex(rgb) {
-  var rgb = rgb.match(
-    /^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i
+  document.body.style.color = pickTextColorBasedOnBgColorSimple(
+    generatecolor(),
+    "#FFFFFF",
+    "#000000"
   );
-
-  return rgb && rgb.length === 4
-    ? "#" +
-        ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) +
-        ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) +
-        ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2)
-    : "";
 }
 
 document.addEventListener("keypress", function(event) {
@@ -33,3 +37,9 @@ document.addEventListener("keypress", function(event) {
     printcolor();
   }
 });
+
+// document.body.style.color = "#ffffff";
+
+// if(){
+//   document.body.style.color = "#ffffff";
+// }

@@ -101,16 +101,28 @@
 //   console.log("Привет, " + name);
 // }
 
-function areArraysSame(array1, array2) {
-  array1 = [1, 2, 3];
-  array2 = [1, 2, 3];
-  for (let i = 0; i < array2.length; i++) {
-    if (array1 == array2) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-}
+// function areArraysSame(array1, array2) {
+//   array1 = [1, 2, 3];
+//   array2 = [1, 2, 3];
+//   for (let i = 0; i < array2.length; i++) {
+//     if (array1 == array2) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+// }
 
-console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
+// console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
+
+var a = 5;
+var b = 2;
+var func = (function f() {
+  return a + b;
+},
+function g() {
+  return 23;
+})();
+typeof typeof func;
+
+console.log(m);
