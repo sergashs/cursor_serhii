@@ -114,15 +114,9 @@
 // }
 
 // console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
-
-var a = 5;
+var a = 1;
 var b = 2;
 var func = (function f() {
   return a + b;
-},
-function g() {
-  return 23;
 })();
-typeof typeof func;
-
-console.log(m);
+func;
