@@ -362,7 +362,7 @@ p {
     /* max-width: 180px; */
     /* background: #21242d; */
    width: 100%;
-   margin-bottom: 10px;
+ 
   }
 
 }
@@ -375,6 +375,7 @@ p {
   font-size: .7rem;
   padding: 5px;
  font-weight: 600;
+ margin-bottom: 10px;
 }
 
 .work-item-block-text{
@@ -384,11 +385,15 @@ p {
 }
 
 .work-item-block-text-icon{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #62626d;
   /* color: rgb(230, 68, 32, 0.7); */
   margin-bottom: 10px;
   transition: ease 1s;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 
 
@@ -399,3 +404,4 @@ p {
 .work-item-block:hover{
   background: #191b22;
 }
+
