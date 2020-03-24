@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #494e56;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #f6f6f6;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+p {
+  align-self: flex-start;
+  margin: 10px 10px 10px 0px;
+  color: #bbbec7;
+}
+
+p span {
+  color: #fed32c;
+}
+
+.block {
+  margin: 5px;
+}
+
+p img {
+  margin: auto;
+  display: block;
+}

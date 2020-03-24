@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Work - React #1</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Home Work - React #1</h1>
+    <div class="block">
+      <p>Я не зміг залити дз на гіт, тому публікую її так)</p>
+      <p>Виглядає все ніби добре, скрін</p>
+      <p><img src="./img/post.png" alt="" /></p>
+      <p><span>src/App.js:</span></p>
+      <pre
+        class="hljs"
+        style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: rgb(255, 255, 255); width: 830px; border-radius: 5px;"
+      ><span class="hljs-keyword" style="color: rgb(252, 194, 140);">import</span> React <span class="hljs-keyword" style="color: rgb(252, 194, 140);">from</span> <span class="hljs-string" style="color: rgb(162, 252, 162);">"react"</span>;
+      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">import</span> <span class="hljs-string" style="color: rgb(162, 252, 162);">"./App.css"</span>;
+      
+      <span class="hljs-keyword" style="color: rgb(252, 194, 140);">import</span> Post <span class="hljs-keyword" style="color: rgb(252, 194, 140);">from</span> <span class="hljs-string" style="color: rgb(162, 252, 162);">"./components/post/"</span>;
+      
+      <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> <span class="hljs-title" style="color: rgb(255, 255, 170);">App</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span> (
+          <span class="xml"><span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"App"</span>&gt;</span>
+            <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">Post</span>
+              <span class="hljs-attr">name</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"Anakin skywalker"</span>
+              <span class="hljs-attr">nick</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"@dart_vader"</span>
+              <span class="hljs-attr">date</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"26 февр."</span>
+              <span class="hljs-attr">avatar</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Anakin-Jedi.jpg/220px-Anakin-Jedi.jpg"</span>
+              <span class="hljs-attr">message</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"WTF? Who is Ray? Why she is Skywalker? Luke...?"</span>
+              <span class="hljs-attr">imginmsg</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"https://specials-images.forbesimg.com/imageserve/5e63b3c8e1e617000759130e/960x0.jpg"</span>
+              <span class="hljs-attr">comments</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"200"</span>
+              <span class="hljs-attr">retweets</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"150"</span>
+              <span class="hljs-attr">hearts</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"500"</span>
+            /&gt;</span>
+          <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+        );
+      }
+      
+      export default App;
+      </span></pre>
+    </div>
+
+    <div class="block">
+      <p><span>src/components/post/index.js:</span></p>
+      <pre
+        class="hljs"
+        style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: rgb(255, 255, 255); width: 830px; border-radius: 5px;"
+      ><span class="xml">import React from "react";
+
+        function post(props) </span><span class="hljs-template-variable" style="color: rgb(173, 229, 252);">{
+          return (
+            &lt;div class="post"&gt;
+              &lt;div class="avatar"&gt;
+                &lt;img src={props.avatar}</span><span class="xml"> /&gt;
+              <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+              <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"post-content"</span>&gt;</span>
+                <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"author_name"</span>&gt;</span>
+                  </span><span class="hljs-template-variable" style="color: rgb(173, 229, 252);">{props.name}</span><span class="xml">
+                  <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">span</span>&gt;</span>
+                    </span><span class="hljs-template-variable" style="color: rgb(173, 229, 252);">{props.nick}</span><span class="xml"> · </span><span class="hljs-template-variable" style="color: rgb(173, 229, 252);">{props.date}</span><span class="xml">
+                  <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">span</span>&gt;</span>
+                <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"message"</span>&gt;</span>
+                  <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">p</span>&gt;</span></span><span class="hljs-template-variable" style="color: rgb(173, 229, 252);">{props.message}</span><span class="xml"><span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">p</span>&gt;</span>
+                  <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">img</span> <span class="hljs-attr">src</span>=</span></span><span class="hljs-template-variable" style="color: rgb(173, 229, 252);">{props.imginmsg}</span><span class="xml"><span class="hljs-tag" style="color: rgb(98, 200, 243);"> /&gt;</span>
+                  <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"icons"</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"icon"</span>&gt;</span>
+                      <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"fa fa-comment-o"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"true"</span>&gt;</span><span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">i</span>&gt;</span>
+                      <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">span</span>&gt;</span></span><span class="hljs-template-variable" style="color: rgb(173, 229, 252);">{props.comments}</span><span class="xml"><span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">span</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"icon"</span>&gt;</span>
+                      <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"fa fa-retweet"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"true"</span>&gt;</span><span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">i</span>&gt;</span>
+                      <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">span</span>&gt;</span></span><span class="hljs-template-variable" style="color: rgb(173, 229, 252);">{props.retweets}</span><span class="xml"><span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">span</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"icon"</span>&gt;</span>
+                      <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"fa fa-heart-o"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"true"</span>&gt;</span><span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">i</span>&gt;</span>
+                      <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">span</span>&gt;</span></span><span class="hljs-template-variable" style="color: rgb(173, 229, 252);">{props.hearts}</span><span class="xml"><span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">span</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"icon"</span>&gt;</span>
+                      <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"fa fa-share-square-o"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string" style="color: rgb(162, 252, 162);">"true"</span>&gt;</span><span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">i</span>&gt;</span>
+                      <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;<span class="hljs-name" style="font-weight: 700;">span</span>&gt;</span></span><span class="hljs-template-variable" style="color: rgb(173, 229, 252);">{props.share}</span><span class="xml"><span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">span</span>&gt;</span>
+                    <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+                  <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+              <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+            <span class="hljs-tag" style="color: rgb(98, 200, 243);">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+          );
+        }
+        
+        export default post;
+        </span></pre>
+    </div>
+
+    <div class="block">
+      <p><span>src/index.css:</span></p>
+      <pre
+        class="hljs"
+        style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: rgb(255, 255, 255); width: 830px; border-radius: 5px;"
+      ><span class="hljs-selector-tag" style="color: rgb(252, 194, 140);">body</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">margin</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">font-family</span>: -apple-system, BlinkMacSystemFont, <span class="hljs-string" style="color: rgb(162, 252, 162);">"Segoe UI"</span>, <span class="hljs-string" style="color: rgb(162, 252, 162);">"Roboto"</span>, <span class="hljs-string" style="color: rgb(162, 252, 162);">"Oxygen"</span>,
+          <span class="hljs-string" style="color: rgb(162, 252, 162);">"Ubuntu"</span>, <span class="hljs-string" style="color: rgb(162, 252, 162);">"Cantarell"</span>, <span class="hljs-string" style="color: rgb(162, 252, 162);">"Fira Sans"</span>, <span class="hljs-string" style="color: rgb(162, 252, 162);">"Droid Sans"</span>, <span class="hljs-string" style="color: rgb(162, 252, 162);">"Helvetica Neue"</span>,
+          sans-serif;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">-webkit-font-smoothing</span>: antialiased;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">-moz-osx-font-smoothing</span>: grayscale;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">background-color</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">#494e56</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">color</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">#e4e5e5</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">display</span>: flex;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">flex-direction</span>: column;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">align-items</span>: center;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">justify-content</span>: center;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">height</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">100vh</span>;
+      }
+      
+      <span class="hljs-selector-tag" style="color: rgb(252, 194, 140);">p</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">margin</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>;
+      }
+      
+      <span class="hljs-selector-class" style="color: rgb(173, 229, 252);">.post</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">display</span>: flex;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">max-width</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">600px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">background-color</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">#20242a</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">padding</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">20px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">border-radius</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">10px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">border</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">2px</span> solid <span class="hljs-number" style="color: rgb(211, 99, 99);">#2b3038</span>;
+      }
+      
+      <span class="hljs-selector-class" style="color: rgb(173, 229, 252);">.avatar</span> <span class="hljs-selector-tag" style="color: rgb(252, 194, 140);">img</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">width</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">90px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">height</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">90px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">border-radius</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">90px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">cursor</span>: pointer;
+      }
+      
+      <span class="hljs-selector-class" style="color: rgb(173, 229, 252);">.author_name</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">font-family</span>: <span class="hljs-string" style="color: rgb(162, 252, 162);">"Segoe UI"</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">font-weight</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">700</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">margin-bottom</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">5px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">font-size</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">18px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">cursor</span>: pointer;
+      }
+      
+      <span class="hljs-selector-class" style="color: rgb(173, 229, 252);">.author_name</span> <span class="hljs-selector-tag" style="color: rgb(252, 194, 140);">span</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">font-family</span>: <span class="hljs-string" style="color: rgb(162, 252, 162);">"Segoe UI"</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">font-weight</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">400</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">font-size</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">17px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">margin-left</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">15px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">color</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">#5d6166</span>;
+      }
+      
+      <span class="hljs-selector-class" style="color: rgb(173, 229, 252);">.post-content</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">margin-left</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">20px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">font-size</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">15px</span>;
+      }
+      
+      <span class="hljs-selector-class" style="color: rgb(173, 229, 252);">.message</span> <span class="hljs-selector-tag" style="color: rgb(252, 194, 140);">img</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">margin-top</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">10px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">width</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">100%</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">border-radius</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">10px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">cursor</span>: pointer;
+      }
+      
+      <span class="hljs-selector-tag" style="color: rgb(252, 194, 140);">button</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">border</span>: none;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">outline</span>: none;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">background-color</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">#fed32c</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">cursor</span>: pointer;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">color</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">#111d2a</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">width</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">200px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">padding</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">10px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">border-radius</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">3px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">font-size</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">15px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">font-weight</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">700</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">border-bottom</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">5px</span> solid <span class="hljs-number" style="color: rgb(211, 99, 99);">#977f1e</span>;
+      }
+      
+      <span class="hljs-selector-class" style="color: rgb(173, 229, 252);">.place-button</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">height</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">100px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">display</span>: flex;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">flex-direction</span>: column;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">justify-content</span>: center;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">align-items</span>: center;
+      }
+      
+      <span class="hljs-selector-tag" style="color: rgb(252, 194, 140);">button</span><span class="hljs-selector-pseudo">:active</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">border-bottom</span>: none;
+      }
+      
+      <span class="hljs-selector-class" style="color: rgb(173, 229, 252);">.icons</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">display</span>: flex;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">justify-content</span>: space-evenly;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">margin-top</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">10px</span>;
+      }
+      
+      <span class="hljs-selector-class" style="color: rgb(173, 229, 252);">.icon</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">cursor</span>: pointer;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">font-size</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">20px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">color</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">#5d6166</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">display</span>: flex;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">justify-content</span>: center;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">align-items</span>: center;
+      }
+      
+      <span class="hljs-selector-class" style="color: rgb(173, 229, 252);">.icon</span> <span class="hljs-selector-tag" style="color: rgb(252, 194, 140);">i</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">transition</span>: all <span class="hljs-number" style="color: rgb(211, 99, 99);">1s</span>;
+      }
+      <span class="hljs-selector-class" style="color: rgb(173, 229, 252);">.icon</span> <span class="hljs-selector-tag" style="color: rgb(252, 194, 140);">i</span><span class="hljs-selector-pseudo">:hover</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">color</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">#fed32c</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">transition</span>: all <span class="hljs-number" style="color: rgb(211, 99, 99);">1s</span>;
+      }
+      
+      <span class="hljs-selector-class" style="color: rgb(173, 229, 252);">.icon</span> <span class="hljs-selector-tag" style="color: rgb(252, 194, 140);">span</span> {
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">margin-left</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">10px</span>;
+        <span class="hljs-attribute" style="color: rgb(255, 255, 170);">font-size</span>: <span class="hljs-number" style="color: rgb(211, 99, 99);">16px</span>;
+      }
+      </pre>
+    </div>
+  </body>
+</html>
