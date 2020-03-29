@@ -1,17 +1,10 @@
 body {
-  background-color: green;
 }
-h2 {
+h1 {
   color: black;
   text-shadow: 2px 2px 4px red;
 }
 h3 {
   color: white;
   text-shadow: 2px 2px 4px blue;
-}
-
-@media (max-width: 800px) {
-  body {
-    background-color: black;
-  }
 }

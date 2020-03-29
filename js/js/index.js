@@ -114,9 +114,61 @@
 // }
 
 // console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
-var a = 1;
-var b = 2;
-var func = (function f() {
-  return a + b;
-})();
-func;
+
+// fetch("https://sergashs.github.io/cursor_serhii/stalker22/").then(res => {
+//   res document.getElementById("publ-img");
+// });
+
+// fetch("https://sergashs.github.io/cursor_serhii/stalker22/")
+//   .then(response => {
+//     return document.getElementsByClassName("publ-img");
+//   })
+//   .then(data => {
+//     console.log(data);
+//   });
+
+// var xhr = new XMLHttpRequest();
+// xhr.open("GET", "https://sergashs.github.io/cursor_serhii/stalker22/", true);
+// xhr.send();
+
+// xhr.onreadystatechange = function() {
+//   if (this.readyState != 4) return;
+//   // по окончании запроса доступны:
+//   // status, statusText
+//   // responseText, responseXML (при content-type: text/xml)
+//   if (this.status != 200) {
+//     // обработать ошибку
+//     alert("ошибка: " + (this.status ? this.statusText : "запрос не удался"));
+//     return;
+//   }
+//   let htmlpage = this.responseText;
+
+//   console.log(htmlpage);
+// };
+
+getElement(
+  "https://sergashs.github.io/cursor_serhii/stalker2/",
+  ".item-news",
+  function(element) {
+    console.log(element);
+    document.getElementById("get").innerHTML = element.outerHTML;
+  }
+);
+
+function getElement(url, selector, c) {
+  request(new XMLHttpRequest());
+
+  function request(xhr) {
+    xhr.open("GET", url, true);
+    xhr.send();
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4) {
+        if (xhr.status == 200) {
+          html = document.createElement("div");
+          html.innerHTML = xhr.responseText;
+          c(html.querySelector(selector));
+        }
+      }
+    };
+  }
+}
