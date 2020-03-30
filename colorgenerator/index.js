@@ -45,3 +45,29 @@ if (document.documentElement.clientWidth < 868) {
     }
   });
 }
+
+function hexToRgbgetinput() {
+  document.getElementById("scriptColor").innerHTML =
+    '<input id="get-hex" placeholder="#" onchange="printrgb()" /> <div id="converted-hex"></div> ';
+}
+
+function hex2rgb(c) {
+  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(c);
+  return result
+    ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+      }
+    : null;
+}
+
+console.log(hex2rgb("#003322"));
+
+function printrgb() {
+  let hexinput = document.getElementById("get-hex").value;
+  let temp = hex2rgb(hexinput);
+
+  document.getElementById("converted-hex").innerHTML = temp;
+  console.log(temp);
+}
