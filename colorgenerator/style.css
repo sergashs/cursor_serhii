@@ -19,7 +19,7 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: inherit;
   font-weight: bold;
 }
 
@@ -53,9 +53,11 @@ footer {
   font-size: 18px;
   flex: 0 0 auto;
   align-self: flex-start;
+  line-height: 25px;
 }
 
-#scriptColor {
+#scriptColor,
+#scriptColor2 {
   flex: 1 0 auto;
   font-size: 45px;
   text-align: center;
@@ -69,11 +71,15 @@ input {
   outline: none;
   background: none;
   border: none;
-  color: rgb(0, 0, 0);
+  color: inherit;
   border-bottom: solid 2px rgb(0, 0, 0);
   padding: 5px;
   width: 100%;
   max-width: 600px;
+}
+
+#converted-hex {
+  margin-top: 50px;
 }
 
 @media (max-width: 868px) {
@@ -81,11 +87,16 @@ input {
     /* flex: 1 0 auto; */
     font-size: 45px;
     text-align: center;
-    height: 90%;
+    height: 80%;
     /* align-self: center; */
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  #scriptColor,
+  #scriptColor2 {
+    font-size: 35px;
   }
 }

@@ -47,8 +47,9 @@ if (document.documentElement.clientWidth < 868) {
 }
 
 function hexToRgbgetinput() {
-  document.getElementById("scriptColor").innerHTML =
-    '<input id="get-hex" placeholder="#" onchange="printrgb()" /> <div id="converted-hex"></div> ';
+  document.getElementById("scriptColor").remove();
+  document.getElementById("scriptColor2").innerHTML =
+    '<input id="get-hex" placeholder="#" oninput="printrgb()" value="#" /> <div id="converted-hex"></div> ';
 }
 
 function hex2rgb(c) {
@@ -62,12 +63,23 @@ function hex2rgb(c) {
     : null;
 }
 
-console.log(hex2rgb("#003322"));
-
 function printrgb() {
   let hexinput = document.getElementById("get-hex").value;
-  let temp = hex2rgb(hexinput);
+  document.body.style.backgroundColor = hexinput;
+  document.body.style.color = pickTextColorBasedOnBgColorSimple(
+    hexinput,
+    "#FFFFFF",
+    "#000000"
+  );
 
-  document.getElementById("converted-hex").innerHTML = temp;
-  console.log(temp);
+  document.getElementById(
+    "get-hex"
+  ).style.borderBottomColor = pickTextColorBasedOnBgColorSimple(
+    hexinput,
+    "#FFFFFF",
+    "#000000"
+  );
+
+  const { r, g, b } = hex2rgb(hexinput);
+  document.getElementById("converted-hex").innerHTML = `rgb(${r},${g},${b})`;
 }
