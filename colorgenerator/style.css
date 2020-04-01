@@ -33,23 +33,18 @@ h1 {
   position: relative;
 }
 
-h1::before {
-  content: "Generator";
-  position: absolute;
-  left: 95px;
-  font-weight: bold;
-}
-
 h1::after {
   content: "#hex";
   position: absolute;
   font-size: 14px;
   right: 0;
   top: -5px;
+  right: 179px;
   font-weight: bold;
 }
 
 footer {
+  position: relative;
   font-size: 18px;
   flex: 0 0 auto;
   align-self: flex-start;
@@ -98,5 +93,8 @@ input {
   #scriptColor,
   #scriptColor2 {
     font-size: 35px;
+  }
+  footer {
+    font-size: 17px;
   }
 }
