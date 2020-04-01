@@ -48,6 +48,7 @@ if (document.documentElement.clientWidth < 868) {
 
 function hexToRgbgetinput() {
   document.getElementById("scriptColor").remove();
+  document.getElementById("scriptColor2").style = "display: block;";
   document.getElementById("scriptColor2").innerHTML =
     '<input id="get-hex" placeholder="#" oninput="printrgb()" value="#" /> <div id="converted-hex"></div> ';
 }

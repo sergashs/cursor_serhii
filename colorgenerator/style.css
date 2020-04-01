@@ -48,7 +48,10 @@ footer {
   font-size: 18px;
   flex: 0 0 auto;
   align-self: flex-start;
-  line-height: 25px;
+}
+
+#scriptColor2 {
+  display: none;
 }
 
 #scriptColor,
@@ -95,6 +98,6 @@ input {
     font-size: 35px;
   }
   footer {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
