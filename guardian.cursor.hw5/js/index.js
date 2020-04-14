@@ -7,33 +7,31 @@ function getRandomArray(length, n, m) {
 }
 
 function getRandomArrayPrint() {
-  let length = document.getElementById("length").value;
-  let n = document.getElementById("min").value;
-  let m = document.getElementById("max").value;
+  const length = document.getElementById("length").value;
+  const n = document.getElementById("min").value;
+  const m = document.getElementById("max").value;
   const temp = `${getRandomArray(length, n, m)}`;
   document.getElementById("RandomArray").innerHTML = temp;
 }
 ///////////////////////////////////
 ///////////////////////////////////
-function average() {
-  let len = arguments.length;
-  let sum = 0;
-  for (let i = 0; i < len; i++) {
-    sum += +arguments[i];
-  }
-  return sum / len;
+function getAverage(...numbers) {
+  const getSum = numbers.reduce((previus, current) =>
+    Math.round(previus + current)
+  );
+  const result = getSum / numbers.length;
+  return result;
 }
 
 function averagePrint() {
-  let arguments = document.getElementById("numerics").value;
-  const arr = arguments.split(" ");
-  document.getElementById("averageinArray").innerHTML = ` ${average(...arr)}`;
-  console.log(average(...arr));
+  let numbers = document.getElementById("numerics").value;
+  const arr = numbers.split(" ");
+  document.getElementById("averageinArray").innerHTML = `${getAverage(...arr)}`;
 }
 //////////////////////////////////////////
 //////////////////////////////////////////
 function filterEvenNumbers(...numbers) {
-  return numbers.filter(numbers => numbers % 2 !== 0);
+  return numbers.filter((numbers) => numbers % 2 !== 0);
 }
 
 function filterEvenNumbersPrint() {
@@ -63,7 +61,7 @@ function countPositiveNumbersPrint() {
 // //////////////////////////////////////////
 // //////////////////////////////////////////
 function getDividedByFive(...numbers) {
-  return numbers.filter(numbers => numbers % 5 == 0);
+  return numbers.filter((numbers) => numbers % 5 == 0);
 }
 
 function getDividedByFivePrint() {
@@ -74,22 +72,17 @@ function getDividedByFivePrint() {
 // // //////////////////////////////////////////
 // // //////////////////////////////////////////
 
-function getMedian(...arr) {
-  let half = Math.floor(arr.length / 2);
-  arr.sort(function(a, b) {
-    return a - b;
-  });
-
-  if (arr.length % 2) {
-    return arr[half];
-  } else {
-    return (arr[half - 1] + arr[half]) / 2.0;
-  }
+function getMedian(...numbers) {
+  const sortedNumbers = numbers.sort((a, b) => a - b);
+  const lowMiddleIndex = Math.floor((sortedNumbers.length - 1) / 2);
+  const highMiddleIndex = Math.ceil((sortedNumbers.length - 1) / 2);
+  return Math.round(
+    (sortedNumbers[lowMiddleIndex] + sortedNumbers[highMiddleIndex]) / 2
+  );
 }
 
 function getMedianPrint() {
   let arr = document.getElementById("GetMedian").value;
   const temp = `${getMedian(...arr.split(" "))}`;
   document.getElementById("getMedian").innerHTML = temp;
-  console.log(getMedian(...arr));
 }

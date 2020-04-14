@@ -146,29 +146,36 @@
 //   console.log(htmlpage);
 // };
 
-getElement(
-  "https://sergashs.github.io/cursor_serhii/stalker2/",
-  ".item-news",
-  function(element) {
-    console.log(element);
-    document.getElementById("get").innerHTML = element.outerHTML;
-  }
-);
+// getElement(
+//   "https://sergashs.github.io/cursor_serhii/stalker2/",
+//   ".item-news",
+//   function(element) {
+//     console.log(element);
+//     document.getElementById("get").innerHTML = element.outerHTML;
+//   }
+// );
 
-function getElement(url, selector, c) {
-  request(new XMLHttpRequest());
+// function getElement(url, selector, c) {
+//   request(new XMLHttpRequest());
 
-  function request(xhr) {
-    xhr.open("GET", url, true);
-    xhr.send();
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState == 4) {
-        if (xhr.status == 200) {
-          html = document.createElement("div");
-          html.innerHTML = xhr.responseText;
-          c(html.querySelector(selector));
-        }
-      }
-    };
-  }
+//   function request(xhr) {
+//     xhr.open("GET", url, true);
+//     xhr.send();
+//     xhr.onreadystatechange = function() {
+//       if (xhr.readyState == 4) {
+//         if (xhr.status == 200) {
+//           html = document.createElement("div");
+//           html.innerHTML = xhr.responseText;
+//           c(html.querySelector(selector));
+//         }
+//       }
+//     };
+//   }
+// }
+
+function cuntehttp() {
+  var sitelink = document.getElementById("link");
+  return (document.body.innerHTML = "http://www.residentevil.com/re3".slice(7));
 }
+
+cuntehttp();
