@@ -5,8 +5,8 @@ const students = [
     subjects: {
       math: [4, 4, 3, 4],
       algorithms: [3, 3, 3, 4, 4, 4],
-      data_science: [5, 5, 3, 4]
-    }
+      data_science: [5, 5, 3, 4],
+    },
   },
   {
     name: "Victor",
@@ -14,8 +14,8 @@ const students = [
     subjects: {
       physics: [5, 5, 5, 3],
       economics: [2, 3, 3, 3, 3, 5],
-      geometry: [5, 5, 2, 3, 5]
-    }
+      geometry: [5, 5, 2, 3, 5],
+    },
   },
   {
     name: "Anton",
@@ -23,29 +23,27 @@ const students = [
     subjects: {
       statistics: [4, 5, 5, 5, 5, 3, 4, 3, 4, 5],
       english: [5, 3],
-      cosmology: [5, 5, 5, 5]
-    }
-  }
+      cosmology: [5, 5, 5, 5],
+    },
+  },
 ];
 
-function getSubjects(array, search) {
-  return array.reduce(function(values, item) {
-    if (item.name === search) {
-      return Object.keys(item.subjects);
-    }
-    return values;
-  }, []);
-}
-console.log(getSubjects(students, "Tanya"));
-document.writeln(
-  `<p>Список предметов для студента <b>${
-    students[1].name
-  }</b> -  <b>${getSubjects(students, "Tanya")}</b></p>`
+const getSubjects = (student) => {
+  const subjectsArr = Object.keys(student.subjects);
+  const studSubj = subjectsArr.map((subject) => {
+    return (subject[0].toUpperCase() + subject.slice(1)).replace(/_/g, " ");
+  });
+  return studSubj;
+};
+document.write(
+  `<p> Студент <b>${students[1].name}</b> вчить такі предмети: <b>${getSubjects(
+    students[1]
+  )}</b></p>`
 );
 
 ////
 ////2
-const getAverageMark = student => {
+const getAverageMark = (student) => {
   const average = Object.values(student.subjects).flat();
   return (average.reduce((a, b) => a + b) / average.length).toFixed(2);
 };
@@ -57,7 +55,7 @@ document.writeln(
 );
 
 ////3
-const getStudentInfo = student => {
+const getStudentInfo = (student) => {
   const { course, name } = student;
   return { course, name, averageMark: getAverageMark(student) };
 };
@@ -69,8 +67,8 @@ document.write(
 
 /////
 ////4
-const getStudentsNames = students => {
-  return students.map((el, i) => students[i].name).sort();
+const getStudentsNames = (students) => {
+  return students.map((el) => el.name).sort();
 };
 console.log(`${getStudentsNames(students)}`);
 document.write(
@@ -80,7 +78,7 @@ document.write(
 );
 
 /////5
-const getBestStudents = students => {
+const getBestStudents = (students) => {
   return students.reduce((previus, current) =>
     getAverageMark(current) > getAverageMark(previus) ? current : previus
   ).name;
@@ -94,7 +92,7 @@ document.write(
 );
 
 /////
-const calculateWordLetters = string => {
+const calculateWordLetters = (string) => {
   return string
     .toLowerCase()
     .split("")
