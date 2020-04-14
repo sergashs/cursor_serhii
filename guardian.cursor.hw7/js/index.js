@@ -78,10 +78,10 @@ function getMySalary(country) {
     const number = Math.floor(Math.random() * (max - min + 1) + min);
     console.log({
       number: number,
-      taxes: Math.floor(this.tax * number),
-      profit: number - Math.floor(this.tax * number)
+      taxes: Math.floor(country.tax * number),
+      profit: number - Math.floor(country.tax * number),
     });
   }, 1000);
 }
 
-getMySalary.call(ukraine);
+getMySalary(ukraine);
