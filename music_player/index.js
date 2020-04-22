@@ -8,23 +8,27 @@ let pPause = document.querySelector("#play-pause"); // element where play and pa
 songIndex = 0;
 songs = [
   "./music/lil-nain_-_30.mp3",
-  // "./music/xxxtentacion_-_look-at-me.mp3",
+  "./music/xxxtentacion_-_look-at-me.mp3",
   "./music/annen.mp3",
+  "./music/Oxxxymiron.mp3",
 ];
 thumbnails = [
   "./album_cover/xxx.jpg",
-  // "./album_cover/xxx2.jpg",
+  "./album_cover/xxx2.jpg",
   "./album_cover/annen.jpg",
+  "./album_cover/3.jpg",
 ];
 songArtists = [
   "XXXTENTACION",
-  // "XXXTENTACION",
+  "XXXTENTACION",
   "AnnenMayKantereit x Parcels",
+  "Oxxxymiron",
 ];
 songTitles = [
   "Jocelyn Flores",
-  // "Look at me",
+  "Look at me",
   "Can't Get You out of My Head (Cover)",
+  "Rap City",
 ];
 
 let playing = true;
@@ -55,12 +59,13 @@ song.addEventListener("ended", function () {
 // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track
 function nextSong() {
   songIndex++;
-  if (songIndex > 1) {
+
+  if (songIndex > songs.length - 1) {
     songIndex = 0;
   }
+
   song.src = songs[songIndex];
   thumbnail.src = thumbnails[songIndex];
-
   songArtist.innerHTML = songArtists[songIndex];
   songTitle.innerHTML = songTitles[songIndex];
 
@@ -72,11 +77,10 @@ function nextSong() {
 function previousSong() {
   songIndex--;
   if (songIndex < 0) {
-    songIndex = 1;
+    songIndex = 0;
   }
   song.src = songs[songIndex];
   thumbnail.src = thumbnails[songIndex];
-
   songArtist.innerHTML = songArtists[songIndex];
   songTitle.innerHTML = songTitles[songIndex];
 
@@ -157,3 +161,17 @@ document.getElementById("themer").addEventListener("change", (ev) => {
     localStorage.setItem("themeStyle", "light"); // записываем значение в localStorage
   }
 });
+
+// var result = [];
+
+// for (let i = 0; i < songArtists.length; i++) {
+//   console.log(songArtists[i]);
+//   result = result.concat(songArtists[i]);
+
+//   var newDiv = document.createElement("div");
+//   newDiv.innerHTML = result.join(" ") + "<br>";
+// }
+
+// document.querySelector(".playlist-container").innerHTML = newDiv.outerHTML;
+
+// document.querySelector(".playlist-container").innerHTML = songArtists.join(" ");
