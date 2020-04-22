@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aliceblue;
+  transition: all 0.5s;
+  padding: 20px;
+}
+
+svg {
+  width: 100%;
+  max-width: 500px;
+  fill: #e2da67;
+}
+
+.button {
+  width: 30px;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  font-size: 14px;
+}
+
+.icon {
+  color: #e2da67;
+}
+
+input[type="checkbox"] {
+  display: none;
+}

@@ -63,9 +63,9 @@ class BudgetStudent extends Student {
 
   getScholarship() {
     if (this.getAverageMark() >= 4 && !this.isDismiss) {
-      console.log(`Вы получили 1400 грн. стипендии`);
+      console.log(`1400 грн. стипендии`);
     } else {
-      console.log(`Стипендии нет :с`);
+      console.log(`Стипендии не будет`);
     }
   }
 }
