@@ -56,8 +56,9 @@ body {
   font-size: 20px;
 }
 
-.song-artist {
-  font-size: 18px;
+.song-title {
+  font-size: 16px;
+  text-align: center;
 }
 
 i {

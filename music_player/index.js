@@ -1,18 +1,32 @@
 const thumbnail = document.querySelector("#thumbnail"); // album cover
 const song = document.querySelector("#song"); // audio object
-
 const songArtist = document.querySelector(".song-artist"); // element where track artist appears
 const songTitle = document.querySelector(".song-title"); // element where track title appears
 const progressBar = document.querySelector("#progress-bar"); // element where progress bar appears
 let pPause = document.querySelector("#play-pause"); // element where play and pause image appears
 
 songIndex = 0;
-songs = ["./music/lil-nain_-_30.mp3", "./music/xxxtentacion_-_look-at-me.mp3"]; // object storing paths for audio objects
-thumbnails = ["./album_cover/xxx.jpg", "./album_cover/xxx2.jpg"]; // object storing paths for album covers and backgrounds
-songArtists = ["XXXTENTACION", "XXXTENTACION"]; // object storing track artists
-songTitles = ["Jocelyn Flores", "Look at me"]; // object storing track titles
+songs = [
+  "./music/lil-nain_-_30.mp3",
+  // "./music/xxxtentacion_-_look-at-me.mp3",
+  "./music/annen.mp3",
+];
+thumbnails = [
+  "./album_cover/xxx.jpg",
+  // "./album_cover/xxx2.jpg",
+  "./album_cover/annen.jpg",
+];
+songArtists = [
+  "XXXTENTACION",
+  // "XXXTENTACION",
+  "AnnenMayKantereit x Parcels",
+];
+songTitles = [
+  "Jocelyn Flores",
+  // "Look at me",
+  "Can't Get You out of My Head (Cover)",
+];
 
-// function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
 let playing = true;
 function playPause() {
   if (playing) {
@@ -79,7 +93,7 @@ function updateProgressValue() {
   document.querySelector(".currentTime").innerHTML = formatTime(
     Math.floor(song.currentTime)
   );
-  if (document.querySelector(".durationTime").innerHTML === "NaN:NaN") {
+  if (document.querySelector(".durationTime").innerHTML === "0:00:0:00") {
     document.querySelector(".durationTime").innerHTML = "0:00";
   } else {
     document.querySelector(".durationTime").innerHTML = formatTime(
