@@ -51,12 +51,10 @@ function playPause() {
   }
 }
 
-// automatically play the next song at the end of the audio object's duration
 song.addEventListener("ended", function () {
   nextSong();
 });
 
-// function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track
 function nextSong() {
   songIndex++;
 
@@ -73,7 +71,6 @@ function nextSong() {
   playPause();
 }
 
-// function where songIndex is decremented, song/thumbnail image/background image/song artist/song title changes to previous index value, and playPause() runs to play previous track
 function previousSong() {
   songIndex--;
   if (songIndex < 0) {
@@ -84,13 +81,10 @@ function previousSong() {
   songArtist.innerHTML = songArtists[songIndex];
   songTitle.innerHTML = songTitles[songIndex];
 
-  //   document.querySelector(".song-title").innerHTML = songTitles[songIndex];
-
   playing = true;
   playPause();
 }
 
-// update progressBar.max to song object's duration, same for progressBar.value, update currentTime/duration DOM
 function updateProgressValue() {
   progressBar.max = song.duration;
   progressBar.value = song.currentTime;
@@ -106,7 +100,6 @@ function updateProgressValue() {
   }
 }
 
-// convert song.currentTime and song.duration into MM:SS format
 function formatTime(seconds) {
   let min = Math.floor(seconds / 60);
   let sec = Math.floor(seconds - min * 60);
@@ -116,17 +109,14 @@ function formatTime(seconds) {
   return `${min}:${sec}`;
 }
 
-// run updateProgressValue function every 1/2 second to show change in progressBar and song.currentTime on the DOM
 setInterval(updateProgressValue, 500);
 
-// function where progressBar.value is changed when slider thumb is dragged without auto-playing audio
 function changeProgressBar() {
   song.currentTime = progressBar.value;
 }
 
 /////////////////////////////////////////////////////
 
-// создаем <link rel="stylesheet" href="light|dark.css">
 let head = document.head,
   link = document.createElement("link");
 link.rel = "stylesheet";
