@@ -1,9 +1,9 @@
-const thumbnail = document.querySelector("#thumbnail"); // album cover
-const song = document.querySelector("#song"); // audio object
-const songArtist = document.querySelector(".song-artist"); // element where track artist appears
-const songTitle = document.querySelector(".song-title"); // element where track title appears
-const progressBar = document.querySelector("#progress-bar"); // element where progress bar appears
-let pPause = document.querySelector("#play-pause"); // element where play and pause image appears
+const thumbnail = document.querySelector("#thumbnail");
+const song = document.querySelector("#song");
+const songArtist = document.querySelector(".song-artist");
+const songTitle = document.querySelector(".song-title");
+const progressBar = document.querySelector("#progress-bar");
+let pPause = document.querySelector("#play-pause");
 
 songIndex = 0;
 songs = [
@@ -38,13 +38,13 @@ function playPause() {
       thumbnail = document.querySelector("#thumbnail");
 
     document.getElementById("play").innerHTML =
-      '<i class="fa fa-pause" id="play-pause" onclick="playPause()" aria-hidden="true"></i>';
+      '<i class="fa fa-pause" id="play-pause" onclick="playPause()"   title="pause" aria-hidden="true"></i>';
 
     song.play();
     playing = false;
   } else {
     document.getElementById("play").innerHTML =
-      '<i class="fa fa-play" id="play-pause" onclick="playPause()" aria-hidden="true"></i>';
+      '<i class="fa fa-play" id="play-pause" onclick="playPause()"   title="play" aria-hidden="true"></i>';
 
     song.pause();
     playing = true;
@@ -74,7 +74,7 @@ function nextSong() {
 function previousSong() {
   songIndex--;
   if (songIndex < 0) {
-    songIndex = 0;
+    songIndex = songs.length - 1;
   }
   song.src = songs[songIndex];
   thumbnail.src = thumbnails[songIndex];
@@ -152,16 +152,37 @@ document.getElementById("themer").addEventListener("change", (ev) => {
   }
 });
 
-// var result = [];
+// playlist in progress...
 
-// for (let i = 0; i < songArtists.length; i++) {
-//   console.log(songArtists[i]);
-//   result = result.concat(songArtists[i]);
+// const getsoundItem = (songArtists, songTitles) => {
+//   const soundItem = [];
+//   for (let i = 0; i < songArtists.length; i++) {
+//     soundItem.push([songArtists[i], songTitles[i]]);
+//   }
+//   return soundItem;
+// };
+// console.log(getsoundItem(songArtists, songTitles));
 
-//   var newDiv = document.createElement("div");
-//   newDiv.innerHTML = result.join(" ") + "<br>";
+// const completeitemsound = getsoundItem(songArtists, songTitles);
+
+// function playlist() {
+//   const songsListArtist = completeitemsound.map(
+//     (
+//       el
+//     ) => `<div class="song-item" src="./music/Oxxxymiron.mp3 id="song" onclick="playPause()"
+//    >${el}</div>`
+//   );
+
+//   return (document.querySelector(
+//     ".playlist-container"
+//   ).innerHTML = songsListArtist.join(" "));
 // }
 
-// document.querySelector(".playlist-container").innerHTML = newDiv.outerHTML;
+// playlist();
 
-// document.querySelector(".playlist-container").innerHTML = songArtists.join(" ");
+// let menuElem = document.querySelector(".playlist-container");
+// let titleElem = document.getElementById("playlist-icon");
+
+// titleElem.onclick = function () {
+//   menuElem.classList.toggle("open");
+// };
