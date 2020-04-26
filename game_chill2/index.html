@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <title>Game</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <img src="./img/logo.svg" alt="logo" class="header-logo-img" />
+          <div class="header__logo__text">game</div>
+        </div>
+        <nav class="nav">
+          <a href="#" class="nav__link">Главная</a>
+          <a href="#" class="nav__link">Файлы</a>
+          <a href="#" class="nav__link">Статьи</a>
+          <a href="#" class="nav__link">Игры</a>
+        </nav>
+        <a href="#" class="toggle-button">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="articles-container">
+        <div class="article-block">
+          <div class="article-block__title">
+            Capcom похвасталась высокими продажами Resident Evil 3 Remake
+          </div>
+
+          <div class="article-block__img">
+            <img
+              src="https://www.gamechill.club/_nw/0/52467989.jpg"
+              alt="Capcom похвасталась высокими продажами Resident Evil 3 Remake"
+            />
+          </div>
+
+          <div class="article-block__description">
+            Представители Capcom сообщили о том, что тираж ремейка Resident Evil
+            3 всего за 5 дней с момента релиза уже превысил значение в 2
+            миллиона проданных копий. Речь идет как о поставках дисков
+            ритейлерам, так и о цифровых продажах.
+          </div>
+
+          <div class="counters-block">
+            <div class="counters-block__left">
+              <div class="counters-block__item">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <div class="counters-block__item__stat">200</div>
+              </div>
+
+              <div class="counters-block__item">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <div class="counters-block__item__stat">20</div>
+              </div>
+            </div>
+            <div class="counters-block__right">
+              <div class="counters-block__item">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <div class="counters-block__item__stat">4 дня назад</div>
+              </div>
+
+              <div class="counters-block__item">
+                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                <div class="counters-block__item__stat">Игры</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="article-block">
+          <div class="article-block__title">
+            Процессоры AMD Ryzen 4000 будут поддерживать чипсет B450
+          </div>
+
+          <div class="article-block__img"></div>
+
+          <div class="article-block__description">
+            Новые процессоры семейства AMD Ryzen 4000 будут использовать
+            архитектуру Zen 3, но производитель ещё не раскрыл их совместимость
+            с различными наборами системной логики. Заполнить информационный
+            пробел взялись сетевые источники — по слухам, следующее поколение
+            «красных» чипов не потребует замены материнских плат на базе AMD
+            B450.
+          </div>
+
+          <div class="counters-block">
+            <div class="counters-block__left">
+              <div class="counters-block__item">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <div class="counters-block__item__stat">300</div>
+              </div>
+
+              <div class="counters-block__item">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <div class="counters-block__item__stat">10</div>
+              </div>
+            </div>
+            <div class="counters-block__right">
+              <div class="counters-block__item">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <div class="counters-block__item__stat">6 дней назад</div>
+              </div>
+
+              <div class="counters-block__item">
+                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                <div class="counters-block__item__stat">Железо</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="aside">
+        <div class="aside-block">
+          <a href="#">читы</a>, <a href="#">моды</a>, <a href="#">читы</a>,
+          <a href="#">читы</a>
+        </div>
+      </aside>
+    </main>
+
+    <div class="changer-theme">
+      <div class="changer-theme_text">Выберите цвет темы:</div>
+      <div class="changer-theme__colors">
+        <div class="default_color"></div>
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="fourth"></div>
+      </div>
+    </div>
+
+    <div id="changer-theme-icon">
+      <i class="fa fa-paint-brush" aria-hidden="true"></i>
+    </div>
+
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("nav")[0];
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+
+      let menuElem = document.querySelector(".changer-theme");
+      let titleElem = document.getElementById("changer-theme-icon");
+
+      titleElem.onclick = function () {
+        menuElem.classList.toggle("open");
+      };
+
+      // //colors switch
+
+      let default_color = document.querySelector(".default_color");
+
+      let first = document.querySelector(".first");
+
+      let second = document.querySelector(".second");
+
+      let fourth = document.querySelector(".fourth");
+
+      if (localStorage.getItem("--temple-main-color") == "#db3742") {
+        document.documentElement.style.setProperty(
+          "--temple-main-color",
+          "#db3742"
+        );
+      } else if (localStorage.getItem("--temple-main-color") == "#2776aa") {
+        document.documentElement.style.setProperty(
+          "--temple-main-color",
+          "#2776aa"
+        );
+      } else if (localStorage.getItem("--temple-main-color") == "#174c51") {
+        document.documentElement.style.setProperty(
+          "--temple-main-color",
+          "#174c51"
+        );
+      } else if (localStorage.getItem("--temple-main-color") == "#636e60") {
+        document.documentElement.style.setProperty(
+          "--temple-main-color",
+          "#636e60"
+        );
+      }
+
+      default_color.onclick = function () {
+        document.documentElement.style.setProperty(
+          "--temple-main-color",
+          "#db3742"
+        );
+        localStorage.setItem("--temple-main-color", "#db3742");
+      };
+
+      first.onclick = function () {
+        document.documentElement.style.setProperty(
+          "--temple-main-color",
+          "#2776aa"
+        );
+        localStorage.setItem("--temple-main-color", "#2776aa");
+      };
+
+      second.onclick = function () {
+        document.documentElement.style.setProperty(
+          "--temple-main-color",
+          "#174c51"
+        );
+        localStorage.setItem("--temple-main-color", "#174c51");
+      };
+
+      fourth.onclick = function () {
+        document.documentElement.style.setProperty(
+          "--temple-main-color",
+          "#636e60"
+        );
+        localStorage.setItem("--temple-main-color", "#636e60");
+      };
+    </script>
+  </body>
+</html>
