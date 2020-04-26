@@ -133,12 +133,18 @@
     </main>
 
     <div class="changer-theme">
-      <div class="changer-theme_text">Выберите цвет темы:</div>
+      <div class="changer-theme__text">Выберите цвет темы:</div>
       <div class="changer-theme__colors">
         <div class="default_color"></div>
         <div class="first"></div>
         <div class="second"></div>
         <div class="fourth"></div>
+      </div>
+
+      <div class="changer-theme__dark-mode">
+        <div class="changer-theme__text">Темный режим:</div>
+        <input type="checkbox" id="darkmode" style="display: none;" />
+        <label for="darkmode" class="toggle"><span></span></label>
       </div>
     </div>
 
@@ -146,83 +152,6 @@
       <i class="fa fa-paint-brush" aria-hidden="true"></i>
     </div>
 
-    <script>
-      const toggleButton = document.getElementsByClassName("toggle-button")[0];
-      const navbarLinks = document.getElementsByClassName("nav")[0];
-      toggleButton.addEventListener("click", () => {
-        navbarLinks.classList.toggle("active");
-      });
-
-      let menuElem = document.querySelector(".changer-theme");
-      let titleElem = document.getElementById("changer-theme-icon");
-
-      titleElem.onclick = function () {
-        menuElem.classList.toggle("open");
-      };
-
-      // //colors switch
-
-      let default_color = document.querySelector(".default_color");
-
-      let first = document.querySelector(".first");
-
-      let second = document.querySelector(".second");
-
-      let fourth = document.querySelector(".fourth");
-
-      if (localStorage.getItem("--temple-main-color") == "#db3742") {
-        document.documentElement.style.setProperty(
-          "--temple-main-color",
-          "#db3742"
-        );
-      } else if (localStorage.getItem("--temple-main-color") == "#2776aa") {
-        document.documentElement.style.setProperty(
-          "--temple-main-color",
-          "#2776aa"
-        );
-      } else if (localStorage.getItem("--temple-main-color") == "#174c51") {
-        document.documentElement.style.setProperty(
-          "--temple-main-color",
-          "#174c51"
-        );
-      } else if (localStorage.getItem("--temple-main-color") == "#636e60") {
-        document.documentElement.style.setProperty(
-          "--temple-main-color",
-          "#636e60"
-        );
-      }
-
-      default_color.onclick = function () {
-        document.documentElement.style.setProperty(
-          "--temple-main-color",
-          "#db3742"
-        );
-        localStorage.setItem("--temple-main-color", "#db3742");
-      };
-
-      first.onclick = function () {
-        document.documentElement.style.setProperty(
-          "--temple-main-color",
-          "#2776aa"
-        );
-        localStorage.setItem("--temple-main-color", "#2776aa");
-      };
-
-      second.onclick = function () {
-        document.documentElement.style.setProperty(
-          "--temple-main-color",
-          "#174c51"
-        );
-        localStorage.setItem("--temple-main-color", "#174c51");
-      };
-
-      fourth.onclick = function () {
-        document.documentElement.style.setProperty(
-          "--temple-main-color",
-          "#636e60"
-        );
-        localStorage.setItem("--temple-main-color", "#636e60");
-      };
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
