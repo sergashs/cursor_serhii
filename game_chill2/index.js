@@ -67,6 +67,10 @@ document.getElementById("darkmode").addEventListener("change", (ev) => {
       "--color-text-title",
       "rgb(139, 139, 139)"
     );
+    document.documentElement.style.setProperty(
+      "--block-swadow",
+      "0 0 0 rgba(0, 0, 0, 0.0)"
+    );
   } else {
     localStorage.setItem("darkmode", "off");
     document.documentElement.style.setProperty("--bg-block", "#fff");
@@ -82,6 +86,10 @@ document.getElementById("darkmode").addEventListener("change", (ev) => {
     document.documentElement.style.setProperty(
       "--color-text-title",
       "rgb(75, 75, 75);"
+    );
+    document.documentElement.style.setProperty(
+      "--block-swadow",
+      "0 0 25px rgba(0, 0, 0, 0.1)"
     );
   }
 });
@@ -99,6 +107,10 @@ if (localStorage.getItem("darkmode") == "on") {
   document.documentElement.style.setProperty(
     "--color-text-title",
     "rgb(139, 139, 139)"
+  );
+  document.documentElement.style.setProperty(
+    "--block-swadow",
+    "0 0 0 rgba(0, 0, 0, 0.0)"
   );
 }
 
@@ -118,5 +130,9 @@ else {
   document.documentElement.style.setProperty(
     "--color-text-title",
     "rgb(75, 75, 75);"
+  );
+  document.documentElement.style.setProperty(
+    "--block-swadow",
+    "0 0 25px rgba(0, 0, 0, 0.1)"
   );
 }
