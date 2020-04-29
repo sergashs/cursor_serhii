@@ -93,7 +93,6 @@ body {
 .article-block {
   background-color: var(--bg-block);
   max-width: 900px;
-  /* border: solid 1px var(--color-border); */
   border-radius: 3px;
   margin: 0 20px 20px 0;
   transition: ease-in 0.3s;
@@ -156,7 +155,6 @@ body {
 .aside-block {
   background-color: var(--bg-block);
   width: 300px;
-  /* border: solid 1px var(--color-border); */
   box-shadow: var(--block-swadow);
   border-radius: 3px;
   transition: ease-in 0.3s;
@@ -315,13 +313,33 @@ body {
 }
 
 .comment__informer-item {
-  padding: 20px;
+  padding: 15px 20px 15px 20px;
   cursor: pointer;
-  border-bottom: 1px solid var(--color-border);
+}
+
+.comment__informer-item:hover {
+  background-color: var(--temple-main-color);
+}
+
+.comment__informer-item:hover .comment__informer-item__user-name {
+  color: var(--bg-block);
+}
+
+.comment__informer-item:hover .comment__informer-item__user-message {
+  color: var(--bg-block);
+}
+
+.comment__informer-item:hover .comment__informer-item__date {
+  color: var(--bg-block);
 }
 
 .comment__informer-item:last-child {
   border-bottom: none;
+}
+
+.comment__informer-item:last-child:hover {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .comment__informer-item-left-side img {
@@ -355,7 +373,7 @@ body {
 }
 
 .comment__informer-item__user-message {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   font-size: 14px;
   color: var(--color-text-description);
   line-height: 20px;
@@ -363,12 +381,11 @@ body {
 
 .aside-block__title {
   text-align: center;
-  padding: 20px 20px 10px 20px;
+  padding: 20px 20px 20px 20px;
   font-size: 14px;
   font-weight: bold;
   color: var(--color-text-title);
   text-transform: uppercase;
-
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }

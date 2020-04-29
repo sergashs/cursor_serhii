@@ -4,11 +4,11 @@ toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
 });
 
-let menuElem = document.querySelector(".changer-theme");
-let titleElem = document.getElementById("changer-theme-icon");
+let modal = document.querySelector(".changer-theme");
+let openButton = document.getElementById("changer-theme-icon");
 
-titleElem.onclick = function () {
-  menuElem.classList.toggle("open");
+openButton.onclick = function () {
+  modal.classList.toggle("open");
 };
 
 // //colors switch
@@ -85,7 +85,7 @@ document.getElementById("darkmode").addEventListener("change", (ev) => {
     );
     document.documentElement.style.setProperty(
       "--color-text-title",
-      "rgb(75, 75, 75);"
+      "rgb(75, 75, 75)"
     );
     document.documentElement.style.setProperty(
       "--block-swadow",
@@ -129,7 +129,7 @@ else {
   );
   document.documentElement.style.setProperty(
     "--color-text-title",
-    "rgb(75, 75, 75);"
+    "rgb(75, 75, 75)"
   );
   document.documentElement.style.setProperty(
     "--block-swadow",
