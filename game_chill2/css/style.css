@@ -481,6 +481,7 @@ body {
 @media (max-width: 900px) {
   .main__left-side-container {
     display: none;
+    opacity: 0.5;
   }
   .button-left-menu-open {
     display: block;
@@ -501,6 +502,8 @@ body {
   }
   .main__left-side-container.open {
     display: block;
+    transition: ease-in 0.5s;
+    opacity: 1;
     position: fixed;
     background-color: var(--bg-body);
     height: 100vh;
@@ -525,7 +528,7 @@ body {
 
   .header__search-container.open {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 60px;
     width: 100%;
     margin: 0;
@@ -550,9 +553,7 @@ body {
     left: 210px;
     top: 60px;
   }
-  .header__search-container {
-    margin: 0;
-  }
+
   .nav__link {
     margin: 0 0 0 20px;
   }
