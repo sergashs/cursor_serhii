@@ -1,3 +1,19 @@
+document.getElementById("left-menu").addEventListener("change", (ev) => {
+  let Leftmenubutton = ev.target;
+  let Leftmainside = document.querySelector(".main__left-side-container");
+
+  if (Leftmenubutton.checked) {
+    document.querySelector(".icon-left-menu").innerHTML =
+      '<i class="fa fa-angle-up" aria-hidden="true"></i>';
+
+    Leftmainside.classList.toggle("open");
+  } else {
+    document.querySelector(".icon-left-menu").innerHTML =
+      '<i class="fa fa-angle-down" aria-hidden="true"></i>';
+    Leftmainside.classList.toggle("open");
+  }
+});
+
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("nav")[0];
 toggleButton.addEventListener("click", () => {
@@ -9,6 +25,13 @@ let openButton = document.getElementById("changer-theme-icon");
 
 openButton.onclick = function () {
   modal.classList.toggle("open");
+};
+
+let search = document.querySelector(".header__search-container");
+let opensearch = document.querySelector(".search-icon");
+
+opensearch.onclick = function () {
+  search.classList.toggle("open");
 };
 
 // //colors switch
