@@ -592,6 +592,48 @@ body {
   color: var(--color-text-title);
 }
 
+.aside-block__statistic {
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text-title);
+}
+
+.aside-block___statistic-line-digits {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.aside-block___statistic-line-icon-description {
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
+
+.aside-block___statistic-line {
+  display: flex;
+  margin: 20px 20px 0 0;
+  justify-content: space-between;
+}
+
+.aside-block___statistic-item:last-child {
+  margin: 0 0 0 0;
+}
+
+.aside-block___statistic-line:first-child {
+  margin: 0 20px 0 0;
+}
+
+.aside-block___statistic-item {
+  margin: 0 20px 0 0;
+}
+
+.hr {
+  margin: 20px 0 0px 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--bg-body);
+}
+
 @media (max-width: 900px) {
   .main__left-side-container {
     display: none;
