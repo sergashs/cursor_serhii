@@ -164,6 +164,7 @@ body {
   box-shadow: var(--block-swadow);
   border-radius: 3px;
   transition: ease-in 0.3s;
+  margin: 0 0 20px 0;
 }
 
 #changer-theme-icon {
@@ -201,7 +202,7 @@ body {
   width: 20px;
   height: 20px;
   right: 20px;
-  bottom: -10px;
+  bottom: -8px;
   transform: rotate(40deg);
 }
 
@@ -476,6 +477,119 @@ body {
 
 #left-menu[type="checkbox"] {
   display: none;
+}
+
+.aside-block__popular-society {
+  padding: 0 20px 20px 20px;
+}
+
+.aside-block__popular-society_img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin: 0 20px 0 0;
+}
+
+.aside-block__popular-society_lines {
+  display: flex;
+}
+
+.aside-block__popular-society_line {
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aside-block__popular-society_title {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--temple-main-color);
+}
+
+.aside-block__popular-posts {
+  font-size: 13px;
+  color: var(--color-text-description);
+  opacity: 0.9;
+}
+
+.aside-block__popular-society_subscribe-button {
+  background-color: var(--temple-main-color);
+  border: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--bg-block);
+  padding: 10px;
+  border-radius: 3px;
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.aside-block__popular-society_subscribe-button:hover::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.aside-block__mail_subscribe {
+  padding: 20px;
+  cursor: pointer;
+  color: var(--color-text-title);
+}
+
+.aside-block__mail_subscribe_about {
+  display: flex;
+  align-items: center;
+}
+
+.aside-block__mail_subscribe_about i {
+  font-size: 25px;
+  margin: 0 20px 0 0;
+}
+
+.aside-block__mail_subscribe_about-text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.aside-block__mail_subscribe:hover {
+  background-color: var(--temple-main-color);
+  color: var(--bg-block);
+  border-radius: 3px;
+}
+
+.aside-block__activity-society {
+  padding: 0px 20px 20px 20px;
+}
+
+.aside-block__activity-society-item-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  object-fit: cover;
+  margin: 0 10px 0 0;
+}
+
+.aside-block__activity-society-item {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.aside-block__activity-society-item:last-child {
+  margin: 0;
+}
+
+.aside-block__activity-society-item__title {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text-title);
 }
 
 @media (max-width: 900px) {
