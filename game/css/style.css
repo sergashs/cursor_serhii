@@ -8,7 +8,7 @@ a {
 }
 
 :root {
-  --temple-main-color: #db3742;
+  --temple-main-color: #a83038;
   --bg-body: #f4f4f4;
   --bg-block: #fff;
   --color-border: rgb(230, 230, 230);
@@ -235,19 +235,19 @@ body {
 }
 
 .default_color {
-  background-color: #db3742;
+  background-color: #a83038;
 }
 .first {
   background-color: #2776aa;
 }
 .second {
-  background-color: #719f62;
+  background-color: #5e8351;
 }
 .fourth {
-  background-color: #b58ab3;
+  background-color: #967294;
 }
 .fifth {
-  background-color: #bd9f99;
+  background-color: #927b76;
 }
 
 .changer-theme__colors {

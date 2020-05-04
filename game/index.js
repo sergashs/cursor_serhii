@@ -50,21 +50,21 @@ let fourth = document.querySelector(".fourth");
 
 let fifth = document.querySelector(".fifth");
 
-if (localStorage.getItem("--temple-main-color") == "#db3742") {
-  document.documentElement.style.setProperty("--temple-main-color", "#db3742");
+if (localStorage.getItem("--temple-main-color") == "#a83038") {
+  document.documentElement.style.setProperty("--temple-main-color", "#a83038");
 } else if (localStorage.getItem("--temple-main-color") == "#2776aa") {
   document.documentElement.style.setProperty("--temple-main-color", "#2776aa");
-} else if (localStorage.getItem("--temple-main-color") == "#719f62") {
-  document.documentElement.style.setProperty("--temple-main-color", "#719f62");
-} else if (localStorage.getItem("--temple-main-color") == "#B58AB3") {
-  document.documentElement.style.setProperty("--temple-main-color", "#B58AB3");
-} else if (localStorage.getItem("--temple-main-color") == "#BD9F99") {
-  document.documentElement.style.setProperty("--temple-main-color", "#BD9F99");
+} else if (localStorage.getItem("--temple-main-color") == "#5e8351") {
+  document.documentElement.style.setProperty("--temple-main-color", "#5e8351");
+} else if (localStorage.getItem("--temple-main-color") == "#967294") {
+  document.documentElement.style.setProperty("--temple-main-color", "#967294");
+} else if (localStorage.getItem("--temple-main-color") == "#927b76") {
+  document.documentElement.style.setProperty("--temple-main-color", "#927b76");
 }
 
 default_color.onclick = function () {
-  document.documentElement.style.setProperty("--temple-main-color", "#db3742");
-  localStorage.setItem("--temple-main-color", "#db3742");
+  document.documentElement.style.setProperty("--temple-main-color", "#a83038");
+  localStorage.setItem("--temple-main-color", "#a83038");
 };
 
 first.onclick = function () {
@@ -73,18 +73,18 @@ first.onclick = function () {
 };
 
 second.onclick = function () {
-  document.documentElement.style.setProperty("--temple-main-color", "#719f62");
-  localStorage.setItem("--temple-main-color", "#719f62");
+  document.documentElement.style.setProperty("--temple-main-color", "#5e8351");
+  localStorage.setItem("--temple-main-color", "#5e8351");
 };
 
 fourth.onclick = function () {
-  document.documentElement.style.setProperty("--temple-main-color", "#B58AB3");
-  localStorage.setItem("--temple-main-color", "#B58AB3");
+  document.documentElement.style.setProperty("--temple-main-color", "#967294");
+  localStorage.setItem("--temple-main-color", "#967294");
 };
 
 fifth.onclick = function () {
-  document.documentElement.style.setProperty("--temple-main-color", "#BD9F99");
-  localStorage.setItem("--temple-main-color", "#BD9F99");
+  document.documentElement.style.setProperty("--temple-main-color", "#927b76");
+  localStorage.setItem("--temple-main-color", "#927b76");
 };
 
 document.getElementById("darkmode").addEventListener("change", (ev) => {
