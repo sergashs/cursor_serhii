@@ -1,3 +1,5 @@
+// buttons start
+
 document.getElementById("left-menu").addEventListener("change", (ev) => {
   let Leftmenubutton = ev.target;
   let Leftmainside = document.querySelector(".main__left-side-container");
@@ -13,6 +15,8 @@ document.getElementById("left-menu").addEventListener("change", (ev) => {
     Leftmainside.classList.toggle("open");
   }
 });
+
+// buttons end
 
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("nav")[0];
