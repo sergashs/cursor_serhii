@@ -35,10 +35,10 @@
         </div>
 
         <nav class="nav">
-          <a href="#" class="nav__link search-icon"
+          <a href="#" class="nav__link search-icon" data-path="form-popup"
             ><i class="fa fa-search" aria-hidden="true"></i
           ></a>
-          <a href="#" class="nav__link"
+          <a href="#" class="nav__link popup-sign-up-open"
             ><i class="fa fa-user-circle-o" aria-hidden="true"></i>
             <span class="nav__link__text">Войти</span></a
           >
@@ -373,6 +373,41 @@
 
     <div id="changer-theme-icon">
       <i class="fa fa-paint-brush" aria-hidden="true"></i>
+    </div>
+
+    <div class="popup-sign-up__container">
+      <div class="popup-sign-up">
+        <div class="popup-sign-up__left"></div>
+        <div class="popup-sign-up__right">
+          <div class="popup-sign-up__title">Вход на сайт</div>
+          <button class="popup-sign-up__button">
+            <i class="fa fa-vk sign-up__icon" aria-hidden="true"></i> Вконтакте
+          </button>
+
+          <button class="popup-sign-up__button">
+            <i class="fa fa-google sign-up__icon" aria-hidden="true"></i> Google
+          </button>
+          <button class="popup-sign-up__button">
+            <i class="fa fa-envelope-o sign-up__icon" aria-hidden="true"></i>
+            Через почту
+          </button>
+          <button class="popup-sign-up__button">
+            <i class="fa fa-twitter sign-up__icon" aria-hidden="true"></i>
+            Twitter
+          </button>
+          <div class="popup-sign-up__rules">
+            Авторизуясь, вы соглашаетесь с
+            <a href="#">правилами пользования сайтом</a> и даете согласие на
+            обработку персональных данных
+          </div>
+
+          <i
+            class="fa fa-times"
+            id="popup-sign-up__close-button"
+            aria-hidden="true"
+          ></i>
+        </div>
+      </div>
     </div>
 
     <script src="index.js"></script>

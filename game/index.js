@@ -172,3 +172,30 @@ else {
     "0 0 25px rgba(0, 0, 0, 0.1)"
   );
 }
+
+///// popup
+
+let modalContainer = document.querySelector(".popup-sign-up__container");
+let modalPopupSignUp = document.querySelector(".popup-sign-up");
+let openSearch = document.querySelector(".popup-sign-up-open");
+let closeModalPopupSignUp = document.getElementById(
+  "popup-sign-up__close-button"
+);
+
+openSearch.onclick = function () {
+  modalContainer.classList.add("popup-sign-up__container--visible");
+  modalPopupSignUp.classList.add("popup-sign-up--visible");
+};
+
+closeModalPopupSignUp.onclick = function () {
+  modalContainer.classList.remove("popup-sign-up__container--visible");
+  modalPopupSignUp.classList.remove("popup-sign-up--visible");
+};
+
+modalContainer.addEventListener("click", (e) => {
+  console.log(e.target);
+  if (e.target == modalContainer) {
+    modalContainer.classList.remove("popup-sign-up__container--visible");
+    modalPopupSignUp.classList.remove("popup-sign-up--visible");
+  }
+});

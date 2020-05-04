@@ -33,6 +33,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 100;
+  top: 0;
 }
 
 .header > .container {
@@ -621,6 +622,111 @@ body {
   background-color: var(--bg-body);
 }
 
+.popup-sign-up__container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10000;
+  transition: all 0.3s ease-in-out;
+}
+
+.popup-sign-up {
+  background-color: var(--bg-block);
+  border-radius: 3px;
+  width: 600px;
+  height: 500px;
+  display: flex;
+  position: relative;
+  display: none;
+}
+
+.popup-sign-up__container--visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.popup-sign-up--visible {
+  display: flex;
+}
+
+.popup-sign-up__left {
+  background-image: url(https://gamemag.ru/images/cache/News/News141305/16b39b1db8-2_1390x600.jpg);
+  background-size: cover;
+  background-position: 19% 50%;
+  height: 100%;
+  width: 600px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.popup-sign-up__button {
+  background-color: var(--bg-block);
+  border: solid 1px var(--color-border);
+  border-radius: 3px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 0 10px 0;
+  color: var(--color-text-title);
+}
+
+.popup-sign-up__button:hover {
+  border: solid 1px var(--temple-main-color);
+}
+
+.popup-sign-up__right {
+  width: 100%;
+  padding: 80px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-sign-up__title {
+  color: var(--color-text-title);
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.sign-up__icon {
+  position: absolute;
+  left: 10px;
+}
+
+#popup-sign-up__close-button {
+  color: var(--color-text-title);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#popup-sign-up__close-button:hover {
+  opacity: 1;
+}
+
+.popup-sign-up__rules {
+  color: var(--color-text-title);
+  opacity: 0.7;
+  font-size: 13px;
+  position: absolute;
+  bottom: 20px;
+  line-height: 17px;
+}
+
 @media (max-width: 900px) {
   .main__left-side-container {
     display: none;
@@ -721,11 +827,20 @@ body {
   .aside-block {
     width: 100%;
   }
-}
-
-@media (max-width: 700px) {
   .main {
     padding: 60px 0 20px 0;
+  }
+
+  .popup-sign-up {
+    max-width: 600px;
+    height: 500px;
+    margin: 20px;
+  }
+  .popup-sign-up__left {
+    width: 50%;
+  }
+  .popup-sign-up__right {
+    width: 50%;
   }
 }
 
@@ -740,5 +855,11 @@ body {
   }
   .counters-block__left {
     margin: 0 0 10px 0;
+  }
+  .popup-sign-up__left {
+    display: none;
+  }
+  .popup-sign-up__right {
+    width: 100%;
   }
 }
