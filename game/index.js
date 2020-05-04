@@ -44,14 +44,18 @@ let second = document.querySelector(".second");
 
 let fourth = document.querySelector(".fourth");
 
+let fifth = document.querySelector(".fifth");
+
 if (localStorage.getItem("--temple-main-color") == "#db3742") {
   document.documentElement.style.setProperty("--temple-main-color", "#db3742");
 } else if (localStorage.getItem("--temple-main-color") == "#2776aa") {
   document.documentElement.style.setProperty("--temple-main-color", "#2776aa");
-} else if (localStorage.getItem("--temple-main-color") == "#174c51") {
-  document.documentElement.style.setProperty("--temple-main-color", "#174c51");
-} else if (localStorage.getItem("--temple-main-color") == "#636e60") {
-  document.documentElement.style.setProperty("--temple-main-color", "#636e60");
+} else if (localStorage.getItem("--temple-main-color") == "#719f62") {
+  document.documentElement.style.setProperty("--temple-main-color", "#719f62");
+} else if (localStorage.getItem("--temple-main-color") == "#B58AB3") {
+  document.documentElement.style.setProperty("--temple-main-color", "#B58AB3");
+} else if (localStorage.getItem("--temple-main-color") == "#BD9F99") {
+  document.documentElement.style.setProperty("--temple-main-color", "#BD9F99");
 }
 
 default_color.onclick = function () {
@@ -65,13 +69,18 @@ first.onclick = function () {
 };
 
 second.onclick = function () {
-  document.documentElement.style.setProperty("--temple-main-color", "#174c51");
-  localStorage.setItem("--temple-main-color", "#174c51");
+  document.documentElement.style.setProperty("--temple-main-color", "#719f62");
+  localStorage.setItem("--temple-main-color", "#719f62");
 };
 
 fourth.onclick = function () {
-  document.documentElement.style.setProperty("--temple-main-color", "#636e60");
-  localStorage.setItem("--temple-main-color", "#636e60");
+  document.documentElement.style.setProperty("--temple-main-color", "#B58AB3");
+  localStorage.setItem("--temple-main-color", "#B58AB3");
+};
+
+fifth.onclick = function () {
+  document.documentElement.style.setProperty("--temple-main-color", "#BD9F99");
+  localStorage.setItem("--temple-main-color", "#BD9F99");
 };
 
 document.getElementById("darkmode").addEventListener("change", (ev) => {
