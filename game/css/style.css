@@ -291,7 +291,7 @@ body {
   width: 34px;
   height: 14px;
   display: block;
-  background: var(--color-text-counter);
+  background: var(--bg-body);
   border-radius: 8px;
   transition: 0.2s ease;
   opacity: 1;
@@ -303,37 +303,15 @@ body {
   width: 20px;
   height: 20px;
   display: block;
-  background: var(--bg-body);
+  background: var(--color-text-counter);
   border-radius: 10px;
   transition: all 0.2s ease;
 }
-.toggle span:before {
-  content: "";
-  position: absolute;
-  display: block;
-  margin: -18px;
-  width: 56px;
-  height: 56px;
-  background: var(--temple-main-color);
-  border-radius: 50%;
-  transform: scale(0);
-  opacity: 1;
-  pointer-events: none;
-}
 
-#darkmode:checked + .toggle:before {
-  background: var(--color-border);
-}
 #darkmode:checked + .toggle span {
   background: var(--temple-main-color);
   transform: translateX(20px);
   transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), 0.15s ease;
-  /* box-shadow: 0 3px 8px var(--temple-main-color); */
-}
-#darkmode:checked + .toggle span:before {
-  transform: scale(1);
-  opacity: 0;
-  transition: all 0.4s ease;
 }
 
 .comment__informer-item {
