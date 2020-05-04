@@ -538,8 +538,8 @@ body {
 .aside-block__popular-society_subscribe-button {
   background-color: var(--temple-main-color);
   border: none;
-  text-transform: uppercase;
-  font-size: 13px;
+  font-weight: bold;
+  font-size: 14px;
   color: var(--bg-block);
   padding: 10px;
   border-radius: 3px;
