@@ -621,8 +621,7 @@ body {
   width: 100%;
   background-color: var(--bg-body);
 }
-
-.popup-sign-up__container {
+.modal-overlay {
   position: fixed;
   left: 0;
   top: 0;
@@ -636,27 +635,29 @@ body {
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  z-index: 10000;
   transition: all 0.3s ease-in-out;
+  z-index: 1000;
 }
 
-.popup-sign-up {
+.modal {
   background-color: var(--bg-block);
-  border-radius: 3px;
-  width: 600px;
-  height: 500px;
+  max-width: 600px;
+  max-height: 500px;
   display: flex;
-  position: relative;
+  border-radius: 3px;
+  justify-content: center;
   display: none;
+  position: relative;
+  margin: 20px;
 }
 
-.popup-sign-up__container--visible {
+.modal-overlay--visible {
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease-in-out;
 }
 
-.popup-sign-up--visible {
+.modal--visible {
   display: flex;
 }
 
@@ -664,7 +665,6 @@ body {
   background-image: url(https://gamemag.ru/images/cache/News/News141305/16b39b1db8-2_1390x600.jpg);
   background-size: cover;
   background-position: 19% 50%;
-  height: 100%;
   width: 600px;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
@@ -692,6 +692,8 @@ body {
   padding: 80px 20px 20px 20px;
   display: flex;
   flex-direction: column;
+  height: 500px;
+  justify-content: space-between;
 }
 
 .popup-sign-up__title {
@@ -705,7 +707,7 @@ body {
   left: 10px;
 }
 
-#popup-sign-up__close-button {
+.close-modal-icon {
   color: var(--color-text-title);
   position: absolute;
   right: 20px;
@@ -714,7 +716,7 @@ body {
   opacity: 0.6;
 }
 
-#popup-sign-up__close-button:hover {
+.close-modal-icon:hover {
   opacity: 1;
 }
 
@@ -722,9 +724,33 @@ body {
   color: var(--color-text-title);
   opacity: 0.7;
   font-size: 13px;
-  position: absolute;
-  bottom: 20px;
   line-height: 17px;
+}
+
+.popup-subscribe-email-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.popup-subscribe-email__title {
+  color: var(--color-text-title);
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.popup-subscribe-email__input {
+  border: solid 1px var(--bg-body);
+  border-radius: 3px;
+  padding: 8px;
+  margin: 0 10px 0 0;
+  color: var(--color-text-counter);
+  background-color: var(--bg-body);
+}
+
+.popup-subscribe-email__input::placeholder {
+  color: var(--color-text-counter);
 }
 
 @media (max-width: 900px) {

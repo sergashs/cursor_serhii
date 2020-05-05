@@ -174,28 +174,39 @@ else {
 }
 
 ///// popup
+const btns = document.querySelectorAll(".open-modal");
+const modalOverlay = document.querySelector(".modal-overlay ");
+const modals = document.querySelectorAll(".modal");
+const IconcloseModals = document.querySelector(".close-modal-icon ");
 
-let modalContainer = document.querySelector(".popup-sign-up__container");
-let modalPopupSignUp = document.querySelector(".popup-sign-up");
-let openSearch = document.querySelector(".popup-sign-up-open");
-let closeModalPopupSignUp = document.getElementById(
-  "popup-sign-up__close-button"
-);
+btns.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    let path = e.currentTarget.getAttribute("data-path");
 
-openSearch.onclick = function () {
-  modalContainer.classList.add("popup-sign-up__container--visible");
-  modalPopupSignUp.classList.add("popup-sign-up--visible");
-};
+    modals.forEach((el) => {
+      el.classList.remove("modal--visible");
+    });
 
-closeModalPopupSignUp.onclick = function () {
-  modalContainer.classList.remove("popup-sign-up__container--visible");
-  modalPopupSignUp.classList.remove("popup-sign-up--visible");
-};
+    document
+      .querySelector(`[data-target="${path}"]`)
+      .classList.add("modal--visible");
+    modalOverlay.classList.add("modal-overlay--visible");
+  });
+});
 
-modalContainer.addEventListener("click", (e) => {
+modalOverlay.addEventListener("click", (e) => {
   console.log(e.target);
-  if (e.target == modalContainer) {
-    modalContainer.classList.remove("popup-sign-up__container--visible");
-    modalPopupSignUp.classList.remove("popup-sign-up--visible");
+  if (e.target == modalOverlay) {
+    modalOverlay.classList.remove("modal-overlay--visible");
+    modals.forEach((el) => {
+      el.classList.remove("modal--visible");
+    });
+  }
+
+  if (e.target == IconcloseModals) {
+    modalOverlay.classList.remove("modal-overlay--visible");
+    modals.forEach((el) => {
+      el.classList.remove("modal--visible");
+    });
   }
 });

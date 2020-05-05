@@ -35,10 +35,10 @@
         </div>
 
         <nav class="nav">
-          <a href="#" class="nav__link search-icon" data-path="form-popup"
+          <a href="#" class="nav__link search-icon"
             ><i class="fa fa-search" aria-hidden="true"></i
           ></a>
-          <a href="#" class="nav__link popup-sign-up-open"
+          <a href="#" class="nav__link open-modal" data-path="form-popup"
             ><i class="fa fa-user-circle-o" aria-hidden="true"></i>
             <span class="nav__link__text">Войти</span></a
           >
@@ -278,7 +278,10 @@
         </div>
 
         <div class="aside-block">
-          <div class="aside-block__mail_subscribe">
+          <div
+            class="aside-block__mail_subscribe open-modal"
+            data-path="me-popup"
+          >
             <div class="aside-block__mail_subscribe_about">
               <i class="fa fa-envelope-o" aria-hidden="true"></i>
               <div class="aside-block__mail_subscribe_about-text">
@@ -375,15 +378,20 @@
       <i class="fa fa-paint-brush" aria-hidden="true"></i>
     </div>
 
-    <div class="popup-sign-up__container">
-      <div class="popup-sign-up">
+   
+
+
+    <div class="modal-overlay">
+
+
+      <div class="modal" data-target="form-popup">
         <div class="popup-sign-up__left"></div>
         <div class="popup-sign-up__right">
-          <div class="popup-sign-up__title">Вход на сайт</div>
+          <div class="popup-sign-up__first-section">
+            <div class="popup-sign-up__title">Вход на сайт</div>
           <button class="popup-sign-up__button">
             <i class="fa fa-vk sign-up__icon" aria-hidden="true"></i> Вконтакте
           </button>
-
           <button class="popup-sign-up__button">
             <i class="fa fa-google sign-up__icon" aria-hidden="true"></i> Google
           </button>
@@ -395,19 +403,36 @@
             <i class="fa fa-twitter sign-up__icon" aria-hidden="true"></i>
             Twitter
           </button>
-          <div class="popup-sign-up__rules">
+          </div> 
+          <div class="popup-sign-up__second-section"><div class="popup-sign-up__rules">
             Авторизуясь, вы соглашаетесь с
             <a href="#">правилами пользования сайтом</a> и даете согласие на
             обработку персональных данных
-          </div>
-
-          <i
-            class="fa fa-times"
-            id="popup-sign-up__close-button"
-            aria-hidden="true"
-          ></i>
+          </div></div>
+          <i class="fa fa-times close-modal-icon" aria-hidden="true"></i>
         </div>
       </div>
+
+
+      <div class="modal" data-target="me-popup">
+        
+        <div class="popup-subscribe-email-container">
+          <div class="popup-subscribe-email__title">
+            Подписка на рассылку
+          </div>
+          <div class="popup-subscribe-email__description"></div>
+  
+          <div class="popup-subscribe-email___form">
+            <input type="text" class="popup-subscribe-email__input" placeholder="Напишите свой e-mail"
+            />
+            <button class="aside-block__popular-society_subscribe-button">Подписаться</button>
+           
+          </div>
+        </div>
+        <i class="fa fa-times close-modal-icon" aria-hidden="true"></i>
+        </div>
+        </div>
+       
     </div>
 
     <script src="index.js"></script>
