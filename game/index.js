@@ -252,8 +252,9 @@ document.addEventListener("DOMContentLoaded", function () {
     false
   );
 
-  overlay.addEventListener("click", (e) => {
+  overlay.addEventListener("click", function (e) {
     if (e.target == overlay) {
+      document.querySelector(".modal.active").classList.remove("active");
       document.querySelector(".overlay").classList.remove("active");
     }
   });
