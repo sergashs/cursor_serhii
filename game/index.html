@@ -38,7 +38,7 @@
           <a href="#" class="nav__link search-icon"
             ><i class="fa fa-search" aria-hidden="true"></i
           ></a>
-          <a href="#" class="nav__link open-modal" data-path="form-popup"
+          <a href="#" class="nav__link open-modal" data-modal="1"
             ><i class="fa fa-user-circle-o" aria-hidden="true"></i>
             <span class="nav__link__text">Войти</span></a
           >
@@ -280,7 +280,7 @@
         <div class="aside-block">
           <div
             class="aside-block__mail_subscribe open-modal"
-            data-path="me-popup"
+            data-modal="2"
           >
             <div class="aside-block__mail_subscribe_about">
               <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -380,11 +380,11 @@
 
    
 
+    <div class="overlay">
+    
 
-    <div class="modal-overlay">
 
-
-      <div class="modal" data-target="form-popup">
+      <div class="modal"  data-modal="1">
         <div class="popup-sign-up__left"></div>
         <div class="popup-sign-up__right">
           <div class="popup-sign-up__first-section">
@@ -414,7 +414,7 @@
       </div>
 
 
-      <div class="modal" data-target="me-popup">
+      <div class="modal"  data-modal="2">
         
         <div class="popup-subscribe-email-container">
           <div class="popup-subscribe-email__title">
@@ -433,7 +433,7 @@
         </div>
         </div>
        
-    </div>
+       </div>
 
     <script src="index.js"></script>
   </body>

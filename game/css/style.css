@@ -621,7 +621,8 @@ body {
   width: 100%;
   background-color: var(--bg-body);
 }
-.modal-overlay {
+
+.overlay {
   position: fixed;
   left: 0;
   top: 0;
@@ -640,25 +641,29 @@ body {
 }
 
 .modal {
+  align-self: center;
   background-color: var(--bg-block);
   max-width: 600px;
   max-height: 500px;
-  display: flex;
+  display: none;
   border-radius: 3px;
   justify-content: center;
-  display: none;
+  visibility: hidden;
   position: relative;
   margin: 20px;
+  z-index: 1000;
 }
 
-.modal-overlay--visible {
+/* Стили для активных классов подложки и окна */
+
+.modal.active {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+.overlay.active {
   opacity: 1;
   visibility: visible;
-  transition: all 0.3s ease-in-out;
-}
-
-.modal--visible {
-  display: flex;
 }
 
 .popup-sign-up__left {
@@ -886,6 +891,9 @@ body {
     display: none;
   }
   .popup-sign-up__right {
+    width: 100%;
+  }
+  .popup-subscribe-email__input {
     width: 100%;
   }
 }
