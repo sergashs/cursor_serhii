@@ -34,3 +34,7 @@ svg {
 input[type="checkbox"] {
   display: none;
 }
+
+.image-source-link {
+  color: rgb(148, 213, 243);
+}

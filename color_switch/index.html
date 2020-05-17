@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__column">
+          <div class="header__logo">
+      
+            <div class="header__logo__title">Header logo</div>
+
+           
+       
+         
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__container">
+       <article class="article">
+I want to present you the first version of my script for changing the <span>color of the theme</span> that is stored in localstorage.
+
+
+</article>
+      </div>
+    </main>
+
+    <div class="button-open-colorswitch">
+      <i class="fa fa-paint-brush" aria-hidden="true"></i>
+    </div>
+
+    <div class="modal-colorswitch">
+      <div class="modal-colorswitch__title">Сhoose the main color</div>
+
+      <div class="modal-colorswitch__main-colors-container">
+        <div
+          class="main-color-block"
+          id="color1"
+          onclick="Color1toLocal()"
+        ></div>
+        <div
+          class="main-color-block"
+          id="color2"
+          onclick="Color2toLocal()"
+        ></div>
+        <div
+          class="main-color-block"
+          id="color3"
+          onclick="Color3toLocal()"
+        ></div>
+        <div
+          class="main-color-block"
+          id="color4"
+          onclick="Color4toLocal()"
+        ></div>
+        <div
+          class="main-color-block"
+          id="color5"
+          onclick="Color5toLocal()"
+        ></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

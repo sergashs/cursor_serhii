@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #6992ff;
+  --text-color: #000000;
+  --white-text-color: #fff;
+  --background-body: #ececec;
+  --border: rgb(224, 224, 224);
+  --background-blocks: #fff;
+}
+
+body {
+  font-size: 16px;
+  background: var(--background-body);
+  color: var(--text-color);
+  font-family: Roboto;
+}
+
+.header {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.header__container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px 0 20px;
+}
+
+.header__logo__title {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* article */
+
+.main__container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.article {
+  background-color: var(--background-blocks);
+  max-width: 600px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  line-height: 150%;
+}
+
+span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+/* article */
+
+/* window set colors */
+
+.button-open-colorswitch {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: var(--main-color);
+  color: var(--white-text-color);
+  padding: 15px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.modal-colorswitch {
+  display: none;
+  position: fixed;
+  right: 20px;
+  padding: 20px;
+  bottom: 80px;
+  width: 250px;
+  border-radius: 5px;
+  background-color: var(--background-blocks);
+  box-shadow: 0 0 21px rgba(0, 0, 0, 0.1);
+}
+
+.modal-colorswitch::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--background-blocks);
+  transform: rotate(40deg);
+}
+
+.modal-colorswitch.open {
+  display: block;
+}
+
+.modal-colorswitch__title {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.modal-colorswitch__main-colors-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-color-block {
+  background-color: antiquewhite;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+}
+
+/* window set colors */
