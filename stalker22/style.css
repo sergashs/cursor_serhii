@@ -8,6 +8,10 @@
   src: url(./fonts/Boycott.otf);
 }
 
+:root {
+  --main-color: #485775;
+}
+
 a {
   text-decoration: none;
   color: #111214;
@@ -22,9 +26,15 @@ a {
 body {
   font-family: "Segoe UI";
   color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #272b33;
 }
 
 header {
+  max-width: 1000px;
   width: 100%;
   z-index: 1000;
   padding: 0px 20px 0px 20px;
@@ -57,25 +67,19 @@ header ul li a {
 }
 
 header ul li a:hover {
-  color: #e3c62d;
-}
-
-.underheader {
-  background-image: url(./img/bg-header.jpg);
-  background-position: 100% 80%;
-  width: 100%;
-  height: 250px;
+  color: var(--main-color);
 }
 
 main {
+  width: 100%;
+  max-width: 1000px;
   display: flex;
-  margin-top: 30px;
   justify-content: center;
-  padding: 0px 20px 0px 20px;
+  padding: 20px;
+  background-color: #fff;
 }
 
 .publ {
-  max-width: 800px;
   margin-bottom: 50px;
   position: relative;
 }
@@ -104,11 +108,10 @@ main {
 
 .publ-info span a {
   text-decoration: none;
-  color: #e3c62d;
+  color: var(--main-color);
 }
 
 .publ-img {
-  max-width: 800px;
   overflow: hidden;
 }
 
@@ -171,13 +174,13 @@ aside {
 }
 
 .tag-block:hover {
-  background-color: #e3c62d;
+  background-color: var(--main-color);
 }
 
 footer {
-  margin-top: 30px;
+  max-width: 1000px;
   width: 100%;
-  height: 300px;
+  padding: 20px;
   background-color: #f5f5f5;
   display: flex;
   justify-content: center;
@@ -191,7 +194,7 @@ footer {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
+  width: 25px;
   height: 21px;
 }
 
@@ -245,8 +248,8 @@ footer {
   }
 
   .navbar-links li a:hover {
-    background-color: #e3c62d;
-    color: rgb(61, 63, 66);
+    background-color: var(--main-color);
+    color: rgb(250, 250, 250);
   }
 
   .navbar-links li a {

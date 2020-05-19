@@ -42,7 +42,6 @@ body {
 /* article */
 
 .main__container {
-  max-width: 1400px;
   display: flex;
   justify-content: center;
   padding: 20px;
