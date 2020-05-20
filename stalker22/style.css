@@ -1,20 +1,10 @@
-@font-face {
-  font-family: stalkerLogo; /* Гарнитура шрифта */
-  src: url(./fonts/stalkerLogo.ttf);
-}
-
-@font-face {
-  font-family: stalkerBoycott; /* Гарнитура шрифта */
-  src: url(./fonts/Boycott.otf);
-}
-
 :root {
   --main-color: #485775;
 }
 
 a {
   text-decoration: none;
-  color: #111214;
+  color: var(--main-color);
 }
 
 * {
@@ -30,7 +20,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #272b33;
+  background-color: #e0e1e6;
+  font-size: 15px;
 }
 
 header {
@@ -42,15 +33,16 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  background-color: #16191c;
-  border-bottom: 1px solid #323233;
+  background-color: #3457dc;
 }
 
 .logo {
-  font-family: stalkerLogo;
-  letter-spacing: 2px;
-  color: #ecedee;
-  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.logo__img {
+  width: 50px;
   cursor: pointer;
 }
 
@@ -60,14 +52,14 @@ header ul {
 
 header ul li a {
   text-decoration: none;
-  color: #92969b;
+  color: #fff;
   font-family: "Segoe UI";
   margin-left: 20px;
   font-weight: 600;
 }
 
 header ul li a:hover {
-  color: var(--main-color);
+  color: rgb(221, 221, 221);
 }
 
 main {
@@ -97,18 +89,35 @@ main {
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #2e2e30;
+  color: #242e4c;
 }
 
-.publ-info {
-  color: #838484;
+.publ__info {
+  color: #5d698d;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #f7f9fd;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.publ-info span a {
-  text-decoration: none;
-  color: var(--main-color);
+.publ__info-item {
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+.publ__info-item::after {
+  content: "\f111";
+  font-family: FontAwesome;
+  margin: 0 5px 0 5px;
+  font-size: 5px;
+}
+
+.publ__info-item:last-child::after {
+  display: none;
 }
 
 .publ-img {
@@ -130,8 +139,9 @@ main {
 
 .publ-text {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 140%;
+  color: #202842;
 }
 
 aside {
@@ -185,6 +195,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .toggle-button {
