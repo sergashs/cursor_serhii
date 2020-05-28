@@ -133,7 +133,7 @@ input {
 
 @font-face {
   font-family: "Relay Cond Regular";
-  src: url("/font/Relaycont-Regular.ttf") format("truetype");
+  src: url("/font/Relaycont-regular.ttf") format("truetype");
   font-style: normal !important;
   font-weight: 400 !important;
 }
