@@ -39,3 +39,15 @@ else {
   document.documentElement.style.setProperty("--grey-text", "#979797");
   document.documentElement.style.setProperty("--input--border", "#cfcfcf");
 }
+
+document.getElementById("menu").addEventListener("change", (ev) => {
+  let btn = ev.target;
+
+  if (btn.checked) {
+    document.querySelector(".nav-1").classList.add("active");
+    document.querySelector(".nav-2").classList.add("active");
+  } else {
+    document.querySelector(".nav-1").classList.remove("active");
+    document.querySelector(".nav-2").classList.remove("active");
+  }
+});
