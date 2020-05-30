@@ -138,15 +138,6 @@ input {
   font-weight: 400 !important;
 }
 
-.header-nav-primary,
-.header-nav-secondary-utility li,
-.header-trending h2,
-.header-trending-story,
-.header-trending-tags,
-body {
-  font-family: museo-sans, Helvetica, Arial, sans-serif;
-}
-
 body {
   font-weight: 300;
 }
@@ -1254,7 +1245,6 @@ h2 a {
 }
 
 html {
-  font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
