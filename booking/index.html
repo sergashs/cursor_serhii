@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Main</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="header__burger-menu">
+          <div class="burger-menu-lines-container">
+            <div class="burger-menu-line"></div>
+            <div class="burger-menu-line"></div>
+            <div class="burger-menu-line"></div>
+          </div>
+        </div>
+
+        <div class="header__profile">
+          <a href="#" class="header__link">Sign In</a>
+          <a href="#" class="header__link header__link-with-bg">Book Now</a>
+        </div>
+      </div>
+
+      <div class="header__main-text-container">
+        <div class="header__main-text-before">Your <span>rest</span></div>
+        <div class="header__main-text">anywhere in the world</div>
+        <div class="header__main-text-after">
+          book the best hotels in one clock
+        </div>
+      </div>
+
+      <div class="header__search-panel">
+        <div class="search-panel-column">
+          <div class="search-panel-column-title">City or Hotel Name</div>
+          <div class="input-cities-container">
+            <input
+              name="city"
+              list="cities"
+              placeholder="Florida"
+              class="input-cities"
+            />
+            <img src="./img/city-icon.png" alt="" class="icon-city-img" />
+            <datalist id="cities">
+              <option value="Naples"></option>
+              <option value="London"> </option>
+              <option value="Berlin"> </option>
+              <option value="New York"> </option>
+              <option value="Frattamaggiore"> </option>
+            </datalist>
+          </div>
+        </div>
+
+        <div class="search-panel-column">
+          <div class="search-panel-column-title">Arrival Date</div>
+          <div class="container-arrival-date">
+            <input
+              class="arrival-date"
+              placeholder="01.06.2020"
+              list="dates"
+              name="date"
+            />
+            <img src="./img/date-cion.png" alt="" class="icon-date-img" />
+          </div>
+        </div>
+
+        <div class="search-panel-column">
+          <div class="search-panel-column-title">Departure Date</div>
+          <div class="container-arrival-date">
+            <input
+              class="arrival-date"
+              placeholder="01.06.2020"
+              list="dates"
+              name="date"
+            />
+            <img src="./img/date-cion.png" alt="" class="icon-date-img" />
+          </div>
+        </div>
+
+        <div class="search-panel-column">
+          <div class="search-panel-column-title">Person</div>
+          <div class="container-person">
+            <input
+              class="person"
+              placeholder="1 Adult"
+              list="persons"
+              name="person"
+            />
+            <datalist id="persons">
+              <option value="2 Adult"></option>
+              <option value="3 Adult"> </option>
+              <option value="4 Adult"> </option>
+            </datalist>
+          </div>
+        </div>
+
+        <div class="search-panel-column">
+          <div class="search-panel-column-title">Rooms</div>
+          <div class="container-rooms">
+            <input class="rooms" placeholder="2" list="rooms" name="person" />
+            <datalist id="rooms">
+              <option value="1"></option>
+              <option value="3"> </option>
+              <option value="4"> </option>
+            </datalist>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <div class="search-panel-column">
+            <div class="search-panel-button-plus">
+              <a href="#"> <img src="/img/plus-button.jpg" alt="" /></a>
+            </div>
+          </div>
+
+          <button class="search-now">Book Now</button>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer"></footer>
+  </body>
+</html>
