@@ -1,6 +1,6 @@
 @font-face {
   font-family: "HelveticaNeueCyr";
-  src: url("/fonts/HelveticaNeueCyr.ttf") format("truetype");
+  src: url("./fonts/HelveticaNeueCyr.ttf") format("truetype");
 }
 
 body {
@@ -12,7 +12,7 @@ a {
 }
 
 .header {
-  background-image: url(/img/bg-header.jpg);
+  background-image: url(./img/bg-header.jpg);
   background-size: cover;
   height: 70vh;
 }
