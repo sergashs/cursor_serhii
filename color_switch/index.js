@@ -4,52 +4,28 @@ const Color3 = "#137557";
 const Color4 = "#CC8390";
 const Color5 = "#CC823E";
 
-function getcolorfromLocalstorage() {
-  document.documentElement.style.setProperty(
-    "--main-color",
-    localStorage.getItem("mainColor")
-  );
-}
-
-getcolorfromLocalstorage();
-
 function Color1toLocal() {
-  localStorage.mainColor = document.documentElement.style.setProperty(
-    "--main-color",
-    Color1
-  );
+  document.documentElement.style.setProperty("--main-color", Color1);
   return localStorage.setItem("mainColor", Color1);
 }
 
 function Color2toLocal() {
-  localStorage.mainColor = document.documentElement.style.setProperty(
-    "--main-color",
-    Color2
-  );
+  document.documentElement.style.setProperty("--main-color", Color2);
   localStorage.setItem("mainColor", Color2);
 }
 
 function Color3toLocal() {
-  localStorage.mainColor = document.documentElement.style.setProperty(
-    "--main-color",
-    Color3
-  );
+  document.documentElement.style.setProperty("--main-color", Color3);
   localStorage.setItem("mainColor", Color3);
 }
 
 function Color4toLocal() {
-  localStorage.mainColor = document.documentElement.style.setProperty(
-    "--main-color",
-    Color4
-  );
+  document.documentElement.style.setProperty("--main-color", Color4);
   localStorage.setItem("mainColor", Color4);
 }
 
 function Color5toLocal() {
-  localStorage.mainColor = document.documentElement.style.setProperty(
-    "--main-color",
-    Color5
-  );
+  document.documentElement.style.setProperty("--main-color", Color5);
   localStorage.setItem("mainColor", Color5);
 }
 
