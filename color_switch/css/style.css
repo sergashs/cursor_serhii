@@ -15,12 +15,13 @@ body {
   font-size: 16px;
   background: var(--background-body);
   color: var(--text-color);
-  font-family: Roboto;
+  font-family: "PT Sans", sans-serif;
 }
 
 .header {
   background-color: var(--main-color);
   color: #fff;
+  transition: ease-in 0.3s;
 }
 
 .header__container {
@@ -52,7 +53,9 @@ body {
   max-width: 600px;
   border-radius: 5px;
   padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 35px -19px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 0px 35px -19px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 0px 35px -19px rgba(0, 0, 0, 0.28);
   line-height: 150%;
 }
 
@@ -85,7 +88,9 @@ span {
   width: 250px;
   border-radius: 5px;
   background-color: var(--background-blocks);
-  box-shadow: 0 0 21px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 35px -19px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 0px 35px -19px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 0px 35px -19px rgba(0, 0, 0, 0.28);
 }
 
 .modal-colorswitch::before {

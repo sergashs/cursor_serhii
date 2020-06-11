@@ -4,76 +4,53 @@ const Color3 = "#137557";
 const Color4 = "#CC8390";
 const Color5 = "#CC823E";
 
+function getcolorfromLocalstorage() {
+  document.documentElement.style.setProperty(
+    "--main-color",
+    localStorage.getItem("mainColor")
+  );
+}
+
+getcolorfromLocalstorage();
+
 function Color1toLocal() {
-  localStorage.clear();
   localStorage.mainColor = document.documentElement.style.setProperty(
     "--main-color",
     Color1
   );
-  return localStorage.setItem("mainColor1", Color1);
+  return localStorage.setItem("mainColor", Color1);
 }
 
 function Color2toLocal() {
-  localStorage.removeItem;
   localStorage.mainColor = document.documentElement.style.setProperty(
     "--main-color",
     Color2
   );
-  localStorage.setItem("mainColor2", Color2);
+  localStorage.setItem("mainColor", Color2);
 }
 
 function Color3toLocal() {
-  localStorage.clear();
   localStorage.mainColor = document.documentElement.style.setProperty(
     "--main-color",
     Color3
   );
-  localStorage.setItem("mainColor3", Color3);
+  localStorage.setItem("mainColor", Color3);
 }
 
 function Color4toLocal() {
-  localStorage.clear();
   localStorage.mainColor = document.documentElement.style.setProperty(
     "--main-color",
     Color4
   );
-  localStorage.setItem("mainColor4", Color4);
+  localStorage.setItem("mainColor", Color4);
 }
 
 function Color5toLocal() {
-  localStorage.clear();
   localStorage.mainColor = document.documentElement.style.setProperty(
     "--main-color",
     Color5
   );
-  localStorage.setItem("mainColor5", Color5);
-}
-
-if (localStorage.getItem("mainColor1")) {
-  localStorage.mainColor = document.documentElement.style.setProperty(
-    "--main-color",
-    Color1
-  );
-} else if (localStorage.getItem("mainColor2")) {
-  localStorage.mainColor = document.documentElement.style.setProperty(
-    "--main-color",
-    Color2
-  );
-} else if (localStorage.getItem("mainColor3")) {
-  localStorage.mainColor = document.documentElement.style.setProperty(
-    "--main-color",
-    Color3
-  );
-} else if (localStorage.getItem("mainColor4")) {
-  localStorage.mainColor = document.documentElement.style.setProperty(
-    "--main-color",
-    Color4
-  );
-} else if (localStorage.getItem("mainColor5")) {
-  localStorage.mainColor = document.documentElement.style.setProperty(
-    "--main-color",
-    Color5
-  );
+  localStorage.setItem("mainColor", Color5);
 }
 
 document.getElementById("color1").style.backgroundColor = Color1;
