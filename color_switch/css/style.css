@@ -96,8 +96,8 @@ span {
 .modal-colorswitch::before {
   content: "";
   position: absolute;
-  bottom: -5px;
-  right: 10px;
+  bottom: -4px;
+  right: 14px;
   width: 20px;
   height: 20px;
   background-color: var(--background-blocks);
