@@ -173,9 +173,36 @@
 //   }
 // }
 
-function cuntehttp() {
-  var sitelink = document.getElementById("link");
-  return (document.body.innerHTML = "http://www.residentevil.com/re3".slice(7));
+// function foo(a) {
+//   return function (b) {
+//     return function (c) {
+//       return a * b * c;
+//     };
+//   };
+// }
+
+// console.log(foo(5)(2)(7));
+
+// var a = 1;
+// if (a) {
+//   function foo() {}
+//   a += foo;
+// }
+
+// function revBySep(str, sep) {
+//   return str.split(sep).reverse().join(sep);
+// }
+
+// var str = "I want to become a JavaScript Ninja!";
+
+// console.log(revBySep(str, ""));
+
+function foo(time, str, callback) {
+  setTimeout(() => {
+    callback(str + " world!");
+  }, time);
 }
 
-cuntehttp();
+foo(3000, "Hello", (responseStr) => {
+  console.log(responseStr);
+});

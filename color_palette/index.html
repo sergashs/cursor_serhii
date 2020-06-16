@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>ColorGenerator in HEX</title>
+  </head>
+
+  <div class="area-for-coppied__color"><div id="coppied__color"></div></div>
+
+  <h1>Color palette generator</h1>
+
+  <body>
+    <div class="colors-generated">
+      <div class="color-block">
+        <div class="color color1"></div>
+        <div class="color__title color__title1">
+          #06A071
+        </div>
+      </div>
+      <div class="color-block">
+        <div class="color color2"></div>
+        <div class="color__title color__title2">
+          #765A63
+        </div>
+      </div>
+      <div class="color-block">
+        <div class="color color3"></div>
+        <div class="color__title color__title3">
+          #008279
+        </div>
+      </div>
+      <div class="color-block">
+        <div class="color color4"></div>
+        <div class="color__title color__title4">
+          #D9B9C5
+        </div>
+      </div>
+    </div>
+    <div class="button-area">
+      <button class="button" onclick="putColorinBlock();">
+        Generate palette
+      </button>
+    </div>
+
+    <div class="after-button">
+      Or just press the “Enter” to generate new palettes.
+    </div>
+
+    <div class="copy-color">
+      Click on block to copy individual color
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
