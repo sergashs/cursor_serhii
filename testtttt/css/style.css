@@ -91,7 +91,7 @@ body {
 }
 
 .header__bottom {
-  background-image: url(/img/header__bg.svg);
+  background-image: url(./img/header__bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 0%;
@@ -148,7 +148,7 @@ body {
 }
 
 .add-block__top {
-  background-image: url(/img/add-block-bg.svg);
+  background-image: url(./img/add-block-bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
