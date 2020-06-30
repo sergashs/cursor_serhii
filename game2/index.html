@@ -18,10 +18,9 @@
         <div class="header__top-line__container">
           <div class="top-line__column">
             <div class="top-line__menu">
-              <a href="#" class="top-line__menu__link">Ссылка1</a>
-              <a href="#" class="top-line__menu__link">Ссылка</a>
-              <a href="#" class="top-line__menu__link">Ссылка</a>
-              <a href="#" class="top-line__menu__link">Ссылка</a>
+              <a href="#" class="top-line__menu__link">Ru</a>
+              <a href="#" class="top-line__menu__link">Eng</a>
+              <a href="#" class="top-line__menu__link">Ua</a>
             </div>
           </div>
 
@@ -443,9 +442,11 @@
     let menuclose = document.querySelector(".menu-close-button");
     openmenu.onclick = function () {
       menu.classList.toggle("open");
+      document.body.style = "overflow:hidden;";
     };
     menuclose.onclick = function () {
       menu.classList.toggle("open");
+      document.body.style = "overflow:y;";
     };
   </script>
 </html>
