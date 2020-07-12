@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <title>Profile</title>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="card__container">
+        <div class="profile">
+<div class="profile__left-side">
+  <div class="profile__avatar">
+    <img
+      src="https://sergashs.github.io/cursor_serhii/portfolio/img/ava.jfif"
+      alt=""
+      class="profile__avatar__img"
+    />
+  </div>
+  <div class="profile__initials">
+    <div class="profile__name">Serhii Demchyshyn</div>
+    <div class="profile__subname">junior developer</div>
+  </div>
+</div>
+   <div class="profile__right-side"><button class="like-button" onclick="giveLike()"><i class="fa fa-thumbs-up like-button__icon" aria-hidden="true"></i> Like</button>
+   </div>    
+
+
+
+              </div>
+        <nav class="card__tab-links">
+          <button class="card__tab-link card__tab-link-active" onclick="openCity(event,'Home')">
+            Home
+          </button>
+          <button class="card__tab-link" onclick="openCity(event,'Projects')">
+            Projects
+          </button>
+          <button class="card__tab-link" onclick="openCity(event,'Jobs')">
+            Jobs
+          </button>
+          <button class="card__tab-link" onclick="openCity(event,'About')">
+            About
+          </button>
+          <button class="card__tab-link" onclick="openCity(event,'Contact')">
+            Contact
+          </button>
+       
+        </nav>
+
+        <div class="buttons-for-scroll">
+          <button class="menu_left" onclick="slideMenuLeft()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <button class="menu_right" onclick="slideMenuRight()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+        
+           <div id="Home" class="card__tab">
+          <h2>Hello</h2>
+
+
+
+        <div class="technologies">
+
+          <div class="technologies__title">Technologies</div>
+<div class="technologies__blocks">
+
+<div class="technologi">
+<div class="technologi__name">HTML</div>
+</div>
+
+<div class="technologi">
+<div class="technologi__name">CSS</div>
+</div>
+
+<div class="technologi">
+<div class="technologi__name">Javascript</div>
+</div> 
+
+<div class="technologi">
+<div class="technologi__name">Bootstrap</div>
+</div>
+
+<div class="technologi">
+<div class="technologi__name">SASS</div>
+</div>
+
+
+  </div>
+
+</div>
+       
+
+<div class="statistics">
+
+  <div class="statistics__title">Statistics</div>
+
+<div class="statistics__blocks">
+  <div class="statistics__block block-views">
+    <div class="statistics__block__name">Profile views</div>
+    <div class="statistics__block__digits digits-views">1,020</div>
+    <div class="icon"><i class="fa fa-eye" aria-hidden="true"></i></div> 
+  </div>  
+
+  <div class="statistics__block block-views">
+    <div class="statistics__block__name">Profile likes</div>
+    <div class="statistics__block__digits digits-likes">90</div>
+    <div class="icon"><i class="fa fa-heart-o" aria-hidden="true"></i></div> 
+  </div>  
+</div>
+
+</div>
+
+        </div>
+      
+        <div id="Projects" class="card__tab" style="display:none">
+          <div class="Projects__container">
+               
+<a class="Project" href="https://sergashs.github.io/cursor_serhii/colorgenerator/" target="_blank">
+<div class="Project__left">
+<div class="Project__icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></div>
+</div>
+<div class="Projects__right">
+  <div class="Project__title">Color generator</div> 
+  <div class="Project__description">Script that generates random color.</div>
+</div>
+</a>
+
+<a class="Project" href="https://sergashs.github.io/cursor_serhii/game2/" target="_blank">
+  <div class="Project__left">
+  <div class="Project__icon"><i class="fa fa-gamepad" aria-hidden="true"></i></div>
+  </div>
+  <div class="Projects__right">
+    <div class="Project__title">Temple for game blog</div> 
+    <div class="Project__description">Template that is suitable for a game blog, made in dark colors, lightweight and fully responsive</div>
+  </div>
+  </a>
+
+  <a class="Project" href="https://sergashs.github.io/cursor_serhii/color_switch/" target="_blank">
+    <div class="Project__left">
+    <div class="Project__icon"><i class="fa fa-refresh" aria-hidden="true"></i></div>
+    </div>
+    <div class="Projects__right">
+      <div class="Project__title">Color changer</div> 
+      <div class="Project__description">A unique script for changing the main color on the site using root. Color stored in local storage.</div>
+    </div>
+    </a>
+          </div>
+        </div>
+      
+        <div id="Jobs" class="card__tab" style="display:none">
+          <p>Soon.</p>
+        </div>
+
+
+        <div id="About" class="card__tab" style="display:none">
+          <p>I am a 25 years old junior web developer from Lviv.
+            I'm interested in IT and everything in its
+            or bit. I currently aim to learn as much as
+            i can in a work environment, and to
+            further my own abilities in a professional
+            setting.</p>
+        </div>
+
+      
+      </div>
+      </div>
+    </div>
+  </body>
+
+  <script>function openCity(evt, card) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("card__tab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("card__tab-link");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" card__tab-link-active", "");
+    }
+    document.getElementById(card).style.display = "block";
+    evt.currentTarget.className += " card__tab-link-active";
+  }
+  
+
+
+
+
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj1 = document.querySelector('.digits-views');
+const obj2 = document.querySelector('.digits-likes');
+animateValue(obj1, 0, 1020, 2000);
+animateValue(obj2, 0, 90, 2000);
+
+function giveLike(){
+document.querySelector('.digits-likes').innerHTML = 90 + 1; 
+};
+
+
+
+function slideMenuRight() {
+  document.querySelector(".card__tab-links").scrollBy(50, 0);
+}
+
+function slideMenuLeft(){
+  document.querySelector(".card__tab-links").scrollBy(-50, 0);
+}
+
+  
+  
+  </script>
+</html>
