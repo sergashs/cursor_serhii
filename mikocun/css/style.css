@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-  background-image: url(/img/section1-bg.jpg);
+  background-image: url(./img/section1-bg.jpg);
   background-size: cover;
 }
 
@@ -41,7 +41,7 @@ body {
   right: -35px;
   width: 32px;
   height: 30px;
-  background-image: url(/img/logo-after.svg);
+  background-image: url(./img/logo-after.svg);
   background-size: cover;
 }
 
@@ -84,7 +84,7 @@ body {
 .main-display__left-side {
   width: 630px;
   height: 650px;
-  background-image: url(/img/bg-for-mikocin.svg);
+  background-image: url(./img/bg-for-mikocin.svg);
   position: relative;
 }
 
@@ -254,7 +254,7 @@ body {
   top: -49px;
   width: 10px;
   height: 36px;
-  background-image: url(/img/lines.svg);
+  background-image: url(./img/lines.svg);
   background-size: cover;
 }
 
@@ -264,7 +264,7 @@ body {
   bottom: -53px;
   width: 10px;
   height: 40px;
-  background-image: url(/img/lines.svg);
+  background-image: url(./img/lines.svg);
   background-position: 100% 99%;
   background-size: cover;
 }
