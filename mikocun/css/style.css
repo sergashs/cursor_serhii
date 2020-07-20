@@ -254,7 +254,7 @@ body {
   top: -49px;
   width: 10px;
   height: 36px;
-  background-image: url(./img/lines.svg);
+  background-image: url(../img/lines.svg);
   background-size: cover;
 }
 
