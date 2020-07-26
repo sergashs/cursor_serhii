@@ -1,0 +1,276 @@
+@font-face {
+  font-family: stalkerLogo;
+  src: url(./fonts/stalkerLogo.ttf);
+}
+
+@font-face {
+  font-family: stalkerBoycott;
+  src: url(./fonts/Boycott.otf);
+}
+
+@font-face {
+  font-family: "Graffiti1CTT";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Graffiti1CTT"), local("Graffiti1CTT-Regular"),
+    url(/fonts/graffiti1ctt_f2f1969c270d4278dd9f2373c303a63e.woff)
+      format("woff"),
+    url(/fonts/graffiti1ctt_f2f1969c270d4278dd9f2373c303a63e.ttf)
+      format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  /* font-family: "Graffiti1CTT", arial; */
+  background: url(/img/bg_header.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+  z-index: 100;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fefcea;
+  background: linear-gradient(to top, #000000, #68675e);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/img/noise3.gif);
+  background-repeat: repeat;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.header__container {
+  padding: 50px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: stalkerLogo;
+  font-size: 50px;
+  color: rgba(236, 236, 236, 0.8);
+  cursor: pointer;
+}
+
+.nav {
+  font-family: "Graffiti1CTT";
+}
+
+.nav__item {
+  text-decoration: none;
+  font-size: 21px;
+  color: rgba(236, 236, 236, 0.8);
+  margin: 0 0 0 20px;
+}
+
+.nav__item:hover {
+  color: rgba(236, 236, 236, 1);
+}
+
+.section1 {
+  background: url(/img/bg-section1.jpg);
+}
+
+.section1__container {
+  max-width: 1700px;
+  margin: auto;
+  padding: 50px 50px 0 50px;
+}
+
+.posts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.posts__item {
+  /* background-color: rgb(49, 49, 49); */
+  border: solid 2px rgb(56, 54, 54);
+  width: 31%;
+  margin: 0 0 calc(30px + 1vw) 0;
+  padding: 0;
+}
+
+.posts__item--top {
+  position: relative;
+}
+
+.posts__item--img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.posts__item--bottom {
+  padding: 20px;
+}
+
+.posts__item--date {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgba(236, 236, 236, 0.8);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  background-color: rgb(49, 49, 49);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.posts__item--title {
+  color: rgba(236, 236, 236, 0.8);
+  font-family: "Graffiti1CTT";
+  font-size: 23px;
+  margin: 0 0 20px 0;
+}
+
+.posts__item--description {
+  color: rgba(236, 236, 236, 0.8);
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* main in header */
+
+.main-display {
+  margin: 100px 0 0 0;
+}
+
+.main-display__left--title {
+  font-family: "Graffiti1CTT";
+  color: rgba(236, 236, 236, 0.8);
+  font-size: 26px;
+  margin: 0 0 20px 0;
+}
+
+.news-item {
+  background-color: rgba(33, 34, 27, 0.7);
+  color: rgba(236, 236, 236, 0.8);
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 0 20px 0;
+}
+
+.news-item:last-child {
+  margin: 0;
+}
+
+.news-item__title {
+  margin: 0 0 20px 0;
+  font-family: "Graffiti1CTT";
+  font-size: 21px;
+}
+
+.news-item__description {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-display__right {
+  width: 50%;
+}
+
+.main-display__right--title {
+  font-family: "Graffiti1CTT";
+  color: rgba(236, 236, 236, 0.8);
+  font-size: 26px;
+  margin: 0 0 20px 0;
+}
+
+.main-article {
+  height: 100%;
+  background-color: rgba(33, 34, 27, 0.7);
+  padding: 20px;
+}
+
+.main-article__description {
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .news-item {
+    max-width: 100%;
+  }
+
+  .main-display {
+    flex-wrap: wrap;
+  }
+  .main-display__left {
+    margin: 0 0 100px 0;
+  }
+  .main-display__right {
+    width: 100%;
+  }
+
+  .header {
+    height: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .header__container {
+    padding: 30px;
+  }
+
+  .main-display {
+    margin: 50px 0 0 0;
+  }
+
+  .main-display__left {
+    margin: 0 0 50px 0;
+  }
+
+  .main-display__right {
+    margin: 0 0 50px 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .header__top {
+    flex-direction: column;
+  }
+
+  .nav {
+    margin: 30px 0 0 0;
+  }
+}
+
+@media (max-width: 530px) {
+  .header__container {
+    padding: 20px;
+  }
+}
