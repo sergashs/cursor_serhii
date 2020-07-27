@@ -4,6 +4,14 @@ const Color3 = "#137557";
 const Color4 = "#CC8390";
 const Color5 = "#CC823E";
 
+function getcolorfromLocalstorage() {
+  document.documentElement.style.setProperty(
+    "--main-color",
+    localStorage.getItem("mainColor")
+  );
+}
+getcolorfromLocalstorage();
+
 function Color1toLocal() {
   document.documentElement.style.setProperty("--main-color", Color1);
   return localStorage.setItem("mainColor", Color1);
