@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://sergashs.github.io/cursor_serhii/game2/css/font-awesome.min.css"
+    />
     <title>Stalker 2</title>
   </head>
   <body>
@@ -22,57 +26,69 @@
         </div>
 
         <div class="main-display">
-          <div class="main-display__left">
-            <div class="main-display__left--title">Последние новости:</div>
-            <div class="main-display__left--last-news">
-              <div class="news-item">
-                <div class="news-item__title">
-                  Показан первый трейлер S.T.A.L.K.E.R. 2
-                </div>
-                <div class="news-item__description">
-                  На презентации Xbox Games Showcase показали первый трейлер
-                  игры S.T.A.L.K.E.R. 2 от украинской студии GSC Game World.
-                </div>
+          <div class="main-article--container">
+            <div class="main-article">
+              <div class="main-article__info">
+                <div class="main-article__info--author-name">strelok</div>
+                <div class="main-article__info--date">20 Сентября, 2020</div>
               </div>
+              <div class="main-article__title">
+                В сети появился первый трейлер S.T.A.L.K.E.R. 2
+              </div>
+              <div class="main-article__description">
+                Создатели игры показали в трейлере некоторые локации, аномалии,
+                артефакты и неизвестных существ. Кроме того, в тизере есть кадр,
+                опубликованный в марте и посвященный годовщине выхода игры
+                «S.T.A.L.K.E.R.: Тень Чернобыля».
+              </div>
+              <button class="main-article__button">Читать больше</button>
+            </div>
 
-              <div class="news-item">
-                <div class="news-item__title">
-                  Показан первый трейлер S.T.A.L.K.E.R. 2
-                </div>
-                <div class="news-item__description">
-                  На презентации Xbox Games Showcase показали первый трейлер
-                  игры S.T.A.L.K.E.R. 2 от украинской студии GSC Game World.
-                </div>
-              </div>
-
-              <div class="news-item">
-                <div class="news-item__title">
-                  Ответы на частые вопросы, FAQ
-                </div>
-                <div class="news-item__description">
-                  Разработчики из GSC Game World дали ответы на самые частые
-                  вопросы фанатов.
-                </div>
-              </div>
+            <div class="main-article--right">
+              <iframe
+                id="player-video"
+                frameborder="0"
+                allowfullscreen="1"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                title="YouTube video player"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/r4xyN1n7ysQ?autoplay=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;playsinline=1&amp;controls=1&amp;color=white&amp;loop=1&amp;mute=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.stalker2.com&amp;widgetid=1"
+              ></iframe>
             </div>
           </div>
-          <div class="main-display__right">
-            <div class="main-display__right--title">
-              Показан первый трейлер S.T.A.L.K.E.R. 2
-            </div>
 
-            <div class="main-article">
-              <div class="main-article__description">
-                <iframe
-                  id="player-video"
-                  frameborder="0"
-                  allowfullscreen="1"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  title="YouTube video player"
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/r4xyN1n7ysQ?autoplay=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;playsinline=1&amp;controls=1&amp;color=white&amp;loop=1&amp;mute=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.stalker2.com&amp;widgetid=1"
-                ></iframe>
+          <div class="main-display__last-news">
+            <div class="main-display__last-news--title">Последние новости:</div>
+            <div class="main-display__last-news--container">
+              <div class="news-item">
+                <img
+                  class="news-item__img"
+                  src="https://3dnews.ru/assets/external/illustrations/2020/07/27/1016670/01.jpg"
+                  alt=""
+                />
+                <div class="news-item__date">20 Сентября, 2020</div>
+                <div class="news-item__title">
+                  Показан первый трейлер S.T.A.L.K.E.R. 2
+                </div>
+                <div class="news-item__read-more">
+                  Читать новость
+                </div>
+              </div>
+
+              <div class="news-item">
+                <img
+                  class="news-item__img"
+                  src="https://cdn.igromania.ru/mnt/news/6/9/c/c/0/2/89413/4796d03216acb2c3_1920xH.jpg"
+                  alt=""
+                />
+                <div class="news-item__date">19 Сентября, 2020</div>
+                <div class="news-item__title">
+                  Официально: S.T.A.L.K.E.R. 2 создаётся на Unreal Engine 4
+                </div>
+                <div class="news-item__read-more">
+                  Читать новость
+                </div>
               </div>
             </div>
           </div>

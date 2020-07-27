@@ -159,118 +159,154 @@
 /* main in header */
 
 .main-display {
-  margin: 100px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
-.main-display__left--title {
+.main-article__info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+}
+
+.main-article__title {
+  max-width: 500px;
+  font-family: "Graffiti1CTT";
+  font-size: 50px;
+  margin: 30px 0 30px 0;
+  color: rgba(236, 236, 236, 0.8);
+}
+
+.main-article__description {
+  max-width: 450px;
+  font-family: "Graffiti1CTT";
+  font-size: 22px;
+  margin: 0 0 30px 0;
+  color: rgba(236, 236, 236, 0.8);
+}
+
+.main-article__button {
+  border: none;
+  font-family: "Graffiti1CTT";
+  background: rgb(196, 117, 21);
+  color: rgba(0, 0, 0, 0.8);
+  padding: 10px 30px 10px 30px;
+}
+
+.main-article__info--date {
+  font-family: "Graffiti1CTT";
+  font-size: 18px;
+  color: #929292;
+}
+
+.main-article__info--author-name {
+  color: rgb(196, 117, 21);
+  font-size: 22px;
+  font-family: "Graffiti1CTT";
+}
+
+.main-article--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-article--right {
+  width: 800px;
+  height: 450px;
+  position: relative;
+}
+
+.watch-trailer {
+  border: solid 1px rgb(196, 117, 21);
+  color: rgb(196, 117, 21);
+  background: none;
+  width: 50px;
+  height: 50px;
+
+  border-radius: 100%;
+  position: relative;
+}
+
+.main-article__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.main-display__last-news {
+  margin: 50px 0 0 0;
+}
+
+.main-display__last-news--container {
+  display: flex;
+}
+
+.main-display__last-news--title {
   font-family: "Graffiti1CTT";
   color: rgba(236, 236, 236, 0.8);
-  font-size: 26px;
+  font-size: 22px;
   margin: 0 0 20px 0;
+  text-transform: uppercase;
 }
 
 .news-item {
   background-color: rgba(33, 34, 27, 0.7);
   color: rgba(236, 236, 236, 0.8);
-  max-width: 350px;
-  padding: 20px;
-  border-radius: 5px;
+  max-width: 390px;
+  padding: 60px 40px 40px 40px;
   cursor: pointer;
-  margin: 0 0 20px 0;
+  position: relative;
+  margin: 0 20px 0 0;
 }
 
-.news-item:last-child {
-  margin: 0;
+.news-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fefcea;
+  background: linear-gradient(to top, #000000, #68675e);
+  opacity: 0.4;
+  z-index: 10;
 }
 
 .news-item__title {
+  font-family: "Graffiti1CTT";
+  font-size: 24px;
+  z-index: 10;
+  position: relative;
   margin: 0 0 20px 0;
-  font-family: "Graffiti1CTT";
-  font-size: 21px;
-}
-
-.news-item__description {
-  font-size: 15px;
-  line-height: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.main-display {
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-display__right {
-  width: 50%;
-}
-
-.main-display__right--title {
-  font-family: "Graffiti1CTT";
   color: rgba(236, 236, 236, 0.8);
-  font-size: 26px;
+}
+
+.news-item__date {
+  font-family: "Graffiti1CTT";
+  font-size: 18px;
+  z-index: 10;
+  position: relative;
+  color: #929292;
   margin: 0 0 20px 0;
 }
 
-.main-article {
+.news-item__read-more {
+  font-size: 19px;
+  font-family: "Graffiti1CTT";
+  z-index: 10;
+  position: relative;
+  color: rgb(196, 117, 21);
+}
+
+.news-item__img {
+  width: 100%;
   height: 100%;
-  background-color: rgba(33, 34, 27, 0.7);
-  padding: 20px;
-}
-
-.main-article__description {
-  height: 100%;
-}
-
-@media (max-width: 900px) {
-  .news-item {
-    max-width: 100%;
-  }
-
-  .main-display {
-    flex-wrap: wrap;
-  }
-  .main-display__left {
-    margin: 0 0 100px 0;
-  }
-  .main-display__right {
-    width: 100%;
-  }
-
-  .header {
-    height: 100%;
-  }
-}
-
-@media (max-width: 680px) {
-  .header__container {
-    padding: 30px;
-  }
-
-  .main-display {
-    margin: 50px 0 0 0;
-  }
-
-  .main-display__left {
-    margin: 0 0 50px 0;
-  }
-
-  .main-display__right {
-    margin: 0 0 50px 0;
-  }
-}
-
-@media (max-width: 630px) {
-  .header__top {
-    flex-direction: column;
-  }
-
-  .nav {
-    margin: 30px 0 0 0;
-  }
-}
-
-@media (max-width: 530px) {
-  .header__container {
-    padding: 20px;
-  }
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
