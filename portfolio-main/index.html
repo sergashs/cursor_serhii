@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">S</div>
+        <div class="nav">
+          <a class="nav__item" href="#">Home</a>
+          <a class="nav__item" href="#">About</a>
+          <a class="nav__item" href="#">Contacts</a>
+
+
+  <div class="color-picker__button">
+    <input type="color"  id="main-color">
+    <i class="fa fa-paint-brush" aria-hidden="true"></i>
+  </div>
+
+
+        
+      
+
+        </div>
+      </div>
+    </header>
+
+    <section class="section1">
+      <div class="scetion1__container">
+        <div class="main-text">
+          Hi, I Am Serhii. <br />
+          I Am A Front End Developer.
+        </div>
+        <div class="contact-me">
+          Have something to say? Let’s talk
+          <button class="contact-me__button">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </button>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+      <section class="section2__container">
+        <div class="work">
+          <div class="work__item">
+            <img
+              class="work__item--img"
+              src="http://mini.s-shot.ru/1024x768/700/jpeg/?https://sergashs.github.io/cursor_serhii/game2/"
+              alt=""
+            />
+            <div class="work__item--title">Game blog</div>
+          </div>
+
+          <div class="work__item">
+            <img
+              class="work__item--img"
+              src="http://mini.s-shot.ru/1024x768/700/jpeg/?https://sergashs.github.io/cursor_serhii/portfolio/"
+              alt=""
+            />
+            <div class="work__item--title">Portfolio</div>
+          </div>
+
+          <div class="work__item">
+            <img
+              class="work__item--img"
+              src="http://mini.s-shot.ru/1024x768/700/jpeg/?https://sergashs.github.io/cursor_serhii/stalker2/"
+              alt=""
+            />
+            <div class="work__item--title">Stalker site</div>
+          </div>
+
+          
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__social">
+        <a class="footer__social--link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a class="footer__social--link" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a class="footer__social--link" href="#"> <i class="fa fa-telegram" aria-hidden="true"></i></a>
+      </div>
+      
+    </div>
+    </footer>
+<script>
+
+
+
+
+
+
+
+
+
+
+var color;
+
+var defaultColor = "#c2e29d";
+
+window.addEventListener("load", startup, false);
+
+function startup() {
+  color = document.getElementById('main-color');
+  color.value = defaultColor;
+  color.addEventListener("input", updateFirst, false);
+}
+
+
+
+function updateFirst(event) {
+  var iconBrush = document.querySelector(".fa-paint-brush");
+
+  if (iconBrush) {
+    document.documentElement.style.setProperty("--main-color", event.target.value);
+
+    function colorToLocal() {
+  document.documentElement.style.setProperty("--main-color", event.target.value);
+  return localStorage.setItem("mainColor", event.target.value);
+}
+colorToLocal();
+  }
+}
+
+
+// function colorToLocal() {
+//   document.documentElement.style.setProperty("--main-color", color.value);
+//   return localStorage.setItem("mainColor", color.value);
+// }
+
+
+
+function colorFromLocal() {
+  document.documentElement.style.setProperty(
+    "--main-color",
+    localStorage.getItem("mainColor")
+  );
+}
+colorFromLocal();
+
+
+
+
+</script>
+
+  </body>
+</html>
