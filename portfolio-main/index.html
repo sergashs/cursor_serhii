@@ -97,24 +97,22 @@
     </footer>
 <script>
 
-
-
-
-
-
-
-
-
-
 var color;
 
-var defaultColor = "#c2e29d";
+
+if(localStorage.getItem("mainColor")!=undefined || localStorage.getItem("mainColor")!==null){
+  var defaultColor = localStorage.getItem("mainColor");
+}else{
+  var defaultColor = "#c2e29d";
+}
+
 
 window.addEventListener("load", startup, false);
 
 function startup() {
   color = document.getElementById('main-color');
   color.value = defaultColor;
+
   color.addEventListener("input", updateFirst, false);
 }
 
@@ -125,21 +123,16 @@ function updateFirst(event) {
 
   if (iconBrush) {
     document.documentElement.style.setProperty("--main-color", event.target.value);
+  
 
-    function colorToLocal() {
+
+ function colorToLocal() {
   document.documentElement.style.setProperty("--main-color", event.target.value);
   return localStorage.setItem("mainColor", event.target.value);
 }
 colorToLocal();
   }
 }
-
-
-// function colorToLocal() {
-//   document.documentElement.style.setProperty("--main-color", color.value);
-//   return localStorage.setItem("mainColor", color.value);
-// }
-
 
 
 function colorFromLocal() {
@@ -149,6 +142,8 @@ function colorFromLocal() {
   );
 }
 colorFromLocal();
+
+
 
 
 
