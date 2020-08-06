@@ -13,20 +13,33 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <div class="setting-panel">
+    
+          <div class="button">
+        <input type="color"  id="main-color">
+       choose color
+      </div>
+    
+      <div class="dark-mode">
+        <input type="checkbox" id="darkmode">
+        <label for="darkmode" class="toggle">
+          <div class="icon-moon">dark mode</div>
+        </label>
+      </div>
+     
+    
+    </div>
     <header class="header">
       <div class="header__container">
         <div class="header__logo">S</div>
         <div class="nav">
-          <a class="nav__item" href="#">Home</a>
+          <a class="nav__item nav__item--hover" href="#">Home</a>
           <a class="nav__item" href="#">About</a>
           <a class="nav__item" href="#">Contacts</a>
+          <a class="setting-icon" href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
 
 
-  <div class="color-picker__button">
-    <input type="color"  id="main-color">
-    <i class="fa fa-paint-brush" aria-hidden="true"></i>
-  </div>
-
+  
 
         
       
@@ -112,27 +125,18 @@ window.addEventListener("load", startup, false);
 function startup() {
   color = document.getElementById('main-color');
   color.value = defaultColor;
-
   color.addEventListener("input", updateFirst, false);
 }
 
-
-
 function updateFirst(event) {
-  var iconBrush = document.querySelector(".fa-paint-brush");
-
-  if (iconBrush) {
-    document.documentElement.style.setProperty("--main-color", event.target.value);
-  
-
-
+  document.documentElement.style.setProperty("--main-color", event.target.value);
  function colorToLocal() {
   document.documentElement.style.setProperty("--main-color", event.target.value);
   return localStorage.setItem("mainColor", event.target.value);
 }
 colorToLocal();
   }
-}
+
 
 
 function colorFromLocal() {
@@ -144,9 +148,67 @@ function colorFromLocal() {
 colorFromLocal();
 
 
+// setting panel
+
+let menu = document.querySelector(".setting-panel");
+    let openmenu = document.querySelector(".setting-icon");
+    // let menuclose = document.querySelector(".menu-close-button");
+    openmenu.onclick = function () {
+      menu.classList.toggle("open");
+      // document.body.style = "overflow:hidden;";
+    };
+    // menuclose.onclick = function () {
+    //   menu.classList.toggle("open");
+    //   document.body.style = "overflow:y;";
+    // };
 
 
 
+    document.getElementById("darkmode").addEventListener("change", (ev) => {
+  let btn = ev.target;
+
+  if (btn.checked) {
+    localStorage.setItem("darkmode", "on");
+    document.querySelector(".icon-moon").innerHTML =
+      'dark mode: off';
+      document.documentElement.style.setProperty("--body-background", "#343434");
+    document.documentElement.style.setProperty("--links", "#c9c9c9");
+    document.documentElement.style.setProperty("--main-text", "#d8d8d8");
+    document.documentElement.style.setProperty("--footer", "rgb(20, 20, 20)");
+    document.documentElement.style.setProperty("--setting-menu", "rgb(90, 90, 90)");
+  } else {
+    localStorage.setItem("darkmode", "off");
+    document.querySelector(".icon-moon").innerHTML =
+      'dark mode: on';
+      document.documentElement.style.setProperty("--body-background", "#f1f1f1");
+    document.documentElement.style.setProperty("--links", "#4e4a4a");
+    document.documentElement.style.setProperty("--main-text", "#474747");
+    document.documentElement.style.setProperty("--footer", "rgb(196, 196, 196)");
+    document.documentElement.style.setProperty("--setting-menu", "rgb(224, 224, 224)");
+  }
+});
+
+if (localStorage.getItem("darkmode") == "on") {
+  document.querySelector(".icon-moon").innerHTML =
+      'dark mode: off';
+    document.documentElement.style.setProperty("--body-background", "#343434");
+    document.documentElement.style.setProperty("--links", "#c9c9c9");
+    document.documentElement.style.setProperty("--main-text", "#d8d8d8");
+    document.documentElement.style.setProperty("--footer", "rgb(20, 20, 20)");
+    document.documentElement.style.setProperty("--setting-menu", "rgb(90, 90, 90)");
+}
+
+
+else {
+  localStorage.setItem("darkmode", "off");
+  document.querySelector(".icon-moon").innerHTML =
+      'dark mode: on';
+    document.documentElement.style.setProperty("--body-background", "#f1f1f1");
+    document.documentElement.style.setProperty("--links", "#4e4a4a");
+    document.documentElement.style.setProperty("--main-text", "#474747");
+    document.documentElement.style.setProperty("--footer", "rgb(196, 196, 196)");
+    document.documentElement.style.setProperty("--setting-menu", "rgb(224, 224, 224)");
+}
 
 </script>
 

@@ -12,6 +12,7 @@ a {
   --links: #c9c9c9;
   --main-text: #d8d8d8;
   --footer: rgb(20, 20, 20);
+  --setting-menu: rgb(90, 90, 90);
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 15px;
   transition: 0.3s;
+  position: relative;
 }
 
 .header__container {
@@ -54,6 +56,22 @@ body {
   color: var(--links);
   margin: 0 40px 0 0;
   transition: all 0.3s;
+}
+
+.nav__item--hover {
+  position: relative;
+}
+
+.nav__item--hover::after {
+  position: absolute;
+  content: "";
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  width: 100%;
+  background-color: var(--main-color);
+  height: 3px;
+  left: 0;
+  bottom: -5px;
 }
 
 .nav__item::before {
@@ -144,7 +162,7 @@ body {
   height: 100%;
   left: 0;
   bottom: 0;
-  background-color: var(--footer);
+  background-color: #000000;
   opacity: 0.3;
   transition: all 0.3s;
 }
@@ -185,6 +203,7 @@ body {
 }
 
 .footer {
+  margin: 60px 0 0 0;
   width: 100%;
   background-color: var(--footer);
   height: 100px;
@@ -205,23 +224,17 @@ body {
   color: var(--main-color);
 }
 
-.color-picker__button {
+.button {
   position: relative;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--main-color);
-  background-color: var(--footer);
-  border-radius: 100%;
-}
-
-.color-picker__button--apply {
-  border: none;
-  background-color: var(--footer);
+  width: 90px;
+  padding: 10px;
+  text-align: center;
   color: var(--links);
+  background-color: var(--footer);
   border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 20px 0 0;
 }
 
 #main-color {
@@ -229,6 +242,53 @@ body {
   position: absolute;
   cursor: pointer;
   opacity: 0;
+}
+
+.setting-icon {
+  color: var(--links);
+  transform: rotate(0deg);
+  font-size: 23px;
+}
+
+.setting-panel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  background-color: var(--setting-menu);
+  top: -100px;
+  width: 100%;
+}
+
+.setting-panel.open {
+  visibility: visible;
+  height: 100px;
+  transition: all 0.3s;
+  top: 0;
+}
+
+.dark-mode {
+  position: relative;
+  width: 90px;
+  padding: 10px;
+  text-align: center;
+  color: var(--links);
+  background-color: var(--footer);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.icon-moon {
+  cursor: pointer;
+}
+
+#darkmode,
+#menu {
+  display: none;
 }
 
 @media (max-width: 940px) {

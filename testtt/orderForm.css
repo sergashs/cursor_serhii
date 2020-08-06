@@ -1,0 +1,96 @@
+#order_form {
+	background: #F2F3F6;
+	padding:20px;
+	max-width:600px;
+	border:3px dashed red;
+	font-family:Arial;
+}
+#order_form h2 {
+	margin:0 0 25px 0;
+	padding:0px;
+	line-height:32px;
+}
+#order_form label {
+	width:230px;
+	display:inline-block;
+	border-bottom:1px solid gray;
+	padding:5px 0 5px 0;
+	font-weight:bold;
+	font-size:16px;
+}
+#order_form label.vertical {
+	border:none!important;
+}
+
+.device_info {
+	font-size: 14px;
+	color:green;
+	display:block;
+	margin:10px 20px;
+}
+
+#order_form .order_form_pole {
+	padding:10px;
+	margin:10px;
+}
+#order_form input {
+	font-size:22px;
+	padding:7px;
+	border-radius:3px;
+	border:1px solid gray;
+	max-width:300px;
+	width:100%;
+}
+#order_form span {
+	font-size:12px;
+}
+
+#order_form button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+	background:-moz-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-webkit-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-o-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-ms-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f',GradientType=0);
+	background-color:#f24537;
+	background-image:url(../img/ordersm.png);
+	background-repeat:no-repeat;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	font-weight:bold;
+	padding:16px 51px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+	margin-top:25px;
+}
+#order_form button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537));
+	background:-moz-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+	background:-webkit-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+	background:-o-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+	background:-ms-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	background-image:url(../img/ordersm.png);
+	background-repeat:no-repeat;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537',GradientType=0);
+	background-color:#c62d1f;
+}
+#order_form button:active {
+	position:relative;
+	top:1px;
+}
+
+#order_form_success {
+	position:relative;
+}
