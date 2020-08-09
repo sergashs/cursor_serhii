@@ -21,7 +21,7 @@
        choose color
       </div>
     
-      <div class="dark-mode">
+      <div class="dark-mode button">
         <input type="checkbox" id="darkmode">
         <label for="darkmode" class="toggle">
           <div class="icon-moon">dark mode</div>
@@ -62,7 +62,7 @@
       <section class="section2__container">
         <div class="work">
 
-          <a href="https://sergashs.github.io/cursor_serhii/game2/" target="__blank" class="work__item">
+          <a href="https://sergashs.github.io/cursor_serhii/game2/" target="_blank" class="work__item">
             <img
               class="work__item--img"
               src="http://mini.s-shot.ru/1024x768/700/jpeg/?https://sergashs.github.io/cursor_serhii/game2/"
@@ -76,7 +76,7 @@
           </a>
 
 
-          <a href="https://sergashs.github.io/cursor_serhii/portfolio/" target="__blank" class="work__item">
+          <a href="https://sergashs.github.io/cursor_serhii/portfolio/" target="_blank" class="work__item">
             <img
               class="work__item--img"
               src="http://mini.s-shot.ru/1024x768/700/jpeg/?https://sergashs.github.io/cursor_serhii/portfolio/"
@@ -88,7 +88,7 @@
             <div class="work__item--title">Portfolio</div>
           </a>
 
-          <a href="https://sergashs.github.io/cursor_serhii/stalker2/" target="__blank" class="work__item">
+          <a href="https://sergashs.github.io/cursor_serhii/stalker2/" target="_blank" class="work__item">
             <img
               class="work__item--img"
               src="http://mini.s-shot.ru/1024x768/700/jpeg/?https://sergashs.github.io/cursor_serhii/stalker2/"
@@ -108,9 +108,8 @@
 
     <footer class="footer">
       <div class="footer__social">
-        <a class="footer__social--link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a class="footer__social--link" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a class="footer__social--link" href="#"> <i class="fa fa-telegram" aria-hidden="true"></i></a>
+      <a class="footer__social--link" href="https://github.com/sergashs/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a class="footer__social--link" href="https:/t.me/sdhssd" target="_blank"> <i class="fa fa-telegram" aria-hidden="true"></i></a>
       </div>
       
     </div>
@@ -145,7 +144,6 @@ colorToLocal();
   }
 
 
-
 function colorFromLocal() {
   document.documentElement.style.setProperty(
     "--main-color",
@@ -159,16 +157,9 @@ colorFromLocal();
 
 let menu = document.querySelector(".setting-panel");
     let openmenu = document.querySelector(".setting-icon");
-    // let menuclose = document.querySelector(".menu-close-button");
     openmenu.onclick = function () {
       menu.classList.toggle("open");
-      // document.body.style = "overflow:hidden;";
     };
-    // menuclose.onclick = function () {
-    //   menu.classList.toggle("open");
-    //   document.body.style = "overflow:y;";
-    // };
-
 
 
     document.getElementById("darkmode").addEventListener("change", (ev) => {
