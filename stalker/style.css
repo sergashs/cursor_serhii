@@ -184,7 +184,7 @@
   color: rgba(236, 236, 236, 0.8);
 }
 
-.main-article__button {
+.button {
   border: none;
   font-family: "Graffiti1CTT";
   background: rgb(196, 117, 21);
@@ -203,20 +203,17 @@
   font-size: 22px;
   font-family: "Graffiti1CTT";
 }
-
 .main-article--container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
-
 .main-article--right {
   width: 800px;
   height: 450px;
   position: relative;
 }
-
 .watch-trailer {
   border: solid 1px rgb(196, 117, 21);
   color: rgb(196, 117, 21);
@@ -238,24 +235,21 @@
   margin: 15px;
   display: flex;
   align-items: flex-end;
-  transition: cubic-bezier(0, 0, 0.2, 1) 0.3s;
   flex: auto;
 }
-
 .news-item:nth-child(1) {
-  width: 48%;
+  width: 35%;
 }
-
 .news-item:nth-child(2) {
-  width: 48%;
+  width: 35%;
 }
 
 .news-item:hover::before {
   opacity: 0.1;
-  transition: cubic-bezier(0, 0, 0.2, 1) 0.3s;
+  transition: all 0.3s;
 }
-
 .news-item::before {
+  transition: all 0.3s;
   content: "";
   position: absolute;
   top: 0;
@@ -267,7 +261,6 @@
   opacity: 0.4;
   z-index: 10;
 }
-
 .news-item__title {
   align-self: flex-end;
   font-family: "Graffiti1CTT";
@@ -286,7 +279,6 @@
   color: #929292;
   margin: 20px 0 20px 0;
 }
-
 .news-item__read-more {
   font-size: 19px;
   font-family: "Graffiti1CTT";
@@ -294,7 +286,6 @@
   z-index: 11;
   color: rgb(196, 117, 21);
 }
-
 .news-item__img {
   width: 100%;
   height: 100%;
@@ -309,4 +300,56 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (max-width: 1160px) {
+  .main-article--container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-article {
+    margin: 50px 0 50px 0;
+  }
+  .header {
+    height: 100%;
+  }
+  .news-item {
+    width: 30%;
+  }
+  .news-item:nth-child(1) {
+    width: 30%;
+  }
+  .news-item:nth-child(2) {
+    width: 30%;
+  }
+}
+
+@media (max-width: 700px) {
+  .header__top {
+    flex-direction: column;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__item {
+    margin: 20px 0 0 0;
+  }
+  .news-item {
+    width: 100%;
+  }
+  .news-item:nth-child(1) {
+    width: 100%;
+  }
+  .news-item:nth-child(2) {
+    width: 100%;
+  }
+
+  .news-item:nth-child(11) {
+    width: 100%;
+  }
+  .news-item:nth-child(12) {
+    width: 100%;
+  }
 }
