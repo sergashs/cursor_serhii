@@ -55,7 +55,9 @@
       <div class="header__navigation">
         <div class="header__navigation--container">
           <div class="header__navigation--logo">
-            <img src="./img/logo.svg" alt="" />
+            <img class="hamburger-menu" src="./img/gmenu.svg" alt="" />
+
+            <img class="logo-img" src="./img/logo.svg" alt="" />
           </div>
 
           <div class="header__navigation--menu">
@@ -66,6 +68,9 @@
               >Сотрудничество</a
             >
             <a href="#" class="header__navigation--menu--link">Информация</a>
+            <div class="menu-close-button">
+              X
+            </div>
           </div>
 
           <div class="header__navigation--button-place">
@@ -76,108 +81,136 @@
     </header>
 
     <section class="main-slider">
-      <div class="main-slider__left">
-        <div class="main-slider__title">
-          NETGOWIFI
-        </div>
-        <div class="main-slider__description">
-          Инструмент, с помощью которого Wi-Fi сеть начинает приносить прибыль
+      <div class="main-slider__item fade">
+        <div class="main-slider__left">
+          <div class="main-slider__title">
+            NETGOWIFI
+          </div>
+          <div class="main-slider__description">
+            Инструмент, с помощью которого Wi-Fi сеть начинает приносить прибыль
+          </div>
+
+          <button class="button main-slider__button">Узнать подробнее</button>
         </div>
 
-        <button class="button main-slider__button">Узнать подробнее</button>
+        <div class="main-slider__right">
+          <img src="./img/main-display-slider-img-1.jpg" alt="" />
+        </div>
       </div>
 
-      <div class="main-slider__right">
-        <img src="./img/main-display-slider-img-1.jpg" alt="" />
+      <div class="main-slider__item fade">
+        <div class="main-slider__left">
+          <div class="main-slider__title">
+            ЧАТ-БОТЫ ДЛЯ БИЗНЕСА
+          </div>
+          <div class="main-slider__description">
+            Автоматизируйте общение с клиентами
+          </div>
+
+          <button class="button main-slider__button">Узнать подробнее</button>
+        </div>
+
+        <div class="main-slider__right">
+          <img src="./img/main-display-slider-img-2.jpg" alt="" />
+        </div>
       </div>
+
+      <a href="#" onclick="plusSlides(1)" class="slider-next-button"
+        ><i class="slider-arrow-right"></i
+      ></a>
+      <a href="#" onclick="plusSlides(-1)" class="slider-prev-button"
+        ><i class="slider-arrow-left"></i
+      ></a>
     </section>
 
     <section class="products">
       <div class="products__container">
         <div class="products__title title">Продукты</div>
 
-        <div class="porducts__item__container">
-          <div class="porducts__item">
-            <div class="porducts__item--title">NetgoWiFi</div>
-            <div class="porducts__item--description">
-              Многофункциональный сервис, позволяющий сделать из Wi-Fi сети
-              автоматизированную рекламную площадку, которая поможет Вам:
+        <div class="scroll" style="overflow-y: auto; cursor: pointer;">
+          <div class="porducts__item__container">
+            <div class="porducts__item">
+              <div class="porducts__item--title">NetgoWiFi</div>
+              <div class="porducts__item--description">
+                Многофункциональный сервис, позволяющий сделать из Wi-Fi сети
+                автоматизированную рекламную площадку, которая поможет Вам:
+              </div>
+              <ul class="porducts__item--list">
+                <li><span>Увеличить продажи и средний чек</span></li>
+                <li><span>Собрать клиентскую базу</span></li>
+                <li>
+                  <span
+                    >Повысить лояльность и дать повод клиентам вернуться к Вам
+                    снова</span
+                  >
+                </li>
+                <li>
+                  <span>Соблюдать закон об идентификации пользователей</span>
+                </li>
+              </ul>
+
+              <a class="button2" href="#">Узнать больше</a>
             </div>
-            <ul class="porducts__item--list">
-              <li><span>Увеличить продажи и средний чек</span></li>
-              <li><span>Собрать клиентскую базу</span></li>
-              <li>
-                <span
-                  >Повысить лояльность и дать повод клиентам вернуться к Вам
-                  снова</span
-                >
-              </li>
-              <li>
-                <span>Соблюдать закон об идентификации пользователей</span>
-              </li>
-            </ul>
 
-            <a class="button2" href="#">Узнать больше</a>
-          </div>
+            <div class="porducts__item">
+              <div class="porducts__item--title">Client Tracker</div>
+              <div class="porducts__item--description">
+                Сервис сбора и обработки данных, который поможет Вам:
+              </div>
+              <ul class="porducts__item--list">
+                <li><span>Найти клиентов</span></li>
+                <li><span>Создать клиентскую базу</span></li>
+                <li>
+                  <span>Показать рекламу</span>
+                </li>
+                <li>
+                  <span>Подсчитать тех, кто придет по рекламе</span>
+                </li>
+                <li>
+                  <span>Отследить проходимость офлайн точек</span>
+                </li>
+              </ul>
 
-          <div class="porducts__item">
-            <div class="porducts__item--title">Client Tracker</div>
-            <div class="porducts__item--description">
-              Сервис сбора и обработки данных, который поможет Вам:
+              <a class="button2" href="#">Узнать больше</a>
             </div>
-            <ul class="porducts__item--list">
-              <li><span>Найти клиентов</span></li>
-              <li><span>Создать клиентскую базу</span></li>
-              <li>
-                <span>Показать рекламу</span>
-              </li>
-              <li>
-                <span>Подсчитать тех, кто придет по рекламе</span>
-              </li>
-              <li>
-                <span>Отследить проходимость офлайн точек</span>
-              </li>
-            </ul>
 
-            <a class="button2" href="#">Узнать больше</a>
-          </div>
+            <div class="porducts__item">
+              <div class="porducts__item--title">Виртуальная АТС</div>
+              <div class="porducts__item--description">
+                Комплексный продукт помогающий внедрить
+              </div>
+              <ul class="porducts__item--list">
+                <li><span>IP телефонию</span></li>
+                <li><span>Коллтрекинг</span></li>
+                <li>
+                  <span>Сквозную аналитику</span>
+                </li>
+                <li>
+                  <span>Удаленную команду сотрудников</span>
+                </li>
+              </ul>
 
-          <div class="porducts__item">
-            <div class="porducts__item--title">Виртуальная АТС</div>
-            <div class="porducts__item--description">
-              Комплексный продукт помогающий внедрить
+              <a class="button2" href="#">Узнать больше</a>
             </div>
-            <ul class="porducts__item--list">
-              <li><span>IP телефонию</span></li>
-              <li><span>Коллтрекинг</span></li>
-              <li>
-                <span>Сквозную аналитику</span>
-              </li>
-              <li>
-                <span>Удаленную команду сотрудников</span>
-              </li>
-            </ul>
 
-            <a class="button2" href="#">Узнать больше</a>
-          </div>
+            <div class="porducts__item">
+              <div class="porducts__item--title">Облачное видеонаблюдение</div>
+              <div class="porducts__item--description">
+                Умная система видеонаблюдения позволяет
+              </div>
+              <ul class="porducts__item--list">
+                <li><span>Распознавать лица</span></li>
+                <li><span>Распознавать номера автомобилей</span></li>
+                <li>
+                  <span>Анализировать проходимость точек</span>
+                </li>
+                <li>
+                  <span>Получать уведомления о событиях на объекте</span>
+                </li>
+              </ul>
 
-          <div class="porducts__item">
-            <div class="porducts__item--title">Облачное видеонаблюдение</div>
-            <div class="porducts__item--description">
-              Умная система видеонаблюдения позволяет
+              <a class="button2" href="#">Узнать больше</a>
             </div>
-            <ul class="porducts__item--list">
-              <li><span>Распознавать лица</span></li>
-              <li><span>Распознавать номера автомобилей</span></li>
-              <li>
-                <span>Анализировать проходимость точек</span>
-              </li>
-              <li>
-                <span>Получать уведомления о событиях на объекте</span>
-              </li>
-            </ul>
-
-            <a class="button2" href="#">Узнать больше</a>
           </div>
         </div>
       </div>
@@ -189,102 +222,110 @@
           Помогаем бизнесу решать следующие задачи
         </div>
 
-        <div class="help-business__item--container">
-          <div class="help-business__item--row">
-            <div class="help-business__item">
-              <div class="help-business__item--icon">
-                <img src="./img/help1.svg" alt="" />
-              </div>
-              <div class="help-business__item--title">Сбор данных клиентов</div>
-            </div>
+        <div class="scroll" style="overflow-y: auto; cursor: pointer;">
+          <div class="help-business__item--container">
+            <div class="help-business__item--row--container">
+              <div class="help-business__item--row">
+                <div class="help-business__item">
+                  <div class="help-business__item--icon">
+                    <img src="./img/help1.svg" alt="" />
+                  </div>
+                  <div class="help-business__item--title">
+                    Сбор данных клиентов
+                  </div>
+                </div>
 
-            <div class="help-business__item">
-              <div class="help-business__item--icon">
-                <img src="./img/help2.svg" alt="" />
-              </div>
-              <div class="help-business__item--title">
-                Аналитика посещаемости точек
-              </div>
-            </div>
+                <div class="help-business__item">
+                  <div class="help-business__item--icon">
+                    <img src="./img/help2.svg" alt="" />
+                  </div>
+                  <div class="help-business__item--title">
+                    Аналитика посещаемости точек
+                  </div>
+                </div>
 
-            <div class="help-business__item">
-              <div class="help-business__item--icon">
-                <img src="./img/help3.svg" alt="" />
-              </div>
-              <div class="help-business__item--title">
-                Разработка и проведение рекламных компаний
-              </div>
-            </div>
+                <div class="help-business__item">
+                  <div class="help-business__item--icon">
+                    <img src="./img/help3.svg" alt="" />
+                  </div>
+                  <div class="help-business__item--title">
+                    Разработка и проведение рекламных компаний
+                  </div>
+                </div>
 
-            <div class="help-business__item">
-              <div class="help-business__item--icon">
-                <img src="./img/help4.svg" alt="" />
-              </div>
-              <div class="help-business__item--title">
-                Создание гиперлокальных аудиторий
-              </div>
-            </div>
+                <div class="help-business__item">
+                  <div class="help-business__item--icon">
+                    <img src="./img/help4.svg" alt="" />
+                  </div>
+                  <div class="help-business__item--title">
+                    Создание гиперлокальных аудиторий
+                  </div>
+                </div>
 
-            <div class="help-business__item">
-              <div class="help-business__item--icon">
-                <img src="./img/help5.svg" alt="" />
+                <div class="help-business__item">
+                  <div class="help-business__item--icon">
+                    <img src="./img/help5.svg" alt="" />
+                  </div>
+                  <div class="help-business__item--title">
+                    Автоматизация клиентского сервиса
+                  </div>
+                </div>
               </div>
-              <div class="help-business__item--title">
-                Автоматизация клиентского сервиса
-              </div>
-            </div>
-          </div>
 
-          <div class="help-business__item--row">
-            <div class="help-business__item">
-              <div class="help-business__item--icon">
-                <img src="./img/help6.svg" alt="" />
-              </div>
-              <div class="help-business__item--title">
-                Увеличение показателя повторных покупок
-              </div>
-            </div>
+              <div class="help-business__item--row">
+                <div class="help-business__item">
+                  <div class="help-business__item--icon">
+                    <img src="./img/help6.svg" alt="" />
+                  </div>
+                  <div class="help-business__item--title">
+                    Увеличение показателя повторных покупок
+                  </div>
+                </div>
 
-            <div class="help-business__item">
-              <div class="help-business__item--icon">
-                <img src="./img/help7.svg" alt="" />
-              </div>
-              <div class="help-business__item--title">
-                Организация удаленной работы
-              </div>
-            </div>
+                <div class="help-business__item">
+                  <div class="help-business__item--icon">
+                    <img src="./img/help7.svg" alt="" />
+                  </div>
+                  <div class="help-business__item--title">
+                    Организация удаленной работы
+                  </div>
+                </div>
 
-            <div class="help-business__item">
-              <div class="help-business__item--icon">
-                <img src="./img/help8.svg" alt="" />
-              </div>
-              <div class="help-business__item--title">
-                Аналитика клиентского сервиса и продаж
-              </div>
-            </div>
+                <div class="help-business__item">
+                  <div class="help-business__item--icon">
+                    <img src="./img/help8.svg" alt="" />
+                  </div>
+                  <div class="help-business__item--title">
+                    Аналитика клиентского сервиса и продаж
+                  </div>
+                </div>
 
-            <div class="help-business__item">
-              <div class="help-business__item--icon">
-                <img src="./img/help9.svg" alt="" />
-              </div>
-              <div class="help-business__item--title">
-                Организация WIFi сетей
-              </div>
-            </div>
+                <div class="help-business__item">
+                  <div class="help-business__item--icon">
+                    <img src="./img/help9.svg" alt="" />
+                  </div>
+                  <div class="help-business__item--title">
+                    Организация WIFi сетей
+                  </div>
+                </div>
 
-            <div class="help-business__item">
-              <div class="help-business__item--icon">
-                <img src="./img/help10.svg" alt="" />
-              </div>
-              <div class="help-business__item--title">
-                Организация видео- наблюдения
+                <div class="help-business__item">
+                  <div class="help-business__item--icon">
+                    <img src="./img/help10.svg" alt="" />
+                  </div>
+                  <div class="help-business__item--title">
+                    Организация видео- наблюдения
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button class="button help-business__button">
-          Получить консультацию
-        </button>
+        <div class="help-business__button--place">
+          <button class="button help-business__button">
+            Получить консультацию
+          </button>
+        </div>
       </div>
     </section>
 
@@ -328,25 +369,27 @@
           продуктами пользуются
         </div>
 
-        <div class="products-used__item--container">
-          <div class="products-used__item">
-            <img src="./img/product-used1.png" alt="" />
-          </div>
+        <div class="scroll" style="overflow-y: auto; cursor: pointer;">
+          <div class="products-used__item--container">
+            <div class="products-used__item">
+              <img src="./img/product-used1.png" alt="" />
+            </div>
 
-          <div class="products-used__item">
-            <img src="./img/product-used2.png" alt="" />
-          </div>
+            <div class="products-used__item">
+              <img src="./img/product-used2.png" alt="" />
+            </div>
 
-          <div class="products-used__item">
-            <img src="./img/product-used3.png" alt="" />
-          </div>
+            <div class="products-used__item">
+              <img src="./img/product-used3.png" alt="" />
+            </div>
 
-          <div class="products-used__item">
-            <img src="./img/product-used4.png" alt="" />
-          </div>
+            <div class="products-used__item">
+              <img src="./img/product-used4.png" alt="" />
+            </div>
 
-          <div class="products-used__item">
-            <img src="./img/product-used5.png" alt="" />
+            <div class="products-used__item">
+              <img src="./img/product-used5.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -356,25 +399,27 @@
       <div class="partners__container">
         <div class="title">Партнеры</div>
 
-        <div class="partners__item--container">
-          <div class="partners__item">
-            <img src="./img/partners1.png" alt="" />
-          </div>
+        <div class="scroll" style="overflow-y: auto; cursor: pointer;">
+          <div class="partners__item--container">
+            <div class="partners__item">
+              <img src="./img/partners1.png" alt="" />
+            </div>
 
-          <div class="partners__item">
-            <img src="./img/partners2.png" alt="" />
-          </div>
+            <div class="partners__item">
+              <img src="./img/partners2.png" alt="" />
+            </div>
 
-          <div class="partners__item">
-            <img src="./img/partners3.png" alt="" />
-          </div>
+            <div class="partners__item">
+              <img src="./img/partners3.png" alt="" />
+            </div>
 
-          <div class="partners__item">
-            <img src="./img/partners4.png" alt="" />
-          </div>
+            <div class="partners__item">
+              <img src="./img/partners4.png" alt="" />
+            </div>
 
-          <div class="partners__item">
-            <img src="./img/partners5.png" alt="" />
+            <div class="partners__item">
+              <img src="./img/partners5.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -385,36 +430,38 @@
         <div class="blog__container--top">
           <div class="title">Блог</div>
 
-          <a href="#" class="arrow-right-button"><i class="arrow-right"></i></a>
+          <a href="#" class="arrow-button-right"><i class="arrow-right"></i></a>
         </div>
 
-        <div class="blog__item--container">
-          <div class="blog__item">
-            <div class="blog__item--left">
-              <img src="./img/blog1.png" alt="" />
-            </div>
-
-            <div class="blog__item--right">
-              <div class="blog__item--title">
-                8 методов повышения лояльности, притягивающие клиентов в
-                ресторан.
+        <div class="scroll" style="overflow-y: auto; cursor: pointer;">
+          <div class="blog__item--container">
+            <div class="blog__item">
+              <div class="blog__item--left">
+                <img src="./img/blog1.png" alt="" />
               </div>
 
-              <a class="blog__item--link" href="#">Читать</a>
-            </div>
-          </div>
+              <div class="blog__item--right">
+                <div class="blog__item--title">
+                  8 методов повышения лояльности, притягивающие клиентов в
+                  ресторан.
+                </div>
 
-          <div class="blog__item">
-            <div class="blog__item--left">
-              <img src="./img/blog2.png" alt="" />
+                <a class="blog__item--link" href="#">Читать</a>
+              </div>
             </div>
 
-            <div class="blog__item--right">
-              <div class="blog__item--title">
-                Топ 5 инструментов для автоматизации отдела продаж
+            <div class="blog__item">
+              <div class="blog__item--left">
+                <img src="./img/blog2.png" alt="" />
               </div>
 
-              <a class="blog__item--link" href="#">Читать</a>
+              <div class="blog__item--right">
+                <div class="blog__item--title">
+                  Топ 5 инструментов для автоматизации отдела продаж
+                </div>
+
+                <a class="blog__item--link" href="#">Читать</a>
+              </div>
             </div>
           </div>
         </div>
@@ -454,23 +501,96 @@
         </div>
 
         <div class="footer__column footer__column-">
-          <a href="#" class="header__top-bar--item footer-icon-link">
-            <div class="header__top-bar--item--icon">
+          <a href="#" class="footer-icon-link">
+            <div class="footer-icon-link-item--icon">
               <img src="./img/mail.svg" alt="" />
             </div>
-            <div class="header__top-bar--item--title">info@netgo.ru</div>
+            <div class="footer-icon-link-item--title">info@netgo.ru</div>
           </a>
 
-          <a href="#" class="header__top-bar--item footer-icon-link">
-            <div class="header__top-bar--item--icon">
+          <a href="#" class="footer-icon-link">
+            <div class="footer-icon-link-item--icon">
               <img src="./img/phone-call.svg" alt="" />
             </div>
-            <div class="header__top-bar--item--title">8 800 336-96-86</div>
+            <div class="footer-icon-link-item--title">8 800 336-96-86</div>
           </a>
 
           <button class="button footer__button">Войти</button>
         </div>
       </div>
     </footer>
+    <script>
+      // const slider = document.querySelectorAll(".scroll");
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      document.querySelectorAll(".scroll").forEach((item) => {
+        item.addEventListener("mousedown", (e) => {
+          isDown = true;
+          item.classList.add("active");
+          startX = e.pageX - item.offsetLeft;
+          scrollLeft = item.scrollLeft;
+        });
+        item.addEventListener("mouseleave", () => {
+          isDown = false;
+          item.classList.remove("active");
+        });
+        item.addEventListener("mouseup", () => {
+          isDown = false;
+          item.classList.remove("active");
+        });
+        item.addEventListener("mousemove", (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - item.offsetLeft;
+          const walk = x - startX;
+          item.scrollLeft = scrollLeft - walk;
+        });
+      });
+
+      let menu = document.querySelector(".header__navigation--menu");
+      let openmenu = document.querySelector(".hamburger-menu");
+      let menuclose = document.querySelector(".menu-close-button");
+      openmenu.onclick = function () {
+        menu.classList.toggle("active");
+        document.body.style = "overflow:hidden;";
+      };
+      menuclose.onclick = function () {
+        menu.classList.toggle("active");
+        document.body.style = "overflow:y;";
+      };
+
+      // slider
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("main-slider__item");
+
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "flex";
+      }
+    </script>
   </body>
 </html>
