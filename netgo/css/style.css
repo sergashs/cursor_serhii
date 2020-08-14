@@ -280,7 +280,7 @@ a {
 }
 
 .help-business {
-  background: url(/img/help-business.jpg);
+  background: url(./img/help-business.jpg);
   background-size: cover;
   padding: 60px 0 60px 0;
 }
