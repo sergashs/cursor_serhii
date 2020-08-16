@@ -520,8 +520,11 @@
       </div>
     </footer>
     <script>
-      // const slider = document.querySelectorAll(".scroll");
-      let isDown = false;
+
+if (document.documentElement.clientWidth < 568) {
+console.log("off script");
+}else{
+  let isDown = false;
       let startX;
       let scrollLeft;
 
@@ -548,6 +551,8 @@
           item.scrollLeft = scrollLeft - walk;
         });
       });
+}
+      
 
       let menu = document.querySelector(".header__navigation--menu");
       let openmenu = document.querySelector(".hamburger-menu");
