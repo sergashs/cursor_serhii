@@ -232,7 +232,7 @@ a {
 }
 
 .shipping-payment {
-  margin: 40px 0;
+  margin: 40px 10px;
 }
 
 .shipping-payment__container {
@@ -423,4 +423,65 @@ a {
 
 .faq__item__content.active {
   display: block;
+}
+
+.request__form {
+  margin: 30px 0 0 0;
+}
+
+.request__form--input {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "MullerRegular";
+}
+
+.request__form--button {
+  font-family: "MullerRegular";
+  border-radius: 5px;
+  font-size: 16px;
+  background: #f5e401;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.shipping-payment__right {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1178px) {
+  .shipping-payment__right img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .certificate__star {
+    display: none;
+  }
+  .tabs-section-left {
+    max-width: 100%;
+  }
+  .shipping-payment__container {
+    flex-direction: column;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .shipping-payment__right img {
+    margin: 30px 0 0 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .request__form {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .request__form--input {
+    margin: 0 0 20px 0;
+  }
 }
