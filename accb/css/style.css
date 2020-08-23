@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "MullerRegular";
+  src: url("/fonts/MullerRegular.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.in-stock {
+  margin: 80px 0 80px 0;
+}
+
+.in-stock__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.in-stock__title {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 49px;
+  color: #000000;
+  max-width: 900px;
+  margin: 0 10px 0 10px;
+}
+
+.in-stock__item--container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.in-stock__item {
+  flex: 1;
+  margin: 0 10px 0 10px;
+}
+
+.in-stock__button-place {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 0 0;
+}
+
+.button {
+  padding: 10px 40px;
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  background: #d10b0f;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.reviews {
+  padding: 40px 0;
+  background-image: url(/img/reviews__background.jpg);
+}
+
+.reviews__container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.reviews__title {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 49px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.reviews__item {
+  cursor: pointer;
+  width: 380px;
+  margin: 0 10px 0 10px;
+}
+
+.reviews__item--top {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews__item--img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.reviews__item--play-icon {
+  position: absolute;
+}
+
+.reviews__item--buttom {
+  margin: 10px 15px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__item--title {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 183%;
+  color: #ffffff;
+}
+
+.star-true {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__slider {
+  margin: 40px 0;
+}
+
+.certificate {
+  margin: 40px 0;
+}
+
+.certificate__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.certificate__title {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 49px;
+  color: #000000;
+  max-width: 800px;
+  margin: 0 10px 20px 10px;
+}
+
+.certificate__top {
+  display: flex;
+}
+
+.certificate__star {
+  background: #ffda11;
+  border-radius: 4px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.certificate__star--digit {
+  font-family: "MullerRegular";
+  font-weight: 500;
+  font-size: 30px;
+  color: #000000;
+  margin: 5px 0 0 10px;
+}
+
+.certificate__description {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 95.5%;
+  color: #000000;
+  margin: 0 10px;
+}
+
+.certificate__slider {
+  margin: 40px 0;
+}
+
+.certificate__item {
+  cursor: pointer;
+  width: 380px;
+  margin: 0 10px;
+}
+
+.request__container {
+  max-width: 1180px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.request__title {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 138.5%;
+  color: #000000;
+  margin: 0 0 50px 0;
+}
+
+.request-form--input-title {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+.request-form--input {
+  border: none;
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 0 15px 0;
+}
+
+.request-form--input::placeholder {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 162.5%;
+  color: #8c8c8c;
+}
+
+.request-form {
+  display: flex;
+}
+
+.request-form__button {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 162.5%;
+  text-align: center;
+  color: #1b1b1b;
+  background: #ffda11;
+  border-radius: 5px;
+  padding: 10px 40px;
+}
+
+.request-form--description {
+  max-width: 270px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 146.34%;
+  font-family: "MullerRegular";
+  color: #acacac;
+  margin: 45px 0 0 0;
+}
+
+.request-form__left {
+  margin: 0 20px 0 0;
+}
+
+.request-form__right {
+  margin: 30px 0 0 0;
+}
+
+@media (max-width: 960px) {
+  .request__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .request__right {
+    margin: 0 0 40px 0;
+  }
+}
