@@ -195,96 +195,232 @@ a {
   margin: 0 10px;
 }
 
+.request {
+  background: #0b1431;
+}
+
 .request__container {
-  max-width: 1180px;
-  margin: auto;
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+  padding: 40px 0;
 }
 
 .request__title {
   font-family: "MullerRegular";
   font-style: normal;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 138.5%;
-  color: #000000;
-  margin: 0 0 50px 0;
-}
-
-.request-form--input-title {
-  font-family: "MullerRegular";
-  font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  color: #000000;
-  margin: 0 0 10px 0;
+  color: #f5e401;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-.request-form--input {
-  border: none;
-  background: #f5f5f5;
-  border-radius: 5px;
-  padding: 10px 20px;
-  width: 100%;
-  max-width: 380px;
+.request__sub-title {
+  font-family: "MullerRegular";
+  color: #fff;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.request__description {
+  font-family: "MullerRegular";
+  color: #ffffff;
+  line-height: 20px;
+}
+
+.request__description span {
+  text-transform: uppercase;
+}
+
+.shipping-payment {
+  margin: 40px 0;
+}
+
+.shipping-payment__container {
+  max-width: 1180px;
+  margin: auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipping-payment__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "MullerRegular";
+  color: #000000;
   margin: 0 0 15px 0;
 }
 
-.request-form--input::placeholder {
+.shipping-payment__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 165.5%;
+  font-family: "MullerRegular";
+  color: #000000;
+}
+
+.shipping-payment__list--item {
   font-family: "MullerRegular";
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 162.5%;
-  color: #8c8c8c;
-}
-
-.request-form {
+  font-size: 15px;
+  line-height: 165.5%;
+  color: #000000;
+  margin: 20px 0 0 0;
+  max-width: 400px;
   display: flex;
 }
 
-.request-form__button {
+.shipping-payment__list--item img {
+  margin: 0 20px 0 0;
+}
+
+.legal__container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+}
+.tab {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding: 15px;
+  background: #ffda11;
+  color: #000000;
+  text-align: center;
+  font-family: "MullerRegular";
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin: 0 10px 0 0;
+}
+.tab:last-child {
+  margin: 0;
+}
+
+.tab.active {
+  border: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #fff;
+  color: #000000;
+  text-align: center;
+  font-family: "MullerRegular";
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+}
+.output {
+  clear: both;
+}
+.section {
+  display: none;
+}
+.section.active {
+  display: flex;
+  background-color: #fff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.tabs-section-left {
+  padding: 30px;
+  max-width: 50%;
+}
+
+.tabs-section-right {
+  padding: 20px;
+}
+
+.tabs-section-right img {
+  width: 100%;
+}
+
+.tabs-section-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 29px;
+  font-family: "MullerRegular";
+  color: #000000;
+}
+
+.tabs-section-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 183%;
+  font-family: "MullerRegular";
+  text-transform: uppercase;
+  color: #d10b0f;
+}
+
+.faq {
+  margin: 50px 0;
+}
+
+.faq__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.faq__title {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  margin: 0 0 30px 0;
+}
+
+.faq__item__tab {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0 30px 0;
+}
+
+.faq__item__tab--title {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 183%;
+  color: #0329a8;
+}
+
+.faq__item__content {
+  display: none;
+  margin: 30px;
   font-family: "MullerRegular";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 162.5%;
-  text-align: center;
-  color: #1b1b1b;
-  background: #ffda11;
-  border-radius: 5px;
-  padding: 10px 40px;
+  line-height: 183%;
+  color: #000000;
 }
 
-.request-form--description {
-  max-width: 270px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 146.34%;
-  font-family: "MullerRegular";
-  color: #acacac;
-  margin: 45px 0 0 0;
-}
-
-.request-form__left {
-  margin: 0 20px 0 0;
-}
-
-.request-form__right {
-  margin: 30px 0 0 0;
-}
-
-@media (max-width: 960px) {
-  .request__container {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .request__right {
-    margin: 0 0 40px 0;
-  }
+.faq__item__content.active {
+  display: block;
 }
