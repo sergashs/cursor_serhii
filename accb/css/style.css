@@ -67,7 +67,7 @@ a {
 
 .reviews {
   padding: 40px 0;
-  background-image: url(./img/reviews__background.jpg);
+  background-image: url(../img/reviews__background.jpg);
 }
 
 .reviews__container {
