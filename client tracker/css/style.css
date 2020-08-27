@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #2e2e2e;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section1__container {
+  padding: 100px 0 0 0;
+  display: flex;
+  max-width: 1100px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.logo {
+  margin: 0 0 40px 0;
+}
+
+.logo img {
+  max-width: 300px;
+}
+
+.section1__item-list {
+  margin: 0 0 20px 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.section1__item-list::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #2e2e2e;
+  left: -15px;
+  border-radius: 100%;
+}
+
+.button {
+  color: #ff8d3c;
+  text-transform: uppercase;
+  border: solid 1px #ff8d3c;
+  padding: 10px 40px;
+  border-radius: 20px;
+  background: none;
+  font-size: 20px;
+}
+
+.button:hover {
+  background: #ff8d3c;
+  color: #fff;
+}
+
+.section1_right img {
+  max-width: 700px;
+  width: 100%;
+}
+
+.how-it-work {
+  margin: 100px 0 0 0;
+  counter-reset: section;
+}
+
+.how-it-work__title {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 60px 0;
+}
+
+.how-it-work__item {
+  margin: 0 0 0 10px;
+  border-left: solid 1px #ff8d3c;
+  padding: 0 0 40px 80px;
+  position: relative;
+}
+
+.how-it-work__item::before {
+  counter-increment: section;
+  content: "" counter(section) ". ";
+  position: absolute;
+  top: -10px;
+  left: -18px;
+  font-size: 38px;
+  color: #ff8d3c;
+  background: #fff;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.how-it-work__item:nth-child(5):before {
+  counter-increment: section;
+  content: "" counter(section) ". ";
+  position: absolute;
+  top: -10px;
+  left: -25px;
+  font-size: 38px;
+  color: #ff8d3c;
+  background: #fff;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.how-it-work__item--title {
+  font-size: 30px;
+  margin: 0 0 20px 0;
+}
+
+.how-it-work__item--description {
+  font-size: 18px;
+}
+
+/* @media (max-width: 568px) {
+  .scroll {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .scroll::-webkit-scrollbar {
+    display: none;
+  }
+} */
