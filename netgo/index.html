@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap"
       rel="stylesheet"
@@ -60,18 +61,111 @@
             <img class="logo-img" src="./img/logo.svg" alt="" />
           </div>
 
-          <div class="header__navigation--menu">
-            <a href="#" class="header__navigation--menu--link">О нас</a>
-            <a href="#" class="header__navigation--menu--link">Продукты</a>
-            <a href="#" class="header__navigation--menu--link">Услуги</a>
-            <a href="#" class="header__navigation--menu--link"
-              >Сотрудничество</a
-            >
-            <a href="#" class="header__navigation--menu--link">Информация</a>
-            <div class="menu-close-button">
-              X
-            </div>
-          </div>
+          <!-- moibile menu -->
+          <ul class="moibile__navigation--menu">
+            <li class="moibile__link--drop-down">
+              <a href="#" class="moibile__link">О нас </a
+              ><i class="down-arrow"></i>
+
+              <div class="moibile__drop-down--menu">
+                <ul class="moibile__drop-down--menu__container">
+                  <li class="moibile__drop-down--menu--item">
+                    <a href="#">О компании</a>
+                  </li>
+                  <li class="moibile__drop-down--menu--item">
+                    <a href="#">О компании</a>
+                  </li>
+                  <li class="moibile__drop-down--menu--item">
+                    <a href="#">О компании</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="moibile__link">Продукты</a>
+            </li>
+            <li>
+              <a href="#" class="moibile__link">Услуги</a>
+            </li>
+            <li>
+              <a href="#" class="moibile__link">Сотрудничество</a>
+            </li>
+
+            <li class="moibile__link--drop-down">
+              <a href="#" class="moibile__link">Инофрмация</a>
+              <i class="down-arrow"></i>
+              <div class="moibile__drop-down--menu">
+                <ul class="moibile__drop-down--menu__container">
+                  <li class="moibile__drop-down--menu--item">
+                    <a href="#">О компании</a>
+                  </li>
+                  <li class="moibile__drop-down--menu--item">
+                    <a href="#">О компании</a>
+                  </li>
+                  <li class="moibile__drop-down--menu--item">
+                    <a href="#">О компании</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <div class="menu-close-button">X</div>
+          </ul>
+
+          <!-- moibile menu -->
+
+          <ul class="header__navigation--menu">
+            <li class="navigation--menu--link--drop-down">
+              <a href="#" class="header__navigation--menu--link">О нас</a>
+
+              <div class="drop-down--menu">
+                <ul class="drop-down--menu__container">
+                  <li class="drop-down--menu--item">
+                    <a href="#">О компании</a>
+                  </li>
+                  <li class="drop-down--menu--item">
+                    <a href="#">О компании</a>
+                  </li>
+                  <li class="drop-down--menu--item">
+                    <a href="#">О компании</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="header__navigation--menu--link">Продукты</a>
+            </li>
+            <li>
+              <a href="#" class="header__navigation--menu--link">Услуги</a>
+            </li>
+            <li>
+              <a href="#" class="header__navigation--menu--link"
+                >Сотрудничество</a
+              >
+            </li>
+
+            <li class="navigation--menu--link--drop-down">
+              <a href="#" class="header__navigation--menu--link">Информация</a>
+
+              <div class="drop-down--menu">
+                <ul class="drop-down--menu__container">
+                  <li class="drop-down--menu--item">
+                    <a href="#">О компании</a>
+                  </li>
+                  <li class="drop-down--menu--item">
+                    <a href="#">О компании</a>
+                  </li>
+                  <li class="drop-down--menu--item">
+                    <a href="#">О компании</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <div class="menu-close-button">X</div>
+          </ul>
 
           <div class="header__navigation--button-place">
             <button class="button">Заказать звонок</button>
@@ -83,9 +177,7 @@
     <section class="main-slider">
       <div class="main-slider__item fade">
         <div class="main-slider__left">
-          <div class="main-slider__title">
-            NETGOWIFI
-          </div>
+          <div class="main-slider__title">NETGOWIFI</div>
           <div class="main-slider__description">
             Инструмент, с помощью которого Wi-Fi сеть начинает приносить прибыль
           </div>
@@ -100,9 +192,7 @@
 
       <div class="main-slider__item fade">
         <div class="main-slider__left">
-          <div class="main-slider__title">
-            ЧАТ-БОТЫ ДЛЯ БИЗНЕСА
-          </div>
+          <div class="main-slider__title">ЧАТ-БОТЫ ДЛЯ БИЗНЕСА</div>
           <div class="main-slider__description">
             Автоматизируйте общение с клиентами
           </div>
@@ -127,7 +217,7 @@
       <div class="products__container">
         <div class="products__title title">Продукты</div>
 
-        <div class="scroll" style="overflow-y: auto; cursor: pointer;">
+        <div class="scroll" style="overflow-y: auto; cursor: pointer">
           <div class="porducts__item__container">
             <div class="porducts__item">
               <div class="porducts__item--title">NetgoWiFi</div>
@@ -222,7 +312,7 @@
           Помогаем бизнесу решать следующие задачи
         </div>
 
-        <div class="scroll" style="overflow-y: auto; cursor: pointer;">
+        <div class="scroll" style="overflow-y: auto; cursor: pointer">
           <div class="help-business__item--container">
             <div class="help-business__item--row--container">
               <div class="help-business__item--row">
@@ -369,7 +459,7 @@
           продуктами пользуются
         </div>
 
-        <div class="scroll" style="overflow-y: auto; cursor: pointer;">
+        <div class="scroll" style="overflow-y: auto; cursor: pointer">
           <div class="products-used__item--container">
             <div class="products-used__item">
               <img src="./img/product-used1.png" alt="" />
@@ -399,7 +489,7 @@
       <div class="partners__container">
         <div class="title">Партнеры</div>
 
-        <div class="scroll" style="overflow-y: auto; cursor: pointer;">
+        <div class="scroll" style="overflow-y: auto; cursor: pointer">
           <div class="partners__item--container">
             <div class="partners__item">
               <img src="./img/partners1.png" alt="" />
@@ -433,7 +523,7 @@
           <a href="#" class="arrow-button-right"><i class="arrow-right"></i></a>
         </div>
 
-        <div class="scroll" style="overflow-y: auto; cursor: pointer;">
+        <div class="scroll" style="overflow-y: auto; cursor: pointer">
           <div class="blog__item--container">
             <div class="blog__item">
               <div class="blog__item--left">
@@ -519,83 +609,8 @@
         </div>
       </div>
     </footer>
-    <script>
-
-if (document.documentElement.clientWidth < 568) {
-console.log("off script");
-}else{
-  let isDown = false;
-      let startX;
-      let scrollLeft;
-
-      document.querySelectorAll(".scroll").forEach((item) => {
-        item.addEventListener("mousedown", (e) => {
-          isDown = true;
-          item.classList.add("active");
-          startX = e.pageX - item.offsetLeft;
-          scrollLeft = item.scrollLeft;
-        });
-        item.addEventListener("mouseleave", () => {
-          isDown = false;
-          item.classList.remove("active");
-        });
-        item.addEventListener("mouseup", () => {
-          isDown = false;
-          item.classList.remove("active");
-        });
-        item.addEventListener("mousemove", (e) => {
-          if (!isDown) return;
-          e.preventDefault();
-          const x = e.pageX - item.offsetLeft;
-          const walk = x - startX;
-          item.scrollLeft = scrollLeft - walk;
-        });
-      });
-}
-      
-
-      let menu = document.querySelector(".header__navigation--menu");
-      let openmenu = document.querySelector(".hamburger-menu");
-      let menuclose = document.querySelector(".menu-close-button");
-      openmenu.onclick = function () {
-        menu.classList.toggle("active");
-        document.body.style = "overflow:hidden;";
-      };
-      menuclose.onclick = function () {
-        menu.classList.toggle("active");
-        document.body.style = "overflow:y;";
-      };
-
-      // slider
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      // Next/previous controls
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      // Thumbnail image controls
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("main-slider__item");
-
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-
-        slides[slideIndex - 1].style.display = "flex";
-      }
-    </script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/main-slider.js"></script>
   </body>
 </html>
