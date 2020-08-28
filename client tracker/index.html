@@ -80,6 +80,63 @@
               </div>
             </div>
           </div>
+
+          <div class="where-ad">
+            <div class="where-ad__title">Где клиенты увидят вашу рекламу</div>
+
+            <div class="where-ad__app">
+              <div class="where-ad__tabs">
+                <div class="where-ad__tab active" data-tab="1">
+                  Яндекс
+                  <span class="where-ad__tab-icon" data-tab="1"
+                    ><img src="/img/ad-tab-off.svg"
+                  /></span>
+                </div>
+                <div class="where-ad__tab" data-tab="2">
+                  VK
+
+                  <span class="where-ad__tab-icon active" data-tab="2"
+                    ><img src="/img/ad-tab-on.svg"
+                  /></span>
+                </div>
+                <div class="where-ad__tab" data-tab="3">
+                  OK.ru
+
+                  <span class="where-ad__tab-icon" data-tab="3"
+                    ><img src="/img/ad-tab-off.svg"
+                  /></span>
+                </div>
+                <div class="where-ad__tab" data-tab="4">
+                  Mail.ru
+
+                  <span class="where-ad__tab-icon" data-tab="4"
+                    ><img src="/img/ad-tab-off.svg"
+                  /></span>
+                </div>
+                <div class="where-ad__tab" data-tab="5">
+                  Facebook
+
+                  <span class="where-ad__tab-icon" data-tab="5"
+                    ><img src="/img/ad-tab-off.svg"
+                  /></span>
+                </div>
+              </div>
+
+              <div class="where-ad__item--container">
+                <div class="where-ad__item" data-tab="1">
+                  <img src="/img/2.jpg" class="where-ad__item--img" />
+                </div>
+
+                <div class="where-ad__item active" data-tab="2">
+                  <img src="/img/vk.jpg" class="where-ad__item--img" />
+                </div>
+              </div>
+            </div>
+
+            <div class="place-fot-button">
+              <button class="button">заказать</button>
+            </div>
+          </div>
         </div>
 
         <div class="section1_right">
@@ -87,5 +144,95 @@
         </div>
       </div>
     </section>
+
+    <section class="section2">
+      <div class="section2__container">
+        <div class="section2__item">
+          <div class="section2__item--title">
+            Оцените эффективность <br />
+            рекламной компании
+          </div>
+          <div class="section2__item--description">
+            Client Tracker покажет сколько посетителей пришли благодаря рекламе,
+            показанной на их устройствах.
+          </div>
+          <div class="section2__item--place-for-img">
+            <img src="/img/section2-item1.svg" class="section2__item--img" />
+          </div>
+
+          <div class="section2__item--title">
+            Все собранные данные <br />
+            доступны для настройки<br />
+            рекламной компании в Личном Кабинете <br />
+          </div>
+
+          <div class="section2__item--place-for-img">
+            <img src="/img/section2-item2.png" class="section2__item--img2" />
+          </div>
+
+          <div class="section2__item--title">
+            Покажите вашу рекламу людям <br />
+            похожим на ваших клиентов
+          </div>
+
+          <div class="section2__item--subtitle">Функция «Look a Like»</div>
+          <div class="section2__item--description">
+            с этой функцией вы можете привлечь тех, чьи данные не попали в
+            систему, но похожи поведением <br />
+            и интересами на вашу целевую аудиторию и с высокой вероятностью
+            заинтересуется предложением.
+          </div>
+
+          <div class="section2__item--color-title">
+            Больше охват-больше результат!
+          </div>
+
+          <div class="section2__item--place-for-img">
+            <img src="/img/section2-item3.svg" class="section2__item--img2" />
+          </div>
+
+          <div class="section2__item--title">
+            Оцените проходимость <br />
+            торговой точки
+          </div>
+
+          <div class="section2__item--description">
+            Client Tracker покажет количество постоянных посетителей и тех кто
+            заходил только один раз.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var jsTriggers = document.querySelectorAll(".where-ad__tab"),
+        jsContents = document.querySelectorAll(".where-ad__item");
+
+      jsTriggers.forEach(function (trigger) {
+        trigger.addEventListener("click", function () {
+          var id = this.getAttribute("data-tab"),
+            content = document.querySelector(
+              '.where-ad__item[data-tab="' + id + '"]'
+            ),
+            icon = document.querySelector(
+              '.where-ad__tab-icon[data-tab="' + id + '"]'
+            ),
+            activeIcon = document.querySelector(".where-ad__tab-icon.active"),
+            activeTrigger = document.querySelector(".where-ad__tab.active"),
+            activeContent = document.querySelector(".where-ad__item.active");
+
+          activeTrigger.classList.remove("active"); // 1
+          trigger.classList.add("active"); // 2
+
+          activeContent.classList.remove("active"); // 3
+          content.classList.add("active"); // 4
+
+          activeIcon.classList.remove("active");
+          activeIcon.innerHTML = '<img src="/img/ad-tab-off.svg"/>';
+          icon.classList.add("active");
+          icon.innerHTML = '<img src="./img/ad-tab-on.svg"/>';
+        });
+      });
+    </script>
   </body>
 </html>

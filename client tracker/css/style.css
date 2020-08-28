@@ -15,7 +15,7 @@ a {
 .section1__container {
   padding: 100px 0 0 0;
   display: flex;
-  max-width: 1100px;
+  max-width: 1200px;
   justify-content: space-between;
   margin: auto;
 }
@@ -84,6 +84,11 @@ a {
   position: relative;
 }
 
+.how-it-work__item:last-child {
+  border: none;
+  padding: 0 0 0 80px;
+}
+
 .how-it-work__item::before {
   counter-increment: section;
   content: "" counter(section) ". ";
@@ -117,6 +122,110 @@ a {
 
 .how-it-work__item--description {
   font-size: 18px;
+}
+
+.where-ad {
+  padding: 0 0 40px 0;
+}
+
+.where-ad__title {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 100px 0 60px 0;
+}
+
+.where-ad__app {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 40px 0;
+}
+
+.where-ad__item--img {
+  max-width: 500px;
+}
+
+.where-ad__tabs {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  border-right: solid 1px #ff8d3c;
+  margin: 0 40px 0 0;
+}
+
+.where-ad__tab {
+  color: #2e2e2e;
+  font-size: 25px;
+  align-self: flex-end;
+  margin: 0 0 20px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.place-fot-button {
+  display: flex;
+  justify-content: center;
+}
+
+.where-ad__item {
+  display: none;
+}
+
+.where-ad__tab-icon {
+  position: absolute;
+  right: -25px;
+}
+
+.where-ad__item.active {
+  display: block;
+}
+
+.section2 {
+  background: #f8f8f8;
+}
+
+.section2__container {
+  padding: 50px 0 0 0;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section2__item--title {
+  font-size: 35px;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.section2__item--color-title {
+  font-size: 35px;
+  margin: 50px 0 20px 0;
+  font-weight: 600;
+  color: #ff8d3c;
+  text-align: center;
+}
+
+.section2__item--subtitle {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+
+.section2__item--description {
+  font-size: 18px;
+  margin: 0 0 30px 0;
+}
+
+.section2__item--img {
+  max-width: 300px;
+  margin: 0 0 40px 0;
+}
+
+.section2__item--img2 {
+  max-width: 600px;
+  margin: 0 0 40px 0;
+}
+
+.section2__item--place-for-img {
+  display: flex;
+  justify-content: center;
 }
 
 /* @media (max-width: 568px) {
