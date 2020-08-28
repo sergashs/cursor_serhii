@@ -228,6 +228,48 @@ a {
   justify-content: center;
 }
 
+.outlet {
+  width: 100%;
+  height: 600px;
+  background: url(/img/restor.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.outlet__item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 3px;
+  max-width: 170px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0 0px 0.9px rgba(0, 0, 0, 0.043), 0 0px 2.3px rgba(0, 0, 0, 0.062),
+    0 0px 4.8px rgba(0, 0, 0, 0.078), 0 0px 9.9px rgba(0, 0, 0, 0.097),
+    0 0px 27px rgba(0, 0, 0, 0.14);
+}
+
+.outlet__item--title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.outlet__item--description {
+  background: #8a4473;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  font-size: 19px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.outlet__items {
+  display: flex;
+}
+
 /* @media (max-width: 568px) {
   .scroll {
     width: 100%;
