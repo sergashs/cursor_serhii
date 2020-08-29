@@ -1,0 +1,11 @@
+<svg id="кнопка_2" data-name="кнопка 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52.594" height="52.59" viewBox="0 0 52.594 52.59">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f49c3e;
+      }
+    </style>
+  </defs>
+  <circle id="прав_копия" data-name="прав копия" class="cls-1" cx="26.297" cy="26.295" r="26.297"/>
+  <image id="прав_копия_2" data-name="прав копия 2" x="16.594" y="12.59" width="16" height="27" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAbCAYAAAB1NA+iAAAAqUlEQVQ4ja2VvQoCMQyAT93uicVFXMTB3cVJuAeQ4rsJJ3ySIVDl2kuaBrrl+yjNTwfAczbAFZiBBIxe+MZvpAgs8Y7AEscIfJGcGrytwGfNK8E7YCrA+zw3BC8JXPC/wA3ngiZYBc2wCu6tsAo+C/DTOiNdbhB+g3AVuvRBl07MJY+C5GARDJY9sCYwS9bqHNpIFsnJ1K4VyWwVlCQvj0Al8jPJACZg/AKnC6MPLxOSiwAAAABJRU5ErkJggg=="/>
+</svg>
