@@ -231,7 +231,7 @@ a {
 .outlet {
   width: 100%;
   height: 600px;
-  background: url(/img/restor.jpg);
+  background: url(../img/restor.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -611,6 +611,10 @@ input[type="checkbox"]:checked:after {
   align-items: center;
 }
 
+.search-clients-area-button {
+  margin: 30px 0 0 0;
+}
+
 @media (max-width: 1250px) {
   .section1 {
     padding: 0 20px;
@@ -774,6 +778,12 @@ input[type="checkbox"]:checked:after {
     display: flex;
     justify-content: center;
   }
+  .where-ad__item--container {
+    width: 100%;
+  }
+  .where-ad__item--img {
+    width: 500px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -864,5 +874,6 @@ input[type="checkbox"]:checked:after {
   }
   .slider__container {
     padding: 0 40px;
+    margin: 0 10px;
   }
 }
