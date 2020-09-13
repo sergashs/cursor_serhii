@@ -14,49 +14,37 @@
     <title>Personal portfolio</title>
   </head>
   <body>
-    <div class="setting-panel">
-    
-          <div class="button">
-        <input type="color"  id="main-color">
-       choose color
-      </div>
-    
-      <div class="dark-mode button">
-        <input type="checkbox" id="darkmode">
-        <label for="darkmode" class="toggle">
-          <div class="icon-moon">dark mode</div>
-        </label>
-      </div>
-     
-    
-    </div>
+  
     <header class="header">
       <div class="header__container">
-        <div class="header__logo">S</div>
+        <div class="header__logo">S.</div>
         <div class="nav">
           <a class="nav__item nav__item--hover" href="#">Home</a>
           <a class="nav__item" href="#">About</a>
           <a class="nav__item" href="#">Contacts</a>
-          <a class="setting-icon" href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
-        </div>
+                 </div>
       </div>
+
+
+
+      <section class="section1">
+        <div class="scetion1__container">
+          <div class="main-text">
+            Hi, I Am Serhii. <br />
+            I Am A Front End Developer.
+          </div>
+          <div class="contact-me">
+            Have something to say? Let’s talk
+            <button class="contact-me__button">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+            
+          </div>
+        </div>
+      </section>
     </header>
 
-    <section class="section1">
-      <div class="scetion1__container">
-        <div class="main-text">
-          Hi, I Am Serhii. <br />
-          I Am A Front End Developer.
-        </div>
-        <div class="contact-me">
-          Have something to say? Let’s talk
-          <button class="contact-me__button">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-          </button>
-          
-        </div>
-      </div>
-    </section>
+    
 
     <section class="section2">
       <section class="section2__container">
@@ -107,106 +95,19 @@
     </section>
 
     <footer class="footer">
+
+<div class="footer__left">
+  <span class="made-by">made by   <b>Serhii</b> | 2020 | ver 0.2</span>
+</div>
+
       <div class="footer__social">
-      <a class="footer__social--link" href="https://github.com/sergashs/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a class="footer__social--link" href="https:/t.me/sdhssd" target="_blank"> <i class="fa fa-telegram" aria-hidden="true"></i></a>
+      <a class="footer__social--link" href="https://github.com/sergashs/" target="_blank">Github</a>
+      <a class="footer__social--link" href="https:/t.me/sdhssd" target="_blank">Telegram</a>
       </div>
-      
+    
     </div>
     </footer>
 <script>
-
-var color;
-
-
-if(localStorage.getItem("mainColor")!=undefined || localStorage.getItem("mainColor")!==null){
-  var defaultColor = localStorage.getItem("mainColor");
-}else{
-  var defaultColor = "#c2e29d";
-}
-
-
-window.addEventListener("load", startup, false);
-
-function startup() {
-  color = document.getElementById('main-color');
-  color.value = defaultColor;
-  color.addEventListener("input", updateFirst, false);
-}
-
-function updateFirst(event) {
-  document.documentElement.style.setProperty("--main-color", event.target.value);
- function colorToLocal() {
-  document.documentElement.style.setProperty("--main-color", event.target.value);
-  return localStorage.setItem("mainColor", event.target.value);
-}
-colorToLocal();
-  }
-
-
-function colorFromLocal() {
-  document.documentElement.style.setProperty(
-    "--main-color",
-    localStorage.getItem("mainColor")
-  );
-}
-colorFromLocal();
-
-
-// setting panel
-
-let menu = document.querySelector(".setting-panel");
-    let openmenu = document.querySelector(".setting-icon");
-    openmenu.onclick = function () {
-      menu.classList.toggle("open");
-    };
-
-
-    document.getElementById("darkmode").addEventListener("change", (ev) => {
-  let btn = ev.target;
-
-  if (btn.checked) {
-    localStorage.setItem("darkmode", "on");
-    document.querySelector(".icon-moon").innerHTML =
-      'dark mode: off';
-      document.documentElement.style.setProperty("--body-background", "#343434");
-    document.documentElement.style.setProperty("--links", "#c9c9c9");
-    document.documentElement.style.setProperty("--main-text", "#d8d8d8");
-    document.documentElement.style.setProperty("--footer", "rgb(20, 20, 20)");
-    document.documentElement.style.setProperty("--setting-menu", "rgb(90, 90, 90)");
-  } else {
-    localStorage.setItem("darkmode", "off");
-    document.querySelector(".icon-moon").innerHTML =
-      'dark mode: on';
-      document.documentElement.style.setProperty("--body-background", "#f1f1f1");
-    document.documentElement.style.setProperty("--links", "#4e4a4a");
-    document.documentElement.style.setProperty("--main-text", "#474747");
-    document.documentElement.style.setProperty("--footer", "rgb(196, 196, 196)");
-    document.documentElement.style.setProperty("--setting-menu", "rgb(224, 224, 224)");
-  }
-});
-
-if (localStorage.getItem("darkmode") == "on") {
-  document.querySelector(".icon-moon").innerHTML =
-      'dark mode: off';
-    document.documentElement.style.setProperty("--body-background", "#343434");
-    document.documentElement.style.setProperty("--links", "#c9c9c9");
-    document.documentElement.style.setProperty("--main-text", "#d8d8d8");
-    document.documentElement.style.setProperty("--footer", "rgb(20, 20, 20)");
-    document.documentElement.style.setProperty("--setting-menu", "rgb(90, 90, 90)");
-}
-
-
-else {
-  localStorage.setItem("darkmode", "off");
-  document.querySelector(".icon-moon").innerHTML =
-      'dark mode: on';
-    document.documentElement.style.setProperty("--body-background", "#f1f1f1");
-    document.documentElement.style.setProperty("--links", "#4e4a4a");
-    document.documentElement.style.setProperty("--main-text", "#474747");
-    document.documentElement.style.setProperty("--footer", "rgb(196, 196, 196)");
-    document.documentElement.style.setProperty("--setting-menu", "rgb(224, 224, 224)");
-}
 
 </script>
 

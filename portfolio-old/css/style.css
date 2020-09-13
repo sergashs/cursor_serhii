@@ -8,8 +8,8 @@ a {
 
 :root {
   --main-color: #c2e29d;
-  --body-background: #ececec;
-  --links: #f5f5f5;
+  --body-background: #343434;
+  --links: #c9c9c9;
   --main-text: #d8d8d8;
   --footer: rgb(20, 20, 20);
   --setting-menu: rgb(90, 90, 90);
@@ -21,12 +21,6 @@ body {
   font-size: 15px;
   transition: 0.3s;
   position: relative;
-}
-
-.header {
-  background: url(../img/adrien-tutin-Ddxb6fq6cIY-unsplash.jpg);
-  background-position: 100% 40%;
-  padding: 0 0 150px 0;
 }
 
 .header__container {
@@ -60,7 +54,7 @@ body {
   font-weight: 600;
   position: relative;
   color: var(--links);
-  margin: 0 0 0 40px;
+  margin: 0 40px 0 0;
   transition: all 0.3s;
 }
 
@@ -100,28 +94,16 @@ body {
   transform: scaleX(1);
 }
 
+.scetion1__container,
+.section2__container,
 .header__container {
-  padding: 40px 0;
+  padding: 20px;
   max-width: 1300px;
   margin: auto;
 }
 
-.scetion1__container {
-  padding: 40px 0;
-  max-width: 1300px;
-  margin: auto;
-}
-
-.section2__container {
-  margin: -150px auto 0;
-  padding: 40px;
-  max-width: 1300px;
-  position: relative;
-  min-height: 100px;
-  background: var(--body-background);
-}
-
-.section1 {
+.section1,
+.section2 {
   margin: 100px 0 0 0;
 }
 
@@ -239,61 +221,95 @@ body {
 }
 
 .work__item--tag {
-  background-color: var(--main-color);
+  background-color: var(--body-background);
   margin: 0 10px 0 0;
   border-radius: 10px;
-  padding: 3px 8px 3px 8px;
-  color: #333333;
+  padding: 5px 10px 5px 10px;
+  color: var(--links);
   font-weight: 600;
-  font-size: 15px;
 }
 
 .footer {
+  margin: 60px 0 0 0;
   width: 100%;
-  padding: 10px 0;
+  background-color: var(--footer);
+  height: 100px;
   display: flex;
-  max-width: 1300px;
-  justify-content: space-between;
-  margin: auto;
+  justify-content: center;
   align-items: center;
 }
 
 .footer__social--link {
-  color: #4f5356;
-  font-size: 15px;
-  margin: 0 0 0 20px;
+  color: var(--links);
+  font-size: 25px;
+  margin: 0 20px 0 0;
   transition: all 0.3s;
-  font-weight: 600;
 }
 
 .footer__social--link:hover {
   transition: all 0.3s;
-  color: #6b7074;
+  color: var(--main-color);
 }
 
-.made-by {
-  color: #6b7074;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.made-by b {
-  text-decoration: underline;
-  cursor: pointer;
+.button {
+  position: relative;
+  width: 90px;
+  padding: 10px;
+  text-align: center;
+  color: var(--links);
+  background-color: var(--footer);
+  border-radius: 5px;
+  font-size: 14px;
   font-weight: 600;
+  margin: 0 20px 0 0;
+  transition: all 0.3s;
 }
 
-@media (max-width: 1340px) {
-  .header__container {
-    padding: 40px;
-  }
+.button:hover {
+  filter: brightness(1.2);
+  transition: all 0.3s;
+}
 
-  .scetion1__container {
-    padding: 40px;
-  }
-  .footer {
-    padding: 10px 40px;
-  }
+#main-color {
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.setting-icon {
+  color: var(--links);
+  transform: rotate(0deg);
+  font-size: 23px;
+}
+
+.setting-panel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  background-color: var(--setting-menu);
+  top: -100px;
+  width: 100%;
+}
+
+.setting-panel.open {
+  visibility: visible;
+  height: 100px;
+  transition: all 0.3s;
+  top: 0;
+}
+
+.icon-moon {
+  cursor: pointer;
+}
+
+#darkmode,
+#menu {
+  display: none;
 }
 
 @media (max-width: 940px) {
@@ -308,32 +324,6 @@ body {
   }
   .work__item--img {
     object-fit: cover;
-  }
-  .main-text {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .header__container {
-    padding: 20px;
-  }
-
-  .scetion1__container {
-    padding: 20px;
-  }
-  .footer {
-    padding: 10px 20px;
-  }
-  .section2__container {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer {
-    flex-direction: column;
-  }
-  .footer__social {
-    margin: 20px 0 0 0;
   }
 }
 
