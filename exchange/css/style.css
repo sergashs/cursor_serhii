@@ -94,6 +94,7 @@ a {
   padding: 13px 70px;
   margin: 0 5px 0 0;
   transition: all 0.3s;
+  background: none;
 }
 
 .button:hover {
@@ -105,4 +106,49 @@ a {
 .main-display__img {
   top: -40px;
   position: relative;
+}
+
+.section1__title {
+  text-align: center;
+  font-size: 33px;
+  line-height: 38px;
+  color: #000000;
+  margin: 0 0 70px 0;
+}
+
+.section1__container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section1 {
+  padding: 100px 0 130px 0;
+}
+
+.section1__description {
+  font-size: 17px;
+  line-height: 20px;
+  max-width: 400px;
+}
+
+.section2 {
+  background: url(/img/section2__background.jpg);
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.section2__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section2__title {
+  font-size: 33px;
+  line-height: 38px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 70px 0;
 }
