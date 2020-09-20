@@ -279,7 +279,8 @@
 Нажимая кнопку «Регистрация» вы даёте согласие на обработку ваших персональных данных
 </div>
 <div class="contact-form__description2">
-  Уже зарегистрированы? Тогда <a class="contact-form__link" href="#">войдите!</a>  
+  Уже зарегистрированы? Тогда <a class="contact-form__link open-modal"  
+  data-modal="2" href="#">войдите!</a>  
 </div>
 
 </div>
@@ -304,10 +305,48 @@
 </footer>
 
 
-
+<!-- button go to top site -->
 <a id="upbutton" href="#" onclick="smoothJumpUp(); return false;">
 <img src="./img/go-to-top-button.svg" alt="Top" title="Наверх">
-  </a>
+</a>
+<!-- button go to top site -->
+
+<!-- modal window -->
+<div class="overlay">
+  <div class="modal"  data-modal="2">
+        
+    <div class="modal__login-container">
+     <div class="modal__login--title">Войдите на сайт чтобы <b>начать зарабатывать</b></div>
+
+
+     <div class="modal__login--input-container">
+       <input class="modal__login--input" type="text" placeholder="+7 (---) ---_--_--">
+     </div>
+
+     <div class="modal__login--input-container">
+  <input class="modal__login--input" type="text" placeholder="Пароль">
+</div>
+
+<div class="modal__login--place-to-button">
+  <a href="#" class="modal__login--button">Войти</a>
+</div>
+
+<div class="modal__login--details">
+<input class="modal__login--checkbox" type="checkbox" id="remember-login-data" name="login-data" value="newsletter">
+<label class="modal__login--remember" for="remember-login-data">Запомнить данные</label>
+<a href="#" class="modal__login--link">Восстановить</a>
+</div>
+
+
+
+    </div>
+    <div class="close-modal-icon"><img src="./img/close-modal-button.svg" alt=""></div>
+   
+    </div>
+    </div>
+   
+   </div>
+<!-- modal window -->
 
 <script src="./js/index.js"></script>
 
