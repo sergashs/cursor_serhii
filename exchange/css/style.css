@@ -135,7 +135,7 @@ a {
 }
 
 .section2 {
-  background: url(/img/section2__background.jpg);
+  background: url(./img/section2__background.jpg);
   background-size: cover;
   padding: 100px 0;
 }
