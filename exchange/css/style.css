@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   position: relative;
@@ -613,3 +618,40 @@ a {
 }
 
 /* 404 page */
+
+/* profile - history */
+
+.profile__main-container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.profile__header {
+  padding: 30px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile__header--logo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 37px;
+  color: #11c4dd;
+}
+
+.profile__menu--item {
+  display: block;
+  background: #ffffff;
+  box-shadow: 0px 22px 44px -12px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  margin: 0 0 35px 0;
+  padding: 15px 40px;
+  color: #5181b8;
+  max-width: 290px;
+  font-size: 14px;
+}
+
+/* profile - history */
