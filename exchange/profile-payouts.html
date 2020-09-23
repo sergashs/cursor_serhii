@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет - выплаты</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/font-awesome.css" />
+  </head>
+  <body>
+    <div class="profile__main-container">
+      <div class="profile__header">
+        <div class="profile__header--left">
+          <div class="profile__header--logo">биржа.ру</div>
+        </div>
+
+        <div class="profile__header--right">
+          <div class="profile__header--balance">
+            На счету: <span>400₴</span>
+          </div>
+          <div class="profile__header--notifications-icon">
+            <img src="./img/profile__notification-icon.svg" alt="" />
+            <span>2</span>
+          </div>
+
+          <div class="profile__header--username">Иванов Иван</div>
+        </div>
+      </div>
+
+      <div class="profile__container">
+        <div class="profile__menu">
+          <a href="#" class="profile__menu--item">
+            <div class="profile__menu--icon">
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            </div>
+
+            Мои заявки</a
+          >
+          <a href="#" class="profile__menu--item">
+            <div class="profile__menu--icon">
+              <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            </div>
+
+            Профиль</a
+          >
+          <a href="#" class="profile__menu--item profile__menu--item-active">
+            <div class="profile__menu--icon">
+              <i class="fa fa-money" aria-hidden="true"></i>
+            </div>
+            Выплаты</a
+          >
+          <a href="#" class="profile__menu--item">
+            <div class="profile__menu--icon">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </div>
+            Уведомления</a
+          >
+        </div>
+
+        <div class="profile__content-block">
+          <div class="profile__content-block--title">Выплаты</div>
+
+          <div class="profile__white--block">
+            <div class="profile__title-block-inside">
+              Подача заявки на вывод средств
+            </div>
+            <div class="profile__information-row">
+              <span class="profile__information-text"
+                >Доступно к списанию:</span
+              >
+              <span class="my-balance">400</span>
+            </div>
+            <div class="profile__information-row">
+              <span class="profile__information-text">Сумма к списанию:</span>
+              <input
+                type="text"
+                value="400"
+                class="profile__information--input"
+              />
+            </div>
+            <div class="profile__information-row profile__card-row">
+              <span class="profile__information-text">Номер счета:</span>
+
+              <div class="profile__card-number">
+                <input
+                  type="text"
+                  value="400"
+                  class="profile__information--input"
+                />
+                <input
+                  type="text"
+                  value="400"
+                  class="profile__information--input"
+                />
+                <input
+                  type="text"
+                  value="400"
+                  class="profile__information--input"
+                />
+                <input
+                  type="text"
+                  value="400"
+                  class="profile__information--input"
+                />
+              </div>
+            </div>
+
+            <div class="profile__information-row">
+              <span class="profile__information-text"
+                ><label for="remember-card">Запомнить</label></span
+              >
+
+              <input
+                class="checkbox-remember-card"
+                type="checkbox"
+                id="remember-card"
+                name="login-data"
+                value="newsletter"
+              />
+            </div>
+
+            <button class="profile__button">Вывести</button>
+          </div>
+
+          <li class="open-tab">
+            <div class="profile__white--block withdrawal-of-funds">
+              <div class="down-arrow">
+                <img src="./img/drop-down-arrow.svg" />
+              </div>
+              <div class="profile__white--block--description">
+                <span> Вывод средств на сумму 400 ₴</span>
+
+                <div class="profile__white--block--date">10.10.2020</div>
+              </div>
+            </div>
+            <div class="withdrawal-of-funds__description open-tab--content">
+              Вы перевели 400 ₴ на счет 9876 5432 1111 0000
+            </div>
+          </li>
+
+          <div class="profile__white--block completed-request">
+            <div class="profile__white--block--description">
+              Оформлена заявка на вывод средств
+
+              <div class="profile__white--block--date">10.10.2020</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/profile.js"></script>
+  </body>
+</html>

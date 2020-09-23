@@ -7,6 +7,11 @@
   src: url("../fonts/Ubuntu-Regular.ttf");
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   position: relative;
@@ -627,7 +632,7 @@ a {
 }
 
 .profile__header {
-  padding: 30px 0 20px 0;
+  padding: 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -640,6 +645,7 @@ a {
   font-size: 32px;
   line-height: 37px;
   color: #11c4dd;
+  text-transform: uppercase;
 }
 
 .profile__menu--item {
@@ -648,10 +654,234 @@ a {
   box-shadow: 0px 22px 44px -12px rgba(0, 0, 0, 0.35);
   border-radius: 5px;
   margin: 0 0 35px 0;
-  padding: 15px 40px;
+  padding: 15px 35px;
   color: #5181b8;
-  max-width: 290px;
+  width: 290px;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.profile__menu--item-active {
+  background: #5181b8;
+  color: #fff;
+}
+
+.profile__menu--icon {
+  margin: 0 20px 0 0;
+  font-size: 18px;
+}
+
+.profile__header--right {
+  display: flex;
+  align-items: center;
+}
+
+.profile__header--balance {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.profile__header--balance span {
+  font-weight: 600;
+}
+
+.profile__header--notifications-icon {
+  position: relative;
+  margin: 0 20px;
+}
+
+.profile__header--notifications-icon span {
+  background-color: #ff0000;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 500;
+}
+
+.profile__container {
+  display: flex;
+}
+
+.profile__content-block {
+  width: 100%;
+  margin: 0 0 0 30px;
+  background: rgb(81, 129, 184, 0.1);
+  padding: 40px;
+  height: 100%;
+}
+
+.profile__content-block--title {
+  font-weight: 300;
+  font-size: 33px;
+  line-height: 38px;
+  color: #000000;
+  margin: 0 0 30px 0;
+}
+
+.profile__white--block {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+}
+
+.profile__notifications--item {
+  margin: 0 0 15px 0;
+}
+
+.profile__white--block--description {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.profile__white--block--date {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10.3448px;
+  line-height: 12px;
+  color: #000000;
+  opacity: 0.3;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.profile__notifications--counter {
+  background-color: #ff0000;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 500;
+}
+
+.profile__title-block-inside {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 25px;
+  color: #000000;
+  margin: 0 0 5px 0;
+}
+
+.profile__information-row {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.my-balance {
+  font-weight: 500;
+}
+
+.profile__information--input {
+  max-width: 46px;
+  border: 1px solid #5181b8;
+  text-align: center;
+}
+
+.profile__card-number {
+  display: flex;
+  margin: 0 0 0 10px;
+}
+
+.profile__card-row {
+  display: flex;
+}
+
+.profile__information-text {
+  margin: 0 5px 0 0;
+}
+
+.checkbox-remember-card {
+  width: 20px;
+  height: 20px;
+}
+
+.profile__button {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #5181b8;
+  padding: 10px 30px;
+}
+
+.completed-request {
+  margin: 15px 0 0 0;
+}
+
+.withdrawal-of-funds {
+  margin: 15px 0 0 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.withdrawal-of-funds__description {
+  padding: 20px;
+  background: #f7f7f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.down-arrow {
+  margin: 0 10px 0 0;
+}
+
+.withdrawal-of-funds__description {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.down-arrow.open {
+  transform: rotate(180deg);
+}
+
+.user-info-value {
+  font-weight: 600;
+}
+
+.profile__edit-myprofile {
+  color: #5181b8;
+}
+
+.profile__edit--icon {
+  margin: 0 10px 0 0;
 }
 
 /* profile - history */
