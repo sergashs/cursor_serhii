@@ -224,6 +224,7 @@ body {
   overflow: hidden;
   position: relative;
   margin: 0 0 40px 0;
+  background-color: rgb(41, 38, 45);
 }
 
 .work__item::after {
@@ -233,27 +234,45 @@ body {
   height: 100%;
   left: 0;
   bottom: 0;
-  background-color: #000000;
-  opacity: 0.3;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(41, 38, 45, 0.2) 0%,
+    rgba(41, 38, 45, 0.3) 5%,
+    rgb(41, 38, 45) 80%
+  );
+
   transition: all 0.3s;
 }
 
 .work__item--img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 80%;
   transition: all 0.3s;
   object-fit: cover;
   transform: scale(1.1);
 }
 
+.work__item--img::after {
+  content: "sss";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  bottom: 0;
+  left: -10px;
+  z-index: 100;
+}
+
+.work__item:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
 .work__item:hover .work__item--img {
   transform: scale(1.3);
   transition: all 0.3s;
+  height: 100%;
 }
 
 .work__item:hover.work__item::after {
@@ -279,7 +298,7 @@ body {
 
 .work__item--tags-container {
   position: absolute;
-  top: 30px;
+  bottom: 30px;
   right: 20px;
   z-index: 10;
   display: flex;
@@ -292,11 +311,10 @@ body {
 }
 
 .work__item--tag {
-  background-color: var(--main-color);
-  margin: 0 10px 0 0;
+  margin: 0 0px 0 0;
   border-radius: 10px;
   padding: 3px 8px 3px 8px;
-  color: #333333;
+  color: var(--main-color);
   font-weight: 600;
   font-size: 15px;
 }
@@ -338,6 +356,7 @@ body {
 
 .technologies-items-container {
   display: flex;
+  padding: 0 0 10px 0;
 }
 
 .technologies-item {
@@ -348,6 +367,7 @@ body {
   margin: 0 20px 0 0;
   cursor: pointer;
   transition: all 0.3s;
+  border: solid 1px rgb(20, 20, 20, 0.1);
 }
 
 .technologies-item:last-child {
@@ -357,6 +377,8 @@ body {
 .technologies-item:hover {
   transition: all 0.3s;
   background-color: var(--main-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .technologies-item--title {
