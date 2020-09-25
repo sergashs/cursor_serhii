@@ -1102,4 +1102,8 @@ li {
   padding: 20px 0;
 }
 
+.notification__modal-complete {
+  padding: 50px;
+}
+
 /* profile - history */
