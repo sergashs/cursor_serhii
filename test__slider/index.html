@@ -6,19 +6,7 @@
     <title>Slider</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- Добавляем стили из CDN -->
-    <!-- <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://kenwheeler.github.io/slick/slick/slick.css"
-    /> -->
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
-    <!-- Добавляем тему по умолчанию из CDN -->
-    <!-- <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
-    /> -->
   </head>
   <body>
     <div class="slider">
@@ -44,7 +32,7 @@
               src="./img/playerunknownsbattlegrounds.jpg"
               class="slider__item--img"
             />
-            <div class="slider__item--title">playerunknown's battlegrounds</div>
+            <div class="slider__item--title">PLAYERUNKNOWN'S BATTLEGROUNDS</div>
           </div>
         </div>
 
@@ -92,7 +80,7 @@
               src="./img/playerunknownsbattlegrounds.jpg"
               class="slider__item--img"
             />
-            <div class="slider__item--title">Playerunknown's battlegrounds</div>
+            <div class="slider__item--title">PLAYERUNKNOWN'S BATTLEGROUNDS</div>
           </div>
         </div>
 
@@ -129,32 +117,37 @@
 
     <script
       type="text/javascript"
-      src="https://kenwheeler.github.io/slick/slick/slick.min.js"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"
     ></script>
 
     <script>
       $(document).ready(function () {
         $(".slider__container").slick({
-          slidesToShow: 1,
-          slidesPerRow: 3,
-          rows: 2,
+          mobileFirst: true,
+          slidesPerRow: 1,
+          slidersToShow: 1,
+          rows: 1,
           dots: true,
+          arrows: false,
           appendArrows: $(".place-for-arrows"),
           appendDots: $(".place-for-dots"),
+          prevArrow:
+            '<button id="prev" type="button" class="slick-prev slick-arrow"><svg  width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="arrow-slider" d="M7 1L1 6L7 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+          nextArrow:
+            '<button id="next" type="button" class="slick-next slick-arrow"><svg  width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="arrow-slider" d="M7 1L1 6L7 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
           responsive: [
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 1,
-                slidesPerRow: 2,
+                arrows: true,
+                slidesPerRow: 3,
                 rows: 2,
               },
             },
             {
-              breakpoint: 375,
+              breakpoint: 475,
               settings: {
-                slidesToShow: 1,
-                slidesPerRow: 1,
+                slidesPerRow: 2,
                 rows: 2,
                 arrows: false,
               },
