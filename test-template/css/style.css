@@ -1,0 +1,378 @@
+.header {
+  background: url(../img/header-bg.jpg);
+  position: relative;
+}
+
+#video--bg-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+body {
+}
+
+.navbar-collapse {
+  flex-basis: 0;
+  flex-grow: 0;
+}
+
+.navbar-expand-lg {
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.bg-light {
+  background: none !important;
+}
+
+.navbar-light .navbar-brand {
+  color: #ffffff;
+  font-size: 47px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navbar-brand b {
+  font-weight: 300;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #ffffff;
+  font-size: 23px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #e2e2e2;
+  font-size: 23px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0rem;
+  padding-left: 3rem;
+  font-size: 23px;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #ffffff;
+}
+
+.navbar {
+  padding: 10px 70px;
+  border-bottom: solid 1px rgba(248, 248, 248, 0.3);
+}
+
+.dropdown-menu {
+  left: 20px;
+  margin: 1.5rem 0 0;
+  border-radius: 0;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(248, 248, 248, 0.3);
+}
+
+@media (max-width: 1260px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+  }
+  .navbar-toggler {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1260px) {
+  .navbar-collapse.collapse.show {
+    display: block !important;
+  }
+}
+
+.header__main-text {
+  text-align: center;
+}
+
+.header__main-text--sub-title {
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.header__main-text--title {
+  font-size: 112px;
+  color: #ffffff;
+  line-height: 100%;
+  margin: 0 0 150px 0;
+}
+
+.reg-form {
+  background: #dadbdb;
+  padding: 25px;
+  max-width: 375px;
+  border-radius: 5px;
+  margin: auto;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.46);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.26);
+}
+
+.btn__reg-form {
+  text-transform: uppercase;
+}
+
+.form-control::placeholder {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.form-control {
+  background-color: #eeefef;
+  border-radius: 3px;
+  height: 51px;
+
+  color: #333333;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #5dbdfe;
+  height: 61px;
+  border: none;
+  -webkit-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.34);
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.24);
+}
+
+.btn-primary:hover {
+  background-color: #5aade4;
+}
+
+.header__main-display {
+  padding: 150px 20px;
+  z-index: 10;
+  position: relative;
+}
+
+.about-us__item-icon {
+  background-color: #5dbdfe;
+  width: 91px;
+  height: 91px;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  padding: 0 0 0 20px;
+}
+
+.section {
+  padding: 125px 20px;
+}
+
+.section__container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section__title {
+  color: #333333;
+  font-size: 45px;
+  text-align: center;
+}
+
+.section__description {
+  color: #333333;
+  font-size: 20px;
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.card {
+  flex-direction: row;
+}
+
+.card-icon {
+  min-width: 91px;
+  height: 91px;
+  background-color: #5dbdfe;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  margin: 0;
+}
+
+@media (max-width: 880px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-sm-6 {
+    max-width: 100%;
+  }
+}
+
+.section--features {
+  background-color: #f1f1f1;
+}
+
+.section--features {
+  position: relative;
+  padding: 120px 20px 0 20px;
+}
+
+.card-feature {
+  background-color: #f1f1f1;
+}
+
+.card-text--feature {
+  font: 20px;
+  color: #333333;
+}
+
+.card-icon-feature {
+  color: #cbcbcb;
+  font-size: 55px;
+  margin: -15px 0 0 0;
+}
+
+@media (max-width: 900px) {
+  .features--img {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .features--right {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.section--advantages {
+  background-color: #f34235;
+}
+
+.section--advantages-title,
+.section--advantages-description {
+  color: #fff;
+}
+
+.advantages__card {
+  background-color: #f34235;
+  margin: 0 0 60px 0;
+}
+
+.advantages__card--title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+.advantages__card--text {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.advantages__card--unmber {
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 45px;
+  font-weight: 600;
+  color: #f34235;
+  position: relative;
+}
+
+.advantages__card--unmber::after {
+  position: absolute;
+  content: ".";
+  position: absolute;
+  left: 55px;
+}
+
+.advantages__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section--testimonials {
+  background-color: #f1f1f1;
+}
+
+.testimonials--text {
+  font-size: 20px;
+  max-width: 750px;
+  text-align: center;
+  margin: auto;
+}
+
+.testimonials--icon {
+  display: flex;
+  justify-content: center;
+  color: #f34235;
+  font-size: 45px;
+}
+
+.testimonials--autor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials--author-avatar {
+  margin: 20px 0;
+}
+
+.testimonials--author-name {
+  font-size: 24px;
+  color: #5dbdfe;
+}
+
+.testimonials-carousel-indicators {
+  bottom: -60px;
+}
+
+.carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #cccccc;
+}
+
+.carousel-indicators .active {
+  background-color: #333333;
+}

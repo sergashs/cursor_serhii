@@ -5,194 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/font-awesome.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
     <title>Personal portfolio</title>
   </head>
   <body>
-  
-  <div class="bg-header"></div>
-
+    <div class="top-line"></div>
     <header class="header">
-      <div class="header__container">
-        <div class="header__logo">S</div>
-        <div class="nav">
-          <a class="nav__item nav__item--hover" href="#">Home</a>
-          <a class="nav__item" href="#">About</a>
-          <a class="nav__item" href="#">Contacts</a>
-                 </div>
+      <div class="name-and-pos">
+        <div class="name">Serhii</div>
+        <div class="suname">front end developer</div>
       </div>
 
-      <section class="section1">
-        <div class="scetion1__container">
-          <div class="main-text">
-            Hi, I Am Serhii. <br />
-            I Am A Front End Developer.
-          </div>
-          <div class="contact-me">
-            Have something to say? Let’s talk
-            <button class="contact-me__button">
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
-            </button>
-            
-          </div>
-        </div>
-      </section>
+      <div class="avatar">
+        <img class="avatar__img" src="" />
+      </div>
     </header>
 
-
-<main class="main">
-
-  
-
-
-
-<section class="section2">
-  <section class="section2__container"> 
-    <div class="section-title">Works</div>
-    <div class="work">
-
-      <a href="https://sergashs.github.io/cursor_serhii/game2/" target="_blank" class="work__item">
-        <img
-          class="work__item--img"
-          src="http://mini.s-shot.ru/1024x768/700/jpeg/?https://sergashs.github.io/cursor_serhii/game2/"
-          alt=""
-        />
-        <div class="work__item--tags-container">
-          <div class="work__item--tag">design,</div>
-          <div class="work__item--tag">code</div>
-        </div>
-        <div class="work__item--title">Game blog</div>
-      </a>
-
-
-      <a href="https://sergashs.github.io/cursor_serhii/portfolio/" target="_blank" class="work__item">
-        <img
-          class="work__item--img"
-          src="http://mini.s-shot.ru/1024x768/700/jpeg/?https://sergashs.github.io/cursor_serhii/portfolio/"
-          alt=""
-        />
-        <div class="work__item--tags-container">
-          <div class="work__item--tag">code</div>
-        </div>
-        <div class="work__item--title">Portfolio</div>
-      </a>
-
-      <a href="https://sergashs.github.io/cursor_serhii/stalker2/" target="_blank" class="work__item">
-        <img
-          class="work__item--img"
-          src="http://mini.s-shot.ru/1024x768/700/jpeg/?https://sergashs.github.io/cursor_serhii/stalker2/"
-          alt=""
-        />
-        <div class="work__item--tags-container">
-          <div class="work__item--tag">design,</div>
-          <div class="work__item--tag">code</div>
-        </div>
-        <div class="work__item--title">Stalker site</div>
-      </a>
-
-      
-    </div>
-  </section>
-</section>
-
-
-<section class="section3">
-<div class="section3__container">
-<div class="section-title">Technologies</div>
-
-
-<div class="scroll" style="overflow-y: auto; cursor: pointer">
-<div class="technologies-items-container">
-  <div class="technologies-item">
-
-    <img class="technologies-item--img" src="./img/js.svg" alt="">
-
-    <div class="technologies-item--title">Javascript</div>
-  </div>
-
-  <div class="technologies-item">
-
-    <img class="technologies-item--img" src="./img/css.svg" alt="">
-
-    <div class="technologies-item--title">CSS</div>
-  </div>
-
-
-  <div class="technologies-item">
-
-    <img class="technologies-item--img" src="./img/html.svg" alt="">
-
-    <div class="technologies-item--title">HTML</div>
-  </div>
-
-</div>
-</div>
-</div>
-</section>
-
-
-
-</main>
-
-     
-<!-- <section class="section4">
-  send me message
-</section> -->
-
-
-    <footer class="footer">
-
-<div class="footer__left">
-  <span class="made-by">made by   <b>Serhii</b> | 2020 | ver 0.2</span>
-</div>
-
-      <div class="footer__social">
-      <a class="footer__social--link" href="https://github.com/sergashs/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a class="footer__social--link" href="https://t.me/sdhssd" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+    <main>
+      <div class="main__left"></div>
+      <div class="main__right">
+        <ul>
+          <li>sergas123456@gmail.com</li>
+          <li>+ 380 63 23 98 941</li>
+        </ul>
       </div>
-    
-    </div>
-    </footer>
-<script>
-if (document.documentElement.clientWidth < 568) {
-  console.log("off script");
-} else {
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  document.querySelectorAll(".scroll").forEach((item) => {
-    item.addEventListener("mousedown", (e) => {
-      isDown = true;
-      item.classList.add("active");
-      startX = e.pageX - item.offsetLeft;
-      scrollLeft = item.scrollLeft;
-    });
-    item.addEventListener("mouseleave", () => {
-      isDown = false;
-      item.classList.remove("active");
-    });
-    item.addEventListener("mouseup", () => {
-      isDown = false;
-      item.classList.remove("active");
-    });
-    item.addEventListener("mousemove", (e) => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - item.offsetLeft;
-      const walk = x - startX;
-      item.scrollLeft = scrollLeft - walk;
-    });
-  });
-}
-</script>
-
+    </main>
   </body>
 </html>
-
-
