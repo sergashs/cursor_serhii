@@ -8,7 +8,7 @@ function generatecolor() {
 function generateBlocks() {
   const container = document.getElementById("container-blocks");
   container.innerHTML = "";
-  for (let i = 1; i < 26; i++) {
+  for (let i = 1; i < 1019; i++) {
     const board = document.createElement("div");
     board.style.backgroundColor = generatecolor();
     board.className = "block";
@@ -18,4 +18,4 @@ function generateBlocks() {
 
 setInterval(() => {
   generateBlocks();
-}, 1000);
+}, 900);
