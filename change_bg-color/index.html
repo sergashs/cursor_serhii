@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Personal portfolio</title>
+  </head>
+  <body>
+   
+     
+    
+    </div>
+    <header class="header">
+
+      
+      <div class="button">
+        <input type="color"  id="main-color">
+       pick color
+      </div>
+
+
+    <article class="article">
+<div class="article__title">
+Words to up style of since world 
+</div>
+
+<p class="article__description">
+  So by colonel hearted ferrars. Is inquiry no he several excited am. Called though excuse length ye needed it he having. Fortune day out married parties. Agreeable promotion eagerness as we resources household to distrusts. Limits far yet turned highly repair parish
+
+Agreeable promotion eagerness as we resources household to distrusts. Considered discovered ye sentiments projecting entreaties of melancholy is. Polite do object at passed it is. Celebrated delightful an especially increasing instrument am. Her too add narrow having wished. He in sportsman household otherwise it p
+
+Words to up style of since world. As so seeing latter he should thirty whence. At principle perfectly by sweetness do. Equally he minutes my hastily. Now summer who day looked our behind moment coming. Called though excuse length ye needed it he having. Now summer who day looked our behind moment coming. As so seeing latter he should t...
+ </p>
+
+    </article>
+        
+        
+        </header>
+
+<script>
+
+
+
+if(localStorage.getItem("mainColor")!=undefined || localStorage.getItem("mainColor")!==null){
+  var defaultColor = localStorage.getItem("mainColor");
+}else{
+  var defaultColor = "#c2e29d";
+}
+
+
+window.addEventListener("load", startup, false);
+
+function startup() {
+  color = document.getElementById('main-color');
+  color.value = defaultColor;
+  color.addEventListener("input", updateFirst, false);
+}
+
+function updateFirst(event) {
+  document.documentElement.style.setProperty("--main-color", event.target.value);
+  let bgColor = event.target.value;
+  function pickTextColorBasedOnBgColorSimple(bgColor, lightColor, darkColor) {
+  var color = bgColor.charAt(0) === "#" ? bgColor.substring(1, 7) : bgColor;
+  var r = parseInt(color.substring(0, 2), 16); // hexToR
+  var g = parseInt(color.substring(2, 4), 16); // hexToG
+  var b = parseInt(color.substring(4, 6), 16); // hexToB
+  result = r * 0.399 + g * 0.687 + b * 0.214 > 186 ? darkColor : lightColor;
+  return result;
+}
+
+let completeColor =  pickTextColorBasedOnBgColorSimple(
+    bgColor,
+    "#FFFFFF",
+    "#000000"
+  );
+
+
+
+ function colorToLocal() {
+  document.documentElement.style.setProperty("--main-color", event.target.value);
+  document.documentElement.style.setProperty("--textColor", completeColor);
+  localStorage.setItem("mainColor", event.target.value);
+  localStorage.setItem("textColor", completeColor);
+}
+
+
+colorToLocal();
+  }
+
+
+function colorFromLocal() {
+  document.documentElement.style.setProperty(
+    "--main-color",
+    localStorage.getItem("mainColor")
+  );
+
+  document.documentElement.style.setProperty(
+    "--textColor",
+    localStorage.getItem("textColor")
+  );
+
+}
+colorFromLocal();
+
+
+// setting panel
+
+</script>
+
+  </body>
+</html>
