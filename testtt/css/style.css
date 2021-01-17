@@ -1,11 +1,11 @@
 @font-face {
   font-family: ClearSans;
-  src: url(./fonts/clearsans.ttf);
+  src: url(../fonts/clearsans.ttf);
 }
 
 @font-face {
   font-family: ClearSansBold;
-  src: url(./fonts/clearsansbold.ttf);
+  src: url(../fonts/clearsansbold.ttf);
 }
 
 body {
