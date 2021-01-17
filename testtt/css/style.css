@@ -1,18 +1,18 @@
 @font-face {
   font-family: ClearSans;
-  src: url(/fonts/clearsans.ttf);
+  src: url(./fonts/clearsans.ttf);
 }
 
 @font-face {
   font-family: ClearSansBold;
-  src: url(/fonts/clearsansbold.ttf);
+  src: url(./fonts/clearsansbold.ttf);
 }
 
 body {
   font-family: ClearSans;
-  background: url(/img//bg.jpg) #000000;
+  background: url(../img//bg.jpg) #000000;
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 100% 70%;
 }
 
 .header {
