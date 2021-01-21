@@ -704,6 +704,25 @@ body {
     color: #fff;
     text-align: center;
   }
+
+  .slider .slick-arrow.slick-prev {
+    left: -25px;
+  }
+  .slider .slick-arrow.slick-next {
+    right: -25px;
+  }
+  .slider__item img {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 580px) {
+  .slider .slick-arrow.slick-prev {
+    left: -5px;
+  }
+  .slider .slick-arrow.slick-next {
+    right: -5px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -734,5 +753,13 @@ body {
 
   .carousel-indicators {
     bottom: -50px;
+  }
+
+  .slider__item img {
+    max-width: 100px;
+  }
+
+  .features {
+    margin: 70px 0 50px 0;
   }
 }
