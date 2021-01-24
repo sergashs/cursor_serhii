@@ -1,0 +1,140 @@
+@media (max-width: 1705px) {
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 900px;
+  }
+
+  .carousel {
+    position: relative;
+    height: 100%;
+    max-height: 800px;
+  }
+
+  .carousel-item {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1405px) {
+  .navbar-expand-xl {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-collapse {
+    margin: 20px 0 0 0;
+  }
+  .header {
+    height: 100%;
+    padding: 20px 0;
+  }
+
+  .carousel-item-before-title {
+    font-size: 26px;
+  }
+  .carousel-item-title {
+    font-size: 49px;
+  }
+  .carousel-item-description {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar-expand-xl {
+    display: flex;
+    flex-direction: row;
+  }
+  .container-custom {
+    width: 100%;
+  }
+}
+
+@media (max-width: 990px) {
+  .btn-carousel {
+    display: none;
+  }
+  .carousel-caption {
+    top: 10%;
+  }
+}
+
+@media (max-width: 798px) {
+  .d-md-block {
+    display: block !important;
+  }
+  .carousel-item-description {
+    display: none !important;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .slider .slick-arrow.slick-prev {
+    left: -25px;
+  }
+  .slider .slick-arrow.slick-next {
+    right: -25px;
+  }
+  .slider__item img {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 580px) {
+  .slider .slick-arrow.slick-prev {
+    left: -5px;
+  }
+  .slider .slick-arrow.slick-next {
+    right: -5px;
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar-brand img {
+    width: 180px;
+    height: 60px;
+  }
+  .header {
+    height: 100%;
+    padding: 10px 0;
+  }
+
+  .btn-carousel,
+  .carousel-item-before-title {
+    display: none;
+  }
+  .carousel-item-title {
+    font-size: 30px;
+  }
+
+  .production__card {
+    width: 250px;
+  }
+
+  .carousel-item-title {
+    font-size: 21px;
+  }
+
+  .carousel-indicators {
+    bottom: -50px;
+  }
+
+  .slider__item img {
+    max-width: 100px;
+  }
+
+  .features {
+    margin: 70px 0 50px 0;
+  }
+}
