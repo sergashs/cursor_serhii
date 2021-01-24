@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: ClearSans;
+  font-family: "ClearSans", sans-serif;
   background: url(../img/bg.jpg) #000000;
   background-repeat: no-repeat;
   background-position: 100% 70%;
@@ -212,7 +212,7 @@ body {
   font-size: 69px;
   font-weight: 900;
   line-height: 110%;
-  font-family: ClearSansBold;
+  font-family: "ClearSansBold", sans-serif;
 }
 
 .carousel-item-description {
@@ -284,29 +284,29 @@ body {
   margin: 0 0 30px 0;
 }
 
-.features__card--img {
+.features__card-img {
   display: flex;
   justify-content: center;
 }
 
-.features__card--title {
+.features__card-title {
   font-size: 24px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
-  font-family: ClearSansBold;
+  font-family: "ClearSansBold", sans-serif;
   text-align: center;
   margin: 10px 0;
 }
 
-.features__card--text {
+.features__card-text {
   font-size: 19px;
   line-height: 24px;
   color: #fff;
   text-align: center;
 }
 
-.features__card--img img {
+.features__card-img img {
   width: 50px;
 }
 
@@ -331,8 +331,8 @@ body {
   flex-grow: 0;
 }
 
-.block-title {
-  font-family: ClearSansBold;
+.section-title {
+  font-family: "ClearSansBold", sans-serif;
   font-size: 36px;
   color: #fff;
   text-transform: uppercase;
@@ -340,7 +340,7 @@ body {
   margin: 0 0 40px 0;
 }
 
-.block-description {
+.section-description {
   margin: auto;
   max-width: 900px;
   color: #fff;
@@ -372,7 +372,7 @@ body {
   z-index: 10;
 }
 
-.production__card:hover .production__card--title-main {
+.production__card:hover .production__card-title-main {
   transition: 0.3s;
   opacity: 0;
 }
@@ -406,10 +406,10 @@ body {
   top: -100px;
 }
 
-.production__card--title-main {
+.production__card-title-main {
   position: relative;
   z-index: 10;
-  font-family: ClearSansBold;
+  font-family: "ClearSansBold", sans-serif;
   font-size: 24px;
   text-transform: uppercase;
   color: #fff;
@@ -418,8 +418,8 @@ body {
   transition: 0.3s;
 }
 
-.production__card--title {
-  font-family: ClearSansBold;
+.production__card-title {
+  font-family: "ClearSansBold", sans-serif;
   font-size: 19px;
   text-transform: uppercase;
   color: #fff;
@@ -427,7 +427,7 @@ body {
   margin: 20px 0 0 0;
 }
 
-.production__card--description {
+.production__card-description {
   margin: 20px 0 0 0;
   font-size: 14px;
   color: #fff;
@@ -449,8 +449,8 @@ body {
   border: solid 1px#ff3c32;
 }
 
-.production__card--bottom,
-.production__card--icon {
+.production__card-bottom,
+.production__card-icon {
   display: flex;
   justify-content: center;
 }
@@ -459,7 +459,7 @@ body {
 
 /*  partners */
 
-.partners .container .block-title {
+.partners .container .section-title {
   border-top: solid 2px #2a2a2a;
   padding: 50px 0 0 0;
 }
