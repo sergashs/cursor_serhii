@@ -309,14 +309,6 @@ body {
   width: 50px;
 }
 
-.features .container .row {
-  justify-content: center;
-}
-
-.features .container .row .col {
-  flex-grow: 0;
-}
-
 /* block features */
 
 /* block production */
