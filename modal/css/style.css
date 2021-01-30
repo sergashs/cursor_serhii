@@ -71,7 +71,7 @@ a {
   top: 20px;
   cursor: pointer;
   opacity: 0.6;
-  background: url(/img/close.svg);
+  background: url(./img/close.svg);
   background-size: cover;
   width: 10px;
   height: 10px;
