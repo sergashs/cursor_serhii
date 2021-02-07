@@ -1,0 +1,94 @@
+.section {
+  display: block;
+  margin-top: 90px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 154.1%;
+  letter-spacing: 0.02em;
+  color: #000103;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 164.1%;
+  max-width: 400px;
+  letter-spacing: 0.02em;
+  color: #000103;
+}
+
+.row {
+  margin-right: 10px;
+}
+
+.row:last-child {
+  margin-right: 0;
+}
+
+.blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.block1 {
+  max-width: 206px;
+  height: 90px;
+  background: #c99047;
+  border-radius: 8px;
+}
+
+.block2 {
+  max-width: 206px;
+  height: 118px;
+  background: #c99047;
+  border-radius: 8px;
+}
+
+.block3 {
+  max-width: 206px;
+  height: 150px;
+  background: #c99047;
+  border-radius: 8px;
+}
+
+.block4 {
+  max-width: 206px;
+  height: 195px;
+  background: #c99047;
+  border-radius: 8px;
+}
+
+.block5 {
+  max-width: 206px;
+  height: 258px;
+  background: #c99047;
+  border-radius: 8px;
+}
+
+.blockTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120.1%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 20px 10px 10px 10px;
+}
+
+.blockDesc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120.1%;
+  letter-spacing: 0.02em;
+  margin: 0 10px;
+  color: #000000;
+}
+
+@media (max-width: 1230px) {
+  .section {
+    padding: 0 30px;
+  }
+}

@@ -1,0 +1,190 @@
+.counter {
+  max-width: 1160px;
+  margin: 70px auto;
+  box-shadow: 0px 4px 10px rgba(124, 126, 146, 0.24);
+  padding: 60px 90px;
+  border-radius: 16px;
+  display: flex;
+  gap: 100px;
+}
+
+.title {
+  max-width: 300px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 154.1%;
+  letter-spacing: 0.02em;
+  margin: 0 0 40px 0;
+}
+
+.input {
+  border: solid 1px #c2c3cc;
+  border-radius: 16px;
+  height: 56px;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.afterInput {
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.4px;
+  color: #b0b2be;
+  margin: 15px 0 40px 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.select {
+  display: block;
+  position: relative;
+  border: solid 1px #c2c3cc;
+  border-radius: 16px;
+  height: 56px;
+  padding: 0 16px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 18px;
+  background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.7489 9.25105C17.4141 8.91632 16.8714 8.91632 16.5367 9.25105L11.9999 12.9307L7.46317 9.25105C7.12843 8.91632 6.58572 8.91632 6.25099 9.25105C5.91625 9.58579 5.91625 10.1285 6.25099 10.4632L11.3938 14.7489C11.5546 14.9097 11.7726 15 11.9999 15C12.2273 15 12.4453 14.9097 12.606 14.7489L17.7489 10.4632C18.0836 10.1285 18.0836 9.58579 17.7489 9.25105Z' fill='%23C99047'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 20px auto, 100%;
+}
+
+.inputContainer1,
+.inputContainer2 {
+  position: relative;
+}
+
+.inputContainer1::before {
+  content: "Сумма, руб.";
+  top: -6px;
+  left: 16px;
+  position: absolute;
+  font-size: 12px;
+  color: #c99047;
+  background: #fff;
+}
+
+.inputContainer2::before {
+  content: "Тариф";
+  top: -7px;
+  left: 16px;
+  position: absolute;
+  font-size: 12px;
+  color: #7c7e92;
+  background: #fff;
+  z-index: 100;
+}
+
+.right {
+  width: 70%;
+}
+
+.blocks {
+  display: flex;
+  gap: 150px;
+  margin: 0 0 100px 0;
+}
+
+.block__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 154.1%;
+  letter-spacing: 0.02em;
+  color: #c4c4c4;
+}
+
+.block__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 154.1%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000103;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 47px 0;
+}
+
+.inputItem {
+  display: flex;
+  align-items: center;
+}
+
+.inputItemBefore {
+  min-width: 70px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.inputItemInput {
+  background: #f8f7f3;
+  height: 17px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.inputItemScale1,
+.inputItemScale2,
+.inputItemScale3 {
+  height: 17px;
+  background: #c99047;
+  border-radius: 8px;
+}
+
+.inputItemScale1 {
+  width: 35%;
+}
+
+.inputItemScale2 {
+  width: 55%;
+}
+
+.inputItemScale3 {
+  width: 75%;
+}
+
+.inputItemAfter {
+  margin: 0 0 0 30px;
+  min-width: 80px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 1230px) {
+  .counter {
+    margin: 70px 30px;
+    padding: 40px 45px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .counter {
+    gap: 50px;
+  }
+  .blocks {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 950px) {
+  .counter {
+    flex-direction: column;
+  }
+  .right {
+    width: 100%;
+  }
+  .title {
+    max-width: 100%;
+  }
+}

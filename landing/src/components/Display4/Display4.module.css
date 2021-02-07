@@ -1,0 +1,49 @@
+.ContainerInner {
+  margin: 68px 0;
+  width: 100%;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 154.1%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 68px 0 40px 0;
+}
+
+.blocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.block {
+  max-width: 260px;
+  box-shadow: 0px 4px 28px rgb(208 208 208 / 25%);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.partner {
+  width: 100%;
+}
+
+.buttonPlace {
+  display: flex;
+  justify-content: center;
+  margin: 65px 0 0 0;
+}
+
+@media (max-width: 1230px) {
+  .section {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 950px) {
+  .blocks {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

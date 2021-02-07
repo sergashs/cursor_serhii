@@ -1,0 +1,83 @@
+.section {
+  margin-top: 60px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 154.1%;
+  letter-spacing: 0.02em;
+  color: #000103;
+  max-width: 655px;
+}
+
+.title a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 154.1%;
+  color: #c99047;
+  margin-left: 30px;
+  vertical-align: middle;
+}
+
+.button {
+  margin-top: 40px;
+}
+
+.right {
+  position: relative;
+  width: 650px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./Mac.svg");
+  right: -100px;
+}
+
+.MacImg {
+  position: absolute;
+  top: 20px;
+  left: 71px;
+  z-index: 1;
+  width: 407px;
+  height: 253px;
+  object-fit: cover;
+}
+
+.iphone {
+  position: absolute;
+  width: 150px;
+  height: 270px;
+  background-image: url("./iphone.svg");
+  z-index: 5;
+  left: -20px;
+  bottom: -20px;
+}
+
+.IphoneScreen {
+  position: absolute;
+  top: 31px;
+  left: 20px;
+}
+
+@media (max-width: 1230px) {
+  .section {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .right {
+    margin-top: 50px;
+    position: relative;
+    margin-left: auto;
+    width: 550px;
+    height: 500px;
+  }
+  .iphone {
+    bottom: 150px;
+  }
+}
