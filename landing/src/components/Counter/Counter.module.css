@@ -188,3 +188,32 @@ select {
     max-width: 100%;
   }
 }
+
+@media (max-width: 550px) {
+  .blocks {
+    flex-direction: column;
+  }
+
+  .inputItem {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .inputItemBefore {
+    align-self: flex-start;
+  }
+
+  .inputItemAfter {
+    align-self: flex-end;
+    min-width: 0px;
+  }
+
+  .title {
+    font-size: 27px;
+  }
+
+  .counter {
+    margin: 70px 30px;
+    padding: 20px 25px;
+  }
+}

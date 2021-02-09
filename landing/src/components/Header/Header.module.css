@@ -1,7 +1,18 @@
-header {
+.Header {
   padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 88px;
+}
+
+@media (max-width: 550px) {
+  .Header img {
+    margin-top: 30px;
+  }
+
+  .Header {
+    flex-direction: column;
+    height: 100%;
+  }
 }

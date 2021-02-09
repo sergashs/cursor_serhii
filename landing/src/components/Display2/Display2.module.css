@@ -92,3 +92,40 @@
     padding: 0 30px;
   }
 }
+
+@media (max-width: 550px) {
+  .blocks {
+    margin: 30px 0 0 0;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .block1 {
+    max-width: 30%;
+    height: 60px;
+  }
+
+  .block2 {
+    max-width: 40%;
+    height: 60px;
+  }
+
+  .block3 {
+    max-width: 50%;
+    height: 60px;
+  }
+
+  .block4 {
+    max-width: 60%;
+    height: 60px;
+  }
+
+  .block5 {
+    max-width: 70%;
+    height: 60px;
+  }
+}

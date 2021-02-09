@@ -25,8 +25,15 @@
   cursor: pointer;
 }
 
+.block:hover .partner {
+  filter: grayscale(0%);
+  transition: 0.3s;
+}
+
 .partner {
   width: 100%;
+  filter: grayscale(100%);
+  transition: 0.3s;
 }
 
 .buttonPlace {

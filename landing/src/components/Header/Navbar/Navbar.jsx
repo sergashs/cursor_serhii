@@ -11,6 +11,14 @@ const Nav = styled.nav`
    margin-left: auto;
   margin-right: 20px; 
   }
+
+
+  @media (max-width: 550px) {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0; 
+margin-bottom: 30px;
+  }
   
 `
 
