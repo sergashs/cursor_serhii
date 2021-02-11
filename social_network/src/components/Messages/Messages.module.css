@@ -1,0 +1,83 @@
+.DialogsContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.block {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 #ded3d3, 0 0 0 1px #ece7e7;
+}
+
+.Dialogs {
+  width: 100%;
+  margin-right: 15px;
+}
+
+.DialogsItem {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: solid 1px #ece7e7;
+  position: relative;
+}
+
+.DialogsItem:hover {
+  background-color: #fcf3f3;
+}
+
+.DialogsItem img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.DialogsItemUserName {
+  color: var(--links);
+  font-size: 12.5px;
+  text-align: center;
+  display: block;
+  font-weight: 500;
+  margin: 0 0 10px 10px;
+  align-self: flex-start;
+}
+
+.DialogsItemUserMessage {
+  margin-left: 10px;
+  align-self: flex-start;
+  font-size: 12.5px;
+  color: #656565;
+}
+
+.DialogsItemContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.DialogsItemUserDate {
+  position: absolute;
+  right: 20px;
+  color: #aa9b9b;
+}
+
+.DialogsBlockFilter {
+  width: 250px;
+  height: 100%;
+}
+
+.FilterItem a {
+  padding: 10px 20px;
+  display: block;
+  color: var(--links);
+}
+
+.FilterItem a:hover {
+  background-color: #fcf3f3;
+}
+
+.FilterMenu {
+  margin: 5px 0;
+}
