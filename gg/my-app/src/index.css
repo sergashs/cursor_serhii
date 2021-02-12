@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: antiquewhite;
+  padding: 30px;
+}
+
+
+.card{
+  background: rgb(146, 113, 65);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  max-width: 250px;
+}
+
+.card__header{
+font-size: 14px;
+}
