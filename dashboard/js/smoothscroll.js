@@ -1,21 +1,29 @@
-const links = document.querySelectorAll(".smoothscroll");
+const scrolls = document.querySelectorAll(".smoothscroll");
 
-for (const link of links) {
-  link.addEventListener("click", clickHandler);
+for (const scroll of scrolls) {
+  scroll.addEventListener("click", clickHandler);
 }
 
 function clickHandler(e) {
   e.preventDefault();
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
+  const dataScroll = this.getAttribute("data-scroll");
+  const offsetTop = document.getElementById(dataScroll).offsetTop;
 
   scroll({
     top: offsetTop,
     behavior: "smooth"
   });
 
-if (href == "#section2"){
+
+const focusInputTwoSection = () => {
+  if (dataScroll == "section2"){
     document.querySelector(".focus-input").focus();
 }
+}
+
+setTimeout(focusInputTwoSection, 650);
+
+
+
 
 }
