@@ -93,7 +93,7 @@
   }
 }
 
-@media (max-width: 433px) {
+@media (max-width: 450px) {
   .send-sms__top {
     flex-direction: column;
   }
@@ -104,6 +104,9 @@
 
   .send-sms__name {
     margin: 0 0 16px 0;
+  }
+  .section4__block-ellipse-green {
+    top: 280px;
   }
 }
 
