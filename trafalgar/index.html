@@ -17,23 +17,23 @@
 
 <div class="container">
 
-<div class="header__top">
-<div class="logo header__logo">
-<div class="logo-icon header__logo-icon">T</div>
-<div class="logo-text header__logo-text">Trafalgar</div>
+<div class="top">
+<div class="logo">
+<div class="logo-icon">T</div>
+<div class="logo-text">Trafalgar</div>
 </div>
 
 
-<nav class="header__menu">
-<a class="header__menu-link header__menu-link--active" href="#">Home</a>
-<a class="header__menu-link" href="#">Find a doctor</a>  
-<a class="header__menu-link" href="#">Apps</a>  
-<a class="header__menu-link" href="#">Testimonials</a>   
-<a class="header__menu-link" href="#">About us</a>
-<a class="header__menu-close-button" href="#">X</a>
+<nav class="menu">
+<a class="menu-link link-active" href="#">Home</a>
+<a class="menu-link" href="#">Find a doctor</a>  
+<a class="menu-link" href="#">Apps</a>  
+<a class="menu-link" href="#">Testimonials</a>   
+<a class="menu-link" href="#">About us</a>
+<a class="header-menu-close-button" href="#">X</a>
 </nav>
 
-<div class="header__menu-open-button">
+<div class="header-menu-open-button">
 <span></span>
 <span></span>
 <span></span>
@@ -54,9 +54,9 @@
 <button class="button-type1">Consult today</button>
  </div>   
 
-<div class="illustration"><img src="./img/illustration-1.svg" alt="image for main-display section"></div>
-
- 
+<div class="illustration">
+<img src="./img/illustration-1.jpg" alt="image for main-display section">
+</div>
 
 </div>
 
@@ -203,7 +203,7 @@ lovely family
 
 
     <div class="block">
-      <h4 class="section3-title section-title">
+      <h4 class="section-title">
       <span>Download our 
         mobile apps</span>
         </h4>
@@ -318,10 +318,9 @@ or administrative hassle) and securely”
 <section class="section4">
   <div class="container">
 
-
-    <h5 class="section-title section4-title"><span>Check out our latest article</span></h5>
+<h5 class="section-title"><span>Check out our latest article</span></h5>
   
-  <div class="cards">
+<div class="cards">
 
 <div class="card">
 <img src="./img/section4-card1-image.jpg" alt="img of this card">
@@ -443,15 +442,15 @@ or administrative hassle) and securely”
 </script>
 
 <script>    
-let menu = document.querySelector(".header__menu");
-let openmenu = document.querySelector(".header__menu-open-button");
-let closemenu = document.querySelector(".header__menu-close-button");
+let menu = document.querySelector(".menu");
+let openmenu = document.querySelector(".header-menu-open-button");
+let closemenu = document.querySelector(".header-menu-close-button");
     openmenu.onclick = function () {
-      menu.classList.toggle("header__menu-open");
+      menu.classList.toggle("header-menu-open");
   document.body.style = "overflow:hidden;"; 
     };
     closemenu.onclick = function () {
-      menu.classList.toggle("header__menu-open");
+      menu.classList.toggle("header-menu-open");
       document.body.style = "overflow:y;";
     };
 
