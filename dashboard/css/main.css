@@ -84,7 +84,7 @@ input::placeholder {
 }
 
 .button-big {
-  padding: 20px;
+  padding: 0 20px;
   height: 52px;
 display: flex;
 justify-content: center;
@@ -544,8 +544,6 @@ align-items: center;
 
 .section3__block-buttons{
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 
 .section4 {
@@ -611,6 +609,11 @@ align-items: center;
   border: 1px solid #e3e8e9;
   border-radius: 7px;
   margin: 0 0 10px 0;
+}
+
+.section4 .button-green{
+  width: 42px;
+  padding: 0;
 }
 
 .send-sms__body {
