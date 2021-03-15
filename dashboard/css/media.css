@@ -110,11 +110,7 @@
   }
 }
 
-@media (max-width: 395px) {
-  .section3__block-buttons > .button__mr-10 {
-    margin: 0 0 10px 0;
-  }
-
+@media (max-width: 357px) {
   .block {
     padding: 20px;
   }

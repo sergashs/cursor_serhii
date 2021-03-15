@@ -85,10 +85,18 @@ input::placeholder {
 
 .button-big {
   padding: 20px;
+  height: 52px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .button-small {
   padding: 15px;
+  height: 42px;
+  display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .button-blue {
@@ -534,6 +542,12 @@ input::placeholder {
   max-width: 500px;
 }
 
+.section3__block-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .section4 {
   padding: 50px 0 200px 0;
   overflow: hidden;
@@ -583,6 +597,12 @@ input::placeholder {
   color: #181f48;
   margin: 0 21px 0 0;
 }
+
+.send-sms__buttons{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 .send-sms__item {
   padding: 10px;
