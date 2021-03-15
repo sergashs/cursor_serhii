@@ -67,6 +67,7 @@ input {
   width: 100%;
   font-size: 18px;
   color: #7b7e92;
+  height: 57px;
 }
 
 input::placeholder {
