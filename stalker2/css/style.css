@@ -44,39 +44,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-image: url(/img/bg1.jpg);
+  background-image: url(../img/bg1.jpg);
   padding: 0 10px;
-}
-
-.bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/screenshot_2.jpg);
-  background-attachment: fixed;
-  z-index: -2;
-}
-
-.noise {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/noise.gif);
-  opacity: 0.1;
-  z-index: -1;
-}
-
-.darkness {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: black;
-  background-attachment: fixed;
-  filter: blur(250px);
-  opacity: 0.9;
-  z-index: -1;
 }
 
 .container-main {
@@ -86,7 +55,7 @@ body {
   min-height: 100%;
   border-right: 1px solid #252522;
   border-left: 1px solid #252522;
-  background-image: url(/img/bg2.jpg);
+  background-image: url(../img/bg2.jpg);
 }
 
 .header {
