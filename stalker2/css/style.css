@@ -1,21 +1,21 @@
 @font-face {
   font-family: "font1";
-  src: url("/fonts/font-1.ttf");
+  src: url("../fonts/font-1.ttf");
 }
 
 @font-face {
   font-family: "font2";
-  src: url("/fonts/font-2.ttf");
+  src: url("../fonts/font-2.ttf");
 }
 
 @font-face {
   font-family: "font3";
-  src: url("/fonts/font-2.ttf");
+  src: url("../fonts/font-2.ttf");
 }
 
 @font-face {
   font-family: "font4";
-  src: url("/fonts/font-2.ttf");
+  src: url("../fonts/font-2.ttf");
 }
 
 * {
@@ -44,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-image: url(http://exelent731.ucoz.ru/d/bg.jpg);
+  background-image: url(/img/bg1.jpg);
   padding: 0 10px;
 }
 
@@ -170,7 +170,7 @@ body {
   width: calc(100% - 2px);
   height: 100%;
   background-position: 40% 40%;
-  background-image: url(/img/screenshot_2.jpg);
+  background-image: url(../img/screenshot_2.jpg);
 }
 
 .header__bottom-line::before {
@@ -181,7 +181,7 @@ body {
   z-index: 2;
   width: 100%;
   height: 100%;
-  background-image: url(/img/noise.gif);
+  background-image: url(../img/noise.gif);
   opacity: 0.1;
 }
 
@@ -276,7 +276,7 @@ aside {
 .block__title {
   width: 100%;
   padding: 15px 15px 15px 10px;
-  background-image: url(/img/99.jpg);
+  background-image: url(../img/99.jpg);
   color: #bebebe;
   border-bottom: 1px solid #252522;
   border-radius: 4px 4px 0 0;
@@ -328,7 +328,7 @@ aside {
 .news__item__title {
   font-size: 18px;
   color: #99958c;
-  background-image: url(/img/99.jpg);
+  background-image: url(../img/99.jpg);
   padding: 15px 15px 15px 10px;
   border-radius: 4px 4px 0 0;
 }
@@ -485,7 +485,7 @@ aside {
   background-color: #151514;
   flex: 1 0 auto;
   position: relative;
-  background-image: url(https://cdn.shazoo.ru/450441_oaVinHN7kL_stalker2.jpg);
+  background-image: url(../img/450441_oaVinHN7kL_stalker2.jpg);
   background-position: 40% 60%;
 }
 
