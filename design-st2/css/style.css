@@ -1,0 +1,273 @@
+@font-face {
+  font-family: stalker-font;
+  src: url(/fonts/stalker-font.ttf);
+}
+
+@font-face {
+  font-family: stalker-font-italic;
+  src: url(/fonts/stalker-font-italic.ttf);
+}
+
+* {
+  transition: all 0.3s;
+}
+
+body {
+  font: 15px "Open Sans", "Trebuchet MS", Helvetica, Helvetica Neue, Arial,
+    sans-serif;
+  position: relative;
+}
+
+a {
+  color: #262b2e;
+}
+
+.flex {
+  display: flex;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  /* background: #222; */
+  background: #fff;
+  box-shadow: 0 2px 2px -1px rgb(0 0 0 / 10%);
+}
+
+.header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.header__logo a {
+  /* font-family: stalker-font; */
+  font-family: stalker-font-italic;
+  color: #262b2e;
+  font-size: 36px;
+}
+
+.header__logo a:hover {
+  color: #000000;
+}
+
+.header nav ul {
+  display: flex;
+}
+
+.header nav ul li a {
+  font-weight: 600;
+  padding: 22px 10px;
+  /* color: #aaa; */
+  color: #262b2e;
+  position: relative;
+  text-align: center;
+}
+
+.header nav ul li a::before {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #d37c22;
+}
+
+.header nav ul li a:hover {
+  color: #000000;
+  background: #efefef;
+}
+
+.header nav ul li a:hover::before {
+  display: block;
+  animation: el-appear 0.3s ease forwards;
+}
+
+@keyframes el-appear {
+  to {
+    opacity: 1;
+  }
+}
+
+.content {
+  padding-top: 200px;
+}
+
+.content .container {
+  width: 100%;
+  max-width: 1150px;
+  margin: auto;
+  background: #f3f5f6;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://www.stalker2.com/img/screenshots/screenshot_4.jpg);
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.news {
+  flex: 1;
+}
+
+.comments__title,
+.news__title {
+  color: #000;
+  font-weight: 800;
+  font-size: 27px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #e7e8e9;
+}
+
+.news .item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #e7e8e9;
+}
+
+.news .item__title {
+  display: block;
+  font-family: "Montserrat", "Trebuchet MS", Helvetica, "Helvetica Neue", Arial,
+    sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.news .item__description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  line-height: 25px;
+}
+
+.news .item__img {
+  width: 100%;
+  margin: 15px 0 0 0;
+}
+
+.comments {
+  width: 300px;
+  margin: 0 0 0 40px;
+}
+
+.comments .item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #e7e8e9;
+}
+
+.comments .item__header {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.comments .item__avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 15px 0 0;
+}
+
+.comments .item__author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments .item__author-name {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.comments .item__date {
+  font-size: 13px;
+  color: rgb(156, 156, 156);
+}
+
+.comments .item__description {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 10px 0;
+}
+
+.comments .item__link {
+  color: #d37c22;
+  font-size: 13px;
+}
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  color: #e7e8e9;
+}
+
+/* dark-mode */
+.dark .header {
+  background: #23252f;
+}
+
+.dark .header__logo a {
+  color: #cacaca;
+}
+
+.dark .header nav ul li a {
+  color: #cacaca;
+}
+
+.dark .header nav ul li a:hover {
+  color: #e6e6e6;
+  background: #2b2d38;
+}
+
+.dark .content .container {
+  background: #23252f;
+}
+
+.dark .comments__title,
+.dark .news__title {
+  color: #b8b8b8;
+}
+
+.dark .comments__title,
+.dark .news__title,
+.dark .comments .item,
+.dark .news .item {
+  border-bottom: solid 1px #ffffff1c;
+}
+
+.dark .news .item__title {
+  color: #cacaca;
+}
+
+.dark .news .item__description {
+  color: #a3a3a3;
+}
+
+.dark .comments .item__author-name {
+  color: #cacaca;
+}
+
+.dark .comments .item__description {
+  color: #a3a3a3;
+}
+
+/* dark-mode */

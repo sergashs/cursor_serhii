@@ -67,6 +67,22 @@ body {
   border-left: 1px solid #252522;
 }
 
+.border-template {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 100%;
+  background-image: url(/img/border.png);
+  top: 0;
+  right: -23px;
+}
+
 .header__top-line {
   background-color: #151514;
   border-bottom: 1px solid #252522;
