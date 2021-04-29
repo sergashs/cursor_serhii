@@ -340,7 +340,7 @@ input:checked + .standart_checkbox__check:before {
 
 .news .item {
   width: 100%;
-  background: url(/img/2.png);
+  background: url(../img/2.png);
   border-radius: 3px;
 }
 
@@ -396,7 +396,7 @@ input:checked + .standart_checkbox__check:before {
 
 .block {
   width: 260px;
-  background: url(/img/2.png);
+  background: url(../img/2.png);
   border-radius: 3px;
 }
 
