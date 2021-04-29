@@ -31,12 +31,19 @@
 					<ul class="dropdown-menu list-group">
 						<li class="list-group-item">
 							<label class="standart_checkbox">
-								<input type="checkbox" id="switchTheme"
+								<input type="checkbox" id="radiation"
 								><span class="standart_checkbox__check"></span>
 								<span class="standart_checkbox__label">Радіація</span>
 							</label>
 						</li>
-						<li class="list-group-item">List item 2</li>
+						<li class="list-group-item">
+
+							<label class="standart_checkbox">
+								<input type="checkbox" id="rain"
+								><span class="standart_checkbox__check"></span>
+								<span class="standart_checkbox__label">Дощ</span>
+							</label>	
+						</li>
 						<li class="list-group-item">List item 3</li>
 					  </ul>
 				</a>
@@ -54,6 +61,7 @@
       <div class="header__logo">
 Stalker-Fenomen
       </div>
+	  <div class="header__rain"></div>
     </div>
     <div class="header__bottom-line">
       <ul class="header__bottom-nav">
@@ -306,8 +314,26 @@ $('.toggle').on('click', () => {
   $menu.toggleClass('is-active');
 });
 
+document.getElementById('rain').addEventListener('click', function() {
+        let htmlClasses = document.querySelector('html').classList;
+        if(localStorage.rain == 'rain') {
+            htmlClasses.remove('rain');
+            localStorage.removeItem('rain')
+        } else {
+            htmlClasses.add('rain');
+            localStorage.rain = 'rain';
+        }
+    });
 
-document.getElementById('switchTheme').addEventListener('click', function() {
+
+	if (localStorage.rain === 'rain') {
+        document.querySelector('html').classList.add('rain')
+		document.getElementById('rain').setAttribute('checked','checked');
+    } else if (localStorage.rain === 'rain') {
+        document.querySelector('html').classList.add('rain')
+    }
+
+document.getElementById('radiation').addEventListener('click', function() {
         let htmlClasses = document.querySelector('html').classList;
         if(localStorage.theme == 'radiation') {
             htmlClasses.remove('radiation');
@@ -320,7 +346,7 @@ document.getElementById('switchTheme').addEventListener('click', function() {
 
     if (localStorage.theme === 'radiation') {
         document.querySelector('html').classList.add('radiation')
-		document.getElementById('switchTheme').setAttribute('checked','checked');
+		document.getElementById('radiation').setAttribute('checked','checked');
     } else if (localStorage.theme === 'radiation') {
         document.querySelector('html').classList.add('radiation')
     }
