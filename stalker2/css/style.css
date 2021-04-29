@@ -303,7 +303,7 @@ body {
   width: 100%;
   max-width: 1100px;
   margin: auto;
-  background: url(/img/footer-bg.png);
+  background: url(../img/footer-bg.png);
   background-position: 20% 70%;
   background-repeat: no-repeat;
   background-size: cover;
