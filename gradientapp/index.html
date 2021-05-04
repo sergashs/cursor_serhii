@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-400 p-5">
 	<div id="app">
-	<div class="container p-5 m-auto w-96 shadow-md bg-gray-100 rounded">
+	<div class="w-full container p-5 m-auto max-w-sm shadow-md bg-gray-100 rounded">
 		<div class="font-medium text-2xl mb-3">
 			{{titleApp}}
 		</div>
@@ -17,16 +17,14 @@
 	    <input 
 		class="w-full rounded-md border border-gray-30 py-1 px-3 mb-2" 
 		type="text"
-		 v-bind:value="inputValue1"
 		 placeholder="Print color 1" 
-		 v-on:input="inputChangeHandler"
+		 v-model="inputValue1"
 		 />
 		<input 
 		class="w-full rounded-md border border-gray-30 py-1 px-3 mb-3"
 		 type="text" 
-		v-bind:value="inputValue2" 
 		placeholder="Print color 2"
-		v-on:input="inputChangeHandler2"
+		v-model="inputValue2"
 		 />
 		</div>
 		<button class="inline-flex items-center justify-center rounded-md bg-black text-white py-1 px-3"

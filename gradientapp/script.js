@@ -14,15 +14,15 @@ const App = {
     };
   },
   methods: {
-    inputChangeHandler(event) {
-      this.inputValue1 = event.target.value;
-      console.log(this.inputValue1);
-    },
+    // inputChangeHandler(event) {
+    //   this.inputValue1 = event.target.value;
+    //   console.log(this.inputValue1);
+    // },
 
-    inputChangeHandler2(event) {
-      this.inputValue2 = event.target.value;
-      console.log(this.inputValue2);
-    },
+    // inputChangeHandler2(event) {
+    //   this.inputValue2 = event.target.value;
+    //   console.log(this.inputValue2);
+    // },
 
     addNewGradient() {
       if (this.inputValue1 !== "" && this.inputValue2 !== "") {
