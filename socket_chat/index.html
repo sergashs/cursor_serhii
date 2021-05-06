@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+		<textarea
+		  id="chat"
+		  placeholder="Waiting connection..."
+		  readonly
+		></textarea>
+		<form id="form" class="utils">
+		  <input
+			type="text"
+			placeholder="Your message..."
+			id="input"
+		  />
+		  <button
+			type="submit"
+			id="submit"
+		  >
+			Send
+		  </button>
+		</form>
+	  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+	  
+	  <script>
+		  var Socket = new WebSocket("wss://echo.websocket.org");
+
+function message(message, prefix = 'system') {
+  var chat = document.getElementById('chat');
+  date = moment().format('HH:mm:ss');
+  chat.value += '[' + prefix + '] ' + date + ': ' + message + '\n';
+}
+
+var form = document.getElementById('form');
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  var input = document.getElementById('input');
+  Socket.send(input.value);
+  input.value = '';
+});
+
+Socket.onopen = function() {
+  message("Соединение установлено.");
+};
+
+Socket.onclose = function(event) {
+  if (event.wasClean) {
+    message('Соединение закрыто чисто');
+  } else {
+    message('Обрыв соединения');
+  }
+  message('Код: ' + event.code + ' причина: ' + event.reason);
+};
+
+Socket.onmessage = function(event) {
+  message(event.data, 'message');
+};
+
+Socket.onerror = function(error) {
+  message("Ошибка " + error.message);
+};
+	  </script>
+</body>
+</html>
