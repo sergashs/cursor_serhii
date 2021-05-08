@@ -16,10 +16,15 @@
 <header class="header">
 	<div class="header__top-line">
 		<div class="container">
-			<div class="header__top-line-date">
-				21:07, 29.04.2021
-			</div>
-			<ul>
+			<ul class="header__our-social">
+        <li><a href="#">
+          <i class="fa fa-telegram" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="#">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a></li>
+			</ul>
+			<ul class="header__profile-menu">
 				<li>
 				<a href="#"><i class="fa fa-user" aria-hidden="true"></i> Профіль</a>
 			</li>
@@ -29,22 +34,32 @@
 			<li class="dropdown">
 				<a class="btn btn-primary toggle" href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Налаштування
 					<ul class="dropdown-menu list-group">
+            <li class="list-group-item-name">Спецефекти:</li>
 						<li class="list-group-item">
 							<label class="standart_checkbox">
-								<input type="checkbox" id="radiation" name="headerChange"
+								<input type="checkbox" id="radiation" 
 								><span class="standart_checkbox__check"></span>
 								<span class="standart_checkbox__label">Радіація</span>
 							</label>
 						</li>
 						<li class="list-group-item">
-
 							<label class="standart_checkbox">
-								<input type="checkbox" id="rain" name="headerChange"
+								<input type="checkbox" id="rain" 
 								><span class="standart_checkbox__check"></span>
 								<span class="standart_checkbox__label">Дощ</span>
 							</label>	
 						</li>
-						<li class="list-group-item">List item 3</li>
+            <li class="list-group-item-name">Header:</li>
+						<li class="list-group-item"><label class="standart_checkbox">
+              <input type="checkbox" id="headerfirst"
+              ><span class="standart_checkbox__check"></span>
+              <span class="standart_checkbox__label">Зображення 1</span>
+            </label></li>
+            <li class="list-group-item"><label class="standart_checkbox">
+              <input type="checkbox" id="headersecond"
+              ><span class="standart_checkbox__check"></span>
+              <span class="standart_checkbox__label">Зображення 2</span>
+            </label></li>
 					  </ul>
 				</a>
 			</li>
@@ -84,32 +99,19 @@ Stalker-Fenomen
 <div class="aside">
 
   <div class="block">
-    <div class="block__title">Wiki</div>
-    <div class="block__content">
-     
-  <div class="wiki">
-
-    <div class="wiki__accordion-item">
-      <div class="wiki__accordion-item-header wiki__accordion-item-header1">
-     <div class="wiki__accordion-item-header-title">Тінь Чорнобиля</div>
-        <!-- <div class="accordion__item-arrow rotate">
-          <img src="img/icon-arrow-right.svg" alt="">
-        </div> -->
-      </div>
-      <div class="wiki__accordion-item-content">
-       <ul>
-         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Локації</a></li>
-         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Артефакти</a></li>
-         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Зброя</a></li>
-         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Мутанти</a></li>
-       </ul>
-      </div>
+		<div class="block__title">Нові відеозаписи</div>
+		<div class="block__content">
+<ul class="informer-new-video">
+  <li><a href="#" class="item">
+    Відеозапис номер 1
+<div class="item__img">
+      <img src="https://i.ytimg.com/vi/TUtFJfEVO7U/maxresdefault.jpg" alt="">
+      <span class="item__icon-play"><i class="fa fa-play-circle" aria-hidden="true"></i></span>
+</div>
+  </a></li>
+</ul>
     </div>
-
-  </div>
-
-    </div>
-  </div>
+	</div>
 
 
 <div class="block">
@@ -347,6 +349,37 @@ Stalker-Fenomen
 
 
 <div class="aside">
+
+  <div class="block">
+    <div class="block__title">Wiki</div>
+    <div class="block__content">
+     
+  <div class="wiki">
+
+    <div class="wiki__accordion-item wiki__accordion-item1">
+      <div class="wiki__accordion-item-header">
+     <div class="wiki__accordion-item-header-title">Тінь Чорнобиля</div>
+        <!-- <div class="accordion__item-arrow rotate">
+          <img src="img/icon-arrow-right.svg" alt="">
+        </div> -->
+      </div>
+      <div class="wiki__accordion-item-content">
+       <ul>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Локації</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Артефакти</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Зброя</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Мутанти</a></li>
+       </ul>
+      </div>
+    </div>
+
+  </div>
+
+    </div>
+  </div>
+
+
+
 	<div class="block">
 		<div class="block__title">Нові коментарі</div>
 		<div class="block__content-np">
@@ -394,11 +427,13 @@ Stalker-Fenomen
 
 	<a class="item-link" href="#">в GSC Game World набирає...</a>
 </div>
-   
-             
+         
     </div>
     </div>
 	</div>
+
+ 
+
 </div>
 
 
@@ -440,6 +475,16 @@ $(function () {
 
 
   //  off input in header
+
+
+  $('input#headerfirst').on('change', function() {
+    $('input#headersecond').prop('checked', false);  
+});
+$('input#headersecond').on('change', function() {
+    $('input#headerfirst').prop('checked', false);  
+});
+
+
 
 $('input#rain').on('change', function() {
     $('input#radiation').prop('checked', false);  
@@ -515,6 +560,54 @@ document.getElementById('radiation').addEventListener('click', function() {
     } else if (localStorage.radiation=== 'radiation') {
         document.querySelector('html').classList.add('radiation')
     }
+
+
+
+
+    document.getElementById('headerfirst').addEventListener('click', function() {
+        let htmlClasses = document.querySelector('html').classList;
+		htmlClasses.remove('headersecond');
+		localStorage.removeItem('headersecond');
+        if(localStorage.headerfirst == 'headerfirst') {
+            htmlClasses.remove('headerfirst');
+            localStorage.removeItem('headerfirst')
+        } else {
+            htmlClasses.add('headerfirst');
+            localStorage.headerfirst = 'headerfirst';
+        }
+    });
+
+    if (localStorage.headerfirst === 'headerfirst') {
+        document.querySelector('html').classList.add('headerfirst')
+		document.getElementById('headerfirst').setAttribute('checked','checked');
+    } else if (localStorage.headerfirst=== 'headerfirst') {
+        document.querySelector('html').classList.add('headerfirst')
+    }
+
+
+    document.getElementById('headersecond').addEventListener('click', function() {
+        let htmlClasses = document.querySelector('html').classList;
+		htmlClasses.remove('headerfirst');
+		localStorage.removeItem('headerfirst');
+        if(localStorage.headersecond == 'headersecond') {
+            htmlClasses.remove('headersecond');
+            localStorage.removeItem('headersecond')
+        } else {
+            htmlClasses.add('headersecond');
+            localStorage.headersecond = 'headersecond';
+        }
+    });
+
+    if (localStorage.headersecond === 'headersecond') {
+        document.querySelector('html').classList.add('headersecond')
+		document.getElementById('headersecond').setAttribute('checked','checked');
+    } else if (localStorage.headersecond=== 'headersecond') {
+        document.querySelector('html').classList.add('headersecond')
+    }
+
+
+
+
 </script>
 
   </body>

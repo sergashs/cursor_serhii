@@ -77,18 +77,38 @@ body {
   font-size: 13px;
 }
 
-.header__top-line ul {
+.header__profile-menu {
   display: flex;
 }
 
-.header__top-line ul li a {
+.header__profile-menu li a {
   color: #bfbdb6;
   font-size: 13px;
 }
 
-.header__top-line ul li:not(:last-child) {
+.header__profile-menu li:not(:last-child) {
   margin: 0 40px 0 0;
 }
+
+/* header__our-social */
+
+.header__our-social {
+  display: flex;
+}
+
+.header__our-social li a {
+  font-size: 17px;
+  color: #bfbdb6;
+  margin: 0 15px 0 0;
+}
+
+.header__our-social li a:hover {
+  color: #dadada;
+}
+
+/* header__our-social */
+
+/* header dropdown menu */
 
 .dropdown {
   position: relative;
@@ -108,6 +128,10 @@ body {
 }
 
 .list-group-item {
+  width: 100%;
+}
+
+.list-group-item .standart_checkbox {
   padding: 10px 10px;
   width: 100%;
 }
@@ -127,6 +151,13 @@ body {
 .header__top-line ul li .standart_checkbox {
   width: 100%;
 }
+
+.list-group-item-name {
+  font-weight: 600;
+  padding: 10px;
+}
+
+/* header dropdown menu */
 
 .standart_checkbox {
   position: relative;
@@ -218,7 +249,7 @@ input:checked + .standart_checkbox__check:before {
 .header__middle {
   width: 100%;
   margin: auto;
-  height: 190px;
+  height: 220px;
   position: relative;
 }
 
@@ -229,6 +260,20 @@ input:checked + .standart_checkbox__check:before {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+}
+
+.headerfirst .header__middle::after {
+  background-repeat: no-repeat;
+  background-position: 0% 88%;
+  background-image: url(https://www.stalker2.com/img/screenshots/screenshot_4.jpg);
+  background-size: 1100px;
+}
+
+.headersecond .header__middle::after {
+  background-repeat: no-repeat;
+  background-position: 0% 61%;
+  background-image: url(https://www.stalker2.com/img/screenshots/screenshot_3.jpg);
+  background-size: 1100px;
 }
 
 .header__middle::after {
@@ -371,10 +416,11 @@ input:checked + .standart_checkbox__check:before {
 }
 
 .news .item__title {
-  font-size: 18px;
+  font-family: Stalker-Graffiti;
+  font-size: 16px;
   font-weight: 500;
   color: #bfbdb6;
-  padding: 9px 15px;
+  padding: 10px 15px;
   background: #252527;
   border-bottom: solid 2px #2d2c31;
   border-radius: 3px 3px 0 0;
@@ -633,6 +679,49 @@ input:checked + .standart_checkbox__check:before {
 
 /* new-comments block */
 
+/* informer-new-video */
+
+.informer-new-video .item {
+  font-size: 14px;
+}
+
+.informer-new-video .item .item__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 5px 0 0 0;
+}
+
+.informer-new-video .item img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.informer-new-video .item .item__img::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #18181a;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.informer-new-video .item:hover .item__img::before {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.informer-new-video .item .item__icon-play {
+  position: absolute;
+  font-size: 29px;
+}
+
+/* informer-new-video */
+
 /* informers */
 
 /* categories */
@@ -669,7 +758,7 @@ input:checked + .standart_checkbox__check:before {
   border: solid 1px #2d2c31;
 }
 
-.wiki__accordion-item-header1 {
+.wiki__accordion-item1 .wiki__accordion-item-header {
   position: relative;
   width: 100%;
   height: 60px;
@@ -683,7 +772,7 @@ input:checked + .standart_checkbox__check:before {
   filter: grayscale(1);
 }
 
-.wiki__accordion-item-header1::before {
+.wiki__accordion-item-header::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -692,15 +781,15 @@ input:checked + .standart_checkbox__check:before {
   opacity: 0.3;
 }
 
-.wiki__accordion-item-header1.active {
+.wiki__accordion-item-header.active {
   filter: grayscale(0);
 }
 
-.wiki__accordion-item-header1.active::before {
+.wiki__accordion-item-header.active::before {
   opacity: 0;
 }
 
-.wiki__accordion-item-header1:hover {
+.wiki__accordion-item-header:hover {
   filter: grayscale(0);
 }
 
@@ -729,6 +818,8 @@ input:checked + .standart_checkbox__check:before {
 }
 
 .wiki__accordion-item-content ul li a {
+  font-size: 14px;
+  font-family: Stalker-Graffiti;
   display: inline-flex;
   align-items: center;
 }
@@ -738,7 +829,7 @@ input:checked + .standart_checkbox__check:before {
   margin: 0 5px 0 0;
 }
 
-.wiki__accordion-item-content ul li a:hover {
+.wiki__accordion-item1 .wiki__accordion-item-content ul li a:hover {
   color: #f1d45c;
 }
 
