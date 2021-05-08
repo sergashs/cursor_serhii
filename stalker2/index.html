@@ -31,7 +31,7 @@
 					<ul class="dropdown-menu list-group">
 						<li class="list-group-item">
 							<label class="standart_checkbox">
-								<input type="checkbox" id="radiation"
+								<input type="checkbox" id="radiation" name="headerChange"
 								><span class="standart_checkbox__check"></span>
 								<span class="standart_checkbox__label">Радіація</span>
 							</label>
@@ -39,7 +39,7 @@
 						<li class="list-group-item">
 
 							<label class="standart_checkbox">
-								<input type="checkbox" id="rain"
+								<input type="checkbox" id="rain" name="headerChange"
 								><span class="standart_checkbox__check"></span>
 								<span class="standart_checkbox__label">Дощ</span>
 							</label>	
@@ -83,9 +83,17 @@ Stalker-Fenomen
 
 <div class="aside">
 <div class="block">
-	<div class="block__title">Нові файли</div>
+	<div class="block__title">Файли</div>
 	<div class="block__content-np">
-  <div class="informer__new-files">
+    <div class="informer-tabs">
+        <ul class="informer-tabs__nav">
+        <li class="active"><span data-href="#tab-1">Нові</span></li>
+        <li><span data-href="#tab-2">Популярні </span></li>
+      </ul>
+      
+
+  <div class="informer-tabs__item active" id="tab-1">
+        <div class="informer__new-files informer__new-files--scroll">
     <a class="item" href="#">
       <div class="item-title">
         Anomaly 1.5.1
@@ -159,6 +167,87 @@ Stalker-Fenomen
    </div>
     </a>
   </div>
+</div>
+  
+
+<div class="informer-tabs__item" id="tab-2">
+  <div class="informer__new-files informer__new-files--scroll">
+    <a class="item" href="#">
+      <div class="item-title">
+        Anomaly
+     </div>
+     <div class="flex items-center">
+<img class="item-img" src="https://stalkermod.ru/modules/mod_news_pro_gk4/cache/stories.imagespost_4.sigerous-3-otvet-300nsp_263.jpg" alt="">
+  <div class="item-description">
+      Anomaly 
+     </div>
+     </div>
+   <div class="item-meta">
+    <ul class="item__meta flex">
+      <li>
+        <i class="fa fa-eye" aria-hidden="true"></i> 55 
+      </li>
+      <li>
+        <i class="fa fa-download" aria-hidden="true"></i> 4
+      </li>
+      <li>
+        <i class="fa fa-comments" aria-hidden="true"></i> 1 
+      </li>
+    </ul>
+   </div>
+    </a>
+    <a class="item" href="#">
+      <div class="item-title">
+        Anomaly 1.5.1
+     </div>
+     <div class="flex items-center">
+<img class="item-img" src="https://stalkermod.ru/modules/mod_news_pro_gk4/cache/stories.imagespost_4.sigerous-3-otvet-300nsp_263.jpg" alt="">
+  <div class="item-description">
+      Anomaly - це один з найпопулярніших, глобальних...
+     </div>
+     </div>
+   <div class="item-meta">
+    <ul class="item__meta flex">
+      <li>
+        <i class="fa fa-eye" aria-hidden="true"></i> 55 
+      </li>
+      <li>
+        <i class="fa fa-download" aria-hidden="true"></i> 4
+      </li>
+      <li>
+        <i class="fa fa-comments" aria-hidden="true"></i> 1 
+      </li>
+    </ul>
+   </div>
+    </a>
+    <a class="item" href="#">
+      <div class="item-title">
+        Anomaly 1.5.1
+     </div>
+     <div class="flex items-center">
+<img class="item-img" src="https://stalkermod.ru/modules/mod_news_pro_gk4/cache/stories.imagespost_4.sigerous-3-otvet-300nsp_263.jpg" alt="">
+  <div class="item-description">
+      Anomaly - це один з найпопулярніших, глобальних...
+     </div>
+     </div>
+   <div class="item-meta">
+    <ul class="item__meta flex">
+      <li>
+        <i class="fa fa-eye" aria-hidden="true"></i> 55 
+      </li>
+      <li>
+        <i class="fa fa-download" aria-hidden="true"></i> 4
+      </li>
+      <li>
+        <i class="fa fa-comments" aria-hidden="true"></i> 1 
+      </li>
+    </ul>
+   </div>
+    </a>
+  </div>
+</div>
+
+</div>
   
   </div>
 </div>
@@ -300,6 +389,22 @@ In the case of full or partial copying of site materials, a link to the source i
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
 <script>
+
+$('input#rain').on('change', function() {
+    $('input#radiation').prop('checked', false);  
+});
+$('input#radiation').on('change', function() {
+    $('input#rain').prop('checked', false);  
+});
+
+
+if ($('.informer-tabs').length) {
+        $('.informer-tabs__nav span').on('click', function () {
+            $([$(this).parent()[0], $($(this).data('href'))[0]]).addClass('active').siblings('.active').removeClass('active');
+        });
+    }
+
+
 	const $menu = $('.dropdown');
 
 $(document).mouseup(e => {
@@ -316,6 +421,8 @@ $('.toggle').on('click', () => {
 
 document.getElementById('rain').addEventListener('click', function() {
         let htmlClasses = document.querySelector('html').classList;
+		htmlClasses.remove('radiation');
+		localStorage.removeItem('radiation');
         if(localStorage.rain == 'rain') {
             htmlClasses.remove('rain');
             localStorage.removeItem('rain')
@@ -335,19 +442,21 @@ document.getElementById('rain').addEventListener('click', function() {
 
 document.getElementById('radiation').addEventListener('click', function() {
         let htmlClasses = document.querySelector('html').classList;
-        if(localStorage.theme == 'radiation') {
+		htmlClasses.remove('rain');
+		localStorage.removeItem('rain');
+        if(localStorage.radiation == 'radiation') {
             htmlClasses.remove('radiation');
-            localStorage.removeItem('theme')
+            localStorage.removeItem('radiation')
         } else {
             htmlClasses.add('radiation');
-            localStorage.theme = 'radiation';
+            localStorage.radiation = 'radiation';
         }
     });
 
-    if (localStorage.theme === 'radiation') {
+    if (localStorage.radiation === 'radiation') {
         document.querySelector('html').classList.add('radiation')
 		document.getElementById('radiation').setAttribute('checked','checked');
-    } else if (localStorage.theme === 'radiation') {
+    } else if (localStorage.radiation=== 'radiation') {
         document.querySelector('html').classList.add('radiation')
     }
 </script>
