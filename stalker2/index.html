@@ -443,7 +443,11 @@ Stalker-Fenomen
 
 <footer class="footer">
   <div class="footer__container">
-    Site created by uCoz | Design by serhii © <br>
+    Site created by uCoz | Design by 
+    <span class="author-design">
+      serhii
+    </span>
+ © <br>
 The copyright for the game and the materials used in it belongs to GSC Game World <br>
 In the case of full or partial copying of site materials, a link to the source is required! <br>
 © 2021 Stalker-Fenomen - fan site of the game Stalker 2<br>
@@ -456,7 +460,34 @@ In the case of full or partial copying of site materials, a link to the source i
   crossorigin="anonymous"></script>
 
 <script>
+// animation author name
 
+function newGradient() {
+  var c1 = {
+    r: Math.floor(Math.random()*255),
+    g: Math.floor(Math.random()*255),
+    b: Math.floor(Math.random()*255)
+  };
+  var c2 = {
+    r: Math.floor(Math.random()*255),
+    g: Math.floor(Math.random()*255),
+    b: Math.floor(Math.random()*255)
+  };
+  c1.rgb = 'rgb('+c1.r+','+c1.g+','+c1.b+')';
+  c2.rgb = 'rgb('+c2.r+','+c2.g+','+c2.b+')';
+  return 'linear-gradient(45deg, '+c1.rgb+', '+c2.rgb+')';
+}
+
+
+function rollBg() {
+  $('.author-design.hidden').css('background-image', newGradient());
+  $('.author-design').toggleClass('hidden');
+}
+
+$(document).ready(function() {
+  rollBg();
+  setInterval(rollBg, 5000);
+});
 
 
 
