@@ -82,6 +82,36 @@ Stalker-Fenomen
 <div class="container-main">
 
 <div class="aside">
+
+  <div class="block">
+    <div class="block__title">Wiki</div>
+    <div class="block__content">
+     
+  <div class="wiki">
+
+    <div class="wiki__accordion-item">
+      <div class="wiki__accordion-item-header wiki__accordion-item-header1">
+     <div class="wiki__accordion-item-header-title">Тінь Чорнобиля</div>
+        <!-- <div class="accordion__item-arrow rotate">
+          <img src="img/icon-arrow-right.svg" alt="">
+        </div> -->
+      </div>
+      <div class="wiki__accordion-item-content">
+       <ul>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Локації</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Артефакти</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Зброя</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Мутанти</a></li>
+       </ul>
+      </div>
+    </div>
+
+  </div>
+
+    </div>
+  </div>
+
+
 <div class="block">
 	<div class="block__title">Файли</div>
 	<div class="block__content-np">
@@ -251,6 +281,7 @@ Stalker-Fenomen
   
   </div>
 </div>
+
 </div>
 
 <div class="news">
@@ -388,7 +419,27 @@ In the case of full or partial copying of site materials, a link to the source i
   src="https://code.jquery.com/jquery-3.6.0.js"
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
+
 <script>
+
+
+
+
+// accordion wiki
+
+$(function () {
+      $(".wiki__accordion-item-header").on("click", function (e) {
+        e.preventDefault();
+        var $this = $(this);
+
+        $this.toggleClass("active");
+        $this.next().slideToggle();
+        // $(".accordion__item-arrow", this).toggleClass("rotate");
+      });
+    });
+
+
+  //  off input in header
 
 $('input#rain').on('change', function() {
     $('input#radiation').prop('checked', false);  
@@ -397,6 +448,7 @@ $('input#radiation').on('change', function() {
     $('input#rain').prop('checked', false);  
 });
 
+// tabs for informer
 
 if ($('.informer-tabs').length) {
         $('.informer-tabs__nav span').on('click', function () {
@@ -405,11 +457,13 @@ if ($('.informer-tabs').length) {
     }
 
 
+// dropdown menu in header
+
 	const $menu = $('.dropdown');
 
 $(document).mouseup(e => {
-   if (!$menu.is(e.target) // if the target of the click isn't the container...
-   && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+   if (!$menu.is(e.target) 
+   && $menu.has(e.target).length === 0) 
    {
      $menu.removeClass('is-active');
   }
@@ -418,6 +472,8 @@ $(document).mouseup(e => {
 $('.toggle').on('click', () => {
   $menu.toggleClass('is-active');
 });
+
+// change of header animation effect
 
 document.getElementById('rain').addEventListener('click', function() {
         let htmlClasses = document.querySelector('html').classList;
