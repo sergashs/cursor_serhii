@@ -359,9 +359,49 @@ Stalker-Fenomen
     <div class="wiki__accordion-item wiki__accordion-item1">
       <div class="wiki__accordion-item-header">
      <div class="wiki__accordion-item-header-title">Тінь Чорнобиля</div>
-        <!-- <div class="accordion__item-arrow rotate">
-          <img src="img/icon-arrow-right.svg" alt="">
-        </div> -->
+      </div>
+      <div class="wiki__accordion-item-content">
+       <ul>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Локації</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Артефакти</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Зброя</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Мутанти</a></li>
+       </ul>
+      </div>
+    </div>
+
+    <div class="wiki__accordion-item wiki__accordion-item2">
+      <div class="wiki__accordion-item-header">
+     <div class="wiki__accordion-item-header-title">Чисте Небо</div>
+      </div>
+      <div class="wiki__accordion-item-content">
+       <ul>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Локації</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Артефакти</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Зброя</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Мутанти</a></li>
+       </ul>
+      </div>
+    </div>
+
+    <div class="wiki__accordion-item wiki__accordion-item3">
+      <div class="wiki__accordion-item-header">
+     <div class="wiki__accordion-item-header-title">Поклик Прип'яті</div>
+      </div>
+      <div class="wiki__accordion-item-content">
+       <ul>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Локації</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Артефакти</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Зброя</a></li>
+         <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i> Мутанти</a></li>
+       </ul>
+      </div>
+    </div>
+
+
+    <div class="wiki__accordion-item wiki__accordion-item4">
+      <div class="wiki__accordion-item-header">
+     <div class="wiki__accordion-item-header-title">Сталкер 2</div>
       </div>
       <div class="wiki__accordion-item-content">
        <ul>
@@ -443,10 +483,7 @@ Stalker-Fenomen
 
 <footer class="footer">
   <div class="footer__container">
-    Site created by uCoz | Design by 
-    <span class="author-design">
-      serhii
-    </span>
+    Site created by uCoz | Design by serhii
  © <br>
 The copyright for the game and the materials used in it belongs to GSC Game World <br>
 In the case of full or partial copying of site materials, a link to the source is required! <br>
@@ -460,34 +497,7 @@ In the case of full or partial copying of site materials, a link to the source i
   crossorigin="anonymous"></script>
 
 <script>
-// animation author name
 
-function newGradient() {
-  var c1 = {
-    r: Math.floor(Math.random()*255),
-    g: Math.floor(Math.random()*255),
-    b: Math.floor(Math.random()*255)
-  };
-  var c2 = {
-    r: Math.floor(Math.random()*255),
-    g: Math.floor(Math.random()*255),
-    b: Math.floor(Math.random()*255)
-  };
-  c1.rgb = 'rgb('+c1.r+','+c1.g+','+c1.b+')';
-  c2.rgb = 'rgb('+c2.r+','+c2.g+','+c2.b+')';
-  return 'linear-gradient(45deg, '+c1.rgb+', '+c2.rgb+')';
-}
-
-
-function rollBg() {
-  $('.author-design.hidden').css('background-image', newGradient());
-  $('.author-design').toggleClass('hidden');
-}
-
-$(document).ready(function() {
-  rollBg();
-  setInterval(rollBg, 5000);
-});
 
 
 

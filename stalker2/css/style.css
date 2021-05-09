@@ -1,8 +1,3 @@
-/* @font-face {
-  font-family: "font2";
-  src: url("../fonts/font-2.ttf");
-} */
-
 @font-face {
   font-family: "font3";
   src: url("../fonts/font-2.ttf");
@@ -44,7 +39,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* background-image: url(../img/bg1.jpg); */
   background-image: url(../img/wall2.jpg);
   padding: 0 10px;
 }
@@ -262,20 +256,6 @@ input:checked + .standart_checkbox__check:before {
   height: 100%;
 }
 
-.headerfirst .header__middle::after {
-  background-repeat: no-repeat;
-  background-position: 0% 88%;
-  background-image: url(https://www.stalker2.com/img/screenshots/screenshot_4.jpg);
-  background-size: 1100px;
-}
-
-.headersecond .header__middle::after {
-  background-repeat: no-repeat;
-  background-position: 0% 61%;
-  background-image: url(https://www.stalker2.com/img/screenshots/screenshot_3.jpg);
-  background-size: 1100px;
-}
-
 .header__middle::after {
   content: "";
   position: absolute;
@@ -285,7 +265,21 @@ input:checked + .standart_checkbox__check:before {
   width: 100%;
   height: 100%;
   background-position: 40% 40%;
-  background-image: url(../img/screenshot_2.jpg);
+  background-image: url(../img/header1.jpg);
+}
+
+.headerfirst .header__middle::after {
+  background-repeat: no-repeat;
+  background-position: 0% 88%;
+  background-image: url(../img/header2.jpg);
+  background-size: 1100px;
+}
+
+.headersecond .header__middle::after {
+  background-repeat: no-repeat;
+  background-position: 0% 61%;
+  background-image: url(../img/header3.jpg);
+  background-size: 1100px;
 }
 
 .header__middle::before {
@@ -297,8 +291,8 @@ input:checked + .standart_checkbox__check:before {
   z-index: 2;
   width: 100%;
   height: 100%;
-  background-image: url(../img/noise.gif);
-  opacity: 0.1;
+  background-image: url(../img/noise-mini.gif);
+  opacity: 0.3;
 }
 
 .header__rain {
@@ -507,7 +501,7 @@ input:checked + .standart_checkbox__check:before {
   width: 100%;
   max-width: 1100px;
   margin: auto;
-  background: url(../img/footer-bg.png);
+  background: url(../img/footer-bg.jpg);
   background-position: 20% 70%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -675,6 +669,12 @@ input:checked + .standart_checkbox__check:before {
   font-size: 13px;
   margin: 10px 0 0 0;
   border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.informer-new-comments .item-link:hover {
+  filter: brightness(1.2);
+  transition: all 0.3s;
 }
 
 /* new-comments block */
@@ -758,18 +758,38 @@ input:checked + .standart_checkbox__check:before {
   border: solid 1px #2d2c31;
 }
 
-.wiki__accordion-item1 .wiki__accordion-item-header {
+.wiki__accordion-item:not(:last-child) {
+  margin: 0 0 5px 0;
+}
+
+.wiki__accordion-item .wiki__accordion-item-header {
   position: relative;
   width: 100%;
   height: 60px;
-  background-image: url(../img/shadow-chernobyl.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   filter: grayscale(1);
+}
+
+.wiki__accordion-item1 .wiki__accordion-item-header {
+  background-image: url(../img/sc.jpg);
+}
+
+.wiki__accordion-item2 .wiki__accordion-item-header {
+  background-image: url(../img/cs.jpg);
+}
+
+.wiki__accordion-item3 .wiki__accordion-item-header {
+  background-image: url(../img/cp.jpg);
+}
+
+.wiki__accordion-item4 .wiki__accordion-item-header {
+  background-image: url(../img/s2.jpg);
 }
 
 .wiki__accordion-item-header::before {
@@ -829,33 +849,8 @@ input:checked + .standart_checkbox__check:before {
   margin: 0 5px 0 0;
 }
 
-.wiki__accordion-item1 .wiki__accordion-item-content ul li a:hover {
-  color: #f1d45c;
+.wiki__accordion-item .wiki__accordion-item-content ul li a:hover {
+  color: #dadada;
 }
 
 /* wiki accordions */
-
-/*  animation author name */
-
-.author-design {
-  font-weight: 600;
-  font-size: 17px;
-  background-image: linear-gradient(45deg, #f3ec78, #af4261);
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  -webkit-animation: hue 3s infinite linear;
-}
-
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
-}
-/*  animation author name */
