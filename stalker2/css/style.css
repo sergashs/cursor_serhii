@@ -480,13 +480,11 @@ input:checked + .standart_checkbox__check:before {
   padding: 15px;
   color: #adadad;
   font-size: 14px;
-  line-height: 19px;
 }
 
 .block__content-np {
   color: #adadad;
   font-size: 14px;
-  line-height: 19px;
 }
 
 /* news */
@@ -560,7 +558,8 @@ input:checked + .standart_checkbox__check:before {
 
 .informer-tabs__nav li span {
   display: block;
-  padding: 3px 10px;
+  padding: 6px 10px;
+  font-size: 13px;
 }
 
 .informer-tabs__nav li.active {
@@ -618,6 +617,7 @@ input:checked + .standart_checkbox__check:before {
 }
 
 .informer__new-files .item-description {
+  line-height: 17px;
   color: #adadad;
 }
 
@@ -660,12 +660,13 @@ input:checked + .standart_checkbox__check:before {
   display: block;
   margin: 10px 0 0 0;
   font-size: 14px;
+  line-height: 17px;
 }
 
 .informer-new-comments .item-link {
   display: block;
   background: #111113;
-  padding: 5px 10px;
+  padding: 8px 10px;
   font-size: 13px;
   margin: 10px 0 0 0;
   border-radius: 3px;
@@ -883,6 +884,10 @@ input:checked + .standart_checkbox__check:before {
   font-family: Stalker-Graffiti;
   display: inline-flex;
   align-items: center;
+}
+
+.wiki__accordion-item-content ul li:not(:last-child) {
+  margin: 0 0 5px 0;
 }
 
 .wiki__accordion-item-content ul li a i {
