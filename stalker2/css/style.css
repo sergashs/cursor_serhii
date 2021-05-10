@@ -282,7 +282,7 @@ input:checked + .standart_checkbox__check:before {
   background-size: 1100px;
 }
 
-.header__middle::before {
+.header__radiation {
   display: none;
   content: "";
   position: absolute;
@@ -312,7 +312,7 @@ input:checked + .standart_checkbox__check:before {
   display: block;
 }
 
-.radiation .header__middle::before {
+.radiation .header__radiation {
   display: block;
 }
 
