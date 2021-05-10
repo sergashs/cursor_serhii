@@ -84,24 +84,6 @@ body {
   margin: 0 40px 0 0;
 }
 
-/* header__our-social */
-
-.header__our-social {
-  display: flex;
-}
-
-.header__our-social li a {
-  font-size: 17px;
-  color: #bfbdb6;
-  margin: 0 15px 0 0;
-}
-
-.header__our-social li a:hover {
-  color: #dadada;
-}
-
-/* header__our-social */
-
 /* header dropdown menu */
 
 .dropdown {
@@ -779,7 +761,7 @@ input:checked + .standart_checkbox__check:before {
   display: inline-flex;
   color: #d8d8d8;
   font-size: 13px;
-  padding: 10px;
+  padding: 8px 10px;
   background: #252527;
   border: solid 1px #2d2c31;
   border-radius: 3px;
@@ -793,6 +775,33 @@ input:checked + .standart_checkbox__check:before {
 }
 
 /* categories */
+
+/* social and friends */
+
+.social-and-friends .our-social {
+  padding: 15px;
+  border-bottom: solid 2px #1f1f22;
+}
+
+.our-social {
+  display: flex;
+}
+
+.our-social li a {
+  font-size: 19px;
+  color: #bfbdb6;
+  margin: 0 15px 0 0;
+}
+
+.our-social li a:hover {
+  color: #dadada;
+}
+
+.social-and-friends__banners {
+  padding: 15px;
+}
+
+/* social and friends */
 
 /* wiki accrodions */
 
