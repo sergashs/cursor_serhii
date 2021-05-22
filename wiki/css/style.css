@@ -1,0 +1,262 @@
+@font-face {
+	font-family: "font4";
+	src: url("../fonts/stalker-font.ttf");
+}
+
+@font-face {
+	font-family: "Stalker-Graffiti";
+	src: url("../fonts/graffiti.woff");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+body {
+	background-color: var(--body-background);
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	background-color: #080808;
+	background-image: url(../img/wall2.jpg);
+	padding: 0 10px;
+}
+
+.header {
+	max-width: 1200px;
+	margin: auto;
+	background: url(../img/header1.jpg);
+	padding: 40px;
+}
+
+.header__container {
+	height: 100%;
+	min-height: 300px;
+}
+
+.header__top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo {
+	font-family: "font4";
+	font-size: 30px;
+	color: rgb(235, 235, 235);
+}
+
+.header__nav li a {
+	color: rgb(235, 235, 235);
+}
+
+.header__middle {
+	padding: 90px 0 0 0;
+	max-width: 900px;
+	margin: auto;
+}
+
+.header__middle p {
+	font-size: 20px;
+	color: rgb(235, 235, 235);
+	line-height: 25px;
+}
+.header__middle h3 {
+	font-size: 25px;
+	color: rgb(235, 235, 235);
+	margin: 0 0 10px 0;
+}
+
+.wiki-container {
+	padding: 15px;
+	max-width: 1200px;
+
+	margin: auto;
+	background: url(../img/2.png);
+}
+
+.wiki-categories {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.wiki-categories .item {
+	position: relative;
+	width: 24%;
+	border: solid 1px #2d2c31;
+	background: #111113;
+	padding: 10px;
+	border-radius: 6px;
+}
+
+.wiki-categories .item.item-sc {
+	background: url(https://cs8.pikabu.ru/post_img/big/2018/01/03/8/1514985016156154797.jpg);
+	background-size: 600px;
+}
+
+.wiki-categories .item.item-cs {
+	background: url(https://vgtimes.ru//uploads/posts/2020-04/dlya-stalker-clear-sky-vyshel-fanatskiy-remaster-kotoryy-vyvodit-grafiku-na-novyy-uroven-video-65936.jpg);
+	background-size: 800px;
+	background-position: 40% 50%;
+}
+
+.wiki-categories .item.item-cp {
+	background: url(https://i.pinimg.com/originals/17/d9/8f/17d98fc91367b5d4262c06dd7f46dc33.jpg);
+	background-size: 600px;
+	background-position: 20% 50%;
+}
+
+.wiki-categories .item.item-2 {
+	background: url(https://cdn.igromania.ru/mnt/news/4/4/1/e/d/5/104711/1453c095a771b4b1_1920xH.jpg);
+	background-size: 600px;
+	background-position: 50% 50%;
+}
+
+.wiki-categories .item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.4;
+	z-index: 1;
+	border-radius: 6px;
+}
+.wiki-categories .item .title {
+	font-family: "font4";
+	font-size: 30px;
+	color: rgb(226, 226, 226);
+	margin: 0 0 15px 0;
+}
+.wiki-categories .item .content {
+	position: relative;
+	z-index: 10;
+}
+.links-to-categories i {
+	font-size: 5px;
+	margin: 0 5px 0 0;
+}
+.links-to-categories li a {
+	display: inline-flex;
+	align-items: center;
+	color: rgb(175, 175, 175);
+	margin: 0 0 5px 0;
+}
+
+.wiki-breadcrumbs {
+	margin: 15px 0 15px 0;
+	color: rgb(175, 175, 175);
+	border: solid 1px #2d2c31;
+	background: #111113;
+	padding: 10px;
+	font-size: 14px;
+	border-radius: 4px;
+}
+
+.wiki-posts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.wiki-posts .post {
+	display: flex;
+	width: calc(50% - 7px);
+	margin: 0 0 15px 0;
+	color: rgb(175, 175, 175);
+	border: solid 1px #2d2c31;
+	background: #111113;
+	padding: 15px;
+	font-size: 14px;
+	border-radius: 4px;
+	transition: all 0.3s;
+}
+
+.wiki-posts .post:hover {
+	border: solid 1px #47454d;
+	transition: all 0.3s;
+}
+
+.wiki-posts .post .title {
+	font-size: 17px;
+	font-weight: 600;
+	margin: 0 0 10px 0;
+}
+
+.wiki-posts .post .description {
+	line-height: 20px;
+	margin: 0 0 15px 0;
+}
+
+.wiki-posts .post .img {
+	margin: 0 10px 0 0;
+}
+
+.wiki-posts .post .content {
+	display: flex;
+	flex-direction: column;
+}
+
+.wiki-posts .post .link {
+	position: relative;
+	margin-top: auto;
+	align-self: flex-end;
+}
+
+.wiki-posts .post .link::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 1px;
+	bottom: -5px;
+	background: rgb(175, 175, 175);
+}
+
+.wiki-posts .post .link:hover::before {
+	width: 100%;
+	transition: all 0.5s;
+}
+
+@media (max-width: 1000px) {
+	.wiki-categories {
+		flex-wrap: wrap;
+		width: unset;
+		margin: -15px;
+	}
+	.wiki-categories .item {
+		width: calc(50% - 30px);
+		margin: 15px;
+	}
+	.wiki-posts {
+		flex-direction: column;
+	}
+	.wiki-posts .post {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.wiki-categories {
+		margin: 0;
+	}
+
+	.wiki-categories .item {
+		width: 100%;
+		margin: 0;
+	}
+	.wiki-categories .item:not(:last-child) {
+		margin: 0 0 15px 0;
+	}
+
+	.wiki-posts .post {
+		flex-direction: column;
+	}
+	.wiki-posts .post .img {
+		margin: 0 0 10px 0;
+	}
+}
