@@ -40,6 +40,7 @@ body {
 .header__top {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .header__logo {
@@ -48,8 +49,17 @@ body {
 	color: rgb(235, 235, 235);
 }
 
+.header__nav {
+	display: flex;
+}
+
 .header__nav li a {
+	font-family: "Stalker-Graffiti";
 	color: rgb(235, 235, 235);
+}
+
+.header__nav li:not(:last-child) {
+	margin: 0 20px 0 0;
 }
 
 .header__middle {
@@ -123,29 +133,45 @@ body {
 	width: 100%;
 	height: 100%;
 	background: black;
-	opacity: 0.4;
+	opacity: 0.5;
 	z-index: 1;
 	border-radius: 6px;
+	transition: all 0.3s;
 }
+
+.wiki-categories .item:hover::before {
+	opacity: 0.3;
+	transition: all 0.3s;
+}
+
 .wiki-categories .item .title {
 	font-family: "font4";
 	font-size: 30px;
 	color: rgb(226, 226, 226);
 	margin: 0 0 15px 0;
 }
+
 .wiki-categories .item .content {
 	position: relative;
 	z-index: 10;
 }
+
 .links-to-categories i {
 	font-size: 5px;
 	margin: 0 5px 0 0;
 }
+
 .links-to-categories li a {
 	display: inline-flex;
 	align-items: center;
 	color: rgb(175, 175, 175);
 	margin: 0 0 5px 0;
+	transition: all 0.3s;
+}
+
+.links-to-categories li a:hover {
+	color: rgb(235, 235, 235);
+	transition: all 0.3s;
 }
 
 .wiki-breadcrumbs {
@@ -206,6 +232,7 @@ body {
 	position: relative;
 	margin-top: auto;
 	align-self: flex-end;
+	font-weight: 600;
 }
 
 .wiki-posts .post .link::before {
