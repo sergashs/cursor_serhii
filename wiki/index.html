@@ -15,7 +15,7 @@
   </head>
   <body>
 
-<header class="header">
+<!-- <header class="header">
   <div class="header__container">
     <div class="header__top">
       <div class="header__logo">
@@ -36,13 +36,105 @@
         </li>
       </ul>
     </div>
-    <div class="header__middle">
-      <h3>Stalker Wiki Це круто</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quibusdam magnam qui earum itaque, aspernatur dolor dolores necessitatibus eaque, assumenda possimus sed odio ratione perferendis fugiat obcaecati optio quae unde?
-      </p>
-       </div>
   </div>
-</header>
+</header> -->
+
+<header class="header">
+  <div class="header__top-line">
+  <div class="container">
+  <div class="time">$TIME$; $DATE$</div>
+  <?if($USER_LOGGED_IN$)?>
+  <ul class="header__profile-menu">
+  <li>
+  <a href="$PERSONAL_PAGE_LINK$"><i class="fa fa-user" aria-hidden="true"></i> <span class="header__profile-menu-link-name">Профіль</span> </a>
+  </li>
+  <li>
+  <a href="$PM_URL$"><i class="fa fa-envelope" aria-hidden="true"></i> <span class="header__profile-menu-link-name">Повідомлення</span> <?if($UNREAD_PM$)?>($UNREAD_PM$)<?else?>(0)<?endif?></a>
+  </li>
+  <li class="dropdown">
+  <a class="btn btn-primary toggle" href="#"><i class="fa fa-cogs" aria-hidden="true"></i> <span class="header__profile-menu-link-name">Налаштування</span> 
+  <ul class="dropdown-menu list-group">
+  <li class="list-group-item-name">Спецефекти:</li>
+  <li class="list-group-item">
+  <label class="standart_checkbox">
+  <input type="checkbox" id="radiation" 
+  ><span class="standart_checkbox__check"></span>
+  <span class="standart_checkbox__label">Радіація</span>
+  </label>
+  </li>
+  <li class="list-group-item">
+  <label class="standart_checkbox">
+  <input type="checkbox" id="rain" 
+  ><span class="standart_checkbox__check"></span>
+  <span class="standart_checkbox__label">Дощ</span>
+  </label> 
+  </li>
+  <li class="list-group-item-name">Header:</li>
+  <li class="list-group-item"><label class="standart_checkbox">
+  <input type="checkbox" id="headerfirst"
+  ><span class="standart_checkbox__check"></span>
+  <span class="standart_checkbox__label">Зображення 1</span>
+  </label></li>
+  <li class="list-group-item"><label class="standart_checkbox">
+  <input type="checkbox" id="headersecond"
+  ><span class="standart_checkbox__check"></span>
+  <span class="standart_checkbox__label">Зображення 2</span>
+  </label></li>
+  </ul>
+  </a>
+  </li>
+  <li>
+  <a href="$LOGOUT_LINK$"><i class="fa fa-sign-out" aria-hidden="true"></i> <span class="header__profile-menu-link-name">Вихід</span> </a>
+  </li>
+  </ul>
+  <?else?>
+  <ul class="header__profile-menu">
+  <li>
+  <a href="$LOGIN_LINK$"><i class="fa fa-user" aria-hidden="true"></i> Вхід / Реєстрація</a>
+  </li>
+  </ul>
+  <?endif?>
+  </div>
+  </div>
+  <div class="header__middle">
+  <div class="container">
+  <div class="header__top">
+  <div class="header__logo">
+ Stalker-Fenomen
+  </div>
+  <div class="header__radiation"></div>
+  <div class="header__rain"></div>
+  </div>
+  <div class="header__bottom-line">
+  <ul class="header__bottom-nav header__bottom-nav1">
+ <li><a class="open-header__bottom-nav2" href="#">Menu</a></li> 
+  </ul>
+  
+  <ul class="header__bottom-nav header__bottom-nav2">
+  <li><a href="/">Головна</a></li>
+  <li><a href="/news">Новини</a></li>
+  <li><a href="/load">Файловий архів</a></li>
+  <li><a href="/photo">Фотоальбом</a></li>
+  <li><a href="/forum">Форум</a></li>
+  <li><a href="/">Wiki</a></li>
+  </ul>
+  
+  <div class="bottom-line__search">
+  <form onsubmit="this.sfSbm.disabled=true" method="get" action="/search/">
+  <input type="text" class="search" placeholder="Search..." name="q" />
+ 
+ <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+ 
+  </form>
+  </div>
+  
+  
+  
+  
+  </div>
+ </div>
+  </div>
+ </header>
 
 <main>
 <div class="wiki-container">
