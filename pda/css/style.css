@@ -4,7 +4,7 @@
 
 body {
 	/* background: rgb(15, 15, 15); */
-	background: url(/img/bg-main.jpg);
+	background: url(../img/bg-main.jpg);
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 	font-size: 14px;
 }
