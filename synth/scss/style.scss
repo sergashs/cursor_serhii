@@ -264,15 +264,14 @@ body {
 
 .content {
 	padding: 80px 0 0 0;
+	@media (max-width: 775px) {
+		flex-direction: column;
+		padding: 60px 0 0 0;
+	}
 	&__container {
 		@media (max-width: 1200px) {
-			padding: 20px;
-		}
-		@media (max-width: 1200px) {
 			flex-direction: column;
-		}
-		@media (max-width: 775px) {
-			padding: 40px 0 0 0;
+			padding: 0 20px;
 		}
 	}
 }
