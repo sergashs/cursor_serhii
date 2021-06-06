@@ -619,9 +619,9 @@ body {
 		@media (max-width: 475px) {
 			margin: 4px 0 0 0;
 			width: calc(100% - 10px);
+			max-width: fit-content;
 			overflow: hidden;
 			text-overflow: ellipsis;
-			max-width: fit-content;
 		}
 	}
 	&__stats {
