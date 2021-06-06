@@ -20,7 +20,7 @@
 					<div class="header__logo">
 						<img src="/img/icon-logo.svg" alt="logo company" />
 					</div>
-					<nav>
+					<nav class="header-menu-wrapper">
 						<ul class="header-menu">
 							<li
 								class="
@@ -44,41 +44,73 @@
 				</div>
 
 				<div class="header__right-side">
-					<div class="header-user-block">
-						<div class="header-user-block__name">Arthur Wood</div>
-						<img
-							class="header-user-block__avatar"
-							src="img/user-avatar-header.png"
-							alt="avatar Arthur Wood"
-						/>
-						<a href="#" class="header-user-block__dropdown">
-							<img src="/img/icon-arrow-down.svg" />
-						</a>
-						<ul class="icon-links">
-							<li class="icon-links__item">
-								<a href="#"
-									><img
-										src="/img/icon-bell.svg"
-										alt="icon bell"
-								/></a>
-							</li>
-							<li class="icon-links__item">
-								<a href="#"
-									><img
-										src="/img/icon-gift.svg"
-										alt="icon gift"
-								/></a>
-							</li>
-							<li class="icon-links__item">
-								<a href="#"
-									><img src="/img/icon-m.svg" alt="icon M"
-								/></a>
-							</li>
-						</ul>
+					<div class="header__burger-wrapper">
+						<div class="header__burger">
+							<div class="header__burger-line"></div>
+							<div class="header__burger-line"></div>
+							<div class="header__burger-line"></div>
+						</div>
+
+						<div class="header__dropdown-right">
+							<div class="header-user-block">
+								<div class="header-user-block__row">
+									<div class="header-user-block__name">
+										Arthur Wood
+									</div>
+									<img
+										class="header-user-block__avatar"
+										src="img/user-avatar-header.png"
+										alt="avatar Arthur Wood"
+									/>
+									<a
+										href="#"
+										class="header-user-block__dropdown"
+									>
+										<img src="/img/icon-arrow-down.svg" />
+									</a>
+								</div>
+
+								<ul class="header-user-block__icon-links">
+									<li
+										class="
+											header-user-block__icon-links-item
+										"
+									>
+										<a href="#"
+											><img
+												src="/img/icon-bell.svg"
+												alt="icon bell"
+										/></a>
+									</li>
+									<li
+										class="
+											header-user-block__icon-links-item
+										"
+									>
+										<a href="#"
+											><img
+												src="/img/icon-gift.svg"
+												alt="icon gift"
+										/></a>
+									</li>
+									<li
+										class="
+											header-user-block__icon-links-item
+										"
+									>
+										<a href="#"
+											><img
+												src="/img/icon-m.svg"
+												alt="icon M"
+										/></a>
+									</li>
+								</ul>
+							</div>
+							<a href="#" class="header__button-add">
+								<img src="/img/icon-add.svg" alt="add icon" />
+							</a>
+						</div>
 					</div>
-					<a href="#" class="header__button-add">
-						<img src="/img/icon-add.svg" alt="add icon" />
-					</a>
 				</div>
 			</div>
 		</header>
@@ -182,7 +214,11 @@
 
 					<div class="content-posts">
 						<div class="checkbox-wrapper">
-							<label class="checkbox-wrapper__title"
+							<label
+								class="
+									checkbox-wrapper__title
+									checkbox-wrapper__title--1
+								"
 								>Public</label
 							>
 
@@ -201,7 +237,11 @@
 								</div>
 							</label>
 
-							<label class="checkbox-wrapper__title"
+							<label
+								class="
+									checkbox-wrapper__title
+									checkbox-wrapper__title--2
+								"
 								>Private</label
 							>
 						</div>
@@ -255,7 +295,12 @@
 								<div class="post-item__title">
 									New air routes that promise cheap flights in
 								</div>
-								<div class="post-item__info">
+								<div
+									class="
+										post-item__info
+										post-item__info--with-likes
+									"
+								>
 									<div class="post-item__profile">
 										<div
 											class="post-item__profile-avatar"
@@ -303,7 +348,12 @@
 								<div class="post-item__title">
 									New air routes that promise cheap flights in
 								</div>
-								<div class="post-item__info">
+								<div
+									class="
+										post-item__info
+										post-item__info--with-likes
+									"
+								>
 									<div class="post-item__profile">
 										<div
 											class="post-item__profile-avatar"
