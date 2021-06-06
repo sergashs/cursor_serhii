@@ -1,7 +1,5 @@
 // dropdown
-let dropdownListOpen = document.querySelector(
-	".user-setting-dropdown__open-link"
-);
+let dropdownListOpen = document.querySelector(".user-setting-dropdown__open-link");
 let dropdownList = document.querySelector(".user-setting-dropdown__menu");
 
 dropdownListOpen.onclick = function () {
@@ -29,4 +27,15 @@ let burgerRightContent = document.querySelector(".header__dropdown-right");
 burgerRightButton.onclick = function () {
 	burgerRightButton.classList.toggle("header__burger--open");
 	burgerRightContent.classList.toggle("header__dropdown-right--open");
+};
+
+// header left dropdown adaptive menu
+
+let OpenHeaderDropdownMenu = document.querySelector(".open-header-menu");
+let HeaderDropdownMenu = document.querySelector(".header-menu");
+let HeaderDropdownMenuIcon = document.querySelector(".open-header-menu__dropdown-icon");
+
+OpenHeaderDropdownMenu.onclick = function () {
+	HeaderDropdownMenu.classList.toggle("header-menu--open");
+	HeaderDropdownMenuIcon.classList.toggle("open-header-menu__dropdown-icon--open");
 };
