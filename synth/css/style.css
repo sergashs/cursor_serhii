@@ -918,6 +918,9 @@ body {
     width: calc(100% - 10px);
     overflow: hidden;
     text-overflow: ellipsis;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
 }
 
