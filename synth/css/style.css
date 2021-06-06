@@ -397,6 +397,12 @@ body {
   }
 }
 
+@media (max-width: 775px) {
+  .content__container {
+    padding: 40px 0 0 0;
+  }
+}
+
 .content-user-block {
   max-width: 350px;
   margin: 0 47px 0 0;
