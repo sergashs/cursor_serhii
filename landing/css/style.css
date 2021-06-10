@@ -485,7 +485,7 @@ b.color {
   left: 0;
   width: 100%;
   height: 65%;
-  background: url(img/blocks-bg.jpg);
+  background: url(../img/blocks-bg.jpg);
   background-position: 0% 66%;
   background-size: 1900px;
 }
@@ -703,13 +703,12 @@ b.color {
 @media (max-width: 1100px) {
   .slider-second__right {
     max-width: 100%;
-    margin: 38px 0 0 0;
+    margin: 18px 0 0 0;
   }
 }
 
 @media (max-width: 500px) {
   .slider-second__right {
-    margin: 18px 0 0 0;
     padding: 30px 30px 160px 30px;
   }
 }
@@ -982,6 +981,12 @@ b.color {
   background: url(img/footer-bg.jpg);
   background-position: 39% 35%;
   background-size: cover;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    padding: 50px 0;
+  }
 }
 
 .footer::after {
