@@ -51,3 +51,32 @@ $(document).ready(function () {
 		cssEase: "linear",
 	});
 });
+
+$(document).ready(function () {
+	$(".slider-second").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: true,
+		speed: 500,
+
+		prevArrow: $(".slider-second__prev"),
+		nextArrow: $(".slider-second__next"),
+
+		customPaging: function (slider, i) {
+			return (
+				'<button class="tab">' + $(slider.$slides[i]).attr("title") + '<i class="fa fa-sort-asc"></i></button>'
+			);
+		},
+		appendDots: $(".slider-second__dots"),
+	});
+});
+
+// open menu header
+
+let openMenuButton = document.querySelector(".open-menu");
+let menuHeader = document.querySelector(".menu");
+
+openMenuButton.onclick = function () {
+	menuHeader.classList.toggle("open");
+};
