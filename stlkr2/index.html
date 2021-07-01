@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=ß, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="/css/reset.css" />
-		<link rel="stylesheet" href="/css/grid.css" />
-		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/grid.css" />
+		<link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
 		<main class="main-container">
@@ -26,10 +27,24 @@
 						</ul>
 					</nav>
 
-					<div class="header__profile">
-						<img class="header__profile-avatar" src="https://99px.ru/sstorage/1/2011/08/image_12608112323236382761.jpg" alt="" />
-						<div class="header__profile-name">Serhii</div>
-					</div>
+					<ul class="header__profile menu">
+						<li>
+							<img class="header__profile-avatar" src="https://99px.ru/sstorage/1/2011/08/image_12608112323236382761.jpg" alt="" />
+						</li>
+						<li>
+							<div class="header__profile-name">Serhii</div>
+						</li>
+						<li>
+							<a href="#"
+								><img class="header__profile-arrow-down" src="img/arrow-down.svg" />
+								<ul class="dropdown">
+									<li><a class="dropdown__link" href="#">Перейти в профіль</a></li>
+									<li><a class="dropdown__link" href="#">Редагувати профіль</a></li>
+									<li><a class="dropdown__link" href="#">Вихід з сайту</a></li>
+								</ul>
+							</a>
+						</li>
+					</ul>
 				</div>
 				<video
 					class="header__video-bg"
@@ -47,7 +62,7 @@
 				<section class="section">
 					<div class="container">
 						<div class="row">
-							<div class="col-9">
+							<div class="col-9 col-news">
 								<div class="row">
 									<div class="col-12">
 										<div class="title-with-tabs">
@@ -59,96 +74,94 @@
 										</div>
 									</div>
 									<div class="col-12">
-										<div class="last-news">
-											<div class="row">
-												<div class="col-4">
-													<div class="last-news__item">
-														<img
-															class="last-news__item-img"
-															src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_STALKER2HeartofChernobyl_GSCGameWorld_S1_2560x1440-34cdfe8a4a37b5c2dc4bf3fe1d943c95?h=270&resize=1&w=480"
-															alt=""
-														/>
-														<a href="#" class="last-news__item-cat">stalker 2</a>
-														<h2><a class="last-news__item-title" href="#">S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021</a></h2>
-														<div class="last-news__item-info">
-															<a class="last-news__item-author" href="#">Serhii</a>
-															<span class="last-news__item-date">Сьогодні в 13:00</span>
-														</div>
+										<div class="row">
+											<div class="col-4">
+												<div class="last-news__item">
+													<img
+														class="last-news__item-img"
+														src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_STALKER2HeartofChernobyl_GSCGameWorld_S1_2560x1440-34cdfe8a4a37b5c2dc4bf3fe1d943c95?h=270&resize=1&w=480"
+														alt=""
+													/>
+													<a href="#" class="last-news__item-cat">stalker 2</a>
+													<h2><a class="last-news__item-title" href="#">S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021</a></h2>
+													<div class="last-news__item-info">
+														<a class="last-news__item-author" href="#">Serhii</a>
+														<span class="last-news__item-date">Сьогодні в 13:00</span>
 													</div>
 												</div>
-												<div class="col-4">
-													<div class="last-news__item">
-														<img
-															class="last-news__item-img"
-															src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_STALKER2HeartofChernobyl_GSCGameWorld_S1_2560x1440-34cdfe8a4a37b5c2dc4bf3fe1d943c95?h=270&resize=1&w=480"
-															alt=""
-														/>
-														<a href="#" class="last-news__item-cat">stalker 2</a>
-														<h2><a class="last-news__item-title" href="#">S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021</a></h2>
-														<div class="last-news__item-info">
-															<a class="last-news__item-author" href="#">Serhii</a>
-															<span class="last-news__item-date">Сьогодні в 13:00</span>
-														</div>
+											</div>
+											<div class="col-4">
+												<div class="last-news__item">
+													<img
+														class="last-news__item-img"
+														src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_STALKER2HeartofChernobyl_GSCGameWorld_S1_2560x1440-34cdfe8a4a37b5c2dc4bf3fe1d943c95?h=270&resize=1&w=480"
+														alt=""
+													/>
+													<a href="#" class="last-news__item-cat">stalker 2</a>
+													<h2><a class="last-news__item-title" href="#">S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021</a></h2>
+													<div class="last-news__item-info">
+														<a class="last-news__item-author" href="#">Serhii</a>
+														<span class="last-news__item-date">Сьогодні в 13:00</span>
 													</div>
 												</div>
-												<div class="col-4">
-													<div class="last-news__item">
-														<img
-															class="last-news__item-img"
-															src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_STALKER2HeartofChernobyl_GSCGameWorld_S1_2560x1440-34cdfe8a4a37b5c2dc4bf3fe1d943c95?h=270&resize=1&w=480"
-															alt=""
-														/>
-														<a href="#" class="last-news__item-cat">stalker 2</a>
-														<h2><a class="last-news__item-title" href="#">S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021</a></h2>
-														<div class="last-news__item-info">
-															<a class="last-news__item-author" href="#">Serhii</a>
-															<span class="last-news__item-date">Сьогодні в 13:00</span>
-														</div>
+											</div>
+											<div class="col-4">
+												<div class="last-news__item">
+													<img
+														class="last-news__item-img"
+														src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_STALKER2HeartofChernobyl_GSCGameWorld_S1_2560x1440-34cdfe8a4a37b5c2dc4bf3fe1d943c95?h=270&resize=1&w=480"
+														alt=""
+													/>
+													<a href="#" class="last-news__item-cat">stalker 2</a>
+													<h2><a class="last-news__item-title" href="#">S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021</a></h2>
+													<div class="last-news__item-info">
+														<a class="last-news__item-author" href="#">Serhii</a>
+														<span class="last-news__item-date">Сьогодні в 13:00</span>
 													</div>
 												</div>
-												<div class="col-4">
-													<div class="last-news__item">
-														<img
-															class="last-news__item-img"
-															src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_STALKER2HeartofChernobyl_GSCGameWorld_S1_2560x1440-34cdfe8a4a37b5c2dc4bf3fe1d943c95?h=270&resize=1&w=480"
-															alt=""
-														/>
-														<a href="#" class="last-news__item-cat">stalker 2</a>
-														<h2><a class="last-news__item-title" href="#">S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021</a></h2>
-														<div class="last-news__item-info">
-															<a class="last-news__item-author" href="#">Serhii</a>
-															<span class="last-news__item-date">Сьогодні в 13:00</span>
-														</div>
+											</div>
+											<div class="col-4">
+												<div class="last-news__item">
+													<img
+														class="last-news__item-img"
+														src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_STALKER2HeartofChernobyl_GSCGameWorld_S1_2560x1440-34cdfe8a4a37b5c2dc4bf3fe1d943c95?h=270&resize=1&w=480"
+														alt=""
+													/>
+													<a href="#" class="last-news__item-cat">stalker 2</a>
+													<h2><a class="last-news__item-title" href="#">S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021</a></h2>
+													<div class="last-news__item-info">
+														<a class="last-news__item-author" href="#">Serhii</a>
+														<span class="last-news__item-date">Сьогодні в 13:00</span>
 													</div>
 												</div>
-												<div class="col-4">
-													<div class="last-news__item">
-														<img
-															class="last-news__item-img"
-															src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_STALKER2HeartofChernobyl_GSCGameWorld_S1_2560x1440-34cdfe8a4a37b5c2dc4bf3fe1d943c95?h=270&resize=1&w=480"
-															alt=""
-														/>
-														<a href="#" class="last-news__item-cat">stalker 2</a>
-														<h2><a class="last-news__item-title" href="#">S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021</a></h2>
-														<div class="last-news__item-info">
-															<a class="last-news__item-author" href="#">Serhii</a>
-															<span class="last-news__item-date">Сьогодні в 13:00</span>
-														</div>
+											</div>
+											<div class="col-4">
+												<div class="last-news__item">
+													<img
+														class="last-news__item-img"
+														src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_STALKER2HeartofChernobyl_GSCGameWorld_S1_2560x1440-34cdfe8a4a37b5c2dc4bf3fe1d943c95?h=270&resize=1&w=480"
+														alt=""
+													/>
+													<a href="#" class="last-news__item-cat">stalker 2</a>
+													<h2><a class="last-news__item-title" href="#">S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021</a></h2>
+													<div class="last-news__item-info">
+														<a class="last-news__item-author" href="#">Serhii</a>
+														<span class="last-news__item-date">Сьогодні в 13:00</span>
 													</div>
 												</div>
-												<div class="col-4">
-													<div class="last-news__item">
-														<img
-															class="last-news__item-img"
-															src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_STALKER2HeartofChernobyl_GSCGameWorld_S1_2560x1440-34cdfe8a4a37b5c2dc4bf3fe1d943c95?h=270&resize=1&w=480"
-															alt=""
-														/>
-														<a href="#" class="last-news__item-cat">stalker 2</a>
-														<h2><a class="last-news__item-title" href="#">S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021</a></h2>
-														<div class="last-news__item-info">
-															<a class="last-news__item-author" href="#">Serhii</a>
-															<span class="last-news__item-date">Сьогодні в 13:00</span>
-														</div>
+											</div>
+											<div class="col-4">
+												<div class="last-news__item">
+													<img
+														class="last-news__item-img"
+														src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_STALKER2HeartofChernobyl_GSCGameWorld_S1_2560x1440-34cdfe8a4a37b5c2dc4bf3fe1d943c95?h=270&resize=1&w=480"
+														alt=""
+													/>
+													<a href="#" class="last-news__item-cat">stalker 2</a>
+													<h2><a class="last-news__item-title" href="#">S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021</a></h2>
+													<div class="last-news__item-info">
+														<a class="last-news__item-author" href="#">Serhii</a>
+														<span class="last-news__item-date">Сьогодні в 13:00</span>
 													</div>
 												</div>
 											</div>
@@ -212,57 +225,201 @@
 
 				<section class="section section--video">
 					<div class="container">
-						<div class="videos">
-							<div class="videos__left">
-								<h4 class="news-title">Популярне відео</h4>
-								<div class="videos__left-slider">
-									<a class="videos__item" href="#">
-										<img class="videos__item-img" src="https://i.ytimg.com/vi/G54hCZoETxw/maxresdefault.jpg" alt="" />
-										<span class="videos__item-play">
-											<img src="/img/play-button.svg" alt="" />
-										</span>
-										<span class="videos__item-content">
-											<span class="videos__item-title"> S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021 </span>
-											<span class="videos__item-count"> 100 переглядів </span>
-										</span>
-									</a>
+						<div class="row">
+							<div class="col-9">
+								<div class="title-with-tabs">
+									<h4 class="news-title">Топ відео</h4>
+								</div>
+								<div class="video-slider2">
+									<div class="video-slider__item-wrapper">
+										<a class="videos__item" href="#">
+											<img class="videos__item-img" src="https://i.ytimg.com/vi/Sjlz2WzwaRU/maxresdefault.jpg" alt="" />
+											<span class="videos__item-play">
+												<img src="/img/play-button.svg" alt="" />
+											</span>
+											<span class="videos__item-content">
+												<span class="videos__item-title"> МОДИ на S.T.A.L.K.E.R. із УКРАЇНСЬКОЮ ЛОКАЛІЗАЦІЄЮ </span>
+												<span class="videos__item-count"> 100 переглядів </span>
+											</span>
+										</a>
+									</div>
+									<div class="video-slider__item-wrapper">
+										<a class="videos__item" href="#">
+											<img class="videos__item-img" src="https://i.ytimg.com/vi/LykuBdbzN-Q/maxresdefault.jpg" alt="" />
+											<span class="videos__item-play">
+												<img src="/img/play-button.svg" alt="" />
+											</span>
+											<span class="videos__item-content">
+												<span class="videos__item-title"> Бар 100 Рентген. Музика з Сталкер Тінь Чорнобиля </span>
+												<span class="videos__item-count"> 100 переглядів </span>
+											</span>
+										</a>
+									</div>
+									<div class="video-slider__item-wrapper">
+										<a class="videos__item" href="#">
+											<img class="videos__item-img" src="https://i.ytimg.com/vi/0-GidbQ5Cw0/maxresdefault.jpg" alt="" />
+											<span class="videos__item-play">
+												<img src="/img/play-button.svg" alt="" />
+											</span>
+											<span class="videos__item-content">
+												<span class="videos__item-title"> Що сталося із Україною у всесвіті гри "МЕТРО 2033"? </span>
+												<span class="videos__item-count"> 100 переглядів </span>
+											</span>
+										</a>
+									</div>
+									<div class="video-slider__item-wrapper">
+										<a class="videos__item" href="#">
+											<img class="videos__item-img" src="https://i.ytimg.com/vi/ZNLaKOlXVvw/maxresdefault.jpg" alt="" />
+											<span class="videos__item-play">
+												<img src="/img/play-button.svg" alt="" />
+											</span>
+											<span class="videos__item-content">
+												<span class="videos__item-title"> S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021 </span>
+												<span class="videos__item-count"> 100 переглядів </span>
+											</span>
+										</a>
+									</div>
+									<div class="video-slider__item-wrapper">
+										<a class="videos__item" href="#">
+											<img class="videos__item-img" src="https://i.ytimg.com/vi/aFPqJguGLug/maxresdefault.jpg" alt="" />
+											<span class="videos__item-play">
+												<img src="/img/play-button.svg" alt="" />
+											</span>
+											<span class="videos__item-content">
+												<span class="videos__item-title"> S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021 </span>
+												<span class="videos__item-count"> 100 переглядів </span>
+											</span>
+										</a>
+									</div>
+									<div class="video-slider__item-wrapper">
+										<a class="videos__item" href="#">
+											<img class="videos__item-img" src="https://i.ytimg.com/vi/Sjlz2WzwaRU/maxresdefault.jpg" alt="" />
+											<span class="videos__item-play">
+												<img src="/img/play-button.svg" alt="" />
+											</span>
+											<span class="videos__item-content">
+												<span class="videos__item-title"> МОДИ на S.T.A.L.K.E.R. із УКРАЇНСЬКОЮ ЛОКАЛІЗАЦІЄЮ </span>
+												<span class="videos__item-count"> 100 переглядів </span>
+											</span>
+										</a>
+									</div>
 								</div>
 							</div>
-
-							<div class="videos__right">
-								<h4 class="news-title">Нове відео</h4>
-								<div class="videos__items">
-									<a class="videos__item" href="#">
-										<img class="videos__item-img" src="https://i.ytimg.com/vi/aFPqJguGLug/maxresdefault.jpg" alt="" />
-										<span class="videos__item-play">
-											<img src="/img/play-button.svg" alt="" />
-										</span>
-										<span class="videos__item-content">
-											<span class="videos__item-title"> S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021 </span>
-											<span class="videos__item-count"> 100 переглядів </span>
-										</span>
-									</a>
-									<a class="videos__item" href="#">
-										<img class="videos__item-img" src="https://i.ytimg.com/vi/aFPqJguGLug/maxresdefault.jpg" alt="" />
-										<span class="videos__item-play">
-											<img src="/img/play-button.svg" alt="" />
-										</span>
-										<span class="videos__item-content">
-											<span class="videos__item-title"> S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021 </span>
-											<span class="videos__item-count"> 100 переглядів </span>
-										</span>
-									</a>
-									<a class="videos__item" href="#">
-										<img class="videos__item-img" src="https://i.ytimg.com/vi/aFPqJguGLug/maxresdefault.jpg" alt="" />
-										<span class="videos__item-play">
-											<img src="/img/play-button.svg" alt="" />
-										</span>
-										<span class="videos__item-content">
-											<span class="videos__item-title"> S.T.A.L.K.E.R. 2— Щоденник розробки : E3 2021 </span>
-											<span class="videos__item-count"> 100 переглядів </span>
-										</span>
-									</a>
+							<div class="col-3 new-video">
+								<div class="title-with-tabs">
+									<h4 class="news-title">Нове відео</h4>
+									<!-- <ul class="news-tabs">
+										<li class="news-tabs__item active">Нові</li>
+										<li class="news-tabs__item">Популярні</li>
+									</ul> -->
 								</div>
+								<div class="new-video__list">
+									<div class="video-slider__item-wrapper">
+										<a class="videos__item" href="#">
+											<img class="videos__item-img" src="https://i.ytimg.com/vi/Sjlz2WzwaRU/maxresdefault.jpg" alt="" />
+											<span class="videos__item-play">
+												<img src="/img/play-button.svg" alt="" />
+											</span>
+											<span class="videos__item-content">
+												<span class="videos__item-title"> МОДИ на S.T.A.L.K.E.R. із УКРАЇНСЬКОЮ ЛОКАЛІЗАЦІЄЮ </span>
+												<span class="videos__item-count"> 100 переглядів </span>
+											</span>
+										</a>
+									</div>
+									<div class="video-slider__item-wrapper">
+										<a class="videos__item" href="#">
+											<img class="videos__item-img" src="https://i.ytimg.com/vi/LykuBdbzN-Q/maxresdefault.jpg" alt="" />
+											<span class="videos__item-play">
+												<img src="/img/play-button.svg" alt="" />
+											</span>
+											<span class="videos__item-content">
+												<span class="videos__item-title"> Бар 100 Рентген. Музика з Сталкер Тінь Чорнобиля </span>
+												<span class="videos__item-count"> 100 переглядів </span>
+											</span>
+										</a>
+									</div>
+									<div class="video-slider__item-wrapper">
+										<a class="videos__item" href="#">
+											<img class="videos__item-img" src="https://i.ytimg.com/vi/0-GidbQ5Cw0/maxresdefault.jpg" alt="" />
+											<span class="videos__item-play">
+												<img src="/img/play-button.svg" alt="" />
+											</span>
+											<span class="videos__item-content">
+												<span class="videos__item-title"> Що сталося із Україною у всесвіті гри "МЕТРО 2033"? </span>
+												<span class="videos__item-count"> 100 переглядів </span>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section section--video">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="title-with-tabs">
+									<h4 class="news-title">Галерея</h4>
+								</div>
+							</div>
+							<div class="col-12">
+								<ul class="gallery">
+									<div class="gallery__item-sizer"></div>
+									<li class="gallery__item">
+										<a href="#"><img src="https://cdn2.unrealengine.com/egs-stalker2heartofchernobyl-gscgameworld-g1a-00-1920x1080-34a878155ea9.jpg" /></a>
+									</li>
+									<li class="gallery__item">
+										<a href="#"><img src="https://compass-ssl.xbox.com/assets/ea/b2/eab23209-a59c-4d30-9b21-647253525b31.jpg?n=827936_GLP-Page-Hero-1084_1920x1080_04.jpg" /></a>
+									</li>
+									<li class="gallery__item">
+										<a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" /></a>
+									</li>
+									<li class="gallery__item">
+										<a href="#"><img src="/img/4.jpg" /></a>
+									</li>
+									<li class="gallery__item">
+										<a href="#"><img src="/img/5.jpg" /></a>
+									</li>
+									<li class="gallery__item">
+										<a href="#"><img src="/img/1.jpg" /></a>
+									</li>
+									<li class="gallery__item">
+										<a href="#"><img src="/img/2.jpg" /></a>
+									</li>
+									<li class="gallery__item">
+										<a href="#"><img src="/img/3.jpg" /></a>
+									</li>
+									<li class="gallery__item">
+										<a href="#"><img src="https://cdn2.unrealengine.com/egs-stalker2heartofchernobyl-gscgameworld-g1a-00-1920x1080-34a878155ea9.jpg" /></a>
+									</li>
+									<li class="gallery__item">
+										<a href="#"><img src="https://compass-ssl.xbox.com/assets/ea/b2/eab23209-a59c-4d30-9b21-647253525b31.jpg?n=827936_GLP-Page-Hero-1084_1920x1080_04.jpg" /></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section section--wiki">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="title-with-tabs">
+									<h4 class="news-title">Wiki</h4>
+								</div>
+							</div>
+							<div class="col-12">
+								<ul class="wiki">
+									<li class="wiki__item">
+										<div class="dark"></div>
+									</li>
+									<li class="wiki__item wiki__item--2"><div class="dark"></div></li>
+									<li class="wiki__item wiki__item--3"><div class="dark"></div></li>
+									<li class="wiki__item wiki__item--4"><div class="dark"></div></li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -270,4 +427,64 @@
 			</div>
 		</main>
 	</body>
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			// 	$(".video-slider").slick({
+			// 		slidesToShow: 3,
+			// 		slidesToScroll: 2,
+			// 		autoplay: true,
+			// 		autoplaySpeed: 2000,
+			// 		arrows: false,
+			// 		dots: true,
+			// 		// appendDots: $(".video-slider__dots"),
+			// 	});
+
+			$(".video-slider2").slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 2000,
+				arrows: false,
+				dots: false,
+				// appendDots: $(".video-slider__dots"),
+			});
+
+			$(".menu li > a").click(function () {
+				var link = $(this);
+				var closest_ul = link.closest("ul");
+				var parallel_active_links = closest_ul.find(".active");
+				var closest_li = link.closest("li");
+				var link_status = closest_li.hasClass("active");
+				// var arrow = link.find(".order-menu__icon");
+				var count = 0;
+
+				closest_ul.find(".dropdown").slideUp(200, function () {
+					if (++count == closest_ul.find(".dropdown").length) {
+						parallel_active_links.removeClass("active");
+					}
+				});
+
+				if (!link_status) {
+					if ($(".menu li").hasClass("active")) {
+						$(".menu li").removeClass("active").children(".dropdown").slideUp(200);
+					}
+					closest_li.children(".dropdown").slideDown(200);
+					closest_li.addClass("active");
+					//   arrow.addClass("active");
+				}
+			});
+			$(document).click(function (e) {
+				var target = e.target.closest(".menu");
+				if (!target) {
+					$(".menu li").removeClass("active").children(".dropdown").slideUp(200);
+				}
+			});
+		});
+	</script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+	<script src="/js/slick.js"></script>
 </html>
