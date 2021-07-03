@@ -50,6 +50,7 @@ body {
 }
 
 .header {
+	position: relative;
 	background: white;
 	border-top: solid 10px #894aa3;
 	border-bottom: solid 1px #e1e1e1;
@@ -59,19 +60,13 @@ body {
 	padding: 0 30px;
 }
 
-.header .right-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-}
-
 .logo {
-	padding: 35px 0 35px 0;
+	margin: 8px 0 0 0;
 }
 
 .logo .navbar-brand {
 	display: block;
-	margin: 0 0 2px 0;
+	margin: 0 0 9px 0;
 	padding: 0;
 	font-size: 24px;
 	line-height: 100%;
@@ -86,13 +81,13 @@ body {
 .logo-description {
 	margin: 0;
 	font-size: 12px;
+	line-height: 100%;
 	color: #999999;
 }
 
 .search-wrapper {
 	position: relative;
 	max-width: 216px;
-	margin: 0 0 41px 0;
 }
 
 .search-form {
@@ -121,6 +116,7 @@ body {
 }
 
 .header .navbar-nav {
+	margin: 45px 0 0 0;
 	flex-direction: row;
 }
 
@@ -139,12 +135,16 @@ body {
 	color: black;
 }
 
+.header .container {
+	padding: 0px 30px 37px 30px;
+}
+
 .main-text {
 	background: #ebebea;
 }
 
 .main-text .container {
-	padding: 30px;
+	padding: 23px 30px;
 }
 
 .main-text p {
@@ -166,8 +166,9 @@ body {
 }
 
 .main-slider .carousel-indicators button {
-	width: 11px;
-	height: 11px;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px 0 0;
 	border-radius: 50%;
 	border-top: 0;
 	border-bottom: 0;
@@ -186,7 +187,7 @@ body {
 	bottom: 0;
 	left: unset;
 	max-width: 450px;
-	padding: 20px 15px;
+	padding: 23px 18px;
 	color: #fff;
 	text-align: left;
 	background: #0f0f0f;
@@ -194,7 +195,7 @@ body {
 }
 
 .main-slider .carousel-caption h5 {
-	margin-bottom: 28px;
+	margin-bottom: 25px;
 	font-size: 20px;
 	line-height: 100%;
 	color: #c2c2c2;
@@ -244,10 +245,11 @@ body {
 }
 
 .cards .container {
-	padding: 46px 30px;
+	padding: 46px 30px 16px 30px;
 }
 
 .cards .card {
+	margin: 0 0 30px 0;
 	flex-direction: row;
 	border: none;
 }
@@ -284,18 +286,28 @@ body {
 	border-bottom: solid 1px #e1e1e1;
 }
 
+.cards2 .row {
+	margin: 0 -15px;
+}
+
+.cards2 .row > * {
+	padding: 0 15px;
+}
+
 .cards2 .container {
-	padding: 50px 30px;
+	padding: 50px 30px 20px 30px;
 }
 
 .cards2 .card {
+	max-width: 280px;
+	margin: 0 0 30px 0;
 	padding: 10px 10px 15px 10px;
 	border: none;
 	border-radius: 0;
 }
 
 .cards2 .card img {
-	height: 180px;
+	min-height: 180px;
 	border-radius: 0;
 }
 
@@ -319,7 +331,11 @@ body {
 }
 
 .footer .container {
-	padding: 41px 30px;
+	padding: 41px 30px 11px 30px;
+}
+
+.footer .footer-group {
+	margin: 0 0 30px 0;
 }
 
 .footer-group .title {
@@ -403,4 +419,113 @@ body {
 
 .footer .bottom .container {
 	padding: 25px 30px;
+}
+
+.header__burger {
+	display: block;
+	position: relative;
+	width: 30px;
+	height: 20px;
+	z-index: 5;
+	overflow: hidden;
+}
+
+.header__burger span {
+	position: absolute;
+	left: 0;
+	top: 9px;
+	width: 100%;
+	height: 2px;
+	background-color: black;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.header__burger:before {
+	top: 0;
+}
+
+.header__burger:after {
+	bottom: 0;
+}
+
+.header__burger:before,
+.header__burger:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: black;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.header__burger.active:before {
+	top: 9px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.header__burger.active:after {
+	bottom: 9px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.header__burger.active span {
+	-webkit-transform: translateX(-35px);
+	-ms-transform: translateX(-35px);
+	transform: translateX(-35px);
+}
+
+.navbar-nav.open {
+	position: absolute;
+	top: 78px;
+	left: 0;
+	z-index: 10;
+	flex-direction: column;
+	width: 100%;
+	padding: 30px;
+	background: white;
+}
+
+@media (min-width: 768px) {
+	.container,
+	.container-md,
+	.container-sm {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 576px) {
+	.container,
+	.container-sm {
+		max-width: 960px;
+	}
+}
+
+@media (max-width: 999px) {
+	.cards2 .card {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 650px) {
+	.main-slider .carousel-item {
+		height: 100%;
+	}
+	.main-slider .carousel-control-next-icon,
+	.main-slider .carousel-control-prev-icon {
+		width: 35px;
+		height: 35px;
+	}
+	.main-slider .carousel-control-next-icon,
+	.main-slider .carousel-control-prev-icon {
+		background-size: 10px;
+	}
 }
