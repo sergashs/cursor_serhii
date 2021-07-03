@@ -1,165 +1,165 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .container {
-  max-width: 900px;
-  margin: auto;
-  background-color: #fff;
-  padding: 20px 70px;
-  position: relative;
+	max-width: 900px;
+	margin: auto;
+	background-color: #fff;
+	padding: 20px 70px;
+	position: relative;
 }
 
 body {
-  padding: 32px;
-  font-family: "Lato", sans-serif;
-  background: #e5e5e5;
+	padding: 32px;
+	font-family: "Lato", sans-serif;
+	background: #e5e5e5;
 }
 
 .container::before {
-  content: "";
-  position: absolute;
-  background: #101214;
-  width: 100%;
-  height: 4px;
-  top: -4px;
-  left: 0;
+	content: "";
+	position: absolute;
+	background: #101214;
+	width: 100%;
+	height: 4px;
+	top: -4px;
+	left: 0;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0 0 0;
 }
 
 .header__avatar img {
-  width: 100%;
-  border-radius: 50%;
-  box-shadow: 0px 2px 4px rgba(16, 18, 20, 0.4);
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 0px 2px 4px rgba(16, 18, 20, 0.4);
 }
 
 .header__avatar {
-  width: 172px;
-  height: 172px;
+	width: 172px;
+	height: 172px;
 }
 
 .header__name {
-  font-family: "Actor", sans-serif;
-  font-size: 50px;
-  font-weight: 900;
-  line-height: 100%;
-  color: #101214;
-  margin-bottom: 20px;
+	font-family: "Actor", sans-serif;
+	font-size: 50px;
+	font-weight: 900;
+	line-height: 100%;
+	color: #101214;
+	margin-bottom: 20px;
 }
 
 .header__position {
-  font-family: "Actor", sans-serif;
-  color: #101214;
-  font-size: 34px;
+	font-family: "Actor", sans-serif;
+	color: #101214;
+	font-size: 34px;
 }
 
 .main {
-  margin: 50px 0 0 0;
-  display: flex;
-  justify-content: space-between;
+	margin: 50px 0 0 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 .main__right {
-  padding-left: 50px;
+	padding-left: 50px;
 }
 
 .sub-pg {
-  text-transform: uppercase;
-  color: #73808d;
-  letter-spacing: 3px;
-  font-size: 13px;
-  margin: 0 0 10px 0;
+	text-transform: uppercase;
+	color: #73808d;
+	letter-spacing: 3px;
+	font-size: 13px;
+	margin: 0 0 10px 0;
 }
 
 .w-p {
-  font-size: 25px;
-  font-weight: 700;
-  margin: 0 0 10px 0;
+	font-size: 25px;
+	font-weight: 700;
+	margin: 0 0 10px 0;
 }
 
 .c-n {
-  font-size: 17px;
-  margin: 0 0 10px 0;
-  font-weight: 600;
+	font-size: 17px;
+	margin: 0 0 10px 0;
+	font-weight: 600;
 }
 
 .w-t {
-  color: #73808d;
-  font-size: 15px;
-  margin: 0 0 10px 0;
+	color: #73808d;
+	font-size: 15px;
+	margin: 0 0 10px 0;
 }
 
 .d-w {
-  font-size: 19px;
-  line-height: 30px;
-  max-width: 550px;
+	font-size: 19px;
+	line-height: 30px;
+	max-width: 550px;
 }
 
 .block-list {
-  margin: 0 0 50px 0;
+	margin: 0 0 50px 0;
 }
 
 .list-line {
-  margin: 0 0 10px 0;
-  color: #73808d;
-  font-weight: 400;
-  font-size: 17px;
+	margin: 0 0 10px 0;
+	color: #73808d;
+	font-weight: 400;
+	font-size: 17px;
 }
 
 .p-list-line {
-  font-weight: 600;
-  font-size: 18px;
+	font-weight: 600;
+	font-size: 18px;
 }
 
 .article {
-  margin: 0 0 50px 0;
+	margin: 0 0 50px 0;
 }
 
 @media (max-width: 880px) {
-  .header {
-    flex-direction: column-reverse;
-  }
-  .header__position,
-  .header__name {
-    text-align: center;
-  }
-  .header__avatar {
-    margin: 0 0 30px 0;
-  }
-  .main {
-    flex-direction: column;
-  }
-  .main__right {
-    padding: 0;
-    position: relative;
-  }
-  .main__right::before {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #e7e7e7;
-    position: absolute;
-    top: -25px;
-  }
-  .container {
-    padding: 20px 40px;
-  }
+	.header {
+		flex-direction: column-reverse;
+	}
+	.header__position,
+	.header__name {
+		text-align: center;
+	}
+	.header__avatar {
+		margin: 0 0 30px 0;
+	}
+	.main {
+		flex-direction: column;
+	}
+	.main__right {
+		padding: 0;
+		position: relative;
+	}
+	.main__right::before {
+		content: "";
+		width: 100%;
+		height: 1px;
+		background-color: #e7e7e7;
+		position: absolute;
+		top: -25px;
+	}
+	.container {
+		padding: 20px 40px;
+	}
 }
 
 @media (max-width: 480px) {
-  body {
-    padding: 0;
-  }
-  .container {
-    padding: 20px 20px;
-  }
-  .header__name {
-    font-size: 40px;
-  }
+	body {
+		padding: 0;
+	}
+	.container {
+		padding: 20px 20px;
+	}
+	.header__name {
+		font-size: 40px;
+	}
 }
