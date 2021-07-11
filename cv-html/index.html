@@ -1,100 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
-  </head>
-  <body>
- <div class="container">
-  <header class="header">
-    <div class="header__profile">
-      <h1 class="header__name">Serhii Demchyshyn</h1>
-    <h2 class="header__position">Frontend dev</h2>
-    </div>
-    
-    <div class="header__avatar">
-      <img src="./img/ava.jfif" alt="">
-    </div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="header__profile">
+					<h1 class="header__name">Serhii Demchyshyn</h1>
+					<h2 class="header__position">Frontend dev</h2>
+				</div>
 
-<main class="main">
+				<div class="header__avatar">
+					<img src="./img/ava.jfif" alt="" />
+				</div>
+			</header>
 
+			<div class="item">
+				<div class="item-title">
+					<a href="$ENTRY_URL$">$TITLE$</a>
+				</div>
+				<div class="flex items-center">
+					<?if($IMG_SMALL_URL1$)?>
+					<img class="item-img" src="$IMG_SMALL_URL1$" alt="$TITLE$" /><?endif?>
+				</div>
+			</div>
+			<div class="item-meta">
+				<ul class="item__meta flex">
+					<li><i class="fa fa-eye" aria-hidden="true"></i> $READS$</li>
+					<li><i class="fa fa-comments" aria-hidden="true"></i> $COMMENTS_NUM$</li>
+				</ul>
+			</div>
 
-<div class="main__left">
+			<main class="main">
+				<div class="main__left">
+					<article class="article">
+						<div class="sub-pg">Experience</div>
+						<div class="w-p">HTML Developer</div>
+						<div class="c-n">7offers</div>
+						<div class="w-t">Aug 2020 - October 2020, freelance</div>
+						<div class="d-w">Creating HTML Pages in HTML5/CSS3 and JavaScript/jQuery. Maintenance of the sites and updating them. Ensuring design colours, fonts, images are in tune with layout...</div>
+					</article>
 
-  <article class="article">
-    <div class="sub-pg">Experience</div>
-<div class="w-p">HTML Developer</div>
-<div class="c-n">7offers</div>
-<div class="w-t">Aug 2020 - October 2020, freelance</div>
-<div class="d-w">Creating HTML Pages in HTML5/CSS3 and JavaScript/jQuery.
-  Maintenance of the sites and updating them.
-  Ensuring design colours, fonts, images are in tune with layout...</div>
-</article>
+					<article class="article">
+						<div class="sub-pg">Education</div>
+						<div class="w-p">FRONT-END EDUCATION</div>
+						<div class="c-n">Cursor</div>
+						<div class="w-t">Oct 2019 - April 2020, Lviv</div>
+						<div class="d-w">
+							This is one of the best courses to learn frontend web development, as it covers some of the most useful programming languages and technologies you will need as a frontend web developer, such
+							as HTML, CSS, JavaScript, jQuery, and Bootstrap.
+						</div>
+					</article>
+				</div>
 
- <article class="article">
-<div class="sub-pg">Education</div>
-<div class="w-p">FRONT-END EDUCATION</div>
-<div class="c-n">Cursor</div>
-<div class="w-t">Oct 2019 - April 2020, Lviv</div>
-<div class="d-w">This is one of the best courses to learn frontend web development, as it covers some of the most useful programming languages and technologies you will need as a frontend web developer, such as HTML, CSS, JavaScript, jQuery, and Bootstrap.</div>
+				<div class="main__right">
+					<ul class="block-list">
+						<li class="list-line">sergas123456@gmail.com</li>
+						<li class="list-line">+38063***</li>
+						<li class="list-line">sasa</li>
+					</ul>
 
-  </article>
+					<ul class="block-list">
+						<li class="list-line p-list-line">Skills</li>
+						<li class="list-line">HTML</li>
+						<li class="list-line">CSS</li>
+						<li class="list-line">JAVASCRIPT</li>
+						<li class="list-line">BOOTSTRAP</li>
+						<li class="list-line">GIT</li>
+					</ul>
 
+					<ul class="block-list">
+						<li class="list-line p-list-line">Other skills</li>
+						<li class="list-line">Figma</li>
+						<li class="list-line">Photoshop</li>
+					</ul>
 
-</div>
- 
+					<ul class="block-list">
+						<li class="list-line p-list-line">Languages</li>
+						<li class="list-line">English (A2)</li>
+					</ul>
 
-
- 
-
-
-<div class="main__right">
-  <ul class="block-list">
-    <li class="list-line">sergas123456@gmail.com</li>
-    <li class="list-line">+38063***</li>
-    <li class="list-line">sasa</li>
-  </ul>
-
-  <ul class="block-list">
-    <li class="list-line p-list-line">Skills</li>
-    <li class="list-line">HTML</li>
-    <li class="list-line">CSS</li>
-    <li class="list-line">JAVASCRIPT</li>
-    <li class="list-line">BOOTSTRAP</li>
-    <li class="list-line">GIT</li>
-  </ul>
-
-
-  <ul class="block-list">
-    <li class="list-line p-list-line">Other skills</li>
-    <li class="list-line">Figma</li>
-    <li class="list-line">Photoshop</li>
-  </ul>
-
-
-  <ul class="block-list">
-    <li class="list-line p-list-line">Languages</li>
-    <li class="list-line">English (A2)</li>
-  </ul>
-
-
-  <ul class="block-list">
-    <li class="list-line p-list-line">Social</li>
-    <li class="list-line">telegram</li>
-  </ul>
-
-</div>
-</main>
-
-
- </div>
-
-
-  </body>
+					<ul class="block-list">
+						<li class="list-line p-list-line">Social</li>
+						<li class="list-line">telegram</li>
+					</ul>
+				</div>
+			</main>
+		</div>
+	</body>
 </html>
