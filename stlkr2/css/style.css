@@ -506,7 +506,7 @@ body {
 	position: relative;
 	width: 30%;
 	height: 300px;
-	background: url(/img/wiki-1.jpg);
+	background: url(../img/wiki-1.jpg);
 	background-position: 10% 20%;
 }
 
